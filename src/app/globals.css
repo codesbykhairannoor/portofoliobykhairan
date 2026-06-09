@@ -111,9 +111,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.04em;
-  background: linear-gradient(135deg, var(--text-primary) 30%, var(--text-secondary) 60%, var(--neon-cyan) 100%);
+  color: var(--text-primary);
+  background: linear-gradient(to right, var(--text-primary), var(--neon-cyan), var(--neon-violet));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 /* Glass Panels with high premium gloss */
@@ -127,7 +129,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html.light .glass-panel {
-  box-shadow: 0 12px 40px -12px rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 12px 40px -12px rgba(15, 23, 42, 0.1);
 }
 
 .glass-panel-hover {

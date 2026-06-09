@@ -61,9 +61,9 @@ const SKILL_PROFICIENCY_MAP: Record<string, number> = {
 const TRANSLATIONS = {
   en: {
     ready: "Ready for New Opportunities",
-    hero_title_1: "Hi, I'm Architecting",
-    hero_title_2: "Intelligent AI Solutions",
-    hero_title_3: "With Seamless Automation",
+    hero_title_1: "Hi, I'm Khairan.",
+    hero_title_2: "Building Intelligent AI",
+    hero_title_3: "Agents & Automations.",
     hero_desc: "Hi! I am Khairan Noor Fadhlillah, a Hybrid Developer and AI Specialist. I build high-performance 24/7 AI agents, social media automations, and deep LLM integrations to transform complex workflows into scalable digital assets.",
     get_in_touch: "Contact Me",
     view_my_work: "View My Work",
@@ -117,9 +117,9 @@ const TRANSLATIONS = {
   },
   id: {
     ready: "Siap untuk Peluang Baru",
-    hero_title_1: "Hi, Arsitektur Solusi",
-    hero_title_2: "Berbasis AI Cerdas",
-    hero_title_3: "Dengan Otomatisasi Mulus",
+    hero_title_1: "Hi, Saya Khairan.",
+    hero_title_2: "Membangun Agen AI",
+    hero_title_3: "& Otomatisasi Cerdas.",
     hero_desc: "Hai! Saya Khairan Noor Fadhlillah, seorang Hybrid Developer dan Spesialis AI. Saya membangun agen AI 24/7 yang berkinerja tinggi, otomatisasi media sosial, dan integrasi LLM mendalam untuk mengubah alur kerja kompleks menjadi aset digital yang skalabel.",
     get_in_touch: "Hubungi Saya",
     view_my_work: "Lihat Karya Saya",
@@ -491,7 +491,9 @@ export default function Home() {
 
         <h1 className="custom-hero-title mb-8 font-extrabold leading-[1.08] tracking-tight">
           {TRANSLATIONS[lang].hero_title_1} <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-100 to-[#50FFD9] drop-shadow-[0_0_30px_rgba(80,255,217,0.15)]">{TRANSLATIONS[lang].hero_title_2}</span> <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-primary)] via-[#50FFD9] to-[var(--neon-violet)]">
+            {TRANSLATIONS[lang].hero_title_2}
+          </span> <br />
           {TRANSLATIONS[lang].hero_title_3}
         </h1>
 
