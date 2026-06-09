@@ -185,7 +185,7 @@ export default function ProjectClientPage({
       [/The Result:/gi, "Hasil Akhir:"],
       [/🔗\s*Live\s*Site/gi, "🔗 Kunjungi Situs"],
       [/🧩\s*(?:Topic\s+Area|Bidang\s+Topik)/gi, "🧩 Bidang Topik"],
-      [/🛠️\s*(?:Skills\s+Used|Keahlian\s+yang\s+Digunakan)/gi, "🛠️ Keahlian yang Digunakan"],
+      [/🛠️\s*(?:<[^>]+>)*\s*Skills\s+Used\s*(?:<\/(?:strong|span|b|i)>)*/gi, "🛠️ Keahlian yang Digunakan"],
       [/⭐\s*(?:Key\s+Features|Fitur\s+Utama)/gi, "⭐ Fitur Utama"],
       [/%\s*Experience/gi, "% Pengalaman"],
       [/Automated Access Control:/gi, "Kontrol Akses Otomatis:"],
@@ -201,12 +201,12 @@ export default function ProjectClientPage({
       [/Project\s*&gt;/gi, "Proyek &gt;"],
       
       // Global and Design Project specific bilingual sections (supports optional nested strong tags!)
-      [/📂\s*(?:<[^>]+>)*\s*Content\s+Categories\s*(?:<\/[^>]+>)*/gi, "📂 Kategori Konten"],
-      [/📺\s*(?:<[^>]+>)*\s*Media\s*(?:<\/[^>]+>)*/gi, "📺 Media"],
-      [/🎯\s*(?:<[^>]+>)*\s*Design\s+Purpose\s*(?:<\/[^>]+>)*/gi, "🎯 Tujuan Desain"],
-      [/📚\s*(?:<[^>]+>)*\s*Poster\s+Type\s*(?:<\/[^>]+>)*/gi, "📚 Tipe Poster"],
-      [/📚\s*(?:<[^>]+>)*\s*Logo\s+Styles\s*(?:<\/[^>]+>)*/gi, "📚 Gaya Logo"],
-      [/🎯\s*(?:<[^>]+>)*\s*Target\s+Audience\s*(?:<\/[^>]+>)*/gi, "🎯 Target Audiens"],
+      [/📂\s*(?:<[^>]+>)*\s*Content\s+Categories\s*(?:<\/(?:strong|span|b|i)>)*/gi, "📂 Kategori Konten"],
+      [/📺\s*(?:<[^>]+>)*\s*Media\s*(?:<\/(?:strong|span|b|i)>)*/gi, "📺 Media"],
+      [/🎯\s*(?:<[^>]+>)*\s*Design\s+Purpose\s*(?:<\/(?:strong|span|b|i)>)*/gi, "🎯 Tujuan Desain"],
+      [/📚\s*(?:<[^>]+>)*\s*Poster\s+Type\s*(?:<\/(?:strong|span|b|i)>)*/gi, "📚 Tipe Poster"],
+      [/📚\s*(?:<[^>]+>)*\s*Logo\s+Styles\s*(?:<\/(?:strong|span|b|i)>)*/gi, "📚 Gaya Logo"],
+      [/🎯\s*(?:<[^>]+>)*\s*Target\s+Audience\s*(?:<\/(?:strong|span|b|i)>)*/gi, "🎯 Target Audiens"],
       [/Carousel\s+Content/gi, "Konten Korsel"],
       [/Promotional\s+Posts/gi, "Postingan Promosi"],
       [/Reels\s*\/\s*Shorts\s+Visual/gi, "Visual Reels / Shorts"],
@@ -324,7 +324,7 @@ export default function ProjectClientPage({
       />
 
       {/* Main Core Centered Wide Sheet */}
-      <div className="relative z-10 pt-28 pb-16 px-4 md:px-8 max-w-4xl mx-auto w-full flex flex-col gap-6 md:gap-8 animate-fade-in">
+      <div className="relative z-10 pt-20 pb-12 px-4 md:px-8 max-w-4xl mx-auto w-full flex flex-col gap-3.5 md:gap-4 animate-fade-in">
         
         {/* Minimal Breadcrumb Path */}
         <nav className="flex items-center gap-2 text-[10px] sm:text-xs font-bold text-[var(--text-muted)] select-none">
@@ -336,18 +336,18 @@ export default function ProjectClientPage({
         </nav>
 
         {/* Compact Hero Header */}
-        <section className="pb-4 border-b border-[var(--border-glass)] flex flex-col gap-3">
+        <section className="pb-3 border-b border-[var(--border-glass)] flex flex-col gap-1.5">
           <div className="inline-flex self-start items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[var(--bg-card)] border border-[var(--border-glass)] text-[9px] font-bold text-[#50FFD9] tracking-wider backdrop-blur-md shadow-sm">
             <span className="w-1 h-1 rounded-full bg-[#50FFD9] shadow-[0_0_6px_#50FFD9]"></span>
             {activeType}
           </div>
           
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-[var(--text-primary)] tracking-tight leading-none font-display">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-black text-[var(--text-primary)] tracking-tight leading-none font-display">
             {activeTitle}
           </h1>
           
           {activeDescription && (
-            <p className="text-[var(--text-secondary)] text-xs sm:text-sm leading-relaxed max-w-3xl font-medium">
+            <p className="text-[var(--text-secondary)] text-[11px] sm:text-xs leading-relaxed max-w-3xl font-medium">
               {activeDescription}
             </p>
           )}
@@ -355,22 +355,29 @@ export default function ProjectClientPage({
 
         {/* Immersive Interactive Slideshow Header with horizontal thumbnail previews */}
         <div className="flex flex-col gap-3">
-          <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl md:rounded-3xl overflow-hidden border border-[var(--border-glass)] bg-black/30 shadow-2xl group/slider">
+          <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] md:h-[380px] md:aspect-auto rounded-2xl md:rounded-3xl overflow-hidden border border-[var(--border-glass)] bg-slate-950/40 shadow-2xl group/slider flex items-center justify-center">
             
+            {/* Gorgeous color-matched ambient blur background */}
+            <div 
+              className="absolute inset-0 z-0 bg-cover bg-center blur-2xl opacity-25 scale-110 pointer-events-none"
+              style={{ backgroundImage: `url(${slides[activeSlide]})` }}
+            />
+            <div className="absolute inset-0 z-[1] bg-black/45 pointer-events-none" />
+
             {/* Main Slide Image Render */}
             <div 
               onClick={() => {
                 setLightboxIndex(activeSlide);
                 setLightboxOpen(true);
               }}
-              className="w-full h-full cursor-zoom-in relative select-none overflow-hidden"
+              className="relative z-10 w-full h-full cursor-zoom-in relative select-none overflow-hidden flex items-center justify-center p-2 sm:p-4"
             >
               <img 
                 src={slides[activeSlide]} 
                 alt={`${activeTitle} Slide ${activeSlide + 1}`} 
-                className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.015]"
+                className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg transition-all duration-700 hover:scale-[1.012]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+              <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none z-20"></div>
             </div>
 
             {/* Slide Indicator Counter Pill (Top-Right) */}
@@ -516,7 +523,7 @@ export default function ProjectClientPage({
 
         {/* Core Case Study Content Card */}
         <main className="w-full">
-          <article className="glass-panel p-5 sm:p-8 md:p-10 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl shadow-xl overflow-hidden relative">
+          <article className="glass-panel p-4 sm:p-6 md:p-7 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl shadow-xl overflow-hidden relative">
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#50FFD9] to-violet-500"></div>
 
             {/* Rendered HTML content from WordPress */}

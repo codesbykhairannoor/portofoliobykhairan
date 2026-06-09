@@ -344,9 +344,9 @@ html.light .search-input {
 .project-content-html {
   display: flex;
   flex-direction: column;
-  line-height: 1.85;
+  line-height: 1.55;
   color: var(--text-secondary);
-  font-size: 15px;
+  font-size: 14.5px;
   font-family: var(--font-sans);
 }
 
@@ -360,30 +360,30 @@ html.light .search-input {
 
 /* Title duplicate check: hide redundant title elements from HTML content */
 .project-content-html > h2:first-of-type {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 /* Heading Overrides */
 .project-content-html h1 {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 800;
   color: var(--text-primary);
-  margin-top: 48px;
-  margin-bottom: 24px;
+  margin-top: 24px;
+  margin-bottom: 12px;
   letter-spacing: -0.03em;
 }
 
 .project-content-html h2 {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-top: 44px;
-  margin-bottom: 18px;
+  margin-top: 20px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   letter-spacing: -0.02em;
 }
 
@@ -391,7 +391,7 @@ html.light .search-input {
   content: '';
   display: inline-block;
   width: 4px;
-  height: 20px;
+  height: 16px;
   background-color: var(--neon-cyan);
   border-radius: 10px;
   box-shadow: 0 0 10px var(--neon-cyan-glow);
@@ -399,16 +399,16 @@ html.light .search-input {
 
 .project-content-html h3 {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
-  margin-top: 32px;
-  margin-bottom: 14px;
+  margin-top: 16px;
+  margin-bottom: 6px;
 }
 
 /* Paragraph Overrides */
 .project-content-html p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: var(--text-secondary);
 }
 
@@ -434,16 +434,16 @@ html.light .search-input {
 /* List Items Overrides */
 .project-content-html ul {
   padding-left: 0;
-  margin-top: 16px;
-  margin-bottom: 28px;
+  margin-top: 8px;
+  margin-bottom: 12px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 6px;
 }
 
 .project-content-html ul li {
   position: relative;
-  padding-left: 26px;
+  padding-left: 22px;
   color: var(--text-secondary);
 }
 
@@ -466,8 +466,8 @@ html.light .search-input {
 .project-content-html blockquote {
   border-left: 3px solid var(--neon-cyan);
   background: rgba(80, 255, 217, 0.02);
-  padding: 16px 20px;
-  margin: 24px 0;
+  padding: 10px 16px;
+  margin: 12px 0;
   border-radius: 0 12px 12px 0;
   color: var(--text-secondary);
 }

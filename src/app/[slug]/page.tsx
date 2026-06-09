@@ -290,7 +290,7 @@ function cleanProjectHtml(html: string): string {
 
   // 7b. Convert any sequence of <a> text </a> tags under h2 headings into premium capsules
   // This handles customized sections like Poster Type, Target Audience, Logo Styles, Content Categories, etc.
-  const headingAndAnchorsRegex = /(<h2[^>]*>[\s\S]*?<\/h2>)\s*((?:<a[^>]*>[\s\S]*?<\/a>\s*)+)/gi;
+  const headingAndAnchorsRegex = /(<h2[^>]*>(?:(?!<\/h2>)[\s\S])*?<\/h2>)\s*((?:<a(?![^>]*data-elementor-open-lightbox)[^>]*>(?:(?!<\/a>)(?!<img)(?!<figure)[\s\S])*?<\/a>\s*)+)/gi;
   clean = clean.replace(headingAndAnchorsRegex, (match: string, heading: string, anchorsText: string) => {
     const anchorRegex = /<a[^>]*>([\s\S]*?)<\/a>/gi;
     const items: string[] = [];

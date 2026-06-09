@@ -23,39 +23,6 @@
       "image": "/wp-content/uploads/2025/07/3-5.png"
     },
     {
-      "title": "Logo Design",
-      "title_en": "Logo Design",
-      "title_id": "Desain Logo",
-      "description": "Developed a visual identity through a logo that captures the brand’s core values with clarity, and meaning...",
-      "description_en": "Developed a visual identity through a logo that captures the brand’s core values with clarity, and meaning...",
-      "description_id": "Mengembangkan identitas visual melalui logo yang menangkap nilai-nilai inti merek dengan kejelasan dan makna...",
-      "link": "/logo-design/",
-      "slug": "logo-design",
-      "image": "/wp-content/uploads/2025/07/7-1.png"
-    },
-    {
-      "title": "Poster Design",
-      "title_en": "Poster Design",
-      "title_id": "Desain Poster",
-      "description": "Turning information into visuals. Clear, concise, and compelling infographic posters for all audiences...",
-      "description_en": "Turning information into visuals. Clear, concise, and compelling infographic posters for all audiences...",
-      "description_id": "Mengubah informasi menjadi visual. Poster infografis yang jelas, ringkas, dan menarik untuk semua kalangan...",
-      "link": "/poster-design/",
-      "slug": "poster-design",
-      "image": "/wp-content/uploads/2025/07/1-1.png"
-    },
-    {
-      "title": "Social Media Design",
-      "title_en": "Social Media Design",
-      "title_id": "Desain Media Sosial",
-      "description": "Designed social media visuals that combine branding, clarity, and engagement across platforms...",
-      "description_en": "Designed social media visuals that combine branding, clarity, and engagement across platforms...",
-      "description_id": "Merancang visual media sosial yang menggabungkan branding, kejelasan, dan keterlibatan di berbagai platform...",
-      "link": "/social-media-design/",
-      "slug": "social-media-design",
-      "image": "/wp-content/uploads/2025/07/8-1.png"
-    },
-    {
       "title": "ShareSkill App Design",
       "title_en": "ShareSkill App Design",
       "title_id": "Desain Aplikasi ShareSkill",
@@ -112,39 +79,6 @@
     }
   ],
   "visual_design": [
-    {
-      "title": "Social Media Design",
-      "title_en": "Social Media Design",
-      "title_id": "Desain Media Sosial",
-      "description": "Designed social media visuals that combine branding, clarity, and engagement across platforms...",
-      "description_en": "Designed social media visuals that combine branding, clarity, and engagement across platforms...",
-      "description_id": "Merancang visual media sosial yang menggabungkan branding, kejelasan, dan keterlibatan di berbagai platform...",
-      "link": "/social-media-design/",
-      "slug": "social-media-design",
-      "image": "/wp-content/uploads/2025/07/8-1.png"
-    },
-    {
-      "title": "Poster Design",
-      "title_en": "Poster Design",
-      "title_id": "Desain Poster",
-      "description": "Turning information into visuals. Clear, concise, and compelling infographic posters for all audiences...",
-      "description_en": "Turning information into visuals. Clear, concise, and compelling infographic posters for all audiences...",
-      "description_id": "Mengubah informasi menjadi visual. Poster infografis yang jelas, ringkas, dan menarik untuk semua kalangan...",
-      "link": "/poster-design/",
-      "slug": "poster-design",
-      "image": "/wp-content/uploads/2025/07/1-1.png"
-    },
-    {
-      "title": "Logo Design",
-      "title_en": "Logo Design",
-      "title_id": "Desain Logo",
-      "description": "Developed a visual identity through a logo that captures the brand’s core values with clarity, and meaning...",
-      "description_en": "Developed a visual identity through a logo that captures the brand’s core values with clarity, and meaning...",
-      "description_id": "Mengembangkan identitas visual melalui logo yang menangkap nilai-nilai inti merek dengan kejelasan dan makna...",
-      "link": "/logo-design/",
-      "slug": "logo-design",
-      "image": "/wp-content/uploads/2025/07/7-1.png"
-    },
     {
       "title": "ShareSkill App - UI Design",
       "title_en": "ShareSkill App - UI Design",
