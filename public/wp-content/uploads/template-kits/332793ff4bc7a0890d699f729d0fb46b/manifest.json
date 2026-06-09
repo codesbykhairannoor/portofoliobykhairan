@@ -1,0 +1,1815 @@
+{
+    "manifest_version": "1.0.19",
+    "title": "Valentina",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/home\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About Us",
+            "screenshot": "screenshots\/about-us.jpg",
+            "source": "templates\/about-us.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/about-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "History",
+            "screenshot": "screenshots\/history.jpg",
+            "source": "templates\/history.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/history\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Team",
+            "screenshot": "screenshots\/team.jpg",
+            "source": "templates\/team.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/team\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Services",
+            "screenshot": "screenshots\/services.jpg",
+            "source": "templates\/services.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/services\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/blog\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-blog",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Lookbook",
+            "screenshot": "screenshots\/lookbook.jpg",
+            "source": "templates\/lookbook.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/lookbook\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Shop",
+            "screenshot": "screenshots\/shop.jpg",
+            "source": "templates\/shop.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/shop\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "FAQS",
+            "screenshot": "screenshots\/faqs.jpg",
+            "source": "templates\/faqs.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/faqs\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact",
+            "screenshot": "screenshots\/contact.jpg",
+            "source": "templates\/contact.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Post",
+            "screenshot": "screenshots\/single-post.jpg",
+            "source": "templates\/single-post.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/single-post\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Product",
+            "screenshot": "screenshots\/single-product.jpg",
+            "source": "templates\/single-product.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/single-product\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Header Section",
+            "screenshot": "screenshots\/header-section.jpg",
+            "source": "templates\/header-section.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/header-section\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Footer Section",
+            "screenshot": "screenshots\/footer-section.jpg",
+            "source": "templates\/footer-section.json",
+            "preview_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/template-kit\/footer-section\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Master Addons for Elementor",
+            "version": "1.6.4",
+            "file": "master-addons\/master-addons.php",
+            "author": "Jewel Theme"
+        },
+        {
+            "name": "Better Elementor Addons",
+            "version": "1.1.1",
+            "file": "better-elementor-addons\/better-addons.php",
+            "author": "Smart Innovates"
+        },
+        {
+            "name": "Contact Form 7",
+            "version": "5.4.1",
+            "file": "contact-form-7\/wp-contact-form-7.php",
+            "author": "Takayuki Miyoshi"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.2.5",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Essential Addons for Elementor",
+            "version": "4.7.3",
+            "file": "essential-addons-for-elementor-lite\/essential_adons_elementor.php",
+            "author": "WPDeveloper"
+        },
+        {
+            "name": "Elementor - Header, Footer & Blocks",
+            "version": "1.5.9",
+            "file": "header-footer-elementor\/header-footer-elementor.php",
+            "author": "Brainstorm Force, Nikhil Chavan"
+        },
+        {
+            "name": "WooCommerce",
+            "version": "5.4.1",
+            "file": "woocommerce\/woocommerce.php",
+            "author": "Automattic"
+        },
+        {
+            "name": "WooLentor - WooCommerce Elementor Addons + Builder",
+            "version": "1.9.0",
+            "file": "woolentor-addons\/woolentor_addons_elementor.php",
+            "author": "HasThemes"
+        }
+    ],
+    "images": [
+        {
+            "filename": "Home-top-background-1.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/Home-top-background-1-800x521.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 178514,
+            "dimensions": [
+                1707,
+                1111
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "ornament-separator.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/ornament-separator.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 8962,
+            "dimensions": [
+                73,
+                119
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "ornament-separator2.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/ornament-separator2.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                }
+            ],
+            "filesize": 6125,
+            "dimensions": [
+                56,
+                91
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "home-welcome-image.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/home-welcome-image-800x1424.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 101168,
+            "dimensions": [
+                978,
+                1741
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/brown-and-white-concrete-building-under-white-sky-7540071\/"
+        },
+        {
+            "filename": "home-about-background-texture.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/home-about-background-texture-800x1067.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 279192,
+            "dimensions": [
+                930,
+                1240
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/dirty-construction-pattern-texture-4705924\/"
+        },
+        {
+            "filename": "home-about.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/home-about-800x1202.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 74987,
+            "dimensions": [
+                825,
+                1240
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/unrecognizable-woman-in-warm-scarf-on-gray-background-6163220\/"
+        },
+        {
+            "filename": "home-fashion-quote.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/home-fashion-quote-800x1207.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 133380,
+            "dimensions": [
+                822,
+                1240
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-white-and-blue-floral-shirt-4974367\/"
+        },
+        {
+            "filename": "home-quote-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/home-quote-1-800x1164.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 53065,
+            "dimensions": [
+                922,
+                1341
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/white-and-yellow-flowers-in-white-vase-4272620\/"
+        },
+        {
+            "filename": "background-texture.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/background-texture-800x1210.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 240698,
+            "dimensions": [
+                820,
+                1240
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Lines-Shape.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/Lines-Shape.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 6531,
+            "dimensions": [
+                106,
+                303
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "ornament-blog.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/ornament-blog.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 5130,
+            "dimensions": [
+                325,
+                64
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "lookbook3.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/lookbook3-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 239594,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/man-in-yellow-robe-walking-on-street-7165100\/"
+        },
+        {
+            "filename": "lookbook2.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/lookbook2-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 134897,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-brown-long-sleeve-shirt-standing-near-green-trees-7760787\/"
+        },
+        {
+            "filename": "lookbook1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/lookbook1-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 314652,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/blooming-bush-near-aged-cottage-in-countryside-4394220\/"
+        },
+        {
+            "filename": "lookbook.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/lookbook-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 144423,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-white-tank-top-holding-brown-woven-basket-with-orange-fruit-7456416\/"
+        },
+        {
+            "filename": "about-top-background.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/about-top-background-800x465.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 677943,
+            "dimensions": [
+                1920,
+                1117
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/uneven-textured-surface-of-rocky-formation-7761186\/"
+        },
+        {
+            "filename": "ornament.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/ornament.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 20718,
+            "dimensions": [
+                191,
+                408
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "about-right-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/about-right-1-800x1405.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 195699,
+            "dimensions": [
+                1040,
+                1827
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/fashion-man-beach-love-7537835\/"
+        },
+        {
+            "filename": "middle-lines.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/middle-lines.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 7349,
+            "dimensions": [
+                55,
+                732
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "about-quote.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/about-quote-800x583.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 405656,
+            "dimensions": [
+                1920,
+                1400
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/sea-sunset-fashion-person-5664706\/"
+        },
+        {
+            "filename": "About-bottom-4.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/About-bottom-4-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 93835,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/slender-woman-in-casual-outfit-with-tender-pink-roses-6121447\/"
+        },
+        {
+            "filename": "About-bottom-3.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/About-bottom-3-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 246419,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/crop-woman-with-flowers-on-street-7137425\/"
+        },
+        {
+            "filename": "About-bottom-2.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/About-bottom-2-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 120538,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/sea-landscape-sunset-fashion-7760646\/"
+        },
+        {
+            "filename": "About-bottom-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/About-bottom-1-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 148418,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/city-man-people-woman-8112496\/"
+        },
+        {
+            "filename": "History-top-image.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/History-top-image-800x1201.jpg",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                }
+            ],
+            "filesize": 204919,
+            "dimensions": [
+                1200,
+                1802
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-pink-dress-holding-brown-ceramic-mug-7760792\/"
+        },
+        {
+            "filename": "History-top-image-right.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/History-top-image-right.jpg",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                }
+            ],
+            "filesize": 208953,
+            "dimensions": [
+                800,
+                1420
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/white-and-brown-plant-in-white-pot-7379683\/"
+        },
+        {
+            "filename": "Lines-1.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lines-1.png",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                }
+            ],
+            "filesize": 6455,
+            "dimensions": [
+                216,
+                367
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Faq-questions-lines1.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Faq-questions-lines1.png",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                },
+                {
+                    "source": "templates\/faqs.json",
+                    "name": "FAQS"
+                }
+            ],
+            "filesize": 4957,
+            "dimensions": [
+                690,
+                38
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "history-gallery-3.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/history-gallery-3-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                }
+            ],
+            "filesize": 126346,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/person-standing-infront-of-a-display-window-3056059\/"
+        },
+        {
+            "filename": "history-gallery-2.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/history-gallery-2-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                }
+            ],
+            "filesize": 273149,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/brown-concrete-buildings-1694432\/"
+        },
+        {
+            "filename": "lookbook2.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/lookbook2-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                }
+            ],
+            "filesize": 134897,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-brown-long-sleeve-shirt-standing-near-green-trees-7760787\/"
+        },
+        {
+            "filename": "history-gallery-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/history-gallery-1-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                }
+            ],
+            "filesize": 159238,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/man-in-bus-247929\/"
+        },
+        {
+            "filename": "history-gallery-4.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/history-gallery-4-800x581.jpg",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                }
+            ],
+            "filesize": 224727,
+            "dimensions": [
+                1134,
+                824
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-wearing-white-lace-dress-holding-wreath-3094437\/"
+        },
+        {
+            "filename": "History-lines-2.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/History-lines-2-800x211.png",
+            "templates": [
+                {
+                    "source": "templates\/history.json",
+                    "name": "History"
+                }
+            ],
+            "filesize": 48709,
+            "dimensions": [
+                837,
+                221
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Team-header.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Team-header-800x529.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 360023,
+            "dimensions": [
+                1920,
+                1269
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/road-man-people-woman-6761600\/"
+        },
+        {
+            "filename": "Team-top-background.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Team-top-background-800x498.png",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 61511,
+            "dimensions": [
+                1608,
+                1001
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Team-director.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Team-director-800x1615.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 300920,
+            "dimensions": [
+                1100,
+                2220
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-white-dress-standing-on-beach-8112994\/"
+        },
+        {
+            "filename": "Team-member-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Team-member-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 69053,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-white-dress-standing-on-brown-rock-mountain-7537818\/"
+        },
+        {
+            "filename": "Line-separator-1.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Line-separator-1.png",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 4725,
+            "dimensions": [
+                47,
+                570
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Team-member2.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Team-member2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 72599,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-with-tattoos-in-swimsuit-and-hat-resting-on-sandy-beach-5390335\/"
+        },
+        {
+            "filename": "Team-member3.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Team-member3.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 73447,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/sea-sunset-fashion-beach-6752270\/"
+        },
+        {
+            "filename": "Team-member4.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Team-member4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 51565,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/unrecognizable-woman-in-warm-scarf-on-gray-background-6163220\/"
+        },
+        {
+            "filename": "Service-Top-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Service-Top-1-800x1090.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 203620,
+            "dimensions": [
+                1200,
+                1635
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/fashion-beach-people-sand-8112460\/"
+        },
+        {
+            "filename": "Service-top-background.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Service-top-background-800x480.png",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 21868,
+            "dimensions": [
+                1600,
+                960
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Lines.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lines.png",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 5118,
+            "dimensions": [
+                686,
+                48
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Service-Shape-Image.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Service-Shape-Image.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 180026,
+            "dimensions": [
+                800,
+                1329
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-brown-long-sleeve-shirt-standing-near-green-trees-7760787\/"
+        },
+        {
+            "filename": "Line-separator2.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Line-separator2-800x40.png",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 6345,
+            "dimensions": [
+                848,
+                42
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Line-separator.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Line-separator-800x44.png",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 6661,
+            "dimensions": [
+                920,
+                51
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Texts-lines.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Texts-lines.png",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 5032,
+            "dimensions": [
+                309,
+                54
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Service-bottom-image-e1624103457666.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Service-bottom-image-e1624103457666-800x392.jpg",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 332979,
+            "dimensions": [
+                1920,
+                940
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/photo-of-woman-standing-near-flowers-3021184\/"
+        },
+        {
+            "filename": "Blog-header.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Blog-header-800x425.jpg",
+            "templates": [
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                }
+            ],
+            "filesize": 349886,
+            "dimensions": [
+                1920,
+                1019
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/city-road-people-woman-6610546\/"
+        },
+        {
+            "filename": "Blog-back-shape.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Blog-back-shape-800x1017.jpg",
+            "templates": [
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                }
+            ],
+            "filesize": 47615,
+            "dimensions": [
+                1200,
+                1525
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Blog-quote-back.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Blog-quote-back-800x446.jpg",
+            "templates": [
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                }
+            ],
+            "filesize": 126972,
+            "dimensions": [
+                1920,
+                1071
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/love-summer-garden-leaf-4234546\/"
+        },
+        {
+            "filename": "Lookbok-header.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-header-800x538.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 171078,
+            "dimensions": [
+                1920,
+                1291
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/fashion-love-people-woman-7532781\/"
+        },
+        {
+            "filename": "Lookbok-shape.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-shape-800x574.png",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 36951,
+            "dimensions": [
+                1500,
+                1077
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Lookbok-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 101566,
+            "dimensions": [
+                636,
+                643
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-gray-sweater-standing-near-body-of-water-7760743\/"
+        },
+        {
+            "filename": "Lookbok-2-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-2-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 192029,
+            "dimensions": [
+                636,
+                962
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/fashion-man-beach-love-7537835\/"
+        },
+        {
+            "filename": "Lookbok-3-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-3-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 53719,
+            "dimensions": [
+                636,
+                643
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/dawn-fashion-love-people-7385627\/"
+        },
+        {
+            "filename": "Lookbok-6.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-6.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 104872,
+            "dimensions": [
+                636,
+                962
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/sea-city-landscape-beach-8112559\/"
+        },
+        {
+            "filename": "Lookbok-4.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 178650,
+            "dimensions": [
+                636,
+                962
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-white-dress-standing-on-brown-rock-mountain-7537818\/"
+        },
+        {
+            "filename": "Lookbok-5-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-5-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 64641,
+            "dimensions": [
+                636,
+                643
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-with-tattoos-in-swimsuit-and-hat-resting-on-sandy-beach-5390335\/"
+        },
+        {
+            "filename": "Lookbok-8.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-8.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 44562,
+            "dimensions": [
+                640,
+                636
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-white-tank-top-and-black-and-white-striped-shorts-sitting-on-blue-metal-railings-4960249\/"
+        },
+        {
+            "filename": "Lookbok-7-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-7-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 50587,
+            "dimensions": [
+                639,
+                636
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/slim-woman-in-dress-standing-on-rooftop-4130226\/"
+        },
+        {
+            "filename": "Lookbok-9.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-9.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 110810,
+            "dimensions": [
+                640,
+                636
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/cold-dawn-love-people-6034044\/"
+        },
+        {
+            "filename": "Lookbok-10-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-10-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 179102,
+            "dimensions": [
+                636,
+                962
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-in-brown-shirt-holding-white-flowers-7760789\/"
+        },
+        {
+            "filename": "Lookbok-11.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-11.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 177567,
+            "dimensions": [
+                636,
+                962
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/fashion-beach-people-woman-8112478\/"
+        },
+        {
+            "filename": "Lookbok-12.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-12.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 85817,
+            "dimensions": [
+                636,
+                667
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/white-flowers-with-green-leaves-7175542\/"
+        },
+        {
+            "filename": "Lookbok-shape-bottom-1.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-shape-bottom-1.png",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 14782,
+            "dimensions": [
+                719,
+                272
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Lookbok-bottom.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Lookbok-bottom-800x460.jpg",
+            "templates": [
+                {
+                    "source": "templates\/lookbook.json",
+                    "name": "Lookbook"
+                }
+            ],
+            "filesize": 288241,
+            "dimensions": [
+                1920,
+                1105
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/faceless-woman-admiring-blooming-flowers-on-bush-4195498\/"
+        },
+        {
+            "filename": "Shop-header.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Shop-header-800x394.jpg",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 103364,
+            "dimensions": [
+                1920,
+                946
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/girl-in-white-long-sleeve-dress-standing-on-brown-grass-field-7574933\/"
+        },
+        {
+            "filename": "Shop-bottom.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Shop-bottom-800x474.jpg",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 485221,
+            "dimensions": [
+                1920,
+                1137
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/green-and-white-abstract-painting-6775344\/"
+        },
+        {
+            "filename": "Faq-Main-Image.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Faq-Main-Image-800x422.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faqs.json",
+                    "name": "FAQS"
+                }
+            ],
+            "filesize": 309588,
+            "dimensions": [
+                1920,
+                1013
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/selective-focus-photography-of-cherry-blossoms-1023953\/"
+        },
+        {
+            "filename": "Faq-lines.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Faq-lines.png",
+            "templates": [
+                {
+                    "source": "templates\/faqs.json",
+                    "name": "FAQS"
+                }
+            ],
+            "filesize": 23085,
+            "dimensions": [
+                219,
+                477
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Faq-left-shape.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Faq-left-shape-800x1405.png",
+            "templates": [
+                {
+                    "source": "templates\/faqs.json",
+                    "name": "FAQS"
+                }
+            ],
+            "filesize": 8074,
+            "dimensions": [
+                983,
+                1727
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Faq-right-window.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Faq-right-window-800x1481.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faqs.json",
+                    "name": "FAQS"
+                }
+            ],
+            "filesize": 202323,
+            "dimensions": [
+                1041,
+                1927
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/sunset-beach-love-people-7574928\/"
+        },
+        {
+            "filename": "Faq-questions-lines.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Faq-questions-lines.png",
+            "templates": [
+                {
+                    "source": "templates\/faqs.json",
+                    "name": "FAQS"
+                }
+            ],
+            "filesize": 5118,
+            "dimensions": [
+                686,
+                48
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Faq-back-image.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Faq-back-image-800x680.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faqs.json",
+                    "name": "FAQS"
+                }
+            ],
+            "filesize": 68464,
+            "dimensions": [
+                1920,
+                1632
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/field-summer-sun-texture-7558442\/"
+        },
+        {
+            "filename": "Faq-bottom.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Faq-bottom-800x708.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faqs.json",
+                    "name": "FAQS"
+                }
+            ],
+            "filesize": 166445,
+            "dimensions": [
+                1334,
+                1181
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/sea-city-landscape-beach-8112559\/"
+        },
+        {
+            "filename": "Contact-header.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Contact-header-800x599.jpg",
+            "templates": [
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                }
+            ],
+            "filesize": 552120,
+            "dimensions": [
+                1920,
+                1438
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/sunny-paris-summer-garden-7379745\/"
+        },
+        {
+            "filename": "Contact-back-form.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Contact-back-form-800x1190.png",
+            "templates": [
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                }
+            ],
+            "filesize": 203038,
+            "dimensions": [
+                2088,
+                3105
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "contact-bottom.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/contact-bottom-800x1175.jpg",
+            "templates": [
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                }
+            ],
+            "filesize": 208245,
+            "dimensions": [
+                957,
+                1405
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/green-potted-plants-on-brown-clay-pots-7926168\/"
+        },
+        {
+            "filename": "contact-bottom-1.jpg",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/contact-bottom-1-800x1175.jpg",
+            "templates": [
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                }
+            ],
+            "filesize": 209627,
+            "dimensions": [
+                957,
+                1405
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/flat-lay-photography-of-person-touching-silver-ipad-on-world-map-chart-beside-black-hat-1051077\/"
+        },
+        {
+            "filename": "valentina-logo.png",
+            "thumbnail_url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/valentina-logo.png",
+            "templates": [
+                {
+                    "source": "templates\/header-section.json",
+                    "name": "Header Section"
+                },
+                {
+                    "source": "templates\/footer-section.json",
+                    "name": "Footer Section"
+                }
+            ],
+            "filesize": 20438,
+            "dimensions": [
+                380,
+                232
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        }
+    ]
+}

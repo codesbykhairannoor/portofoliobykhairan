@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//khairan.tech/main-sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>https://khairan.tech/post-sitemap.xml</loc>
+		<lastmod>2025-05-25T07:07:09+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://khairan.tech/page-sitemap.xml</loc>
+		<lastmod>2026-02-03T08:05:53+00:00</lastmod>
+	</sitemap>
+</sitemapindex>

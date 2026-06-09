@@ -1,0 +1,305 @@
+{
+    "version": "0.4",
+    "title": "Global Kit Styles",
+    "type": "section",
+    "metadata": {
+        "template_type": "global-styles",
+        "include_in_zip": "1",
+        "elementor_pro_required": "1",
+        "additional_template_information": [
+            "These are the global theme styles configured through the Elementor Theme Styles area."
+        ],
+        "wp_page_template": "default"
+    },
+    "content": [],
+    "page_settings": {
+        "system_colors": [
+            {
+                "_id": "primary",
+                "title": "Primary",
+                "color": "#DB0144"
+            },
+            {
+                "_id": "secondary",
+                "title": "Black",
+                "color": "#14191F"
+            },
+            {
+                "_id": "text",
+                "title": "Text",
+                "color": "#565656"
+            },
+            {
+                "_id": "accent",
+                "title": "Accent",
+                "color": "#EAACBF"
+            }
+        ],
+        "custom_colors": [
+            {
+                "_id": "1c38be7",
+                "title": "White",
+                "color": "#FFFFFF"
+            },
+            {
+                "_id": "0afcc90",
+                "title": "Gray",
+                "color": "#CEDED3"
+            }
+        ],
+        "system_typography": [
+            {
+                "_id": "primary",
+                "title": "Navigation menu",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "500",
+                "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1,
+                    "sizes": []
+                }
+            },
+            {
+                "_id": "secondary",
+                "title": "Title",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "500",
+                "typography_font_size": {
+                    "unit": "rem",
+                    "size": 0.875,
+                    "sizes": []
+                }
+            },
+            {
+                "_id": "text",
+                "title": "Title price",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1,
+                    "sizes": []
+                }
+            },
+            {
+                "_id": "accent",
+                "title": "Button product",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "600",
+                "typography_font_size": {
+                    "unit": "rem",
+                    "size": 0.90000000000000002220446049250313080847263336181640625,
+                    "sizes": []
+                }
+            }
+        ],
+        "custom_typography": [
+            {
+                "_id": "74d9989",
+                "title": "Slder title",
+                "typography_typography": "custom",
+                "typography_font_family": "Playfair Display",
+                "typography_font_size": {
+                    "unit": "rem",
+                    "size": 3.20000000000000017763568394002504646778106689453125,
+                    "sizes": []
+                },
+                "typography_font_size_mobile": {
+                    "unit": "rem",
+                    "size": 2,
+                    "sizes": []
+                },
+                "typography_text_transform": "capitalize",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.100000000000000088817841970012523233890533447265625,
+                    "sizes": []
+                }
+            },
+            {
+                "_id": "a277114",
+                "title": "Product single price",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.5,
+                    "sizes": []
+                },
+                "typography_font_weight": "600"
+            },
+            {
+                "_id": "31fd78d",
+                "title": "Product single heading",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.5,
+                    "sizes": []
+                }
+            },
+            {
+                "_id": "3b8db56",
+                "title": "Faq title",
+                "typography_typography": "custom",
+                "typography_font_family": "Playfair Display",
+                "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.3000000000000000444089209850062616169452667236328125,
+                    "sizes": []
+                },
+                "typography_font_weight": "600"
+            },
+            {
+                "_id": "46057f6",
+                "title": "Blog single title",
+                "typography_typography": "custom",
+                "typography_font_family": "Playfair Display",
+                "typography_font_size": {
+                    "unit": "rem",
+                    "size": 2.899999999999999911182158029987476766109466552734375,
+                    "sizes": []
+                },
+                "typography_font_size_mobile": {
+                    "unit": "rem",
+                    "size": 2,
+                    "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_text_transform": "capitalize",
+                "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.100000000000000088817841970012523233890533447265625,
+                    "sizes": []
+                }
+            }
+        ],
+        "default_generic_fonts": "Sans-serif",
+        "page_title_selector": "h1.entry-title",
+        "hello_footer_copyright_text": "All rights reserved",
+        "activeItemIndex": 1,
+        "viewport_md": 768,
+        "viewport_lg": 1025,
+        "body_typography_typography": "custom",
+        "body_typography_font_family": "Montserrat",
+        "body_typography_font_size": {
+            "unit": "rem",
+            "size": 1,
+            "sizes": []
+        },
+        "body_typography_font_weight": "400",
+        "body_typography_line_height": {
+            "unit": "em",
+            "size": 1.8000000000000000444089209850062616169452667236328125,
+            "sizes": []
+        },
+        "h1_typography_typography": "custom",
+        "h1_typography_font_size": {
+            "unit": "rem",
+            "size": 3.20000000000000017763568394002504646778106689453125,
+            "sizes": []
+        },
+        "h2_typography_typography": "custom",
+        "h2_typography_font_family": "Playfair Display",
+        "h2_typography_font_size": {
+            "unit": "rem",
+            "size": 2.20000000000000017763568394002504646778106689453125,
+            "sizes": []
+        },
+        "h2_typography_font_weight": "700",
+        "button_typography_typography": "custom",
+        "button_typography_font_size": {
+            "unit": "rem",
+            "size": 0.6999999999999999555910790149937383830547332763671875,
+            "sizes": []
+        },
+        "button_typography_font_weight": "700",
+        "button_typography_text_transform": "uppercase",
+        "button_typography_letter_spacing": {
+            "unit": "px",
+            "size": 1,
+            "sizes": []
+        },
+        "button_border_radius": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+        },
+        "button_padding": {
+            "unit": "px",
+            "top": "15",
+            "right": "20",
+            "bottom": "15",
+            "left": "20",
+            "isLinked": false
+        },
+        "__globals__": {
+            "body_color": "globals\/colors?id=text",
+            "link_normal_color": "globals\/colors?id=secondary",
+            "link_hover_color": "globals\/colors?id=primary",
+            "h2_color": "globals\/colors?id=secondary",
+            "button_background_color": "globals\/colors?id=primary",
+            "button_text_color": "globals\/colors?id=1c38be7",
+            "button_hover_background_color": "globals\/colors?id=secondary",
+            "button_hover_text_color": "globals\/colors?id=1c38be7",
+            "h3_color": "globals\/colors?id=secondary",
+            "h4_color": "globals\/colors?id=secondary",
+            "h1_color": "globals\/colors?id=secondary",
+            "form_field_border_color": "globals\/colors?id=0afcc90"
+        },
+        "h3_typography_typography": "custom",
+        "h3_typography_font_family": "Playfair Display",
+        "h3_typography_font_size": {
+            "unit": "rem",
+            "size": 1.8000000000000000444089209850062616169452667236328125,
+            "sizes": []
+        },
+        "h3_typography_font_weight": "700",
+        "h2_typography_text_transform": "capitalize",
+        "h2_typography_line_height": {
+            "unit": "em",
+            "size": 1.399999999999999911182158029987476766109466552734375,
+            "sizes": []
+        },
+        "h4_typography_typography": "custom",
+        "h4_typography_font_family": "Playfair Display",
+        "h4_typography_font_size": {
+            "unit": "rem",
+            "size": 1.399999999999999911182158029987476766109466552734375,
+            "sizes": []
+        },
+        "h1_typography_font_family": "Playfair Display",
+        "h1_typography_font_weight": "700",
+        "h2_typography_line_height_tablet": {
+            "unit": "em",
+            "size": 1.100000000000000088817841970012523233890533447265625,
+            "sizes": []
+        },
+        "h3_typography_text_transform": "capitalize",
+        "form_field_border_border": "solid",
+        "form_field_border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+        },
+        "form_field_border_radius": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+        }
+    }
+}

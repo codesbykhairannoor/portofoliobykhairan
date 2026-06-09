@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --neon-cyan: #50FFD9;
+  --neon-cyan-glow: rgba(80, 255, 217, 0.4);
+  --neon-cyan-dim: rgba(80, 255, 217, 0.1);
+  --neon-violet: #a78bfa;
+  --neon-violet-glow: rgba(167, 139, 250, 0.3);
+  --bg-dark: #030303;
+  --bg-card: rgba(8, 8, 8, 0.65);
+  --border-glass: rgba(255, 255, 255, 0.04);
+  --border-glass-hover: rgba(80, 255, 217, 0.2);
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+}
+
+/* HIGH END PREMIUM LIGHT MODE OVERRIDES */
+html.light, body.light, .light {
+  --bg-dark: #f8fafc;
+  --bg-card: rgba(255, 255, 255, 0.75);
+  --border-glass: rgba(15, 23, 42, 0.06);
+  --border-glass-hover: rgba(13, 148, 136, 0.2);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  
+  --neon-cyan: #0d9488; /* Deep Teal for high readability and premium feel */
+  --neon-cyan-glow: rgba(13, 148, 136, 0.2);
+  --neon-cyan-dim: rgba(13, 148, 136, 0.08);
+  --neon-violet: #6366f1; /* Deep Indigo */
+  --neon-violet-glow: rgba(99, 102, 241, 0.2);
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  line-height: 1.6;
+  background-image: 
+    radial-gradient(circle at 5% 15%, var(--neon-cyan-dim) 0%, transparent 40%),
+    radial-gradient(circle at 95% 85%, var(--neon-violet-glow) 0%, transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.002) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.002) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 45px 40px, 45px 40px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Custom Selection & Premium Scrollbar */
+::selection {
+  background: var(--neon-cyan-dim);
+  color: var(--neon-cyan);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan);
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Hero Section Accents */
+.custom-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  background: linear-gradient(135deg, var(--text-primary) 30%, var(--text-secondary) 60%, var(--neon-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glass Panels with high premium gloss */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.light .glass-panel {
+  box-shadow: 0 12px 40px -12px rgba(15, 23, 42, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: var(--border-glass-hover);
+  background: var(--bg-card);
+  box-shadow: 0 20px 50px -12px var(--neon-cyan-glow);
+  transform: translateY(-4px);
+}
+
+/* Neon Glow Buttons */
+.btn-neon {
+  background-color: var(--neon-cyan);
+  color: var(--bg-dark) !important;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 13px 30px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 0 20px var(--neon-cyan-glow);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.light .btn-neon {
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px var(--neon-cyan-glow);
+}
+
+.btn-neon:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px var(--neon-cyan-glow);
+}
+
+/* Glass Buttons */
+.btn-glass {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 13px 30px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.light .btn-glass {
+  background: rgba(15, 23, 42, 0.02);
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--border-glass-hover);
+  transform: translateY(-2px);
+}
+
+/* Social Buttons */
+.social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.light .social-btn {
+  background: rgba(15, 23, 42, 0.02);
+}
+
+.social-btn:hover {
+  background-color: var(--neon-cyan);
+  border-color: var(--neon-cyan);
+  color: var(--bg-dark) !important;
+  transform: translateY(-6px) rotate(3deg);
+  box-shadow: 0 12px 30px var(--neon-cyan-glow);
+}
+
+/* Tab System Components */
+.tab-list-wrapper {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--border-glass);
+  border-radius: 16px;
+  padding: 6px;
+  gap: 6px;
+  backdrop-filter: blur(12px);
+}
+
+html.light .tab-list-wrapper {
+  background: rgba(15, 23, 42, 0.01);
+}
+
+.tab-btn {
+  padding: 12px 26px;
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tab-btn.active {
+  background: var(--neon-cyan-dim);
+  color: var(--neon-cyan);
+  border: 1px solid var(--border-glass-hover);
+}
+
+/* Skills Badge Widgets */
+.skill-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--border-glass);
+  padding: 12px 18px;
+  border-radius: 14px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-badge:hover {
+  background: var(--neon-cyan-dim);
+  border-color: var(--border-glass-hover);
+  transform: translateY(-3px);
+}
+
+/* Contact Inputs styling */
+.contact-input {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: 16px 20px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: var(--font-sans);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+html.light .contact-input {
+  background: rgba(15, 23, 42, 0.01);
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: var(--neon-cyan);
+  background: rgba(80, 255, 217, 0.01);
+  box-shadow: 0 0 25px var(--neon-cyan-glow);
+}
+
+/* Search Bar styling */
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+}
+
+.search-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--border-glass);
+  border-radius: 14px;
+  padding: 12px 18px 12px 42px;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: var(--font-sans);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.light .search-input {
+  background: rgba(15, 23, 42, 0.01);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 25px var(--neon-cyan-glow);
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+
+.search-input:focus + .search-icon {
+  color: var(--neon-cyan);
+}
+
+/* =========================================================
+   PORTFOLIO DETAILS HTML RENDERING & TIDY-UP OVERRIDES
+   ========================================================= */
+
+.project-content-html {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.85;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-family: var(--font-sans);
+}
+
+/* Hide raw Elementor navigation arrows and duplicate Back triggers */
+.project-content-html > a[href="/"], 
+.project-content-html > a[href="/#portofolio"],
+.project-content-html > svg {
+  display: none !important;
+}
+
+
+/* Title duplicate check: hide redundant title elements from HTML content */
+.project-content-html > h2:first-of-type {
+  margin-top: 10px;
+}
+
+/* Heading Overrides */
+.project-content-html h1 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-top: 48px;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+}
+
+.project-content-html h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 44px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.02em;
+}
+
+.project-content-html h2::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-color: var(--neon-cyan);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--neon-cyan-glow);
+}
+
+.project-content-html h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 32px;
+  margin-bottom: 14px;
+}
+
+/* Paragraph Overrides */
+.project-content-html p {
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.project-content-html strong, .project-content-html b {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+/* Anchor styling inside sub-pages */
+.project-content-html a {
+  color: var(--neon-cyan);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--neon-cyan);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-content-html a:hover {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+/* List Items Overrides */
+.project-content-html ul {
+  padding-left: 0;
+  margin-top: 16px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-content-html ul li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--text-secondary);
+}
+
+.project-content-html ul li p {
+  margin-bottom: 0 !important;
+  display: inline;
+}
+
+.project-content-html ul li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 8px var(--neon-cyan-glow);
+  font-size: 11px;
+}
+
+/* Blockquote Styling */
+.project-content-html blockquote {
+  border-left: 3px solid var(--neon-cyan);
+  background: rgba(80, 255, 217, 0.02);
+  padding: 16px 20px;
+  margin: 24px 0;
+  border-radius: 0 12px 12px 0;
+  color: var(--text-secondary);
+}
+
+.project-content-html blockquote ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Figures & Image Grids */
+/* We hide the raw inline WordPress images completely from the rich body 
+   text because we render them inside our custom, space-saving bento grid interactive gallery! 
+   But we preserve the figures and figcaptions so valuable description text is never lost! */
+.project-content-html figure {
+  margin: 24px auto;
+  padding: 0;
+  max-width: 100%;
+}
+
+.project-content-html figure img {
+  display: block !important;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.project-content-html figure img:hover {
+  transform: scale(1.015);
+  border-color: rgba(80, 255, 217, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45), 0 0 20px rgba(80, 255, 217, 0.05);
+}
+
+.project-content-html figcaption {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.project-content-html img {
+  display: block !important;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  margin: 24px auto;
+}
+
+.project-content-html img:hover {
+  transform: scale(1.015);
+  border-color: rgba(80, 255, 217, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45), 0 0 20px rgba(80, 255, 217, 0.05);
+}
+
+.project-content-html a[data-elementor-open-lightbox] {
+  display: block !important;
+  margin: 24px auto;
+  max-width: 100%;
+}
+
+.project-content-html p:empty,
+.project-content-html p:has(br:only-child) {
+  display: none !important;
+}
+
+.project-content-html a[data-elementor-open-lightbox]:hover {
+  transform: translateY(-2px);
+}
+
+.project-content-html a[data-elementor-open-lightbox]:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .project-content-html a[data-elementor-open-lightbox] {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* WordPress Badge Overrides */
+.kh-stack-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin: 20px 0 !important;
+}
+
+.kh-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 8px 16px !important;
+  border-radius: 10px !important;
+  font-size: 11px !important;
+  font-family: var(--font-display);
+  font-weight: 700 !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.kh-badge:hover {
+  transform: translateY(-2px) !important;
+}
+
+.dotnet {
+  background-color: rgba(139, 92, 246, 0.08) !important;
+  color: #a78bfa !important;
+  border: 1px solid rgba(139, 92, 246, 0.2) !important;
+}
+
+.angular {
+  background-color: rgba(239, 68, 68, 0.08) !important;
+  color: #f87171 !important;
+  border: 1px solid rgba(239, 68, 68, 0.2) !important;
+}
+
+.ai {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  color: #60a5fa !important;
+  border: 1px solid rgba(59, 130, 246, 0.2) !important;
+}
+
+.sql {
+  background-color: rgba(6, 182, 212, 0.08) !important;
+  color: #22d3ee !important;
+  border: 1px solid rgba(6, 182, 212, 0.2) !important;
+}
+
+/* WordPress Topic Pills Overrides */
+.topic-container-horizontal {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin: 20px 0 !important;
+}
+
+.topic-pill-v2 {
+  display: flex !important;
+  align-items: center !important;
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-glass) !important;
+  padding: 8px 16px !important;
+  border-radius: 100px !important;
+  font-size: 13px !important;
+  color: var(--text-secondary) !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.topic-pill-v2:hover {
+  background: var(--neon-cyan-dim) !important;
+  border-color: var(--neon-cyan) !important;
+  color: var(--text-primary) !important;
+  transform: translateY(-2px) !important;
+}
+
+.topic-icon {
+  margin-right: 8px !important;
+  color: var(--neon-cyan);
+}
+
+/* Skills progress meters */
+.skills-used-container {
+  margin: 24px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  width: 100%;
+}
+
+.skill-info {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-bottom: 6px !important;
+  font-size: 13px !important;
+  font-family: var(--font-display);
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+}
+
+.progress-bar-v2 {
+  width: 100% !important;
+  height: 6px !important;
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+html.light .progress-bar-v2 {
+  background-color: rgba(15, 23, 42, 0.06) !important;
+}
+
+.progress-fill-v2 {
+  height: 100% !important;
+  background-color: var(--neon-cyan) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 10px var(--neon-cyan-glow) !important;
+  transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Table styling override */
+.project-content-html table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 32px 0;
+  border: 1px solid var(--border-glass);
+  font-size: 14px;
+}
+
+.project-content-html th {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-align: left;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.project-content-html td {
+  padding: 14px 18px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-glass);
+}

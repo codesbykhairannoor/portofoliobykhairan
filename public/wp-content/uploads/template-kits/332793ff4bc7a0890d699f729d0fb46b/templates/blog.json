@@ -1,0 +1,1892 @@
+{
+    "version": "0.4",
+    "title": "Blog",
+    "type": "section",
+    "metadata": {
+        "template_type": "archive-blog",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "default"
+    },
+    "content": [
+        {
+            "id": "7ffc566a",
+            "settings": {
+                "background_background": "classic",
+                "background_image": {
+                    "url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Blog-header.jpg",
+                    "id": 7181
+                },
+                "background_position": "center center",
+                "margin": {
+                    "unit": "px",
+                    "top": "",
+                    "right": 0,
+                    "bottom": "",
+                    "left": 0,
+                    "isLinked": true
+                },
+                "background_position_mobile": "bottom center"
+            },
+            "elements": [
+                {
+                    "id": "22fe2a5b",
+                    "settings": {
+                        "_column_size": 100,
+                        "_inline_size": null,
+                        "margin": {
+                            "unit": "px",
+                            "top": "450",
+                            "right": "150",
+                            "bottom": "0",
+                            "left": "150",
+                            "isLinked": false
+                        },
+                        "margin_tablet": {
+                            "unit": "px",
+                            "top": "350",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "27c2b7fc",
+                            "settings": {
+                                "structure": "30",
+                                "background_background": "classic",
+                                "background_image": {
+                                    "url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Blog-back-shape.jpg",
+                                    "id": 7185
+                                },
+                                "background_size": "cover",
+                                "margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": 0,
+                                    "bottom": "-200",
+                                    "left": 0,
+                                    "isLinked": false
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "80",
+                                    "right": "80",
+                                    "bottom": "200",
+                                    "left": "80",
+                                    "isLinked": false
+                                },
+                                "z_index": 2,
+                                "custom_height_inner": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "padding_mobile": {
+                                    "unit": "px",
+                                    "top": "50",
+                                    "right": "0",
+                                    "bottom": "200",
+                                    "left": "0",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "1ceeec0e",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 10
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "2b086d25",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/ornament-separator.png",
+                                                    "id": 87
+                                                },
+                                                "image_size": "full",
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 35,
+                                                    "sizes": []
+                                                },
+                                                "align": "right",
+                                                "_margin": {
+                                                    "unit": "px",
+                                                    "top": "-10",
+                                                    "right": "-62",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "align_mobile": "center",
+                                                "_margin_mobile": {
+                                                    "unit": "px",
+                                                    "top": "0",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "image",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "column"
+                                },
+                                {
+                                    "id": "6dedae52",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 79.332999999999998408384271897375583648681640625
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "5795947e",
+                                            "settings": {
+                                                "title": "Our Blog",
+                                                "align": "center",
+                                                "header_size": "h1",
+                                                "__globals__": {
+                                                    "typography_typography": "",
+                                                    "title_color": "globals\/colors?id=42f5e06"
+                                                },
+                                                "title_color": "#F4F4F4",
+                                                "typography_font_family": "Prata",
+                                                "typography_font_size": {
+                                                    "unit": "px",
+                                                    "size": 75,
+                                                    "sizes": []
+                                                },
+                                                "typography_text_transform": "uppercase",
+                                                "typography_line_height": {
+                                                    "unit": "em",
+                                                    "size": 0.6999999999999999555910790149937383830547332763671875,
+                                                    "sizes": []
+                                                },
+                                                "typography_letter_spacing": {
+                                                    "unit": "px",
+                                                    "size": -3.5,
+                                                    "sizes": []
+                                                },
+                                                "_margin": {
+                                                    "unit": "px",
+                                                    "top": "0",
+                                                    "right": "8",
+                                                    "bottom": "-40",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                },
+                                                "_margin_mobile": {
+                                                    "unit": "px",
+                                                    "top": "0",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "column"
+                                },
+                                {
+                                    "id": "7673d4a2",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 10
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "619d3136",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/05\/ornament-separator.png",
+                                                    "id": 87
+                                                },
+                                                "image_size": "full",
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 35,
+                                                    "sizes": []
+                                                },
+                                                "align": "left",
+                                                "_margin": {
+                                                    "unit": "px",
+                                                    "top": "-10",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "-65",
+                                                    "isLinked": false
+                                                },
+                                                "align_mobile": "center",
+                                                "_margin_mobile": {
+                                                    "unit": "px",
+                                                    "top": "0",
+                                                    "right": "0",
+                                                    "bottom": "0",
+                                                    "left": "0",
+                                                    "isLinked": false
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "image",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "column"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "section"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        },
+        {
+            "id": "6ad5b1c7",
+            "settings": {
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals\/colors?id=primary"
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "50",
+                    "right": "100",
+                    "bottom": "300",
+                    "left": "100",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "50",
+                    "right": "0",
+                    "bottom": "290",
+                    "left": "0",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "7ac82af0",
+                    "settings": {
+                        "_column_size": 100,
+                        "_inline_size": null,
+                        "z_index": 3,
+                        "padding_tablet": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "25cd2176",
+                            "settings": {
+                                "better_blog_style": "style2",
+                                "blog_post": 2,
+                                "excerpt_after": "...",
+                                "blog_column": "two",
+                                "button": "Read More",
+                                "cat_show": "",
+                                "title_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "title_color": "#D0B4A9",
+                                "meta_color": "#D0B4A9",
+                                "content_bg": "#F0E8DF",
+                                "__globals__": {
+                                    "title_color": "globals\/colors?id=accent",
+                                    "meta_color": "globals\/colors?id=accent",
+                                    "content_bg": "globals\/colors?id=42f5e06",
+                                    "page_color_hover": "",
+                                    "title_color_hover": "globals\/colors?id=primary",
+                                    "text_typo_typography": "",
+                                    "meta_link": "globals\/colors?id=accent",
+                                    "meta_link_hover": "globals\/colors?id=primary",
+                                    "meta_icon": "globals\/colors?id=primary",
+                                    "page_color": "",
+                                    "page_color_hover_bg": "",
+                                    "page_color_active": ""
+                                },
+                                "title_color_hover": "#DDBE9F",
+                                "text_typo_font_family": "Roboto",
+                                "text_typo_font_weight": "400",
+                                "meta_link": "#D0B4A9",
+                                "meta_link_hover": "#DDBE9F",
+                                "meta_icon": "#DDBE9F",
+                                "excerpt_padding_box": {
+                                    "unit": "px",
+                                    "top": "80",
+                                    "right": "58",
+                                    "bottom": "60",
+                                    "left": "58",
+                                    "isLinked": false
+                                },
+                                "excerpt_padding_box_tablet": {
+                                    "unit": "px",
+                                    "top": "80",
+                                    "right": "28",
+                                    "bottom": "50",
+                                    "left": "28",
+                                    "isLinked": false
+                                },
+                                "excerpt_padding_box_mobile": {
+                                    "unit": "px",
+                                    "top": "70",
+                                    "right": "15",
+                                    "bottom": "50",
+                                    "left": "15",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "better-blog",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        },
+        {
+            "id": "5ec1d450",
+            "settings": {
+                "background_background": "gradient",
+                "background_color_stop": {
+                    "unit": "%",
+                    "size": 60,
+                    "sizes": []
+                },
+                "background_color_b_stop": {
+                    "unit": "%",
+                    "size": 60,
+                    "sizes": []
+                },
+                "__globals__": {
+                    "background_color": "globals\/colors?id=e19b511",
+                    "background_color_b": "globals\/colors?id=accent"
+                },
+                "margin": {
+                    "unit": "px",
+                    "top": "",
+                    "right": 0,
+                    "bottom": "",
+                    "left": 0,
+                    "isLinked": true
+                }
+            },
+            "elements": [
+                {
+                    "id": "367c69a9",
+                    "settings": {
+                        "_column_size": 100,
+                        "_inline_size": null,
+                        "margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "16",
+                            "bottom": "0",
+                            "left": "16",
+                            "isLinked": false
+                        },
+                        "margin_tablet": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "padding_tablet": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "7491c42c",
+                            "settings": {
+                                "show_load_more_text": "Load More",
+                                "excerpt_expanison_indicator": "...",
+                                "eael_read_more_text": "Read More",
+                                "read_more_button_text": "Read More",
+                                "eael_post_grid_preset_style": "two",
+                                "eael_excerpt_length": 19,
+                                "eael_post_grid_meta_alignment": "center",
+                                "eael_post_grid_meta_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 10,
+                                    "sizes": []
+                                },
+                                "eael_post_grid_meta_typography_line_height": {
+                                    "unit": "em",
+                                    "size": 2.600000000000000088817841970012523233890533447265625,
+                                    "sizes": []
+                                },
+                                "eael_post_grid_meta_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 1.1999999999999999555910790149937383830547332763671875,
+                                    "sizes": []
+                                },
+                                "eael_post_grid_title_alignment": "center",
+                                "eael_post_grid_excerpt_alignment": "center",
+                                "eael_post_read_more_btn_padding": {
+                                    "unit": "%",
+                                    "top": "7",
+                                    "right": "0",
+                                    "bottom": "8",
+                                    "left": "33",
+                                    "isLinked": false
+                                },
+                                "posts_per_page": 6,
+                                "eael_post_grid_border_border": "solid",
+                                "eael_post_grid_border_width": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "eael_post_read_more_btn_padding_tablet": {
+                                    "unit": "px",
+                                    "top": "5",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "51",
+                                    "isLinked": false
+                                },
+                                "eael_post_read_more_btn_padding_mobile": {
+                                    "unit": "px",
+                                    "top": "5",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "103",
+                                    "isLinked": false
+                                },
+                                "eael_post_grid_spacing": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "15",
+                                    "bottom": "34",
+                                    "left": "15",
+                                    "isLinked": false
+                                },
+                                "eael_post_grid_box_shadow_box_shadow": {
+                                    "horizontal": 0,
+                                    "vertical": 0,
+                                    "blur": 10,
+                                    "spread": 0,
+                                    "color": ""
+                                },
+                                "_margin": {
+                                    "unit": "px",
+                                    "top": "-180",
+                                    "right": "0",
+                                    "bottom": "140",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "eael_post_grid_border_color": "#FFFFFF",
+                                "eael_post_grid_spacing_tablet": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "7",
+                                    "bottom": "10",
+                                    "left": "7",
+                                    "isLinked": false
+                                },
+                                "title_tag": "h4",
+                                "eael_title_length": 4,
+                                "__globals__": {
+                                    "eael_post_grid_bg_color": "",
+                                    "eael_post_grid_title_color": "globals\/colors?id=accent",
+                                    "eael_post_grid_title_hover_color": "globals\/colors?id=primary",
+                                    "eael_post_grid_border_color": "",
+                                    "eael_post_grid_title_typography_typography": "",
+                                    "eael_post_read_more_btn_color": "globals\/colors?id=accent",
+                                    "eael_post_grid_excerpt_typography_typography": "",
+                                    "eael_post_read_more_btn_typography_typography": "globals\/typography?id=primary",
+                                    "eael_post_grid_hover_bg_color": "",
+                                    "eael_post_read_more_btn_hover_color": "globals\/colors?id=primary",
+                                    "eael_post_grid_load_more_btn_typography_typography": "globals\/typography?id=primary",
+                                    "eael_post_grid_load_more_btn_hover_text_color": "globals\/colors?id=e19b511",
+                                    "eael_post_grid_load_more_btn_hover_border_color": "globals\/colors?id=e19b511"
+                                },
+                                "eael_post_grid_columns": "eael-col-3",
+                                "_z_index": 2,
+                                "eael_post_grid_bg_color": "#FFFFFF",
+                                "eael_post_grid_excerpt_margin": {
+                                    "unit": "px",
+                                    "top": "-7",
+                                    "right": "25",
+                                    "bottom": "0",
+                                    "left": "25",
+                                    "isLinked": false
+                                },
+                                "eael_post_grid_border_width_tablet": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "eael_post_grid_columns_tablet": "eael-col-3",
+                                "eael_post_grid_title_margin": {
+                                    "unit": "px",
+                                    "top": "28",
+                                    "right": "0",
+                                    "bottom": "25",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "eael_post_grid_excerpt_margin_tablet": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "_ob_perspektive_use": "no",
+                                "_ob_perspektive_val": {
+                                    "unit": "px",
+                                    "size": 800,
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_val_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_val_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_origin": {
+                                    "unit": "%",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_origin_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_origin_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_z": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_z_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_z_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_xrot": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_xrot_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_xrot_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_yrot": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_yrot_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_perspektive_yrot_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_parspektive_visibility": "visible",
+                                "_ob_steroids_overlay_background_background": "",
+                                "_ob_steroids_overlay_background_color": "",
+                                "_ob_steroids_overlay_background_color_stop": {
+                                    "unit": "%",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_color_b": "#f2295b",
+                                "_ob_steroids_overlay_background_color_b_stop": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_gradient_type": "linear",
+                                "_ob_steroids_overlay_background_gradient_angle": {
+                                    "unit": "deg",
+                                    "size": 180,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_gradient_position": "center center",
+                                "_ob_steroids_overlay_background_image": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_overlay_background_image_tablet": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_overlay_background_image_mobile": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_overlay_background_position": "",
+                                "_ob_steroids_overlay_background_position_tablet": "",
+                                "_ob_steroids_overlay_background_position_mobile": "",
+                                "_ob_steroids_overlay_background_xpos": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_xpos_tablet": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_xpos_mobile": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_ypos": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_ypos_tablet": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_ypos_mobile": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_attachment": "",
+                                "_ob_steroids_overlay_background_repeat": "",
+                                "_ob_steroids_overlay_background_repeat_tablet": "",
+                                "_ob_steroids_overlay_background_repeat_mobile": "",
+                                "_ob_steroids_overlay_background_size": "",
+                                "_ob_steroids_overlay_background_size_tablet": "",
+                                "_ob_steroids_overlay_background_size_mobile": "",
+                                "_ob_steroids_overlay_background_bg_width": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_bg_width_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_bg_width_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_background_video_link": "",
+                                "_ob_steroids_overlay_background_video_start": "",
+                                "_ob_steroids_overlay_background_video_end": "",
+                                "_ob_steroids_overlay_background_play_once": "",
+                                "_ob_steroids_overlay_background_play_on_mobile": "",
+                                "_ob_steroids_overlay_background_privacy_mode": "",
+                                "_ob_steroids_overlay_background_video_fallback": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_overlay_background_slideshow_gallery": [],
+                                "_ob_steroids_overlay_background_slideshow_loop": "yes",
+                                "_ob_steroids_overlay_background_slideshow_slide_duration": 5000,
+                                "_ob_steroids_overlay_background_slideshow_slide_transition": "fade",
+                                "_ob_steroids_overlay_background_slideshow_transition_duration": 500,
+                                "_ob_steroids_overlay_background_slideshow_background_size": "",
+                                "_ob_steroids_overlay_background_slideshow_background_size_tablet": "",
+                                "_ob_steroids_overlay_background_slideshow_background_size_mobile": "",
+                                "_ob_steroids_overlay_background_slideshow_background_position": "",
+                                "_ob_steroids_overlay_background_slideshow_background_position_tablet": "",
+                                "_ob_steroids_overlay_background_slideshow_background_position_mobile": "",
+                                "_ob_steroids_overlay_background_slideshow_ken_burns": "",
+                                "_ob_steroids_overlay_background_slideshow_ken_burns_zoom_direction": "in",
+                                "_ob_steroids_overlay_bg_opacity": {
+                                    "unit": "px",
+                                    "size": 0.6999999999999999555910790149937383830547332763671875,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_bg_filters_css_filter": "",
+                                "_ob_steroids_overlay_bg_filters_blur": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_bg_filters_brightness": {
+                                    "unit": "px",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_bg_filters_contrast": {
+                                    "unit": "px",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_bg_filters_saturate": {
+                                    "unit": "px",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_bg_filters_hue": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_bg_blend_mode": "",
+                                "_ob_steroids_overlay_popover_whyxrot": "",
+                                "_ob_steroids_overlay_w": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_w_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_w_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_w_alt": "",
+                                "_ob_steroids_overlay_w_alt_tablet": "",
+                                "_ob_steroids_overlay_w_alt_mobile": "",
+                                "_ob_steroids_overlay_h": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_h_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_h_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_h_alt": "",
+                                "_ob_steroids_overlay_h_alt_tablet": "",
+                                "_ob_steroids_overlay_h_alt_mobile": "",
+                                "_ob_steroids_overlay_y": {
+                                    "unit": "%",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_y_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_y_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_y_alt": "",
+                                "_ob_steroids_overlay_y_alt_tablet": "",
+                                "_ob_steroids_overlay_y_alt_mobile": "",
+                                "_ob_steroids_overlay_x": {
+                                    "unit": "%",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_x_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_x_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_x_alt": "",
+                                "_ob_steroids_overlay_x_alt_tablet": "",
+                                "_ob_steroids_overlay_x_alt_mobile": "",
+                                "_ob_steroids_overlay_rot": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_rot_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_rot_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_popover_border": "",
+                                "_ob_steroids_overlay_borders_border": "",
+                                "_ob_steroids_overlay_borders_width": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_overlay_borders_width_tablet": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_overlay_borders_width_mobile": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_overlay_borders_color": "",
+                                "_ob_steroids_overlay_border_rad": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_overlay_border_rad_tablet": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_overlay_border_rad_mobile": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_overlay_popover_masq": "",
+                                "_ob_steroids_overlay_mask_img": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_overlay_mask_img_tablet": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_overlay_mask_img_mobile": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_overlay_mask_position": "center center",
+                                "_ob_steroids_overlay_mask_position_tablet": "",
+                                "_ob_steroids_overlay_mask_position_mobile": "",
+                                "_ob_steroids_overlay_mask_size": "contain",
+                                "_ob_steroids_overlay_mask_size_tablet": "",
+                                "_ob_steroids_overlay_mask_size_mobile": "",
+                                "_ob_steroids_overlay_mask_size_width": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_mask_size_width_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_mask_size_width_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_overlay_mask_repeat": "no-repeat",
+                                "_ob_steroids_overlay_mask_repeat_tablet": "",
+                                "_ob_steroids_overlay_mask_repeat_mobile": "",
+                                "_ob_steroids_overlay_clip_path": "",
+                                "_ob_steroids_overlay_z_index": -1,
+                                "_ob_steroids_underlay_background_background": "",
+                                "_ob_steroids_underlay_background_color": "",
+                                "_ob_steroids_underlay_background_color_stop": {
+                                    "unit": "%",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_color_b": "#f2295b",
+                                "_ob_steroids_underlay_background_color_b_stop": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_gradient_type": "linear",
+                                "_ob_steroids_underlay_background_gradient_angle": {
+                                    "unit": "deg",
+                                    "size": 180,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_gradient_position": "center center",
+                                "_ob_steroids_underlay_background_image": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_underlay_background_image_tablet": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_underlay_background_image_mobile": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_underlay_background_position": "",
+                                "_ob_steroids_underlay_background_position_tablet": "",
+                                "_ob_steroids_underlay_background_position_mobile": "",
+                                "_ob_steroids_underlay_background_xpos": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_xpos_tablet": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_xpos_mobile": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_ypos": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_ypos_tablet": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_ypos_mobile": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_attachment": "",
+                                "_ob_steroids_underlay_background_repeat": "",
+                                "_ob_steroids_underlay_background_repeat_tablet": "",
+                                "_ob_steroids_underlay_background_repeat_mobile": "",
+                                "_ob_steroids_underlay_background_size": "",
+                                "_ob_steroids_underlay_background_size_tablet": "",
+                                "_ob_steroids_underlay_background_size_mobile": "",
+                                "_ob_steroids_underlay_background_bg_width": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_bg_width_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_bg_width_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_background_video_link": "",
+                                "_ob_steroids_underlay_background_video_start": "",
+                                "_ob_steroids_underlay_background_video_end": "",
+                                "_ob_steroids_underlay_background_play_once": "",
+                                "_ob_steroids_underlay_background_play_on_mobile": "",
+                                "_ob_steroids_underlay_background_privacy_mode": "",
+                                "_ob_steroids_underlay_background_video_fallback": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_underlay_background_slideshow_gallery": [],
+                                "_ob_steroids_underlay_background_slideshow_loop": "yes",
+                                "_ob_steroids_underlay_background_slideshow_slide_duration": 5000,
+                                "_ob_steroids_underlay_background_slideshow_slide_transition": "fade",
+                                "_ob_steroids_underlay_background_slideshow_transition_duration": 500,
+                                "_ob_steroids_underlay_background_slideshow_background_size": "",
+                                "_ob_steroids_underlay_background_slideshow_background_size_tablet": "",
+                                "_ob_steroids_underlay_background_slideshow_background_size_mobile": "",
+                                "_ob_steroids_underlay_background_slideshow_background_position": "",
+                                "_ob_steroids_underlay_background_slideshow_background_position_tablet": "",
+                                "_ob_steroids_underlay_background_slideshow_background_position_mobile": "",
+                                "_ob_steroids_underlay_background_slideshow_ken_burns": "",
+                                "_ob_steroids_underlay_background_slideshow_ken_burns_zoom_direction": "in",
+                                "_ob_steroids_underlay_bg_opacity": {
+                                    "unit": "px",
+                                    "size": 0.6999999999999999555910790149937383830547332763671875,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_bg_filters_css_filter": "",
+                                "_ob_steroids_underlay_bg_filters_blur": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_bg_filters_brightness": {
+                                    "unit": "px",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_bg_filters_contrast": {
+                                    "unit": "px",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_bg_filters_saturate": {
+                                    "unit": "px",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_bg_filters_hue": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_bg_blend_mode": "",
+                                "_ob_steroids_underlay_popover_whyxrot": "",
+                                "_ob_steroids_underlay_w": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_w_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_w_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_w_alt": "",
+                                "_ob_steroids_underlay_w_alt_tablet": "",
+                                "_ob_steroids_underlay_w_alt_mobile": "",
+                                "_ob_steroids_underlay_h": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_h_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_h_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_h_alt": "",
+                                "_ob_steroids_underlay_h_alt_tablet": "",
+                                "_ob_steroids_underlay_h_alt_mobile": "",
+                                "_ob_steroids_underlay_y": {
+                                    "unit": "%",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_y_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_y_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_y_alt": "",
+                                "_ob_steroids_underlay_y_alt_tablet": "",
+                                "_ob_steroids_underlay_y_alt_mobile": "",
+                                "_ob_steroids_underlay_x": {
+                                    "unit": "%",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_x_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_x_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_x_alt": "",
+                                "_ob_steroids_underlay_x_alt_tablet": "",
+                                "_ob_steroids_underlay_x_alt_mobile": "",
+                                "_ob_steroids_underlay_rot": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_rot_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_rot_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_popover_border": "",
+                                "_ob_steroids_underlay_borders_border": "",
+                                "_ob_steroids_underlay_borders_width": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_underlay_borders_width_tablet": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_underlay_borders_width_mobile": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_underlay_borders_color": "",
+                                "_ob_steroids_underlay_border_rad": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_underlay_border_rad_tablet": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_underlay_border_rad_mobile": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "_ob_steroids_underlay_popover_masq": "",
+                                "_ob_steroids_underlay_mask_img": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_underlay_mask_img_tablet": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_underlay_mask_img_mobile": {
+                                    "url": "",
+                                    "id": ""
+                                },
+                                "_ob_steroids_underlay_mask_position": "center center",
+                                "_ob_steroids_underlay_mask_position_tablet": "",
+                                "_ob_steroids_underlay_mask_position_mobile": "",
+                                "_ob_steroids_underlay_mask_size": "contain",
+                                "_ob_steroids_underlay_mask_size_tablet": "",
+                                "_ob_steroids_underlay_mask_size_mobile": "",
+                                "_ob_steroids_underlay_mask_size_width": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_mask_size_width_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_mask_size_width_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_steroids_underlay_mask_repeat": "no-repeat",
+                                "_ob_steroids_underlay_mask_repeat_tablet": "",
+                                "_ob_steroids_underlay_mask_repeat_mobile": "",
+                                "_ob_steroids_underlay_clip_path": "",
+                                "_ob_steroids_underlay_z_index": -1,
+                                "_ob_shadough_use": "no",
+                                "_ob_shadough_x": {
+                                    "unit": "px",
+                                    "size": 5,
+                                    "sizes": []
+                                },
+                                "_ob_shadough_x_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_shadough_x_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_shadough_y": {
+                                    "unit": "px",
+                                    "size": 5,
+                                    "sizes": []
+                                },
+                                "_ob_shadough_y_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_shadough_y_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_shadough_blur": {
+                                    "unit": "px",
+                                    "size": 5,
+                                    "sizes": []
+                                },
+                                "_ob_shadough_blur_tablet": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_shadough_blur_mobile": {
+                                    "unit": "px",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "_ob_shadough_color": "#0000001C",
+                                "_ob_allow_hoveranimator": "no",
+                                "_ob_hoveranimator_opacity_popover": "",
+                                "_ob_hoveranimator_opacity": {
+                                    "unit": "px",
+                                    "size": 1,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_opacity_hover": {
+                                    "unit": "px",
+                                    "size": 1,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_opacity_duration": {
+                                    "unit": "px",
+                                    "size": 250,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_opacity_delay": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_opacity_easing": "ease",
+                                "_ob_hoveranimator_y_popover": "",
+                                "_ob_hoveranimator_y": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_y_hover": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_y_duration": {
+                                    "unit": "px",
+                                    "size": 250,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_y_delay": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_y_easing": "ease",
+                                "_ob_hoveranimator_x_popover": "",
+                                "_ob_hoveranimator_x": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_x_hover": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_x_duration": {
+                                    "unit": "px",
+                                    "size": 250,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_x_delay": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_x_easing": "ease",
+                                "_ob_hoveranimator_transforms_popover": "",
+                                "_ob_hoveranimator_scalex": {
+                                    "unit": "px",
+                                    "size": 1,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_scalex_hover": {
+                                    "unit": "px",
+                                    "size": 1,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_scaley": {
+                                    "unit": "px",
+                                    "size": 1,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_scaley_hover": {
+                                    "unit": "px",
+                                    "size": 1,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_rot": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_rot_hover": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_transform_duration": {
+                                    "unit": "px",
+                                    "size": 250,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_transform_delay": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_transform_easing": "ease",
+                                "_ob_hoveranimator_blur_popover": "",
+                                "_ob_hoveranimator_blur": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_blur_hover": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_blur_duration": {
+                                    "unit": "px",
+                                    "size": 250,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_blur_delay": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                },
+                                "_ob_hoveranimator_blur_easing": "ease",
+                                "_ob_widget_stalker_use": "no",
+                                "_ob_ws_width_method": "flex",
+                                "_ob_ws_width_method_tablet": "",
+                                "_ob_ws_width_method_mobile": "",
+                                "_ob_ws_flex": "unset",
+                                "_ob_ws_flex_tablet": "",
+                                "_ob_ws_flex_mobile": "",
+                                "_ob_ws_width": "",
+                                "_ob_ws_width_tablet": "",
+                                "_ob_ws_width_mobile": "",
+                                "_ob_ws_max_width": "",
+                                "_ob_ws_max_width_tablet": "",
+                                "_ob_ws_max_width_mobile": "",
+                                "_ob_ws_align_self": "auto",
+                                "_ob_ws_align_self_tablet": "",
+                                "_ob_ws_align_self_mobile": "",
+                                "_ob_ws_widget_order": "",
+                                "_ob_ws_widget_order_tablet": "",
+                                "_ob_ws_widget_order_mobile": "",
+                                "eael_post_grid_bg_hover_icon_new": {
+                                    "value": "fab fa-readme",
+                                    "library": "fa-brands"
+                                },
+                                "eael_post_grid_hover_bg_color": "#E5D6C1EB",
+                                "eael_post_grid_hover_icon_fontsize": {
+                                    "unit": "px",
+                                    "size": 24,
+                                    "sizes": []
+                                },
+                                "offset": 2,
+                                "show_load_more": "yes",
+                                "postgrid_image_height": {
+                                    "unit": "px",
+                                    "size": 300,
+                                    "sizes": []
+                                },
+                                "eael_post_grid_title_color": "#D0B4A9",
+                                "eael_post_grid_title_hover_color": "#DDBE9F",
+                                "eael_post_grid_title_typography_font_family": "Nanum Myeongjo",
+                                "eael_post_grid_title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "eael_post_grid_title_typography_font_weight": "300",
+                                "eael_post_grid_title_typography_text_transform": "lowercase",
+                                "eael_post_grid_title_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 3,
+                                    "sizes": []
+                                },
+                                "eael_post_grid_load_more_btn_padding": {
+                                    "unit": "px",
+                                    "top": "20",
+                                    "right": "80",
+                                    "bottom": "20",
+                                    "left": "80",
+                                    "isLinked": false
+                                },
+                                "eael_post_grid_load_more_btn_margin": {
+                                    "unit": "px",
+                                    "top": "80",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "eael_cta_btn_normal_bg_color": "",
+                                "eael_post_grid_load_more_btn_hover_bg_color": "#02010100",
+                                "_margin_mobile": {
+                                    "unit": "px",
+                                    "top": "-180",
+                                    "right": "0",
+                                    "bottom": "100",
+                                    "left": "0",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "eael-post-grid",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        },
+        {
+            "id": "51205dd8",
+            "settings": {
+                "height": "min-height",
+                "custom_height": {
+                    "unit": "px",
+                    "size": 490,
+                    "sizes": []
+                },
+                "column_position": "bottom",
+                "background_background": "classic",
+                "background_overlay_background": "classic",
+                "background_image": {
+                    "url": "https:\/\/touringxx.com\/wptemplatekits\/valentina\/wp-content\/uploads\/sites\/9\/2021\/06\/Blog-quote-back.jpg",
+                    "id": 7269
+                },
+                "background_size": "cover",
+                "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "90",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "background_position_mobile": "center center"
+            },
+            "elements": [
+                {
+                    "id": "2d35a1b6",
+                    "settings": {
+                        "_column_size": 100,
+                        "_inline_size": null,
+                        "padding_tablet": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "2be6385",
+                            "settings": {
+                                "structure": "30",
+                                "layout": "full_width"
+                            },
+                            "elements": [
+                                {
+                                    "id": "76007b2f",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 12.9019999999999992468247000942938029766082763671875,
+                                        "_inline_size_tablet": 5
+                                    },
+                                    "elements": [],
+                                    "isInner": true,
+                                    "elType": "column"
+                                },
+                                {
+                                    "id": "753b4093",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 73.5270000000000010231815394945442676544189453125,
+                                        "background_background": "classic",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "38",
+                                            "right": "0",
+                                            "bottom": "16",
+                                            "left": "0",
+                                            "isLinked": false
+                                        },
+                                        "__globals__": {
+                                            "background_color": ""
+                                        },
+                                        "background_color": "#D0B4A9CC",
+                                        "_inline_size_tablet": 90,
+                                        "padding_mobile": {
+                                            "unit": "px",
+                                            "top": "20",
+                                            "right": "3",
+                                            "bottom": "20",
+                                            "left": "3",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "621fda1f",
+                                            "settings": {
+                                                "title": "\"To wear dreams on one's feet is to",
+                                                "align": "center",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=42f5e06"
+                                                },
+                                                "header_size": "h3",
+                                                "_animation": "fadeIn",
+                                                "animation_duration": "slow",
+                                                "_animation_delay": 100
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "column"
+                                },
+                                {
+                                    "id": "7d3abfd7",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 12.903999999999999914734871708787977695465087890625,
+                                        "_inline_size_tablet": 5
+                                    },
+                                    "elements": [],
+                                    "isInner": true,
+                                    "elType": "column"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "section"
+                        },
+                        {
+                            "id": "194a57a0",
+                            "settings": {
+                                "structure": "30",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "3",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "layout": "full_width"
+                            },
+                            "elements": [
+                                {
+                                    "id": "4487acf3",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 12.9000000000000003552713678800500929355621337890625,
+                                        "_inline_size_tablet": 5
+                                    },
+                                    "elements": [],
+                                    "isInner": true,
+                                    "elType": "column"
+                                },
+                                {
+                                    "id": "547e622e",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 73.5280000000000057980287238024175167083740234375,
+                                        "background_background": "classic",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "20",
+                                            "right": "0",
+                                            "bottom": "35",
+                                            "left": "0",
+                                            "isLinked": false
+                                        },
+                                        "__globals__": {
+                                            "background_color": ""
+                                        },
+                                        "background_color": "#DDBE9FCF",
+                                        "_inline_size_tablet": 90,
+                                        "padding_mobile": {
+                                            "unit": "px",
+                                            "top": "20",
+                                            "right": "3",
+                                            "bottom": "20",
+                                            "left": "3",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "342e6529",
+                                            "settings": {
+                                                "title": "begin to give a reality to one's dreams\"",
+                                                "align": "center",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=4fe579b"
+                                                },
+                                                "header_size": "h3",
+                                                "_animation": "fadeIn",
+                                                "animation_duration": "slow",
+                                                "_animation_delay": 200
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "column"
+                                },
+                                {
+                                    "id": "35a49a83",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 12.9049999999999993605115378159098327159881591796875,
+                                        "_inline_size_tablet": 5
+                                    },
+                                    "elements": [],
+                                    "isInner": true,
+                                    "elType": "column"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "section"
+                        },
+                        {
+                            "id": "39e9eb07",
+                            "settings": {
+                                "structure": "30",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "3",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "layout": "full_width"
+                            },
+                            "elements": [
+                                {
+                                    "id": "52441afc",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 10,
+                                        "_inline_size_tablet": 5
+                                    },
+                                    "elements": [],
+                                    "isInner": true,
+                                    "elType": "column"
+                                },
+                                {
+                                    "id": "7d82c59a",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 76.43000000000000682121026329696178436279296875,
+                                        "background_background": "classic",
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "15",
+                                            "right": "0",
+                                            "bottom": "25",
+                                            "left": "0",
+                                            "isLinked": false
+                                        },
+                                        "__globals__": {
+                                            "background_color": ""
+                                        },
+                                        "_inline_size_tablet": 90
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "2b6b5619",
+                                            "settings": {
+                                                "title": "ROGER VIVIER",
+                                                "align": "right",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=42f5e06",
+                                                    "typography_typography": "globals\/typography?id=secondary"
+                                                },
+                                                "header_size": "h3",
+                                                "_animation": "fadeIn",
+                                                "animation_duration": "slow",
+                                                "_animation_delay": 200
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "column"
+                                },
+                                {
+                                    "id": "65cb1029",
+                                    "settings": {
+                                        "_column_size": 33,
+                                        "_inline_size": 12.9030000000000004689582056016661226749420166015625,
+                                        "_inline_size_tablet": 5
+                                    },
+                                    "elements": [],
+                                    "isInner": true,
+                                    "elType": "column"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "section"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        }
+    ],
+    "page_settings": {
+        "hide_title": "yes",
+        "eael_ext_toc_title": "Table of Contents"
+    }
+}

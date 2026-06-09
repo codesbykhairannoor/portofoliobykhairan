@@ -1,0 +1,1639 @@
+{
+    "manifest_version": "1.0.21",
+    "title": "Vaya - E-commerce Elementor Template Kit",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Blog - 02",
+            "screenshot": "screenshots\/blog-02.jpg",
+            "source": "templates\/blog-02.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/blog-02\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Vaya - Footer",
+            "screenshot": "screenshots\/vaya-footer.jpg",
+            "source": "templates\/vaya-footer.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/?elementor_library=vaya-footer",
+            "type": "footer",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "footer",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Footer\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Vaya - Product single - 01",
+            "screenshot": "screenshots\/vaya-product-single-01.jpg",
+            "source": "templates\/vaya-product-single-01.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/?elementor_library=vaya-product-single-01",
+            "type": "product",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product",
+                "elementor_pro_conditions": [
+                    "exclude\/product\/in_product_tag\/28",
+                    "exclude\/product\/in_product_tag\/35",
+                    "include\/product"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product\" template for Elementor Pro.",
+                    "This template will display on: Products."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Vaya - Product single - 02",
+            "screenshot": "screenshots\/vaya-product-single-02.jpg",
+            "source": "templates\/vaya-product-single-02.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/?elementor_library=vaya-product-single-02",
+            "type": "product",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product",
+                "elementor_pro_conditions": [
+                    "include\/product\/in_product_tag\/28"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product\" template for Elementor Pro.",
+                    "This template will display on: In Tag #28."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Vaya - Product single - 03",
+            "screenshot": "screenshots\/vaya-product-single-03.jpg",
+            "source": "templates\/vaya-product-single-03.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/?elementor_library=vaya-product-single-03",
+            "type": "product",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product",
+                "elementor_pro_conditions": [
+                    "include\/product\/in_product_tag\/35"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product\" template for Elementor Pro.",
+                    "This template will display on: In Tag #35."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Vaya - Single Post",
+            "screenshot": "screenshots\/vaya-single-post.jpg",
+            "source": "templates\/vaya-single-post.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/?elementor_library=vaya-single-post",
+            "type": "single-post",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single-post",
+                "elementor_pro_conditions": [
+                    "include\/singular"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single Post\" template for Elementor Pro.",
+                    "This template will display on: All Singular."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Vaya - Error 404",
+            "screenshot": "screenshots\/vaya-error-404.jpg",
+            "source": "templates\/vaya-error-404.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/?elementor_library=vaya-error-404",
+            "type": "error-404",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-404",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "error-404",
+                "elementor_pro_conditions": [
+                    "include\/singular\/not_found404"
+                ],
+                "additional_template_information": [
+                    "This is a \"Error 404\" template for Elementor Pro.",
+                    "This template will display on: 404 Page."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Vaya - Products archive",
+            "screenshot": "screenshots\/vaya-products-archive.jpg",
+            "source": "templates\/vaya-products-archive.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/?elementor_library=vaya-products-archive",
+            "type": "product-archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product-archive",
+                "elementor_pro_conditions": [
+                    "include\/product_archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product Archive\" template for Elementor Pro.",
+                    "This template will display on: All Product Archives."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Vaya - Archive",
+            "screenshot": "screenshots\/vaya-archive.jpg",
+            "source": "templates\/vaya-archive.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/?elementor_library=vaya-archive",
+            "type": "archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-blog",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "archive",
+                "elementor_pro_conditions": [
+                    "include\/archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Archive\" template for Elementor Pro.",
+                    "This template will display on: All Archives."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Common elements",
+            "screenshot": "screenshots\/common-elements.jpg",
+            "source": "templates\/common-elements.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/common-elements\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Blog - 01",
+            "screenshot": "screenshots\/blog-01.jpg",
+            "source": "templates\/blog-01.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/blog-01\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home - 01",
+            "screenshot": "screenshots\/home-01.jpg",
+            "source": "templates\/home-01.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/home-01\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home - 02",
+            "screenshot": "screenshots\/home-02.jpg",
+            "source": "templates\/home-02.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/home-02\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home - 03",
+            "screenshot": "screenshots\/home-03.jpg",
+            "source": "templates\/home-03.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/home-03\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home - 04",
+            "screenshot": "screenshots\/home-04.jpg",
+            "source": "templates\/home-04.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/home-04\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Shop page - 01",
+            "screenshot": "screenshots\/shop-page-01.jpg",
+            "source": "templates\/shop-page-01.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/shop-page-01\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Shop page - 02",
+            "screenshot": "screenshots\/shop-page-02.jpg",
+            "source": "templates\/shop-page-02.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/shop-page-02\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "About us",
+            "screenshot": "screenshots\/about-us.jpg",
+            "source": "templates\/about-us.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/about-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact us",
+            "screenshot": "screenshots\/contact-us.jpg",
+            "source": "templates\/contact-us.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/template-kit\/contact-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Vaya - Header",
+            "screenshot": "screenshots\/vaya-header.jpg",
+            "source": "templates\/vaya-header.json",
+            "preview_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/?elementor_library=vaya-header",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor Pro",
+            "version": "3.3.1",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.6.4",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Premium Addons for Elementor",
+            "version": "4.9.6",
+            "file": "premium-addons-for-elementor\/premium-addons-for-elementor.php",
+            "author": "Leap13"
+        },
+        {
+            "name": "WooCommerce",
+            "version": "6.4.1",
+            "file": "woocommerce\/woocommerce.php",
+            "author": "Automattic"
+        }
+    ],
+    "images": [
+        {
+            "filename": "banner-04.jpg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-04.jpg",
+            "templates": [
+                {
+                    "source": "templates\/blog-02.json",
+                    "name": "Blog - 02"
+                },
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/vaya-single-post.json",
+                    "name": "Vaya - Single Post"
+                },
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 184464,
+            "dimensions": [
+                600,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/carefree-girl-posing-in-jacket-and-sunglasses-port-YLP7PKP"
+        },
+        {
+            "filename": "logo.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/logo.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-footer.json",
+                    "name": "Vaya - Footer"
+                },
+                {
+                    "source": "templates\/vaya-header.json",
+                    "name": "Vaya - Header"
+                }
+            ],
+            "filesize": 11556,
+            "dimensions": [
+                685,
+                158
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "app-store-btn.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/app-store-btn.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-footer.json",
+                    "name": "Vaya - Footer"
+                }
+            ],
+            "filesize": 16190,
+            "dimensions": [
+                499,
+                167
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "google-play-btn.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/google-play-btn.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-footer.json",
+                    "name": "Vaya - Footer"
+                }
+            ],
+            "filesize": 13986,
+            "dimensions": [
+                564,
+                168
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "logo-01.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/logo-01.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 8540,
+            "dimensions": [
+                500,
+                300
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-02.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/logo-02.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 8149,
+            "dimensions": [
+                500,
+                300
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-03.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/logo-03.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 8623,
+            "dimensions": [
+                500,
+                300
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-04.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/logo-04.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 9490,
+            "dimensions": [
+                500,
+                300
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-05.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/logo-05.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 9933,
+            "dimensions": [
+                500,
+                300
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-06.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/logo-06.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 8307,
+            "dimensions": [
+                500,
+                300
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "icon-01.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/icon-01.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 12139,
+            "dimensions": [
+                600,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/simple-icons-BSK3HF"
+        },
+        {
+            "filename": "icon-02.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/icon-02.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 43104,
+            "dimensions": [
+                600,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/simple-icons-BSK3HF"
+        },
+        {
+            "filename": "icon-03.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/icon-03.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-product-single-02.json",
+                    "name": "Vaya - Product single - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 32998,
+            "dimensions": [
+                600,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/simple-icons-BSK3HF"
+        },
+        {
+            "filename": "gallery-03.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/gallery-03-800x1067.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 229294,
+            "dimensions": [
+                810,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/happy-young-woman-with-shopping-bags-walking-in-th-372UXHE"
+        },
+        {
+            "filename": "gallery-02.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/gallery-02-800x1067.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 207998,
+            "dimensions": [
+                810,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/smiling-guy-standing-against-gray-wall-with-hands--BQSDU95"
+        },
+        {
+            "filename": "gallery-01.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/gallery-01-800x1067.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 256113,
+            "dimensions": [
+                810,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/attractive-stylish-blonde-woman-in-jeans-oversize--3LA9DEP"
+        },
+        {
+            "filename": "testimonial-img-01.jpg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/testimonial-img-01.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 37919,
+            "dimensions": [
+                500,
+                500
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/smiling-group-of-ethnically-diverse-professional-b-E54D7RY"
+        },
+        {
+            "filename": "testimonial-img-03.jpg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/testimonial-img-03.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 32847,
+            "dimensions": [
+                500,
+                500
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/smiling-group-of-ethnically-diverse-professional-b-E54D7RY"
+        },
+        {
+            "filename": "testimonial-img-04.jpg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/testimonial-img-04.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 25731,
+            "dimensions": [
+                500,
+                500
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/smiling-group-of-ethnically-diverse-professional-b-E54D7RY"
+        },
+        {
+            "filename": "slide-01.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/slide-01-800x450.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 150957,
+            "dimensions": [
+                1920,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/fashion-GK5FSHW"
+        },
+        {
+            "filename": "slide-02.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/slide-02-800x450.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                }
+            ],
+            "filesize": 77547,
+            "dimensions": [
+                1920,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/confident-male-model-in-autumn-outfit-posing-isola-7J5PB6Y"
+        },
+        {
+            "filename": "banner-01.jpg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-01.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 80378,
+            "dimensions": [
+                800,
+                600
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/DDqxX0-7vKE"
+        },
+        {
+            "filename": "banner-02.jpg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-02.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 123759,
+            "dimensions": [
+                800,
+                600
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/d54wbtjedog"
+        },
+        {
+            "filename": "banner-03.jpg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-03.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 124581,
+            "dimensions": [
+                800,
+                600
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/CkCUvwMXAac"
+        },
+        {
+            "filename": "bg-img-01-.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/bg-img-01--800x450.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                }
+            ],
+            "filesize": 303567,
+            "dimensions": [
+                1920,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/xXJ6utyoSw0"
+        },
+        {
+            "filename": "content-img-01.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-01-800x800.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                }
+            ],
+            "filesize": 375731,
+            "dimensions": [
+                1080,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/mens-beauty-seasonal-fashion-portrait-of-a-stylish-Z7S6F7W"
+        },
+        {
+            "filename": "content-img-02.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-02-800x800.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                }
+            ],
+            "filesize": 445170,
+            "dimensions": [
+                1080,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/attractive-stylish-blonde-woman-in-jeans-oversize--48BZNJS"
+        },
+        {
+            "filename": "content-img-03.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-03-800x800.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-01.json",
+                    "name": "Home - 01"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                }
+            ],
+            "filesize": 180610,
+            "dimensions": [
+                1080,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/small-girl-child-model-in-beautiful-dress-childhoo-Z6VFK8B"
+        },
+        {
+            "filename": "banner-05.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-05-800x1067.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 138351,
+            "dimensions": [
+                810,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/beautiful-woman-with-wavy-hair-in-striped-coat-sen-LSZCZQQ"
+        },
+        {
+            "filename": "banner-07.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-07-800x1067.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                }
+            ],
+            "filesize": 139399,
+            "dimensions": [
+                810,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/young-gorgeous-woman-with-wavy-hair-in-black-leath-A83DMB8"
+        },
+        {
+            "filename": "banner-10.jpg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-10-800x1067.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                }
+            ],
+            "filesize": 162671,
+            "dimensions": [
+                810,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/E-0ON3VGrBc"
+        },
+        {
+            "filename": "banner-11.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-11.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                }
+            ],
+            "filesize": 79110,
+            "dimensions": [
+                800,
+                600
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/abThP5SERao"
+        },
+        {
+            "filename": "banner-12.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-12.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                }
+            ],
+            "filesize": 115307,
+            "dimensions": [
+                800,
+                600
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/yOCIkYb1L5g"
+        },
+        {
+            "filename": "content-img-04.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-04-800x800.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                }
+            ],
+            "filesize": 96812,
+            "dimensions": [
+                1080,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-bearded-gentleman-wearing-trendy-suit--V28HTE9"
+        },
+        {
+            "filename": "banner-06.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-06-800x1067.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-02.json",
+                    "name": "Home - 02"
+                }
+            ],
+            "filesize": 178323,
+            "dimensions": [
+                810,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/pretty-smiling-woman-with-wavy-hair-in-hat-and-red-XRCX9WJ"
+        },
+        {
+            "filename": "slide1-01.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/slide1-01-800x600.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 274673,
+            "dimensions": [
+                1440,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/beautiful-casual-blond-girl-in-stylish-trench-coat-PMT88W4"
+        },
+        {
+            "filename": "slide1-02.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/slide1-02-800x600.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                },
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                }
+            ],
+            "filesize": 130552,
+            "dimensions": [
+                1440,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/elegantly-dressed-young-man-in-a-vest-with-bow-tie-KJY9SHA"
+        },
+        {
+            "filename": "banner-13.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-13-800x800.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 187919,
+            "dimensions": [
+                1080,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/woman-wearing-blue-long-sleeved-button-up-dress-and-brown-sling-bag-1102207\/"
+        },
+        {
+            "filename": "banner-14.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/banner-14-800x800.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 172259,
+            "dimensions": [
+                1080,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.pexels.com\/photo\/round-silver-colored-fossil-chronograph-watch-with-brown-leather-band-on-brown-wooden-surface-1546333\/"
+        },
+        {
+            "filename": "icon-04.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/icon-04.png",
+            "templates": [
+                {
+                    "source": "templates\/home-03.json",
+                    "name": "Home - 03"
+                }
+            ],
+            "filesize": 13068,
+            "dimensions": [
+                600,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/simple-icons-BSK3HF"
+        },
+        {
+            "filename": "bg-img-02.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/bg-img-02-800x450.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/shop-page-01.json",
+                    "name": "Shop page - 01"
+                }
+            ],
+            "filesize": 219021,
+            "dimensions": [
+                1920,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/pretty-smiling-woman-with-wavy-hair-in-hat-and-red-XRCX9WJ"
+        },
+        {
+            "filename": "testimonial-img-02.jpg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/testimonial-img-02.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-04.json",
+                    "name": "Home - 04"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 34002,
+            "dimensions": [
+                500,
+                500
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/smiling-group-of-ethnically-diverse-professional-b-E54D7RY"
+        },
+        {
+            "filename": "content-img-05.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-05-800x450.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 205023,
+            "dimensions": [
+                1920,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/dlxLGIy-2VU"
+        },
+        {
+            "filename": "content-img-07.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-07-800x800.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact us"
+                }
+            ],
+            "filesize": 116507,
+            "dimensions": [
+                1080,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/mU88MlEFcoU"
+        },
+        {
+            "filename": "bg-img-03.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/bg-img-03-800x450.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 395713,
+            "dimensions": [
+                1920,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/ZmgJiztRHXE"
+        },
+        {
+            "filename": "content-img-06.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-06-800x1067.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 103319,
+            "dimensions": [
+                810,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/bhLMUIlIhxk"
+        },
+        {
+            "filename": "content-img-09.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-09-800x600.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact us"
+                }
+            ],
+            "filesize": 195931,
+            "dimensions": [
+                1440,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/_4K7BwaHUGc"
+        },
+        {
+            "filename": "content-img-08.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-08-800x600.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact us"
+                }
+            ],
+            "filesize": 305747,
+            "dimensions": [
+                1440,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/ZmgJiztRHXE"
+        },
+        {
+            "filename": "content-img-10.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/content-img-10-800x600.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact us"
+                }
+            ],
+            "filesize": 191944,
+            "dimensions": [
+                1440,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/XdjS0AzKzo0"
+        },
+        {
+            "filename": "logo-light.png",
+            "thumbnail_url": "http:\/\/templatekits.c-kav.com\/demo3\/vaya\/wp-content\/uploads\/sites\/14\/2022\/04\/logo-light.png",
+            "templates": [
+                {
+                    "source": "templates\/vaya-header.json",
+                    "name": "Vaya - Header"
+                }
+            ],
+            "filesize": 11486,
+            "dimensions": [
+                685,
+                158
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        }
+    ]
+}

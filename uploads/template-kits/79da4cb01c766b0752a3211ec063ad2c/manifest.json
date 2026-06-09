@@ -1,0 +1,1626 @@
+{
+    "manifest_version": "1.0.23",
+    "title": "Turn's Time",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Archive",
+            "screenshot": "screenshots\/archive.jpg",
+            "source": "templates\/archive.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=elementor-archive-3297",
+            "type": "archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-blog",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "archive",
+                "elementor_pro_conditions": [
+                    "include\/archive\/post_archive",
+                    "include\/archive\/date",
+                    "include\/archive\/author",
+                    "include\/archive\/category",
+                    "include\/archive\/post_tag",
+                    "include\/archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Archive\" template for Elementor Pro.",
+                    "This template will display on: Posts Archive &amp; Date Archive &amp; Author Archive &amp; Categories &amp; Tags &amp; All Archives."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=home",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Testimonials",
+            "screenshot": "screenshots\/testimonials.jpg",
+            "source": "templates\/testimonials.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=testimonials",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Team",
+            "screenshot": "screenshots\/team.jpg",
+            "source": "templates\/team.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=team",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Faq",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=faq",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact",
+            "screenshot": "screenshots\/contact.jpg",
+            "source": "templates\/contact.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=contact",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Coming Soon",
+            "screenshot": "screenshots\/coming-soon.jpg",
+            "source": "templates\/coming-soon.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=coming-soon",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=blog",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "About",
+            "screenshot": "screenshots\/about.jpg",
+            "source": "templates\/about.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=about",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Search Result",
+            "screenshot": "screenshots\/search-result.jpg",
+            "source": "templates\/search-result.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=elementor-search-results-2639",
+            "type": "search-results",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "search-results",
+                "elementor_pro_conditions": [
+                    "include\/archive\/search"
+                ],
+                "additional_template_information": [
+                    "This is a \"Search Results\" template for Elementor Pro.",
+                    "This template will display on: Search Results."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Cart",
+            "screenshot": "screenshots\/cart.jpg",
+            "source": "templates\/cart.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=cart",
+            "type": "single-page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single-page",
+                "elementor_pro_conditions": [
+                    "include\/singular\/page\/19"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single Page\" template for Elementor Pro.",
+                    "This template will display on: Page #19."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "My Account",
+            "screenshot": "screenshots\/my-account.jpg",
+            "source": "templates\/my-account.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=my-account",
+            "type": "single-page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single-page",
+                "elementor_pro_conditions": [
+                    "include\/singular\/page\/21"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single Page\" template for Elementor Pro.",
+                    "This template will display on: Page #21."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Checkout",
+            "screenshot": "screenshots\/checkout.jpg",
+            "source": "templates\/checkout.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=checkout",
+            "type": "single-page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single-page",
+                "elementor_pro_conditions": [
+                    "include\/singular\/page\/20"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single Page\" template for Elementor Pro.",
+                    "This template will display on: Page #20."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "404",
+            "screenshot": "screenshots\/404.jpg",
+            "source": "templates\/404.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=404",
+            "type": "error-404",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-404",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "error-404",
+                "elementor_pro_conditions": [
+                    "include\/singular\/not_found404"
+                ],
+                "additional_template_information": [
+                    "This is a \"Error 404\" template for Elementor Pro.",
+                    "This template will display on: 404 Page."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Single Product",
+            "screenshot": "screenshots\/single-product.jpg",
+            "source": "templates\/single-product.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=single-product",
+            "type": "product",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product",
+                "elementor_pro_conditions": [
+                    "include\/product"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product\" template for Elementor Pro.",
+                    "This template will display on: Products."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Shop",
+            "screenshot": "screenshots\/shop.jpg",
+            "source": "templates\/shop.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=elementor-products-archive-2028",
+            "type": "product-archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product-archive",
+                "elementor_pro_conditions": [
+                    "include\/product_archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product Archive\" template for Elementor Pro.",
+                    "This template will display on: All Product Archives."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Single post",
+            "screenshot": "screenshots\/single-post.jpg",
+            "source": "templates\/single-post.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=elementor-single-post-2012",
+            "type": "single-post",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single-post",
+                "elementor_pro_conditions": [
+                    "include\/singular\/post"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single Post\" template for Elementor Pro.",
+                    "This template will display on: Posts."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.jpg",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=elementor-footer-70",
+            "type": "footer",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "footer",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Footer\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.jpg",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/?elementor_library=elementor-header-39",
+            "type": "header",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor Pro",
+            "version": "3.24.4",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.24.7",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Jeg Elementor Kit",
+            "version": "2.6.9",
+            "file": "jeg-elementor-kit\/jeg-elementor-kit.php",
+            "author": "Jegtheme"
+        },
+        {
+            "name": "WooCommerce",
+            "version": "9.3.3",
+            "file": "woocommerce\/woocommerce.php",
+            "author": "Automattic"
+        }
+    ],
+    "images": [
+        {
+            "filename": "Group-1000004229.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Group-1000004229.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 10625,
+            "dimensions": [
+                436,
+                289
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Union-3.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Union-3.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 21956,
+            "dimensions": [
+                318,
+                319
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Group-1000004232.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Group-1000004232.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 21838,
+            "dimensions": [
+                303,
+                303
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "collection-2-2.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/collection-2-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 2798,
+            "dimensions": [
+                31,
+                31
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/close-up-hands-of-the-groom-with-a-clock-U6RW2GD"
+        },
+        {
+            "filename": "00-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/00-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 31204,
+            "dimensions": [
+                780,
+                510
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/cute-couple-on-a-date-at-the-cafe-PCMRUUC"
+        },
+        {
+            "filename": "03-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/03-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 27167,
+            "dimensions": [
+                780,
+                510
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/business-mans-hand-with-watch-BHZJSLP"
+        },
+        {
+            "filename": "01.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/01.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 42709,
+            "dimensions": [
+                780,
+                510
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/close-up-of-a-womans-hand-with-a-retro-style-watch-LULGVCK"
+        },
+        {
+            "filename": "collection-4.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/collection-4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 38746,
+            "dimensions": [
+                542,
+                680
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/seller-shows-an-exclusive-mens-wristwatch-from-the-VWL9UPC"
+        },
+        {
+            "filename": "collection-5.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/collection-5.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 50270,
+            "dimensions": [
+                542,
+                680
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/close-up-portrait-of-blonde-fashion-girl-hiding-ey-C8N8B4C"
+        },
+        {
+            "filename": "collection-2.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/collection-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 26228,
+            "dimensions": [
+                542,
+                680
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/close-up-hands-of-the-groom-with-a-clock-U6RW2GD"
+        },
+        {
+            "filename": "collection-3.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/collection-3.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 49465,
+            "dimensions": [
+                542,
+                680
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/expensive-wrist-watch-F7LT6XH"
+        },
+        {
+            "filename": "collection-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/collection-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 22758,
+            "dimensions": [
+                542,
+                680
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/watch-computer-for-diving-in-water-streams-on-a-bl-PQ5LW5J"
+        },
+        {
+            "filename": "arrival.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/arrival.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 44189,
+            "dimensions": [
+                684,
+                820
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/beautiful-wristwatch-on-a-metal-bracelet-on-a-woma-JDFLMSQ"
+        },
+        {
+            "filename": "best-selling-2.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/best-selling-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 96855,
+            "dimensions": [
+                602,
+                1019
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/man-looking-at-his-watch-P42PD3A"
+        },
+        {
+            "filename": "Frame-56.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Frame-56.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 1276,
+            "dimensions": [
+                34,
+                45
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/product-features-icon-59RM6FZ"
+        },
+        {
+            "filename": "Frame-58.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Frame-58.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 2067,
+            "dimensions": [
+                32,
+                45
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/product-features-icon-59RM6FZ"
+        },
+        {
+            "filename": "Frame-57.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Frame-57.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 1536,
+            "dimensions": [
+                27,
+                45
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/product-features-icon-59RM6FZ"
+        },
+        {
+            "filename": "Mask-group-33-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Mask-group-33-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 42467,
+            "dimensions": [
+                570,
+                675
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/happy-young-people-buying-new-digital-gadgets-in-s-ZBNHKEA"
+        },
+        {
+            "filename": "banner-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/banner-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 137100,
+            "dimensions": [
+                1666,
+                614
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/details-of-the-wedding-day-B4RQT9F"
+        },
+        {
+            "filename": "banner-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/banner-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 43437,
+            "dimensions": [
+                515,
+                663
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/close-up-of-female-hands-with-stylish-watch-EFEQ35X"
+        },
+        {
+            "filename": "Group-1000004233.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Group-1000004233.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 4331,
+            "dimensions": [
+                129,
+                129
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Mask-group-34.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Mask-group-34.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 162541,
+            "dimensions": [
+                270,
+                395
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/wrist-watch-product-shoot-WSX6Y7D"
+        },
+        {
+            "filename": "Testimonial-page-9.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-9.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 18911,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/positive-young-guy-with-workbooks-YAUB7DQ"
+        },
+        {
+            "filename": "Testimonial-page-5.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-5.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 15899,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/front-view-of-happy-young-asian-businesswoman-look-FXMTABC"
+        },
+        {
+            "filename": "Testimonial-page-8.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-8.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 15435,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/i-know-where-im-going-C8AZGNL"
+        },
+        {
+            "filename": "Testimonial-page-6.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-6.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 16533,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/studio-portrait-of-smiling-young-man-against-blue--2YTYFZF"
+        },
+        {
+            "filename": "Testimonial-page-7.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-7.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 16925,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/dark-haired-young-cute-reporter-holding-a-camera-J4ATNJT"
+        },
+        {
+            "filename": "old-watch-fixed-in-plastic-holder-for-repairing-2023-11-27-05-03-40-utc-2-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/old-watch-fixed-in-plastic-holder-for-repairing-2023-11-27-05-03-40-utc-2-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 47601,
+            "dimensions": [
+                570,
+                340
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/old-watch-fixed-in-plastic-holder-for-repairing-PZGLG8M"
+        },
+        {
+            "filename": "vision.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/vision.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 69349,
+            "dimensions": [
+                570,
+                340
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/close-up-on-vintage-clock-8HJ5YFA"
+        },
+        {
+            "filename": "choose.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/choose.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 36117,
+            "dimensions": [
+                564,
+                585
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/shop-assistant-in-black-gloves-is-showing-expensiv-ZZJR3HK"
+        },
+        {
+            "filename": "team-3.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/team-3.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 43541,
+            "dimensions": [
+                370,
+                413
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/grey-haired-cheerful-bearded-man-in-casualwear-cro-DGCEC3B"
+        },
+        {
+            "filename": "team-6.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/team-6.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 29793,
+            "dimensions": [
+                370,
+                413
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/were-ready-to-shift-business-to-the-next-level-9UGT9UX"
+        },
+        {
+            "filename": "team-5.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/team-5.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 26908,
+            "dimensions": [
+                370,
+                413
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-a-businessman-with-a-smile-in-a-corpor-SUPAUZK"
+        },
+        {
+            "filename": "team-2.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/team-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 29823,
+            "dimensions": [
+                370,
+                413
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/confidence-is-such-a-boost-for-business-N2GYUKV"
+        },
+        {
+            "filename": "team-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/team-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 38253,
+            "dimensions": [
+                370,
+                413
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-visiting-the-meeting-at-office-DFSC6F6"
+        },
+        {
+            "filename": "team-4.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/team-4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 27886,
+            "dimensions": [
+                370,
+                413
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/my-expertise-is-needed-and-i-must-go-portrait-of-a-VD4U6GW"
+        },
+        {
+            "filename": "Testimonial-page-6-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-6-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 16533,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/studio-portrait-of-smiling-young-man-against-blue--2YTYFZF"
+        },
+        {
+            "filename": "Testimonial-page-9-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-9-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 18911,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/positive-young-guy-with-workbooks-YAUB7DQ"
+        },
+        {
+            "filename": "Testimonial-page-8-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-8-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 15435,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-professional-confidence-DQ6SR7M"
+        },
+        {
+            "filename": "Testimonial-page-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 14460,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/success-happens-when-you-work-for-it-DZY3AUU"
+        },
+        {
+            "filename": "Testimonial-page-7-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-7-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 16925,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/dark-haired-young-cute-reporter-holding-a-camera-J4ATNJT"
+        },
+        {
+            "filename": "testi-9-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/testi-9-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 12408,
+            "dimensions": [
+                200,
+                200
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-professional-confidence-DQ6SR7M"
+        },
+        {
+            "filename": "Testimonial-page-3.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-3.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 13512,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/teenage-young-man-in-college-VCKLRAK"
+        },
+        {
+            "filename": "testi-7.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/testi-7.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 15200,
+            "dimensions": [
+                200,
+                200
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-young-university-student-sitting-in-cl-KXUR286"
+        },
+        {
+            "filename": "Testimonial-page-5-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Testimonial-page-5-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 15899,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/front-view-of-happy-young-asian-businesswoman-look-FXMTABC"
+        },
+        {
+            "filename": "faq.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/faq.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faq.json",
+                    "name": "Faq"
+                },
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 49670,
+            "dimensions": [
+                570,
+                537
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/photo-of-an-adult-handsome-brunette-man-in-a-white-5JN5SYH"
+        },
+        {
+            "filename": "COMING-SOON-1.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/COMING-SOON-1.png",
+            "templates": [
+                {
+                    "source": "templates\/coming-soon.json",
+                    "name": "Coming Soon"
+                }
+            ],
+            "filesize": 10620,
+            "dimensions": [
+                496,
+                244
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "wrist-watch-1-1.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/wrist-watch-1-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 65985,
+            "dimensions": [
+                500,
+                584
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/wrist-watch-PPCCCZK"
+        },
+        {
+            "filename": "wrist-watch-2-1.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/wrist-watch-2-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 65579,
+            "dimensions": [
+                500,
+                585
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/wrist-watch-PPCCCZK"
+        },
+        {
+            "filename": "Group-1000-1.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Group-1000-1.png",
+            "templates": [
+                {
+                    "source": "templates\/404.json",
+                    "name": "404"
+                }
+            ],
+            "filesize": 62035,
+            "dimensions": [
+                1692,
+                821
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/concept-404-not-found-with-people-scene-3EQ79MW"
+        },
+        {
+            "filename": "Frame-60.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Frame-60.png",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 1507,
+            "dimensions": [
+                82,
+                40
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "logo-46.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/logo-46.png",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 3587,
+            "dimensions": [
+                123,
+                62
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "logo-75.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/logo-75.png",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 2829,
+            "dimensions": [
+                186,
+                42
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "logo-54.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/logo-54.png",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 2723,
+            "dimensions": [
+                170,
+                42
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "logo-50.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/logo-50.png",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 2700,
+            "dimensions": [
+                153,
+                38
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "logo-74.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/logo-74.png",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 3332,
+            "dimensions": [
+                70,
+                44
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "logo-49.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/logo-49.png",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 1853,
+            "dimensions": [
+                154,
+                28
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Vector-7.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Vector-7.png",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 813,
+            "dimensions": [
+                40,
+                40
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "banner.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/banner.jpg",
+            "templates": [
+                {
+                    "source": "templates\/shop.json",
+                    "name": "Shop"
+                }
+            ],
+            "filesize": 134679,
+            "dimensions": [
+                1920,
+                522
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/agung-trekking-results-on-fitness-watch-finish-aft-ZFERL92"
+        },
+        {
+            "filename": "single-post.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/single-post.jpg",
+            "templates": [
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single post"
+                }
+            ],
+            "filesize": 35109,
+            "dimensions": [
+                570,
+                247
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/close-up-of-the-sellers-hand-in-gloves-shows-the-e-SZPDRVT"
+        },
+        {
+            "filename": "Frame-1000003032.png",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Frame-1000003032.png",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                },
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                }
+            ],
+            "filesize": 1802,
+            "dimensions": [
+                190,
+                37
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Mastercard.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Mastercard.jpg",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 4033,
+            "dimensions": [
+                78,
+                53
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Discover.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Discover.jpg",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 3663,
+            "dimensions": [
+                78,
+                53
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Visa.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Visa.jpg",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 3342,
+            "dimensions": [
+                78,
+                53
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Stripe.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Stripe.jpg",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 4030,
+            "dimensions": [
+                78,
+                53
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Bitpay.jpg",
+            "thumbnail_url": "https:\/\/template-kit.evonicmedia.com\/layout59\/wp-content\/uploads\/2024\/10\/Bitpay.jpg",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 3832,
+            "dimensions": [
+                79,
+                53
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        }
+    ]
+}

@@ -1,0 +1,617 @@
+{
+    "manifest_version": "1.0.20",
+    "title": "Zahrah - Flower Shop and Store WooCommerce Elementor Template Kit",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/template-kit\/blog\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Faq",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/template-kit\/faq\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact",
+            "screenshot": "screenshots\/contact.jpg",
+            "source": "templates\/contact.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/template-kit\/contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "About",
+            "screenshot": "screenshots\/about.jpg",
+            "source": "templates\/about.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/template-kit\/about\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/template-kit\/home\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Single Post",
+            "screenshot": "screenshots\/single-post.jpg",
+            "source": "templates\/single-post.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/?elementor_library=single-post",
+            "type": "single-post",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single-post",
+                "elementor_pro_conditions": [
+                    "include\/singular\/post"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single Post\" template for Elementor Pro.",
+                    "This template will display on: Posts."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "404",
+            "screenshot": "screenshots\/404.jpg",
+            "source": "templates\/404.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/?elementor_library=404",
+            "type": "error-404",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-404",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "error-404",
+                "elementor_pro_conditions": [
+                    "include\/singular\/not_found404"
+                ],
+                "additional_template_information": [
+                    "This is a \"Error 404\" template for Elementor Pro.",
+                    "This template will display on: 404 Page."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Product Archive",
+            "screenshot": "screenshots\/product-archive.jpg",
+            "source": "templates\/product-archive.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/?elementor_library=product-archive",
+            "type": "product-archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product-archive",
+                "elementor_pro_conditions": [
+                    "include\/product_archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product Archive\" template for Elementor Pro.",
+                    "This template will display on: All Product Archives."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.jpg",
+            "source": "templates\/footer.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/?elementor_library=footer",
+            "type": "footer",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "footer",
+                "elementor_pro_conditions": [
+                    "include\/general",
+                    "exclude\/singular\/not_found404"
+                ],
+                "additional_template_information": [
+                    "This is a \"Footer\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.jpg",
+            "source": "templates\/header.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/?elementor_library=header",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/general",
+                    "exclude\/singular\/not_found404"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Single Product",
+            "screenshot": "screenshots\/single-product.jpg",
+            "source": "templates\/single-product.json",
+            "preview_url": "http:\/\/astylers.com\/zahrah\/?elementor_library=single-product",
+            "type": "product",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product",
+                "elementor_pro_conditions": [
+                    "include\/product"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product\" template for Elementor Pro.",
+                    "This template will display on: Products."
+                ]
+            },
+            "elementor_pro_required": true
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor Pro",
+            "version": "3.3.4",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.3.1",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "WooCommerce",
+            "version": "5.5.2",
+            "file": "woocommerce\/woocommerce.php",
+            "author": "Automattic"
+        }
+    ],
+    "images": [
+        {
+            "filename": "image979.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/image979.png",
+            "templates": [
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/product-archive.json",
+                    "name": "Product Archive"
+                }
+            ],
+            "filesize": 172338,
+            "dimensions": [
+                1263,
+                909
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/orchid-AYBJPJ"
+        },
+        {
+            "filename": "g3388.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/g3388.png",
+            "templates": [
+                {
+                    "source": "templates\/faq.json",
+                    "name": "Faq"
+                },
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/single-product.json",
+                    "name": "Single Product"
+                }
+            ],
+            "filesize": 89135,
+            "dimensions": [
+                2503,
+                1369
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/jasmine-flowers-line-art-ornate-elements-HZR7SKN"
+        },
+        {
+            "filename": "image1021.jpg",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/image1021.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faq.json",
+                    "name": "Faq"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 285994,
+            "dimensions": [
+                1483,
+                869
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/flower-shop-5QM86TV"
+        },
+        {
+            "filename": "g3s388.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/g3s388.png",
+            "templates": [
+                {
+                    "source": "templates\/faq.json",
+                    "name": "Faq"
+                },
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 89193,
+            "dimensions": [
+                2503,
+                1369
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/jasmine-flowers-line-art-ornate-elements-HZR7SKN"
+        },
+        {
+            "filename": "g50199.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/g50199.png",
+            "templates": [
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                }
+            ],
+            "filesize": 60006,
+            "dimensions": [
+                943,
+                559
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/hatched-world-map-B5TJ5ST"
+        },
+        {
+            "filename": "path880.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/path880.png",
+            "templates": [
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                },
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/single-product.json",
+                    "name": "Single Product"
+                }
+            ],
+            "filesize": 6147,
+            "dimensions": [
+                96,
+                80
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/flowers-logo-LYC2RH8"
+        },
+        {
+            "filename": "image9891.jpg",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/image9891.jpg",
+            "templates": [
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 153209,
+            "dimensions": [
+                862,
+                750
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/open-signboard-bicycle-creative-sign-for-the-store-CLGP5J4"
+        },
+        {
+            "filename": "image955.jpg",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/image955.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 79123,
+            "dimensions": [
+                1000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/flowers-composition-with-flowers-and-gift-box-PWDRKUJ"
+        },
+        {
+            "filename": "image999.jpg",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/image999.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 60855,
+            "dimensions": [
+                1000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/flower-pattern-made-of-chamomile-on-pink-backgroun-D35NTZU"
+        },
+        {
+            "filename": "image988.jpg",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/image988.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 130642,
+            "dimensions": [
+                1000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/flowers-N9UUMSQ"
+        },
+        {
+            "filename": "g14002.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/g14002.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/product-archive.json",
+                    "name": "Product Archive"
+                }
+            ],
+            "filesize": 3910,
+            "dimensions": [
+                101,
+                81
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/line-icons-S66ZM6?_ga=2.145967926.364710071.1627290353-847667631.1626934470"
+        },
+        {
+            "filename": "g12590.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/g12590.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/product-archive.json",
+                    "name": "Product Archive"
+                }
+            ],
+            "filesize": 4000,
+            "dimensions": [
+                100,
+                101
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/line-icons-S66ZM6?_ga=2.145967926.364710071.1627290353-847667631.1626934470"
+        },
+        {
+            "filename": "g11366.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/g11366.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/product-archive.json",
+                    "name": "Product Archive"
+                }
+            ],
+            "filesize": 5385,
+            "dimensions": [
+                100,
+                88
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/line-icons-S66ZM6?_ga=2.145967926.364710071.1627290353-847667631.1626934470"
+        },
+        {
+            "filename": "g11512.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/g11512.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/product-archive.json",
+                    "name": "Product Archive"
+                }
+            ],
+            "filesize": 5569,
+            "dimensions": [
+                100,
+                101
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/line-icons-S66ZM6?_ga=2.145967926.364710071.1627290353-847667631.1626934470"
+        },
+        {
+            "filename": "rect1028.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/rect1028.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/product-archive.json",
+                    "name": "Product Archive"
+                }
+            ],
+            "filesize": 36484,
+            "dimensions": [
+                457,
+                384
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/orchid-flower-42WKPKJ"
+        },
+        {
+            "filename": "image1038.jpg",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/image1038.jpg",
+            "templates": [
+                {
+                    "source": "templates\/404.json",
+                    "name": "404"
+                }
+            ],
+            "filesize": 98202,
+            "dimensions": [
+                1143,
+                762
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/flower-EXF39FH"
+        },
+        {
+            "filename": "mylogo.png",
+            "thumbnail_url": "http:\/\/astylers.com\/zahrah\/wp-content\/uploads\/2021\/07\/mylogo.png",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                },
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                }
+            ],
+            "filesize": 8775,
+            "dimensions": [
+                162,
+                137
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/flowers-logo-LYC2RH8"
+        }
+    ]
+}

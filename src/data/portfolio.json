@@ -1,0 +1,449 @@
+{
+  "carousel": [
+    {
+      "title": "FundEx Web ReDesign",
+      "title_en": "FundEx Web ReDesign",
+      "title_id": "Redesain Web FundEx",
+      "description": "UI/UX redesign for FundEx, focused on improving clarity, trust, and user flow for new investors...",
+      "description_en": "UI/UX redesign for FundEx, focused on improving clarity, trust, and user flow for new investors...",
+      "description_id": "Redesain UI/UX untuk FundEx, berfokus pada peningkatan kejelasan, kepercayaan, dan alur pengguna bagi investor baru...",
+      "link": "/fundex-wesbsite-redesign/",
+      "slug": "fundex-wesbsite-redesign",
+      "image": "/wp-content/uploads/2025/07/2-3.png"
+    },
+    {
+      "title": "Newtriens App Design",
+      "title_en": "Newtriens App Design",
+      "title_id": "Desain Aplikasi Newtriens",
+      "description": "A health app for ordering nutritious meals, tracking calories, and accessing expert wellness advice...",
+      "description_en": "A health app for ordering nutritious meals, tracking calories, and accessing expert wellness advice...",
+      "description_id": "Aplikasi kesehatan untuk memesan makanan bergizi, melacak kalori, dan mengakses saran kesehatan dari ahli...",
+      "link": "/newtriens-app-design/",
+      "slug": "newtriens-app-design",
+      "image": "/wp-content/uploads/2025/07/3-5.png"
+    },
+    {
+      "title": "Logo Design",
+      "title_en": "Logo Design",
+      "title_id": "Desain Logo",
+      "description": "Developed a visual identity through a logo that captures the brand’s core values with clarity, and meaning...",
+      "description_en": "Developed a visual identity through a logo that captures the brand’s core values with clarity, and meaning...",
+      "description_id": "Mengembangkan identitas visual melalui logo yang menangkap nilai-nilai inti merek dengan kejelasan dan makna...",
+      "link": "/logo-design/",
+      "slug": "logo-design",
+      "image": "/wp-content/uploads/2025/07/7-1.png"
+    },
+    {
+      "title": "Poster Design",
+      "title_en": "Poster Design",
+      "title_id": "Desain Poster",
+      "description": "Turning information into visuals. Clear, concise, and compelling infographic posters for all audiences...",
+      "description_en": "Turning information into visuals. Clear, concise, and compelling infographic posters for all audiences...",
+      "description_id": "Mengubah informasi menjadi visual. Poster infografis yang jelas, ringkas, dan menarik untuk semua kalangan...",
+      "link": "/poster-design/",
+      "slug": "poster-design",
+      "image": "/wp-content/uploads/2025/07/1-1.png"
+    },
+    {
+      "title": "Social Media Design",
+      "title_en": "Social Media Design",
+      "title_id": "Desain Media Sosial",
+      "description": "Designed social media visuals that combine branding, clarity, and engagement across platforms...",
+      "description_en": "Designed social media visuals that combine branding, clarity, and engagement across platforms...",
+      "description_id": "Merancang visual media sosial yang menggabungkan branding, kejelasan, dan keterlibatan di berbagai platform...",
+      "link": "/social-media-design/",
+      "slug": "social-media-design",
+      "image": "/wp-content/uploads/2025/07/8-1.png"
+    },
+    {
+      "title": "ShareSkill App Design",
+      "title_en": "ShareSkill App Design",
+      "title_id": "Desain Aplikasi ShareSkill",
+      "description": "Designed a skill-sharing app that connects individuals through mutual learning and personal growth...",
+      "description_en": "Designed a skill-sharing app that connects individuals through mutual learning and personal growth...",
+      "description_id": "Merancang aplikasi berbagi keahlian yang menghubungkan individu melalui pembelajaran bersama dan pertumbuhan pribadi...",
+      "link": "/shareskill/",
+      "slug": "shareskill",
+      "image": "/wp-content/uploads/2025/07/2-5.png"
+    },
+    {
+      "title": "Makaragus Library",
+      "title_en": "Makaragus Library",
+      "title_id": "Perpustakaan Makaragus",
+      "description": "A digital library platform with smart borrowing, categorized collections, and full database integration...",
+      "description_en": "A digital library platform with smart borrowing, categorized collections, and full database integration...",
+      "description_id": "Platform perpustakaan digital dengan peminjaman pintar, koleksi berkategori, dan integrasi database penuh...",
+      "link": "/makaragus-library/",
+      "slug": "makaragus-library",
+      "image": "/wp-content/uploads/2025/07/5-1.png"
+    },
+    {
+      "title": "Organization Website",
+      "title_en": "Organization Website",
+      "title_id": "Situs Web Organisasi",
+      "description": "Responsive WordPress site for showcasing structure, programs, and activities with clean layout and navigation...",
+      "description_en": "Responsive WordPress site for showcasing structure, programs, and activities with clean layout and navigation...",
+      "description_id": "Situs WordPress responsif untuk menampilkan struktur, program, dan aktivitas dengan tata letak dan navigasi yang bersih...",
+      "link": "/organization-website/",
+      "slug": "organization-website",
+      "image": "/wp-content/uploads/2025/07/bem.png"
+    },
+    {
+      "title": "Velosta Marketplace",
+      "title_en": "Velosta Marketplace",
+      "title_id": "Marketplace Velosta",
+      "description": "A responsive shoe marketplace with brand-based filtering, seamless transactions, and full database integration...",
+      "description_en": "A responsive shoe marketplace with brand-based filtering, seamless transactions, and full database integration...",
+      "description_id": "Marketplace sepatu responsif dengan penyaringan berbasis merek, transaksi mulus, dan integrasi database penuh...",
+      "link": "/velosta-web/",
+      "slug": "velosta-web",
+      "image": "/wp-content/uploads/2025/07/4-3.png"
+    },
+    {
+      "title": "Arvenia Shop Website",
+      "title_en": "Arvenia Shop Website",
+      "title_id": "Situs Web Toko Arvenia",
+      "description": "Responsive WordPress site for showcasing structure, programs, and activities with clean layout and navigation...",
+      "description_en": "Responsive WordPress site for showcasing structure, programs, and activities with clean layout and navigation...",
+      "description_id": "Situs WordPress responsif untuk menampilkan struktur, program, dan aktivitas dengan tata letak dan navigasi yang bersih...",
+      "link": "/arvenia-shop-website/",
+      "slug": "arvenia-shop-website",
+      "image": "/wp-content/uploads/2025/08/Arvenia-Web.png"
+    }
+  ],
+  "visual_design": [
+    {
+      "title": "Social Media Design",
+      "title_en": "Social Media Design",
+      "title_id": "Desain Media Sosial",
+      "description": "Designed social media visuals that combine branding, clarity, and engagement across platforms...",
+      "description_en": "Designed social media visuals that combine branding, clarity, and engagement across platforms...",
+      "description_id": "Merancang visual media sosial yang menggabungkan branding, kejelasan, dan keterlibatan di berbagai platform...",
+      "link": "/social-media-design/",
+      "slug": "social-media-design",
+      "image": "/wp-content/uploads/2025/07/8-1.png"
+    },
+    {
+      "title": "Poster Design",
+      "title_en": "Poster Design",
+      "title_id": "Desain Poster",
+      "description": "Turning information into visuals. Clear, concise, and compelling infographic posters for all audiences...",
+      "description_en": "Turning information into visuals. Clear, concise, and compelling infographic posters for all audiences...",
+      "description_id": "Mengubah informasi menjadi visual. Poster infografis yang jelas, ringkas, dan menarik untuk semua kalangan...",
+      "link": "/poster-design/",
+      "slug": "poster-design",
+      "image": "/wp-content/uploads/2025/07/1-1.png"
+    },
+    {
+      "title": "Logo Design",
+      "title_en": "Logo Design",
+      "title_id": "Desain Logo",
+      "description": "Developed a visual identity through a logo that captures the brand’s core values with clarity, and meaning...",
+      "description_en": "Developed a visual identity through a logo that captures the brand’s core values with clarity, and meaning...",
+      "description_id": "Mengembangkan identitas visual melalui logo yang menangkap nilai-nilai inti merek dengan kejelasan dan makna...",
+      "link": "/logo-design/",
+      "slug": "logo-design",
+      "image": "/wp-content/uploads/2025/07/7-1.png"
+    },
+    {
+      "title": "ShareSkill App - UI Design",
+      "title_en": "ShareSkill App - UI Design",
+      "title_id": "Aplikasi ShareSkill - Desain UI",
+      "description": "Designed a skill-sharing app that connects individuals through mutual learning and personal growth...",
+      "description_en": "Designed a skill-sharing app that connects individuals through mutual learning and personal growth...",
+      "description_id": "Merancang aplikasi berbagi keahlian yang menghubungkan individu melalui pembelajaran bersama dan pertumbuhan pribadi...",
+      "link": "/shareskill/",
+      "slug": "shareskill",
+      "image": "/wp-content/uploads/2025/07/2-5.png"
+    },
+    {
+      "title": "Newtriens App - UI Design",
+      "title_en": "Newtriens App - UI Design",
+      "title_id": "Aplikasi Newtriens - Desain UI",
+      "description": "A health app for ordering nutritious meals, tracking calories, and accessing expert wellness advice...",
+      "description_en": "A health app for ordering nutritious meals, tracking calories, and accessing expert wellness advice...",
+      "description_id": "Aplikasi kesehatan untuk memesan makanan bergizi, melacak kalori, dan mengakses saran kesehatan dari ahli...",
+      "link": "/newtriens-app-design/",
+      "slug": "newtriens-app-design",
+      "image": "/wp-content/uploads/2025/07/3-5.png"
+    },
+    {
+      "title": "Rumah Kedua App - UI Design",
+      "title_en": "Rumah Kedua App - UI Design",
+      "title_id": "Aplikasi Rumah Kedua - Desain UI",
+      "description": "An integrated mental defense ecosystem designed to combat bullying and school violence through anonymous reporting and real-time intervention...",
+      "description_en": "An integrated mental defense ecosystem designed to combat bullying and school violence through anonymous reporting and real-time intervention...",
+      "description_id": "Ekosistem pertahanan mental terintegrasi yang dirancang untuk memerangi perundungan dan kekerasan sekolah melalui pelaporan anonim dan intervensi waktu nyata...",
+      "link": "/rumah-kedua/",
+      "slug": "rumah-kedua",
+      "image": "/wp-content/uploads/2025/07/lapor.png"
+    },
+    {
+      "title": "FundEx Web - ReDesign",
+      "title_en": "FundEx Web - ReDesign",
+      "title_id": "Redesain Web FundEx",
+      "description": "UI/UX redesign for FundEx, focused on improving clarity, trust, and user flow for new investors...",
+      "description_en": "UI/UX redesign for FundEx, focused on improving clarity, trust, and user flow for new investors...",
+      "description_id": "Redesain UI/UX untuk FundEx, berfokus pada peningkatan kejelasan, kepercayaan, dan alur pengguna bagi investor baru...",
+      "link": "/fundex-wesbsite-redesign/",
+      "slug": "fundex-wesbsite-redesign",
+      "image": "/wp-content/uploads/2025/07/2-3.png"
+    }
+  ],
+  "website": [
+    {
+      "title": "PlayForCalm - Logic Arcade Game",
+      "title_en": "PlayForCalm - Logic Arcade Game",
+      "title_id": "PlayForCalm - Game Arkade Logika",
+      "description": "A mental-clarity focused game suite. Featuring a custom-built Sudoku engine designed to train focus and logic in a minimal, zen environment.Tech Stack:React 15, JavaScript (Pure Logic), CSS3.",
+      "description_en": "A mental-clarity focused game suite. Featuring a custom-built Sudoku engine designed to train focus and logic in a minimal, zen environment.Tech Stack:React 15, JavaScript (Pure Logic), CSS3.",
+      "description_id": "Seri game yang berfokus pada kejelasan mental. Menampilkan mesin Sudoku khusus yang dirancang untuk melatih fokus dan logika dalam lingkungan minimalis bernuansa zen.Tech Stack:React 15, JavaScript (Pure Logic), CSS3.",
+      "link": "/playforcalm/",
+      "slug": "playforcalm",
+      "image": "/wp-content/uploads/2025/07/1-4.png"
+    },
+    {
+      "title": "ZeroCloud - Local Image Suite",
+      "title_en": "ZeroCloud - Local Image Suite",
+      "title_id": "ZeroCloud - Utilitas Gambar Lokal",
+      "description": "Privacy-first image processing tool. Perform bulk compression and optimization directly in the browser without ever uploading data to a server.Tech Stack:Nuxt 3, Web Workers API, Tailwind CSS.",
+      "description_en": "Privacy-first image processing tool. Perform bulk compression and optimization directly in the browser without ever uploading data to a server.Tech Stack:Nuxt 3, Web Workers API, Tailwind CSS.",
+      "description_id": "Alat pemrosesan gambar yang mengutamakan privasi. Lakukan kompresi dan optimalisasi massal langsung di peramban tanpa mengunggah data ke server.Tech Stack:Nuxt 3, Web Workers API, Tailwind CSS.",
+      "link": "/zerocloud/",
+      "slug": "zerocloud",
+      "image": "/wp-content/uploads/2025/07/4-1.png"
+    },
+    {
+      "title": "EstimateScopeAI - Smart Auditor",
+      "title_en": "EstimateScopeAI - Smart Auditor",
+      "title_id": "EstimateScopeAI - Auditor Pintar",
+      "description": "An enterprise-grade tool for project estimation and auditing. Leveraging AI to analyze complexity and provide precise development scopes.Tech Stack:.NET 8, Angular 19, Gemini AI API.",
+      "description_en": "An enterprise-grade tool for project estimation and auditing. Leveraging AI to analyze complexity and provide precise development scopes.Tech Stack:.NET 8, Angular 19, Gemini AI API.",
+      "description_id": "Alat kelas perusahaan untuk estimasi dan audit proyek. Memanfaatkan AI untuk menganalisis kompleksitas dan memberikan ruang lingkup pengembangan yang tepat.Tech Stack:.NET 8, Angular 19, Gemini AI API.",
+      "link": "/estimatescopeai/",
+      "slug": "estimatescopeai",
+      "image": "/wp-content/uploads/2025/07/8-2.png"
+    },
+    {
+      "title": "Sharesa Digital - Agency Suite",
+      "title_en": "Sharesa Digital - Agency Suite",
+      "title_id": "Sharesa Digital - Solusi Agensi",
+      "description": "A high-performance platform for digital agencies. Managed portfolio and client intake system with a focus on speed and seamless integrations.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
+      "description_en": "A high-performance platform for digital agencies. Managed portfolio and client intake system with a focus on speed and seamless integrations.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
+      "description_id": "Platform berkinerja tinggi untuk agensi digital. Sistem manajemen portofolio dan penerimaan klien yang berfokus pada kecepatan dan integrasi yang mulus.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
+      "link": "/sharesa-digital/",
+      "slug": "sharesa-digital",
+      "image": "/wp-content/uploads/2025/07/12-2.png"
+    },
+    {
+      "title": "KarsaChain - Eternal Archive Web3",
+      "title_en": "KarsaChain - Eternal Archive Web3",
+      "title_id": "KarsaChain - Arsip Abadi Web3",
+      "description": "A decentralized asset storage solution ensuring data immortality. Features secure blockchain-based archiving with IPFS for tamper-proof records.Tech Stack:Solidity, Ethereum/Polygon, Next.js 15, IPFS.",
+      "description_en": "A decentralized asset storage solution ensuring data immortality. Features secure blockchain-based archiving with IPFS for tamper-proof records.Tech Stack:Solidity, Ethereum/Polygon, Next.js 15, IPFS.",
+      "description_id": "Solusi penyimpanan aset terdesentralisasi untuk memastikan keabadian data. Menampilkan pengarsipan berbasis blockchain yang aman dengan IPFS untuk catatan tahan rusak.Tech Stack:Solidity, Ethereum/Polygon, Next.js 15, IPFS.",
+      "link": "/karsachain/",
+      "slug": "karsachain",
+      "image": "/wp-content/uploads/2025/07/16.png"
+    },
+    {
+      "title": "DopaMind - Productivity OS Tracker",
+      "title_en": "DopaMind - Productivity OS Tracker",
+      "title_id": "DopaMind - Pelacak OS Produktivitas",
+      "description": "A holistic personal growth platform integrating finance tracking, atomic habits, and intentional planning into a seamless Modern Monolith experience.Tech Stack:Laravel 11, Vue 3, Inertia.js, Tailwind CSS.",
+      "description_en": "A holistic personal growth platform integrating finance tracking, atomic habits, and intentional planning into a seamless Modern Monolith experience.Tech Stack:Laravel 11, Vue 3, Inertia.js, Tailwind CSS.",
+      "description_id": "Platform pertumbuhan pribadi holistik yang mengintegrasikan pelacakan keuangan, kebiasaan atom, dan perencanaan terarah ke dalam pengalaman Modern Monolith yang mulus.Tech Stack:Laravel 11, Vue 3, Inertia.js, Tailwind CSS.",
+      "link": "/dopamind/",
+      "slug": "dopamind",
+      "image": "/wp-content/uploads/2025/07/20.png"
+    },
+    {
+      "title": "Makaragus Library",
+      "title_en": "Makaragus Library",
+      "title_id": "Perpustakaan Makaragus",
+      "description": "A digital library platform with smart borrowing, categorized collections, and full database integration...",
+      "description_en": "A digital library platform with smart borrowing, categorized collections, and full database integration...",
+      "description_id": "Platform perpustakaan digital dengan peminjaman pintar, koleksi berkategori, dan integrasi database penuh...",
+      "link": "/makaragus-library/",
+      "slug": "makaragus-library",
+      "image": "/wp-content/uploads/2025/07/5-1.png"
+    },
+    {
+      "title": "Velosta Marketplace",
+      "title_en": "Velosta Marketplace",
+      "title_id": "Marketplace Velosta",
+      "description": "A responsive shoe marketplace with brand-based filtering, seamless transactions, and full database integration...",
+      "description_en": "A responsive shoe marketplace with brand-based filtering, seamless transactions, and full database integration...",
+      "description_id": "Marketplace sepatu responsif dengan penyaringan berbasis merek, transaksi mulus, dan integrasi database penuh...",
+      "link": "/velosta-web/",
+      "slug": "velosta-web",
+      "image": "/wp-content/uploads/2025/07/4-3.png"
+    },
+    {
+      "title": "Organization Website",
+      "title_en": "Organization Website",
+      "title_id": "Situs Web Organisasi",
+      "description": "Responsive WordPress site for showcasing structure, programs, and activities with clean layout and navigation...",
+      "description_en": "Responsive WordPress site for showcasing structure, programs, and activities with clean layout and navigation...",
+      "description_id": "Situs WordPress responsif untuk menampilkan struktur, program, dan aktivitas dengan tata letak dan navigasi yang bersih...",
+      "link": "/organization-website/",
+      "slug": "organization-website",
+      "image": "/wp-content/uploads/2025/11/20.png"
+    },
+    {
+      "title": "Arvenia Shop Website",
+      "title_en": "Arvenia Shop Website",
+      "title_id": "Situs Web Toko Arvenia",
+      "description": "Arvenia Shop is a digital-focused e-commerce website built with WordPress, WooCommerce, and Elementor Pro...",
+      "description_en": "Arvenia Shop is a digital-focused e-commerce website built with WordPress, WooCommerce, and Elementor Pro...",
+      "description_id": "Arvenia Shop adalah situs web e-commerce berfokus digital yang dibangun dengan WordPress, WooCommerce, dan Elementor Pro...",
+      "link": "/arvenia-shop-website/",
+      "slug": "arvenia-shop-website",
+      "image": "/wp-content/uploads/2025/11/25.png"
+    },
+    {
+      "title": "UMKM Sukatani Website",
+      "title_en": "UMKM Sukatani Website",
+      "title_id": "Situs Web UMKM Sukatani",
+      "description": "Responsive WordPress site for showcasing local businesses, community news, and a full front-end admin system…",
+      "description_en": "Responsive WordPress site for showcasing local businesses, community news, and a full front-end admin system…",
+      "description_id": "Situs WordPress responsif untuk menampilkan bisnis lokal, berita komunitas, dan sistem admin front-end yang lengkap…",
+      "link": "/umkm-sukatani-website/",
+      "slug": "umkm-sukatani-website",
+      "image": "/wp-content/uploads/2025/11/30.png"
+    },
+    {
+      "title": "Multi-Asset Investment Analysis (2022–2024)",
+      "title_en": "Multi-Asset Investment Analysis (2022–2024)",
+      "title_id": "Analisis Investasi Multi-Aset (2022–2024)",
+      "description": "A data-driven analysis comparing 50+ assets across global markets, built with Python scraping and multi-asset performance metrics.",
+      "description_en": "A data-driven analysis comparing 50+ assets across global markets, built with Python scraping and multi-asset performance metrics.",
+      "description_id": "Analisis berbasis data yang membandingkan lebih dari 50 aset di pasar global, dibangun dengan scraping Python dan metrik kinerja multi-aset.",
+      "link": "/multi-asset-investment-analysis/",
+      "slug": "multi-asset-investment-analysis",
+      "image": "/wp-content/uploads/2025/07/Screenshot-2025-11-14-184625.png"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend Ecosystem",
+      "items": [
+        {
+          "name": "React 19",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+          "name": "Next.js 15",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+        },
+        {
+          "name": "Vue 3",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+        },
+        {
+          "name": "Nuxt 3",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg"
+        },
+        {
+          "name": "Angular 19",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+        },
+        {
+          "name": "Tailwind",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        }
+      ]
+    },
+    {
+      "category": "Backend, AI & Web3",
+      "items": [
+        {
+          "name": "Laravel 11",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+        },
+        {
+          "name": ".NET 8",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+        },
+        {
+          "name": "Node.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        },
+        {
+          "name": "PHP",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+        },
+        {
+          "name": "Solidity",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
+        },
+        {
+          "name": "IPFS",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ipfs-logo-1024-ice-text.png"
+        },
+        {
+          "name": "Gemini AI",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg"
+        }
+      ]
+    },
+    {
+      "category": "Database & Infrastructure",
+      "items": [
+        {
+          "name": "MySQL",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+        },
+        {
+          "name": "Supabase",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+        },
+        {
+          "name": "Firebase",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+        },
+        {
+          "name": "Docker",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+        }
+      ]
+    },
+    {
+      "category": "Creative & Tools",
+      "items": [
+        {
+          "name": "Figma",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+        },
+        {
+          "name": "Canva",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+        },
+        {
+          "name": "WordPress",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+        },
+        {
+          "name": "Git",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+        },
+        {
+          "name": "VS Code",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+        },
+        {
+          "name": "Postman",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+        }
+      ]
+    }
+  ]
+}

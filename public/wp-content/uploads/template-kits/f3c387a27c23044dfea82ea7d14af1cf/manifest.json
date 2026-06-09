@@ -1,0 +1,927 @@
+{
+    "manifest_version": "1.0.20",
+    "title": "Urbanisty",
+    "page_builder": "elementor",
+    "kit_version": "1.0.1",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.png",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact Us",
+            "screenshot": "screenshots\/contact-us.png",
+            "source": "templates\/contact-us.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/template-kit\/contact-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "About Us",
+            "screenshot": "screenshots\/about-us.png",
+            "source": "templates\/about-us.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/template-kit\/about-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home 3",
+            "screenshot": "screenshots\/home-3.png",
+            "source": "templates\/home-3.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/template-kit\/home-3\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home 2",
+            "screenshot": "screenshots\/home-2.png",
+            "source": "templates\/home-2.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/template-kit\/home-2\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home 1",
+            "screenshot": "screenshots\/home-1.png",
+            "source": "templates\/home-1.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/template-kit\/home-1\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "popup",
+            "screenshot": "screenshots\/popup.png",
+            "source": "templates\/popup.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/?elementor_library=popup",
+            "type": "popup",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-popup",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "popup",
+                "elementor_pro_conditions": [
+                    "include\/singular\/front_page"
+                ],
+                "additional_template_information": [
+                    "This is a \"Popup\" template for Elementor Pro.",
+                    "This template will display on: Front Page."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Single Post",
+            "screenshot": "screenshots\/single-post.png",
+            "source": "templates\/single-post.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/?elementor_library=single-post",
+            "type": "single-post",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single-post",
+                "elementor_pro_conditions": [
+                    "include\/singular\/post"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single Post\" template for Elementor Pro.",
+                    "This template will display on: Posts."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Blog Archive",
+            "screenshot": "screenshots\/blog-archive.png",
+            "source": "templates\/blog-archive.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/?elementor_library=blog",
+            "type": "archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-blog",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "archive",
+                "elementor_pro_conditions": [
+                    "include\/archive\/post_archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Archive\" template for Elementor Pro.",
+                    "This template will display on: Posts Archive."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Single Product",
+            "screenshot": "screenshots\/single-product.png",
+            "source": "templates\/single-product.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/?elementor_library=single-product",
+            "type": "product",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product",
+                "elementor_pro_conditions": [
+                    "include\/product"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product\" template for Elementor Pro.",
+                    "This template will display on: Products."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Shop Page",
+            "screenshot": "screenshots\/shop-page.png",
+            "source": "templates\/shop-page.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/?elementor_library=shop-page",
+            "type": "product-archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-product",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "product-archive",
+                "elementor_pro_conditions": [
+                    "include\/product_archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Product Archive\" template for Elementor Pro.",
+                    "This template will display on: All Product Archives."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Error 404",
+            "screenshot": "screenshots\/error-404.png",
+            "source": "templates\/error-404.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/?elementor_library=error-404",
+            "type": "error-404",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-404",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "error-404",
+                "elementor_pro_conditions": [
+                    "include\/singular\/not_found404"
+                ],
+                "additional_template_information": [
+                    "This is a \"Error 404\" template for Elementor Pro.",
+                    "This template will display on: 404 Page."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.png",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/?elementor_library=footer",
+            "type": "footer",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "footer",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Footer\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.png",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/?elementor_library=header",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Essential Addons for Elementor",
+            "version": "4.9.3",
+            "file": "essential-addons-for-elementor-lite\/essential_adons_elementor.php",
+            "author": "WPDeveloper"
+        },
+        {
+            "name": "ShopEngine",
+            "version": "1.2.1",
+            "file": "shopengine\/shopengine.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "WooCommerce",
+            "version": "5.7.1",
+            "file": "woocommerce\/woocommerce.php",
+            "author": "Automattic"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.4.4",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor Pro",
+            "version": "3.4.1",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "shop-assistant-helping-man.jpg",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/shop-assistant-helping-man-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 415269,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-8WM2DXC"
+        },
+        {
+            "filename": "Frame-34.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/Frame-34.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 161515,
+            "dimensions": [
+                650,
+                650
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/shopping-YA23LFT"
+        },
+        {
+            "filename": "Frame-35.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/Frame-35.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 115063,
+            "dimensions": [
+                500,
+                500
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/fashionable-young-woman-shopping-at-boutique-3XP2YTL"
+        },
+        {
+            "filename": "closeup-portrait-of-young-fair-haired-woman-on-yellow.jpg",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/closeup-portrait-of-young-fair-haired-woman-on-yellow-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                }
+            ],
+            "filesize": 230598,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-FZ6MCW3"
+        },
+        {
+            "filename": "woman.jpg",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/woman-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                }
+            ],
+            "filesize": 311045,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-UXU8DBN"
+        },
+        {
+            "filename": "logo-5.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/logo-5-800x450.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                }
+            ],
+            "filesize": 56824,
+            "dimensions": [
+                2000,
+                1125
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-6.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/logo-6-800x450.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                }
+            ],
+            "filesize": 47255,
+            "dimensions": [
+                2000,
+                1125
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-7.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/logo-7-800x450.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                }
+            ],
+            "filesize": 58531,
+            "dimensions": [
+                2000,
+                1125
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-8.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/logo-8-800x450.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                }
+            ],
+            "filesize": 56938,
+            "dimensions": [
+                2000,
+                1125
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-9.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/logo-9-800x450.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                }
+            ],
+            "filesize": 63973,
+            "dimensions": [
+                2000,
+                1125
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "handsome-relaxed-man-in-suglasses-sitting-on-the-c-P6HN5FG.png.jpg-1.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/handsome-relaxed-man-in-suglasses-sitting-on-the-c-P6HN5FG.png.jpg-1-800x1411.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/popup.json",
+                    "name": "popup"
+                },
+                {
+                    "source": "templates\/error-404.json",
+                    "name": "Error 404"
+                }
+            ],
+            "filesize": 536511,
+            "dimensions": [
+                1373,
+                2422
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-P6HN5FG"
+        },
+        {
+            "filename": "wallet.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/wallet.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/single-product.json",
+                    "name": "Single Product"
+                }
+            ],
+            "filesize": 1112,
+            "dimensions": [
+                50,
+                50
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/e-commerce-icon-set-4V9A3K3"
+        },
+        {
+            "filename": "free-delivery.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/free-delivery.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/single-product.json",
+                    "name": "Single Product"
+                }
+            ],
+            "filesize": 1137,
+            "dimensions": [
+                50,
+                50
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/e-commerce-icon-set-4V9A3K3"
+        },
+        {
+            "filename": "discount.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/discount.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/single-product.json",
+                    "name": "Single Product"
+                }
+            ],
+            "filesize": 1551,
+            "dimensions": [
+                50,
+                50
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/e-commerce-icon-set-4V9A3K3"
+        },
+        {
+            "filename": "customer-service.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/customer-service.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/single-product.json",
+                    "name": "Single Product"
+                }
+            ],
+            "filesize": 1728,
+            "dimensions": [
+                50,
+                50
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/e-commerce-icon-set-4V9A3K3"
+        },
+        {
+            "filename": "straw-beach-woman-s-hat-sun-glasses-summer-time-vacation-concept-travel-mood-to-the-sea-.jpg",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/straw-beach-woman-s-hat-sun-glasses-summer-time-vacation-concept-travel-mood-to-the-sea--800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                }
+            ],
+            "filesize": 277217,
+            "dimensions": [
+                2000,
+                1333
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-7VGGLFU"
+        },
+        {
+            "filename": "attractive-young-man-in-hat-and-sunglasses-drinkin-PNXJZE6.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/attractive-young-man-in-hat-and-sunglasses-drinkin-PNXJZE6-800x873.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/popup.json",
+                    "name": "popup"
+                }
+            ],
+            "filesize": 510421,
+            "dimensions": [
+                1373,
+                1498
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PNXJZE6"
+        },
+        {
+            "filename": "happy-and-carefree-childhood-playful-and-fidgety-b-3SWEN45-1.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/happy-and-carefree-childhood-playful-and-fidgety-b-3SWEN45-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                }
+            ],
+            "filesize": 320844,
+            "dimensions": [
+                646,
+                584
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-3SWEN45"
+        },
+        {
+            "filename": "summer-travel-vacation-concept-striped-hat-and-sunglasses-on-yellow-.jpg",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/summer-travel-vacation-concept-striped-hat-and-sunglasses-on-yellow--800x267.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                }
+            ],
+            "filesize": 168332,
+            "dimensions": [
+                2000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-N74ULQD"
+        },
+        {
+            "filename": "Sport_Watch_Generic.G15.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/Sport_Watch_Generic.G15-800x800.png",
+            "templates": [
+                {
+                    "source": "templates\/home-3.json",
+                    "name": "Home 3"
+                },
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                }
+            ],
+            "filesize": 464737,
+            "dimensions": [
+                1024,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/sport-watch-generic-GK3LTFS"
+        },
+        {
+            "filename": "asian-excited-nice-girl-with-headphones-using-mobi-ELN93UC-1.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/10\/asian-excited-nice-girl-with-headphones-using-mobi-ELN93UC-1-800x891.png",
+            "templates": [
+                {
+                    "source": "templates\/home-2.json",
+                    "name": "Home 2"
+                }
+            ],
+            "filesize": 249119,
+            "dimensions": [
+                909,
+                1012
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-ELN93UC"
+        },
+        {
+            "filename": "Monochrome-Headphones.H03.2k.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/Monochrome-Headphones.H03.2k-800x800.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                }
+            ],
+            "filesize": 433632,
+            "dimensions": [
+                2048,
+                2048
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/monochrome-headphones-TBDC75"
+        },
+        {
+            "filename": "woman-fashion-dress-blonde-hair-beauty-portrait-4SY3AJV.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/woman-fashion-dress-blonde-hair-beauty-portrait-4SY3AJV-800x873.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                }
+            ],
+            "filesize": 420024,
+            "dimensions": [
+                1373,
+                1498
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-4SY3AJV"
+        },
+        {
+            "filename": "Mens-Polo-Shirt.H01-1.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/Mens-Polo-Shirt.H01-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 143984,
+            "dimensions": [
+                635,
+                658
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/mens-polo-shirt-9E5P9ME"
+        },
+        {
+            "filename": "Hat.H03.2k.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/Hat.H03.2k-800x800.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                }
+            ],
+            "filesize": 696277,
+            "dimensions": [
+                2048,
+                2048
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/hat-KVXCUT8"
+        },
+        {
+            "filename": "Frame-28.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/Frame-28.png",
+            "templates": [
+                {
+                    "source": "templates\/home-1.json",
+                    "name": "Home 1"
+                }
+            ],
+            "filesize": 20524,
+            "dimensions": [
+                300,
+                300
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/black-sunglass-ER8ATGM"
+        },
+        {
+            "filename": "URBANisty.png",
+            "thumbnail_url": "https:\/\/tpkit.colllabstudio.com\/urbanisty\/wp-content\/uploads\/sites\/13\/2021\/09\/URBANisty.png",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                },
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                }
+            ],
+            "filesize": 6163,
+            "dimensions": [
+                480,
+                92
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        }
+    ]
+}
