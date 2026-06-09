@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import portfolioData from "../data/portfolio.json";
+import AIChatBot from "./components/AIChatBot";
 
 // Type structures for robust compilation
 interface PortfolioItem {
@@ -60,8 +61,8 @@ const SKILL_PROFICIENCY_MAP: Record<string, number> = {
 const TRANSLATIONS = {
   en: {
     ready: "Ready for New Opportunities",
-    hero_title_1: "Architecting Intelligent",
-    hero_title_2: "AI-Driven Solutions",
+    hero_title_1: "Hi, I'm Architecting",
+    hero_title_2: "Intelligent AI Solutions",
     hero_title_3: "With Seamless Automation",
     hero_desc: "Hi! I am Khairan Noor Fadhlillah, a Hybrid Developer and AI Specialist. I build high-performance 24/7 AI agents, social media automations, and deep LLM integrations to transform complex workflows into scalable digital assets.",
     get_in_touch: "Contact Me",
@@ -116,7 +117,7 @@ const TRANSLATIONS = {
   },
   id: {
     ready: "Siap untuk Peluang Baru",
-    hero_title_1: "Arsitektur Solusi",
+    hero_title_1: "Hi, Arsitektur Solusi",
     hero_title_2: "Berbasis AI Cerdas",
     hero_title_3: "Dengan Otomatisasi Mulus",
     hero_desc: "Hai! Saya Khairan Noor Fadhlillah, seorang Hybrid Developer dan Spesialis AI. Saya membangun agen AI 24/7 yang berkinerja tinggi, otomatisasi media sosial, dan integrasi LLM mendalam untuk mengubah alur kerja kompleks menjadi aset digital yang skalabel.",
@@ -968,6 +969,9 @@ export default function Home() {
         <p>© {new Date().getFullYear()} Khairan Noor Fadhlillah. {TRANSLATIONS[lang].all_rights}</p>
         <p>{TRANSLATIONS[lang].footer_alternative}</p>
       </footer>
+
+      {/* AI Assistant */}
+      <AIChatBot lang={lang} />
     </div>
   );
 }

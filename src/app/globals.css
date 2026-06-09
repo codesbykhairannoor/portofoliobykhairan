@@ -21,19 +21,31 @@
 
 /* HIGH END PREMIUM LIGHT MODE OVERRIDES */
 html.light, body.light, .light {
-  --bg-dark: #f8fafc;
-  --bg-card: rgba(255, 255, 255, 0.75);
-  --border-glass: rgba(15, 23, 42, 0.06);
-  --border-glass-hover: rgba(13, 148, 136, 0.2);
+  --bg-dark: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --border-glass: rgba(15, 23, 42, 0.12);
+  --border-glass-hover: rgba(13, 148, 136, 0.4);
   --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
   
-  --neon-cyan: #0d9488; /* Deep Teal for high readability and premium feel */
-  --neon-cyan-glow: rgba(13, 148, 136, 0.2);
-  --neon-cyan-dim: rgba(13, 148, 136, 0.08);
-  --neon-violet: #6366f1; /* Deep Indigo */
-  --neon-violet-glow: rgba(99, 102, 241, 0.2);
+  --neon-cyan: #0d9488; 
+  --neon-cyan-glow: rgba(13, 148, 136, 0.3);
+  --neon-cyan-dim: rgba(13, 148, 136, 0.15);
+  --neon-violet: #4f46e5;
+  --neon-violet-glow: rgba(79, 70, 229, 0.3);
+}
+
+html.light p, html.light span, html.light li {
+  font-weight: 500; /* Thicker text for light mode */
+}
+
+html.light h1, html.light h2, html.light h3 {
+  font-weight: 800;
+}
+
+html.light .custom-hero-title {
+  font-weight: 900;
 }
 
 body {
@@ -148,7 +160,8 @@ html.light .glass-panel {
 
 html.light .btn-neon {
   color: #ffffff !important;
-  box-shadow: 0 4px 15px var(--neon-cyan-glow);
+  font-weight: 800;
+  box-shadow: 0 8px 20px var(--neon-cyan-glow);
 }
 
 .btn-neon:hover {
