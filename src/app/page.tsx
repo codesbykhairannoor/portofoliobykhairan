@@ -348,15 +348,23 @@ export default function Home() {
 
       {/* Floating Header */}
       <header className="fixed top-6 left-0 right-0 z-50 px-4 md:px-8">
-        <div className="max-w-5xl mx-auto glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-white/5 backdrop-blur-xl">
+        <div className="max-w-5xl mx-auto glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-white/5 backdrop-blur-xl relative">
           <div className="flex items-center gap-2">
             <a href="#home" className="text-lg md:text-xl font-black tracking-tighter text-[var(--text-primary)] select-none">
               Khairan<span className="text-[#50FFD9] glow-text">.tech</span>
             </a>
           </div>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8 text-xs font-bold tracking-wider text-gray-400">
+          {/* Desktop Navigation Links - Centered */}
+          <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-xs font-bold tracking-wider text-gray-400">
+            <a href="#home" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "home" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_home}</a>
+            <a href="#about" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "about" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_about}</a>
+            <a href="#portfolio" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "portfolio" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_portfolio}</a>
+            <a href="#contact" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "contact" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_contact}</a>
+          </nav>
+
+          {/* Fallback for smaller desktops where absolute centering might overlap */}
+          <nav className="hidden md:flex lg:hidden items-center gap-6 text-[10px] font-bold tracking-wider text-gray-400">
             <a href="#home" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "home" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_home}</a>
             <a href="#about" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "about" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_about}</a>
             <a href="#portfolio" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "portfolio" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_portfolio}</a>
@@ -375,6 +383,7 @@ export default function Home() {
               <span>{lang === "en" ? "EN" : "ID"}</span>
             </button>
 
+            {/* Theme Toggle Button */}
             <button 
               onClick={toggleTheme}
               className="w-10 h-10 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center hover:border-[#50FFD9]/30 text-gray-300 hover:text-[#50FFD9] transition-all focus:outline-none cursor-pointer"
@@ -399,7 +408,7 @@ export default function Home() {
                 </svg>
               )}
             </button>
-            <a href="#contact" className="btn-neon text-xs py-2 px-5 rounded-xl border border-transparent">
+            <a href="/#contact" className="btn-neon text-[9px] sm:text-xs py-2 px-3 sm:px-4.5 rounded-xl border border-transparent transition-all">
               {TRANSLATIONS[lang].lets_talk}
             </a>
           </div>
