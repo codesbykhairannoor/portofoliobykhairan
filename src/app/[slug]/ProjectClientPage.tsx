@@ -62,6 +62,7 @@ export default function ProjectClientPage({
   const [lang, setLang] = useState<"id" | "en">("id");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);
 
   // Load and synchronize theme on mount
   useEffect(() => {
@@ -196,8 +197,10 @@ export default function ProjectClientPage({
   const prevTitle = prevProject ? (lang === "en" ? (prevProject.title_en || prevProject.title) : (prevProject.title_id || prevProject.title)) : "";
   const nextTitle = nextProject ? (lang === "en" ? (nextProject.title_en || nextProject.title) : (nextProject.title_id || nextProject.title)) : "";
 
-  // Combine cover image and all extracted screenshots as a single immersive stage
-  const lightboxImages = images && images.length > 0 ? images : [coverImage];
+  // Use actual project screenshots (images) as slides directly. Fall back to coverImage if no screenshots exist.
+  const slides = (images && images.length > 0)
+    ? Array.from(new Set(images)).filter(Boolean)
+    : [coverImage].filter(Boolean);
 
   // Intercept click on inline figures inside the raw HTML to trigger the immersive Lightbox
   const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -205,13 +208,13 @@ export default function ProjectClientPage({
     if (target.tagName.toLowerCase() === "img") {
       const src = target.getAttribute("src");
       if (src) {
-        const index = lightboxImages.indexOf(src);
+        const index = slides.indexOf(src);
         if (index !== -1) {
           setLightboxIndex(index);
           setLightboxOpen(true);
         } else {
           // Fallback if not found
-          const updatedImages = [...lightboxImages];
+          const updatedImages = [...slides];
           if (!updatedImages.includes(src)) {
             updatedImages.push(src);
           }
@@ -248,7 +251,7 @@ export default function ProjectClientPage({
           <span className="text-[var(--text-secondary)] truncate">{activeTitle}</span>
         </nav>
 
-        {/* Compact Hero Header (Without cover image duplication) */}
+        {/* Compact Hero Header */}
         <section className="pb-4 border-b border-[var(--border-glass)] flex flex-col gap-3">
           <div className="inline-flex self-start items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[var(--bg-card)] border border-[var(--border-glass)] text-[9px] font-bold text-[#50FFD9] tracking-wider backdrop-blur-md shadow-sm">
             <span className="w-1 h-1 rounded-full bg-[#50FFD9] shadow-[0_0_6px_#50FFD9]"></span>
@@ -266,14 +269,105 @@ export default function ProjectClientPage({
           )}
         </section>
 
-        {/* Immersive Cover Image Showcase Header */}
-        <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl md:rounded-3xl overflow-hidden border border-[var(--border-glass)] bg-black/20 shadow-2xl">
-          <img 
-            src={coverImage} 
-            alt={activeTitle} 
-            className="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.015]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
+        {/* Immersive Interactive Slideshow Header with horizontal thumbnail previews */}
+        <div className="flex flex-col gap-3">
+          <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl md:rounded-3xl overflow-hidden border border-[var(--border-glass)] bg-black/30 shadow-2xl group/slider">
+            
+            {/* Main Slide Image Render */}
+            <div 
+              onClick={() => {
+                setLightboxIndex(activeSlide);
+                setLightboxOpen(true);
+              }}
+              className="w-full h-full cursor-zoom-in relative select-none overflow-hidden"
+            >
+              <img 
+                src={slides[activeSlide]} 
+                alt={`${activeTitle} Slide ${activeSlide + 1}`} 
+                className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.015]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+
+            {/* Slide Indicator Counter Pill (Top-Right) */}
+            {slides.length > 1 && (
+              <div className="absolute top-4 right-4 z-20 px-3 py-1.5 rounded-full bg-black/60 border border-white/5 text-[10px] font-black text-gray-300 backdrop-blur-md shadow-lg select-none">
+                <span className="text-[#50FFD9] glow-text">{activeSlide + 1}</span> / {slides.length}
+              </div>
+            )}
+
+            {/* Left Navigation Arrow */}
+            {slides.length > 1 && (
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
+                }}
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-black/50 border border-white/5 flex items-center justify-center text-white hover:text-[#50FFD9] hover:border-[#50FFD9]/30 hover:bg-black/75 transition-all opacity-0 group-hover/slider:opacity-100 cursor-pointer z-20 focus:outline-none backdrop-blur-sm"
+                aria-label="Previous Slide"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+            )}
+
+            {/* Right Navigation Arrow */}
+            {slides.length > 1 && (
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveSlide((prev) => (prev + 1) % slides.length);
+                }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-black/50 border border-white/5 flex items-center justify-center text-white hover:text-[#50FFD9] hover:border-[#50FFD9]/30 hover:bg-black/75 transition-all opacity-0 group-hover/slider:opacity-100 cursor-pointer z-20 focus:outline-none backdrop-blur-sm"
+                aria-label="Next Slide"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            )}
+
+            {/* Bottom Dots Strip */}
+            {slides.length > 1 && (
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 items-center bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/5">
+                {slides.map((_, idx) => (
+                  <button 
+                    key={idx}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveSlide(idx);
+                    }}
+                    className={`h-2 rounded-full transition-all cursor-pointer ${
+                      idx === activeSlide ? "bg-[#50FFD9] w-5 shadow-[0_0_8px_#50FFD9]" : "bg-white/30 w-2 hover:bg-white/65"
+                    }`}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  />
+                ))}
+              </div>
+            )}
+
+          </div>
+
+          {/* Compact Horizontal Thumbnail Row (No vertical stacking, extremely space-saving!) */}
+          {slides.length > 1 && (
+            <div className="flex gap-2 overflow-x-auto py-1 scrollbar-none snap-x snap-mandatory">
+              {slides.map((img, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveSlide(idx)}
+                  className={`relative aspect-[16/10] w-20 sm:w-24 rounded-lg overflow-hidden border transition-all shrink-0 snap-start cursor-pointer ${
+                    idx === activeSlide 
+                      ? "border-[#50FFD9] ring-1 ring-[#50FFD9]/50 shadow-[0_0_10px_rgba(80,255,217,0.2)] opacity-100 scale-[0.98]" 
+                      : "border-[var(--border-glass)] opacity-50 hover:opacity-100 hover:border-[#50FFD9]/30"
+                  }`}
+                  aria-label={`View slide ${idx + 1}`}
+                >
+                  <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Horizontal Metadata & Stack Dashboard Card */}
@@ -306,7 +400,7 @@ export default function ProjectClientPage({
           <article className="glass-panel p-5 sm:p-8 md:p-10 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl shadow-xl overflow-hidden relative">
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#50FFD9] to-violet-500"></div>
 
-            {/* Rendered HTML content from WordPress with native click-to-lightbox interceptor */}
+            {/* Rendered HTML content from WordPress */}
             <div 
               className="project-content-html text-sm leading-relaxed" 
               dangerouslySetInnerHTML={{ __html: localizedContent }} 
@@ -315,42 +409,7 @@ export default function ProjectClientPage({
           </article>
         </main>
 
-        {/* Compact Visual Assets Gallery at the bottom of the page */}
-        {lightboxImages && lightboxImages.length > 1 && (
-          <section className="glass-panel p-6 sm:p-8 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col gap-4">
-            <div className="flex flex-col gap-1">
-              <h3 className="text-xs font-black text-[var(--text-primary)] tracking-wider flex items-center gap-2 uppercase">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#50FFD9] shadow-[0_0_6px_#50FFD9]"></span>
-                {TEXTS[lang].visual_assets}
-              </h3>
-              <p className="text-[10px] font-bold text-[var(--text-muted)]">
-                {lang === "en" ? "Click any screenshot to enter full screen gallery view." : "Klik cuplikan gambar untuk masuk ke mode galeri layar penuh."}
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3.5 mt-2">
-              {lightboxImages.map((img, idx) => (
-                <div 
-                  key={idx}
-                  onClick={() => {
-                    setLightboxIndex(idx);
-                    setLightboxOpen(true);
-                  }}
-                  className="group relative aspect-video rounded-xl overflow-hidden border border-[var(--border-glass)] bg-black/25 hover:border-[#50FFD9]/30 hover:shadow-[0_0_12px_rgba(80,255,217,0.08)] transition-all duration-300 cursor-pointer"
-                >
-                  <img 
-                    src={img} 
-                    alt={`${activeTitle} screenshot ${idx + 1}`} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                    <span className="text-[9px] font-extrabold text-[#50FFD9] bg-black/60 px-3 py-1.5 rounded-lg border border-white/5 backdrop-blur-sm shadow-md">🔍 {TEXTS[lang].zoom_asset}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
+        {/* Gallery thumbnails removed and replaced by horizontal scrolling thumbnails above to save vertical space */}
 
         {/* Bottom Showcase Navigation Links */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -398,14 +457,14 @@ export default function ProjectClientPage({
       </div>
 
       {/* Immersive Lightbox Portal */}
-      {lightboxOpen && lightboxImages && lightboxImages.length > 0 && (
+      {lightboxOpen && slides && slides.length > 0 && (
         <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/95 backdrop-blur-md transition-all duration-300 animate-fade-in select-none">
           
           {/* Top Bar Details */}
           <div className="absolute top-6 left-6 right-6 flex items-center justify-between z-50">
             <div className="flex flex-col">
               <span className="text-xs font-black text-[#50FFD9] tracking-wider">{activeTitle}</span>
-              <span className="text-[11px] text-gray-400 font-bold">{TEXTS[lang].slide_text} {lightboxIndex + 1} {TEXTS[lang].of} {lightboxImages.length}</span>
+              <span className="text-[11px] text-gray-400 font-bold">{TEXTS[lang].slide_text} {lightboxIndex + 1} {TEXTS[lang].of} {slides.length}</span>
             </div>
             <button 
               onClick={() => setLightboxOpen(false)}
@@ -422,11 +481,11 @@ export default function ProjectClientPage({
           {/* Immersive Stage */}
           <div className="relative w-full max-w-5xl h-[70vh] flex items-center justify-center px-4 md:px-12">
             {/* Left Arrow */}
-            {lightboxImages.length > 1 && (
+            {slides.length > 1 && (
               <button 
                 onClick={(e) => {
                   e.stopPropagation();
-                  setLightboxIndex((prev) => (prev - 1 + lightboxImages.length) % lightboxImages.length);
+                  setLightboxIndex((prev) => (prev - 1 + slides.length) % slides.length);
                 }}
                 className="absolute left-4 md:left-6 w-12 h-12 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center text-white hover:text-[#50FFD9] hover:border-[#50FFD9]/30 hover:bg-white/[0.06] transition-all cursor-pointer z-30 focus:outline-none"
                 aria-label="Previous Slide"
@@ -440,18 +499,18 @@ export default function ProjectClientPage({
             {/* Main High-Res Image Render Stage */}
             <div className="relative max-w-full max-h-full flex items-center justify-center overflow-hidden">
               <img 
-                src={lightboxImages[lightboxIndex]} 
+                src={slides[lightboxIndex]} 
                 alt={`${activeTitle} full screen details`} 
                 className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-2xl"
               />
             </div>
 
             {/* Right Arrow */}
-            {lightboxImages.length > 1 && (
+            {slides.length > 1 && (
               <button 
                 onClick={(e) => {
                   e.stopPropagation();
-                  setLightboxIndex((prev) => (prev + 1) % lightboxImages.length);
+                  setLightboxIndex((prev) => (prev + 1) % slides.length);
                 }}
                 className="absolute right-4 md:right-6 w-12 h-12 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center text-white hover:text-[#50FFD9] hover:border-[#50FFD9]/30 hover:bg-white/[0.06] transition-all cursor-pointer z-30 focus:outline-none"
                 aria-label="Next Slide"
@@ -465,12 +524,12 @@ export default function ProjectClientPage({
 
           {/* Slider Bottom Navigation Dots */}
           <div className="mt-8 flex gap-1.5 items-center">
-            {lightboxImages.map((_, idx) => (
+            {slides.map((_, idx) => (
               <button 
                 key={idx}
                 onClick={() => setLightboxIndex(idx)}
-                className={`w-2 h-2 rounded-full transition-all cursor-pointer ${
-                  idx === lightboxIndex ? "bg-[#50FFD9] w-5 shadow-[0_0_8px_#50FFD9]" : "bg-white/20 hover:bg-white/45"
+                className={`h-2 rounded-full transition-all cursor-pointer ${
+                  idx === lightboxIndex ? "bg-[#50FFD9] w-5 shadow-[0_0_8px_#50FFD9]" : "bg-white/20 w-2 hover:bg-white/45"
                 }`}
                 aria-label={`Go to slide ${idx + 1}`}
               />
