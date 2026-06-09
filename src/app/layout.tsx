@@ -15,26 +15,31 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://khairan.tech"),
   title: {
-    default: "Khairan | AI, DevOps, & Software Engineering Expert Portfolio",
-    template: "%s | Khairan - AI, DevOps & Engineering"
+    default: "Khairan Noor Fadhlillah | AI, DevOps, & Software Engineering Expert Portfolio",
+    template: "%s | Khairan Noor Fadhlillah - AI, DevOps & Engineering"
   },
-  description: "Explore the professional portfolio of Khairan, an elite specialist in Artificial Intelligence systems, DevOps automation pipelines, cloud architecture, and modern full-stack software engineering. View production-ready case studies, AI architectures, and interactive tools.",
+  description: "Explore the professional portfolio of Khairan Noor Fadhlillah, an elite specialist in Artificial Intelligence systems, DevOps automation pipelines, cloud architecture, and modern full-stack software engineering. View production-ready case studies and AI solutions.",
   keywords: [
-    "Khairan",
+    "Khairan Noor Fadhlillah",
+    "Khairan Noor Fadhlillah Portfolio",
+    "Khairan Noor Fadhlillah Tech",
+    "Khairan Noor",
+    "Khairan Fadhlillah",
     "Khairan tech",
-    "AI Expert",
-    "DevOps Specialist",
-    "Software Engineering Specialist",
-    "Artificial Intelligence Engineer",
-    "DevOps Automation Engineer",
-    "Kubernetes CI CD",
-    "Cloud Architect",
-    "Laravel Inertia",
-    "Next.js React",
-    "Full Stack Developer"
+    "Best AI Engineer Indonesia",
+    "Top DevOps Specialist Indonesia",
+    "Senior Software Engineer Jakarta",
+    "Expert Software Engineering Specialist",
+    "Artificial Intelligence Deployment Engineer",
+    "Enterprise DevOps Automation",
+    "Kubernetes CI/CD Expert",
+    "Cloud Architecture Solutions",
+    "Next.js React Development Indonesia",
+    "Full Stack Web Developer Jakarta",
+    "Khairan Noor Fadhlillah Projects"
   ],
-  authors: [{ name: "Khairan", url: "https://khairan.tech" }],
-  creator: "Khairan",
+  authors: [{ name: "Khairan Noor Fadhlillah", url: "https://khairan.tech" }],
+  creator: "Khairan Noor Fadhlillah",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -44,22 +49,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
     url: "https://khairan.tech",
-    siteName: "Khairan Portfolio",
-    title: "Khairan | AI, DevOps, & Software Engineering Expert Portfolio",
-    description: "In-depth showcase of elite AI model deployments, automated DevOps workflows, and enterprise-grade software engineering solutions crafted by Khairan.",
+    siteName: "Khairan Noor Fadhlillah Portfolio",
+    title: "Khairan Noor Fadhlillah | AI, DevOps, & Software Engineering Expert Portfolio",
+    description: "Professional portfolio of Khairan Noor Fadhlillah, showcasing elite AI deployments, automated DevOps workflows, and enterprise-grade software engineering solutions.",
     images: [
       {
         url: "/favicon.ico",
         width: 512,
         height: 512,
-        alt: "Khairan AI, DevOps, & Software Engineering",
+        alt: "Khairan Noor Fadhlillah - AI, DevOps, & Software Engineering",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khairan | AI, DevOps, & Software Engineering Expert Portfolio",
-    description: "In-depth showcase of elite AI model deployments, automated DevOps workflows, and enterprise-grade software engineering solutions crafted by Khairan.",
+    title: "Khairan Noor Fadhlillah | AI, DevOps, & Software Engineering Expert Portfolio",
+    description: "Professional portfolio of Khairan Noor Fadhlillah, showcasing elite AI deployments and automated DevOps workflows.",
   },
 };
 
@@ -68,13 +73,32 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Khairan Noor Fadhlillah",
+    "url": "https://khairan.tech",
+    "jobTitle": "AI & DevOps Engineering Specialist",
+    "alumniOf": "Universitas Ahmad Dahlan",
+    "knowsAbout": ["Artificial Intelligence", "DevOps", "Software Engineering", "Cloud Computing", "Next.js", "Laravel"],
+    "sameAs": [
+      "https://github.com/codesbykhairannoor",
+      "https://www.linkedin.com/in/khairannoorfadhlillah/",
+      "https://instagram.com/khairannoor.f"
+    ]
+  };
+
   return (
     <html
-      lang="en"
+      lang="id"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `

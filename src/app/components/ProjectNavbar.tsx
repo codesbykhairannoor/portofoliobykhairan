@@ -80,11 +80,11 @@ export default function ProjectNavbar({
   const navText = {
     en: {
       back: "Back to Vault",
-      consult: "Secure Consult"
+      consult: "Contact Me"
     },
     id: {
       back: "Kembali ke Gudang",
-      consult: "Konsultasi Aman"
+      consult: "Hubungi Saya"
     }
   };
 

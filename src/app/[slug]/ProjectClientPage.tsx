@@ -576,7 +576,7 @@ export default function ProjectClientPage({
 
         {/* Footer */}
         <footer className="w-full border-t border-[var(--border-glass)] pt-6 mt-4 text-center text-[10px] text-[var(--text-muted)] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} Khairan.tech. {TEXTS[lang].all_rights}</p>
+          <p>© {new Date().getFullYear()} Khairan Noor Fadhlillah. {TEXTS[lang].all_rights}</p>
           <p>{TEXTS[lang].footer_alternative}</p>
         </footer>
 

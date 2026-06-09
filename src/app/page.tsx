@@ -107,7 +107,7 @@ const TRANSLATIONS = {
     btn_sending: "Compiling Query...",
     footer_alternative: "WordPress Alternative System. Handcrafted with Next.js 15 & React 19.",
     theme_mode: "Theme Mode",
-    lets_talk: "Let's Talk",
+    lets_talk: "Contact Me",
     all_rights: "All Rights Reserved.",
     nav_home: "Home",
     nav_about: "About",
@@ -119,8 +119,8 @@ const TRANSLATIONS = {
     hero_title_1: "Membangun Solusi",
     hero_title_2: "Web Berkinerja Tinggi",
     hero_title_3: "Dengan Desain Premium",
-    hero_desc: "Hai! Saya Khairan, seorang Hybrid Developer dan UI/UX Designer yang menjembatani kesenjangan antara kode terstruktur dan desain yang berpusat pada manusia, menciptakan pengalaman digital yang cepat, intuitif, dan indah.",
-    get_in_touch: "Hubungi Kontak",
+    hero_desc: "Hai! Saya Khairan Noor Fadhlillah, seorang Hybrid Developer dan UI/UX Designer yang menjembatani kesenjangan antara kode terstruktur dan desain yang berpusat pada manusia, menciptakan pengalaman digital yang cepat, intuitif, dan indah.",
+    get_in_touch: "Hubungi Saya",
     view_my_work: "Lihat Karya Saya",
     profile_summary: "Ringkasan Profil",
     meet_architect: "Kenali Sang Kreator",
@@ -148,7 +148,7 @@ const TRANSLATIONS = {
     no_projects_desc: "Tidak ada proyek yang cocok dengan kata kunci di bawah kategori ini. Coba sesuaikan kata pencarian Anda.",
     experience: "Pengalaman",
     collaboration: "Kolaborasi",
-    let_compile: "Mari Kita Bangun Sesuatu Yang Luar Bacaan",
+    let_compile: "Mari Kita Bangun Sesuatu Yang Luar Biasa",
     collab_desc: "Memiliki proyek yang menantang, lowongan kerja penuh waktu, atau konsultasi struktural yang ingin Anda kerjakan? Kirim pesan aman Anda, atau hubungi saya langsung di profil sosial.",
     secure_email: "Email Aman",
     visit: "Kunjungi",
@@ -168,7 +168,7 @@ const TRANSLATIONS = {
     nav_home: "Beranda",
     nav_about: "Tentang",
     nav_portfolio: "Portofolio",
-    nav_contact: "Kontak"
+    nav_contact: "Hubungi Saya"
   }
 };
 
@@ -965,7 +965,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-14 px-6 max-w-5xl mx-auto w-full border-t border-white/5 text-center text-[11px] text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p>© {new Date().getFullYear()} KHAIRAN.TECH. {TRANSLATIONS[lang].all_rights}</p>
+        <p>© {new Date().getFullYear()} Khairan Noor Fadhlillah. {TRANSLATIONS[lang].all_rights}</p>
         <p>{TRANSLATIONS[lang].footer_alternative}</p>
       </footer>
     </div>

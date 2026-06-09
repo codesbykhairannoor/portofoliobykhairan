@@ -43,24 +43,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const titleText = data.title_en || data.title;
     const typeText = data.type_en || data.type;
     return {
-      title: `${titleText} | AI, DevOps & Engineering Case Study`,
-      description: `In-depth architectural analysis of ${titleText} (${typeText}), engineered by Khairan with specialized AI algorithms, cloud DevOps automation, and robust system designs.`,
+      title: `${titleText} | Khairan Noor Fadhlillah - AI, DevOps & Engineering`,
+      description: `In-depth architectural analysis of ${titleText} (${typeText}), engineered by Khairan Noor Fadhlillah with specialized AI algorithms, cloud DevOps automation, and robust system designs.`,
       openGraph: {
-        title: `${titleText} - AI, DevOps & Engineering Portfolio`,
-        description: `Explore the code architecture, continuous integration deployment pipelines, and custom designs of ${titleText} built by Khairan.`,
+        title: `${titleText} | Khairan Noor Fadhlillah - AI, DevOps & Engineering`,
+        description: `Explore the code architecture, CI/CD pipelines, and custom designs of ${titleText} built by Khairan Noor Fadhlillah.`,
         type: "article",
         url: `https://khairan.tech/${slug}`,
-        siteName: "Khairan Portfolio",
+        siteName: "Khairan Noor Fadhlillah Portfolio",
       },
       twitter: {
         card: "summary_large_image",
-        title: `${titleText} | AI, DevOps & Engineering Showcase`,
-        description: `In-depth architectural analysis of ${titleText} (${typeText}), engineered by Khairan with specialized AI algorithms and cloud DevOps automation.`,
+        title: `${titleText} | Khairan Noor Fadhlillah Showcase`,
+        description: `In-depth architectural analysis of ${titleText} (${typeText}), engineered by Khairan Noor Fadhlillah with specialized AI algorithms and cloud DevOps automation.`,
       }
     };
   } catch {
     return {
-      title: "Showcase Not Found | Khairan - AI, DevOps & Engineering Specialist",
+      title: "Showcase Not Found | Khairan Noor Fadhlillah - AI, DevOps & Engineering Specialist",
     };
   }
 }
