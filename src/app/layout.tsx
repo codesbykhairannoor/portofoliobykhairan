@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     "Khairan Fadhlillah",
     "Khairan tech",
     "Best AI Engineer Indonesia",
+    "AI Agent Specialist Indonesia",
+    "LLM Integration Expert",
+    "Social Media Automation AI",
     "Top DevOps Specialist Indonesia",
     "Senior Software Engineer Jakarta",
     "Expert Software Engineering Specialist",
@@ -36,7 +39,8 @@ export const metadata: Metadata = {
     "Cloud Architecture Solutions",
     "Next.js React Development Indonesia",
     "Full Stack Web Developer Jakarta",
-    "Khairan Noor Fadhlillah Projects"
+    "Khairan Noor Fadhlillah Projects",
+    "Autonomous AI Agents VPS"
   ],
   authors: [{ name: "Khairan Noor Fadhlillah", url: "https://khairan.tech" }],
   creator: "Khairan Noor Fadhlillah",

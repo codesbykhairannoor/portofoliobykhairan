@@ -60,17 +60,17 @@ const SKILL_PROFICIENCY_MAP: Record<string, number> = {
 const TRANSLATIONS = {
   en: {
     ready: "Ready for New Opportunities",
-    hero_title_1: "Crafting High-Performance",
-    hero_title_2: "Web Solutions",
-    hero_title_3: "With Premium Design",
-    hero_desc: "Hi! I am Khairan, a Hybrid Developer and UI/UX Designer who bridges the gap between structured code and human-centered design, creating digital experiences that are fast, intuitive, and beautiful.",
-    get_in_touch: "Get In Touch",
+    hero_title_1: "Architecting Intelligent",
+    hero_title_2: "AI-Driven Solutions",
+    hero_title_3: "With Seamless Automation",
+    hero_desc: "Hi! I am Khairan Noor Fadhlillah, a Hybrid Developer and AI Specialist. I build high-performance 24/7 AI agents, social media automations, and deep LLM integrations to transform complex workflows into scalable digital assets.",
+    get_in_touch: "Contact Me",
     view_my_work: "View My Work",
     profile_summary: "Profile Summary",
     meet_architect: "Meet The Architect",
     biography: "Biography",
     bio_quote: "Good code needs good design, and good design needs pristine execution.",
-    bio_body: "I am a hybrid Full-Stack Developer and UI/UX Designer. Over the past 3 years, I've designed and engineered dozens of responsive web applications, interactive software suites, and enterprise database systems. I specialize in converting raw mockups and structural challenges into performant, clean production systems that stand out.",
+    bio_body: "I am a hybrid Full-Stack Developer, AI Specialist, and UI/UX Designer. Over the past 3 years, I've engineered dozens of production systems, from interactive software suites to autonomous AI agents running 24/7 on private VPS. I specialize in LLM integration, social media automation, and structural engineering that bridges human intuition with machine intelligence.",
     download_cv: "Download CV",
     my_projects: "My Projects",
     completed_works: "Completed Works",
@@ -116,17 +116,17 @@ const TRANSLATIONS = {
   },
   id: {
     ready: "Siap untuk Peluang Baru",
-    hero_title_1: "Membangun Solusi",
-    hero_title_2: "Web Berkinerja Tinggi",
-    hero_title_3: "Dengan Desain Premium",
-    hero_desc: "Hai! Saya Khairan Noor Fadhlillah, seorang Hybrid Developer dan UI/UX Designer yang menjembatani kesenjangan antara kode terstruktur dan desain yang berpusat pada manusia, menciptakan pengalaman digital yang cepat, intuitif, dan indah.",
+    hero_title_1: "Arsitektur Solusi",
+    hero_title_2: "Berbasis AI Cerdas",
+    hero_title_3: "Dengan Otomatisasi Mulus",
+    hero_desc: "Hai! Saya Khairan Noor Fadhlillah, seorang Hybrid Developer dan Spesialis AI. Saya membangun agen AI 24/7 yang berkinerja tinggi, otomatisasi media sosial, dan integrasi LLM mendalam untuk mengubah alur kerja kompleks menjadi aset digital yang skalabel.",
     get_in_touch: "Hubungi Saya",
     view_my_work: "Lihat Karya Saya",
     profile_summary: "Ringkasan Profil",
     meet_architect: "Kenali Sang Kreator",
     biography: "Biografi",
     bio_quote: "Kode yang baik butuh desain yang baik, dan desain yang baik butuh eksekusi yang sempurna.",
-    bio_body: "Saya adalah seorang Full-Stack Developer dan UI/UX Designer hybrid. Selama 3 tahun terakhir, saya telah merancang dan membangun puluhan aplikasi web responsif, rangkaian perangkat lunak interaktif, dan sistem database perusahaan. Saya berspesialisasi dalam mengubah maket mentah dan tantangan struktural menjadi sistem produksi berkinerja tinggi dan bersih yang menonjol.",
+    bio_body: "Saya adalah seorang Full-Stack Developer, Spesialis AI, dan UI/UX Designer hybrid. Selama 3 tahun terakhir, saya telah merancang puluhan sistem produksi, mulai dari rangkaian perangkat lunak interaktif hingga agen AI otonom yang berjalan 24/7 di VPS pribadi. Saya berspesialisasi dalam integrasi LLM, otomatisasi media sosial, dan rekayasa struktural yang menjembatani intuisi manusia dengan kecerdasan mesin.",
     download_cv: "Unduh CV",
     my_projects: "Proyek Saya",
     completed_works: "Karya Selesai",
@@ -481,7 +481,7 @@ export default function Home() {
       </header>
 
       {/* Hero Landing Section */}
-      <section className="pt-48 pb-24 px-6 max-w-5xl mx-auto w-full flex flex-col items-center justify-center text-center relative">
+      <section className="pt-40 pb-24 px-6 max-w-5xl mx-auto w-full flex flex-col items-center justify-center text-center relative">
         {/* Pulsing indicator capsule */}
         <div className="inline-flex items-center gap-3 px-4.5 py-2.5 rounded-full bg-white/[0.02] border border-white/5 text-xs font-bold text-gray-300 mb-8 backdrop-blur-md shadow-inner">
           <span className="w-2 h-2 rounded-full bg-[#50FFD9] shadow-[0_0_10px_#50FFD9] animate-pulse"></span>
