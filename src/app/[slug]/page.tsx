@@ -40,18 +40,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   try {
     const data = await getProjectData(slug);
+    const titleText = data.title_en || data.title;
+    const typeText = data.type_en || data.type;
     return {
-      title: `${data.title_en || data.title} | Portfolio Case Study`,
-      description: `In-depth look at ${data.title_en || data.title} (${data.type_en || data.type}) project. Engineered with high-fidelity performance metrics.`,
+      title: `${titleText} | AI, DevOps & Engineering Case Study`,
+      description: `In-depth architectural analysis of ${titleText} (${typeText}), engineered by Khairan with specialized AI algorithms, cloud DevOps automation, and robust system designs.`,
       openGraph: {
-        title: `${data.title_en || data.title} | Case Study`,
-        description: `Explore the architecture and specifications of ${data.title_en || data.title}.`,
+        title: `${titleText} - AI, DevOps & Engineering Portfolio`,
+        description: `Explore the code architecture, continuous integration deployment pipelines, and custom designs of ${titleText} built by Khairan.`,
         type: "article",
+        url: `https://khairan.tech/${slug}`,
+        siteName: "Khairan Portfolio",
       },
+      twitter: {
+        card: "summary_large_image",
+        title: `${titleText} | AI, DevOps & Engineering Showcase`,
+        description: `In-depth architectural analysis of ${titleText} (${typeText}), engineered by Khairan with specialized AI algorithms and cloud DevOps automation.`,
+      }
     };
   } catch {
     return {
-      title: "Showcase Not Found | Khairan.tech",
+      title: "Showcase Not Found | Khairan - AI, DevOps & Engineering Specialist",
     };
   }
 }
@@ -76,11 +85,8 @@ function cleanProjectHtml(html: string): string {
   // Strip all inline unstyled style blocks first to prevent CSS rules leaking as plain text
   let clean = html.replace(/<style[\s\S]*?<\/style>/gi, "");
 
-  // 1. Remove Back to Vault unstyled links & inline SVGs at the beginning/end of the post
-  clean = clean.replace(/<a\s+href="\/">[\s\S]*?<svg[\s\S]*?<\/svg>[\s\S]*?Back[\s\S]*?<\/a>/gi, "");
-  clean = clean.replace(/<a\s+href="\/">[\s\S]*?Back[\s\S]*?<\/a>/gi, "");
-  clean = clean.replace(/<a\s+href="\/#portofolio">[\s\S]*?<svg[\s\S]*?<\/svg>[\s\S]*?Back[\s\S]*?<\/a>/gi, "");
-  clean = clean.replace(/<a\s+href="\/#portofolio">[\s\S]*?Back[\s\S]*?<\/a>/gi, "");
+  // 1. Remove Back to Vault unstyled links & inline SVGs completely on the server-side
+  clean = clean.replace(/<a\s+href=["'](?:\/|#|\/#portofolio)?["'][^>]*>[\s\S]*?\bBack\b[\s\S]*?<\/a>/gi, "");
 
   // 2. Remove breadcrumb structures
   clean = clean.replace(/<p>Project\s*&gt;<\/p>\s*<p>.*?<\/p>/gi, "");
@@ -282,9 +288,9 @@ function cleanProjectHtml(html: string): string {
     `;
   });
 
-  // 7b. Convert any sequence of <a href="#"> text </a> tags under h2 headings into premium capsules
-  // This handles customized sections like Poster Type, Target Audience, Logo Styles, etc.
-  const headingAndAnchorsRegex = /(<h2[^>]*>(?:(?!<\/h2>)[\s\S])*?(?:📚|🎯|🧩|⚙️|💎|🔗|👥|🎨|📈|💡|🔍)(?:(?!<\/h2>)[\s\S])*?<\/h2>)\s*((?:<a\s+href=["']#["'][^>]*>\s*[^<]*?\s*<\/a>\s*)+)/gi;
+  // 7b. Convert any sequence of <a> text </a> tags under h2 headings into premium capsules
+  // This handles customized sections like Poster Type, Target Audience, Logo Styles, Content Categories, etc.
+  const headingAndAnchorsRegex = /(<h2[^>]*>[\s\S]*?<\/h2>)\s*((?:<a[^>]*>[\s\S]*?<\/a>\s*)+)/gi;
   clean = clean.replace(headingAndAnchorsRegex, (match: string, heading: string, anchorsText: string) => {
     const anchorRegex = /<a[^>]*>([\s\S]*?)<\/a>/gi;
     const items: string[] = [];
@@ -320,15 +326,11 @@ function cleanProjectHtml(html: string): string {
   // 8. Style raw images beautifully and prevent stacking layout break
   clean = clean.replace(/<style[\s\S]*?<\/style>/gi, "");
 
-  // 9. Wrap consecutive figure elements in a premium gallery grid to prevent vertical image stacks
-  const consecutiveFiguresRegex = /(<figure[^>]*>[\s\S]*?<\/figure>)(?:\s*(<figure[^>]*>[\s\S]*?<\/figure>))+/gi;
-  clean = clean.replace(consecutiveFiguresRegex, (match) => {
-    const figures = match.match(/<figure[^>]*>[\s\S]*?<\/figure>/gi) || [];
-    if (figures.length > 1) {
-      return `<div class="premium-gallery-grid">${figures.join("")}</div>`;
-    }
-    return match;
-  });
+  // 9. Strip all image tags, figures, and lightbox anchor containers from the rich text body
+  // since they are already beautifully rendered in our interactive slider at the top!
+  clean = clean.replace(/<a[^>]*data-elementor-open-lightbox[^>]*>[\s\S]*?<\/a>/gi, "");
+  clean = clean.replace(/<figure[^>]*>[\s\S]*?<\/figure>/gi, "");
+  clean = clean.replace(/<img[^>]*>/gi, "");
 
   return clean;
 }

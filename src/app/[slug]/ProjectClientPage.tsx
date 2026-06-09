@@ -63,6 +63,32 @@ export default function ProjectClientPage({
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const [activeSlide, setActiveSlide] = useState(0);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  // Mouse move parallax ambient lighting effect
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePos({
+        x: (e.clientX / window.innerWidth - 0.5) * 25, // max 25px offset
+        y: (e.clientY / window.innerHeight - 0.5) * 25,
+      });
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  // Sticky top reading scroll progress meter
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalScroll > 0) {
+        setScrollProgress((window.scrollY / totalScroll) * 100);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Load and synchronize theme on mount
   useEffect(() => {
@@ -172,9 +198,50 @@ export default function ProjectClientPage({
       [/Open Live Site/gi, "Buka Situs Langsung"],
       [/Open GitHub Code/gi, "Buka Kode GitHub"],
       [/Open Figma Prototype/gi, "Buka Prototipe Figma"],
-      [/Back to Vault/gi, "Kembali ke Gudang"],
-      [/Back/gi, "Kembali"],
       [/Project\s*&gt;/gi, "Proyek &gt;"],
+      
+      // Global and Design Project specific bilingual sections (supports optional nested strong tags!)
+      [/📂\s*(?:<[^>]+>)*\s*Content\s+Categories\s*(?:<\/[^>]+>)*/gi, "📂 Kategori Konten"],
+      [/📺\s*(?:<[^>]+>)*\s*Media\s*(?:<\/[^>]+>)*/gi, "📺 Media"],
+      [/🎯\s*(?:<[^>]+>)*\s*Design\s+Purpose\s*(?:<\/[^>]+>)*/gi, "🎯 Tujuan Desain"],
+      [/📚\s*(?:<[^>]+>)*\s*Poster\s+Type\s*(?:<\/[^>]+>)*/gi, "📚 Tipe Poster"],
+      [/📚\s*(?:<[^>]+>)*\s*Logo\s+Styles\s*(?:<\/[^>]+>)*/gi, "📚 Gaya Logo"],
+      [/🎯\s*(?:<[^>]+>)*\s*Target\s+Audience\s*(?:<\/[^>]+>)*/gi, "🎯 Target Audiens"],
+      [/Carousel\s+Content/gi, "Konten Korsel"],
+      [/Promotional\s+Posts/gi, "Postingan Promosi"],
+      [/Reels\s*\/\s*Shorts\s+Visual/gi, "Visual Reels / Shorts"],
+      [/Branding\s+Templates/gi, "Templat Branding"],
+      [/Educational\s+Infographics/gi, "Infografis Edukatif"],
+      [/Research\s+Posters/gi, "Poster Penelitian"],
+      [/Awareness\s+Campaigns/gi, "Kampanye Kesadaran"],
+      [/Event\s+Infographic/gi, "Infografis Acara"],
+      [/Students/gi, "Siswa / Mahasiswa"],
+      [/Professionals/gi, "Profesional"],
+      [/Public/gi, "Umum"],
+      [/Healthcare/gi, "Kesehatan"],
+      [/Attendees/gi, "Peserta"],
+      [/Wordmarks/gi, "Logo Wordmark"],
+      [/Emblems/gi, "Logo Emblem"],
+      [/Lettermarks/gi, "Logo Lettermark"],
+      [/Mascot\s+Logos/gi, "Logo Maskot"],
+      
+      // Social Media Design Purpose list translations
+      [/Create content that’s not only visually appealing but also tailored to specific platform formats and user behavior\./gi, "Buat konten yang tidak hanya menarik secara visual tetapi juga disesuaikan dengan format platform spesifik dan perilaku pengguna."],
+      [/Strengthen brand consistency and recognition through every visual element\./gi, "Perkuat konsistensi dan pengenalan merek melalui setiap elemen visual."],
+      [/Help businesses communicate complex ideas in a simple, engaging way\./gi, "Bantu bisnis mengomunikasikan ide-ide kompleks dengan cara yang sederhana dan menarik."],
+      [/Increase audience retention and interactions with data-backed design decisions\./gi, "Tingkatkan retensi audiens dan interaksi dengan keputusan desain yang didukung data."],
+      
+      // Logo Design Purpose list translations
+      [/Craft iconic logos that instantly connect with audiences and leave a lasting impression\./gi, "Buat logo ikonik yang langsung terhubung dengan audiens dan meninggalkan kesan abadi."],
+      [/Blend creativity and strategy, delivering designs that tell a brand’s unique story at a glance\./gi, "Padukan kreativitas dan strategi, menghadirkan desain yang menceritakan kisah unik merek secara sekilas."],
+      [/Ensure every logo is versatile and impactful, shining equally on a business card or billboard\./gi, "Pastikan setiap logo serbaguna dan berdampak, bersinar sama baiknya di kartu nama atau papan reklame."],
+      [/Create timeless marks that grow with the brand, staying relevant across trends and time\./gi, "Buat tanda abadi yang berkembang bersama merek, tetap relevan di berbagai tren dan waktu."],
+      
+      // Poster Design Purpose list translations
+      [/Turn complex data and concepts into clear, compelling visuals that people actually want to read\./gi, "Ubah data dan konsep kompleks menjadi visual yang jelas dan menarik yang benar-benar ingin dibaca orang."],
+      [/Capture attention instantly with layout and hierarchy built for quick scanning\./gi, "Tarik perhatian secara instan dengan tata letak dan hierarki yang dibangun untuk pemindaian cepat."],
+      [/Elevate brand presence by aligning infographics with tone, style, and messaging\./gi, "Tingkatkan kehadiran merek dengan menyelaraskan infografis dengan nada, gaya, dan pesan."],
+      [/Drive higher engagement and shares by making information both useful and beautiful\./gi, "Mendorong keterlibatan dan pembagian yang lebih tinggi dengan membuat informasi berguna sekaligus indah."]
     ];
 
     replacements.forEach(([regex, replacement]) => {
@@ -197,9 +264,10 @@ export default function ProjectClientPage({
   const prevTitle = prevProject ? (lang === "en" ? (prevProject.title_en || prevProject.title) : (prevProject.title_id || prevProject.title)) : "";
   const nextTitle = nextProject ? (lang === "en" ? (nextProject.title_en || nextProject.title) : (nextProject.title_id || nextProject.title)) : "";
 
-  // Use actual project screenshots (images) as slides directly. Fall back to coverImage if no screenshots exist.
+  // Use actual project screenshots (images) as slides directly.
+  // Exclude the redundant coverImage from slides if screenshots exist, ensuring no visual overlap with the beranda preview.
   const slides = (images && images.length > 0)
-    ? Array.from(new Set(images)).filter(Boolean)
+    ? Array.from(new Set(images)).filter((img) => img !== coverImage && Boolean(img))
     : [coverImage].filter(Boolean);
 
   // Intercept click on inline figures inside the raw HTML to trigger the immersive Lightbox
@@ -227,6 +295,22 @@ export default function ProjectClientPage({
 
   return (
     <div className={`min-h-screen bg-[var(--bg-dark)] text-[var(--text-primary)] transition-colors duration-500 relative overflow-x-hidden selection:bg-[#50FFD9]/15 selection:text-[#50FFD9] ${theme}`}>
+      
+      {/* Premium Top Reading Progress Indicator */}
+      <div 
+        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#50FFD9] via-teal-400 to-violet-500 z-[110] transition-all duration-100 pointer-events-none"
+        style={{ width: `${scrollProgress}%` }}
+      />
+
+      {/* Interactive Floating Mouse Parallax Glow Orbs */}
+      <div 
+        className="absolute top-20 left-10 w-72 h-72 rounded-full bg-[#50FFD9]/6 blur-[100px] pointer-events-none transition-transform duration-700 ease-out z-0"
+        style={{ transform: `translate(${mousePos.x}px, ${mousePos.y}px)` }}
+      />
+      <div 
+        className="absolute top-[40vh] right-10 w-96 h-96 rounded-full bg-violet-500/5 blur-[120px] pointer-events-none transition-transform duration-1000 ease-out z-0"
+        style={{ transform: `translate(${-mousePos.x}px, ${-mousePos.y}px)` }}
+      />
       
       {/* Soft Blurred Background Radial Gradients */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[400px] bg-gradient-to-b from-[#50FFD9]/4 via-transparent to-transparent pointer-events-none z-0"></div>
@@ -370,30 +454,65 @@ export default function ProjectClientPage({
           )}
         </div>
 
-        {/* Horizontal Metadata & Stack Dashboard Card */}
-        <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="flex flex-col gap-2">
-            <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">{TEXTS[lang].engineered_stack}</span>
+        {/* 3D-like Bento Grid Metadata & Cloud DevOps Automation Dashboard */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full relative z-10">
+          
+          {/* Card 1: Category */}
+          <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 group hover:border-[#50FFD9]/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(80,255,217,0.03)] transition-all duration-300">
+            <div className="flex items-center justify-between">
+              <span className="text-[9px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "Category" : "Kategori"}</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#50FFD9] shadow-[0_0_8px_#50FFD9] animate-pulse"></span>
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="text-xs font-black text-[var(--text-primary)] tracking-wide group-hover:text-[#50FFD9] transition-colors line-clamp-1">{activeType}</span>
+              <span className="text-[10px] text-[var(--text-muted)] font-semibold">{lang === "en" ? "Domain Scope" : "Bidang Keahlian"}</span>
+            </div>
+          </div>
+
+          {/* Card 2: Engineered Stack */}
+          <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 sm:col-span-2 group hover:border-violet-500/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(139,92,246,0.03)] transition-all duration-300">
+            <div className="flex items-center justify-between">
+              <span className="text-[9px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{TEXTS[lang].engineered_stack}</span>
+              <div className="flex gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-violet-400"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-fuchsia-400"></span>
+              </div>
+            </div>
             <div className="flex flex-wrap gap-1.5">
               {techStackBadges.length > 0 ? (
                 techStackBadges.map((badge, bIdx) => (
-                  <span key={bIdx} className="text-[10px] font-bold text-[var(--text-secondary)] bg-white/[0.02] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg hover:border-[#50FFD9]/20 transition-colors">
+                  <span key={bIdx} className="text-[9px] font-black text-[var(--text-secondary)] bg-white/[0.02] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg hover:border-[#50FFD9]/20 hover:bg-white/[0.04] transition-all">
                     {badge}
                   </span>
                 ))
               ) : (
-                <span className="text-[10px] font-bold text-[var(--text-secondary)] bg-white/[0.02] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg">
+                <span className="text-[9px] font-black text-[var(--text-secondary)] bg-white/[0.02] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg">
                   {activeType}
                 </span>
               )}
             </div>
           </div>
-          
-          <div className="flex flex-col gap-1 sm:items-end shrink-0">
-            <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "Category" : "Kategori"}</span>
-            <span className="text-xs font-extrabold text-[#50FFD9] tracking-wide">{activeType}</span>
+
+          {/* Card 3: DevOps & Integrity Dashboard */}
+          <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 group hover:border-fuchsia-500/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(217,70,239,0.03)] transition-all duration-300">
+            <div className="flex items-center justify-between">
+              <span className="text-[9px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "DevOps & Cloud" : "DevOps & Cloud"}</span>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_#10b981] animate-ping"></span>
+            </div>
+            <div className="flex flex-col gap-1 text-[10px] font-bold text-[var(--text-secondary)]">
+              <div className="flex items-center justify-between">
+                <span>CI/CD Status</span>
+                <span className="text-emerald-400">VERIFIED</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Hosting</span>
+                <span className="text-[#50FFD9]">Vercel / Edge</span>
+              </div>
+            </div>
           </div>
-        </div>
+
+        </section>
 
         {/* Core Case Study Content Card */}
         <main className="w-full">
