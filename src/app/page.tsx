@@ -348,9 +348,9 @@ export default function Home() {
 
       {/* Floating Header */}
       <header className="fixed top-6 left-0 right-0 z-50 px-4 md:px-8">
-        <div className="max-w-5xl mx-auto glass-panel px-6 py-4 rounded-2xl flex items-center justify-between border border-white/5 backdrop-blur-xl">
+        <div className="max-w-5xl mx-auto glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-white/5 backdrop-blur-xl">
           <div className="flex items-center gap-2">
-            <a href="#home" className="text-xl font-black tracking-tighter text-[var(--text-primary)] select-none">
+            <a href="#home" className="text-lg md:text-xl font-black tracking-tighter text-[var(--text-primary)] select-none">
               Khairan<span className="text-[#50FFD9] glow-text">.tech</span>
             </a>
           </div>
@@ -482,14 +482,14 @@ export default function Home() {
       </header>
 
       {/* Hero Landing Section */}
-      <section className="pt-40 pb-24 px-6 max-w-5xl mx-auto w-full flex flex-col items-center justify-center text-center relative">
+      <section className="pt-32 md:pt-40 pb-16 md:pb-24 px-6 max-w-5xl mx-auto w-full flex flex-col items-center justify-center text-center relative">
         {/* Pulsing indicator capsule */}
-        <div className="inline-flex items-center gap-3 px-4.5 py-2.5 rounded-full bg-white/[0.02] border border-white/5 text-xs font-bold text-gray-300 mb-8 backdrop-blur-md shadow-inner">
-          <span className="w-2 h-2 rounded-full bg-[#50FFD9] shadow-[0_0_10px_#50FFD9] animate-pulse"></span>
+        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/[0.02] border border-white/5 text-[10px] md:text-xs font-bold text-gray-300 mb-6 md:mb-8 backdrop-blur-md shadow-inner">
+          <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#50FFD9] shadow-[0_0_10px_#50FFD9] animate-pulse"></span>
           {TRANSLATIONS[lang].ready}
         </div>
 
-        <h1 className="custom-hero-title mb-8 font-extrabold leading-[1.08] tracking-tight">
+        <h1 className="custom-hero-title mb-6 md:mb-8 font-extrabold leading-[1.1] tracking-tight">
           {TRANSLATIONS[lang].hero_title_1} <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-primary)] via-[#50FFD9] to-[var(--neon-violet)]">
             {TRANSLATIONS[lang].hero_title_2}
@@ -497,7 +497,7 @@ export default function Home() {
           {TRANSLATIONS[lang].hero_title_3}
         </h1>
 
-        <p className="max-w-2xl text-gray-400 text-sm md:text-base mb-12 leading-relaxed font-medium">
+        <p className="max-w-2xl text-gray-400 text-xs md:text-base mb-10 md:mb-12 leading-relaxed font-medium px-4 md:px-0">
           {TRANSLATIONS[lang].hero_desc}
         </p>
 
@@ -541,22 +541,22 @@ export default function Home() {
       </section>
 
       {/* About Section in a Premium Bento Grid Layout */}
-      <section id="about" className="py-28 px-6 max-w-5xl mx-auto w-full scroll-mt-24">
-        <div className="mb-14">
-          <span className="text-xs font-black text-[#50FFD9] uppercase tracking-widest mb-3 block">{TRANSLATIONS[lang].profile_summary}</span>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">{TRANSLATIONS[lang].meet_architect}</h2>
+      <section id="about" className="py-16 md:py-28 px-6 max-w-5xl mx-auto w-full scroll-mt-24">
+        <div className="mb-10 md:mb-14">
+          <span className="text-[10px] md:text-xs font-black text-[#50FFD9] uppercase tracking-widest mb-2 md:mb-3 block">{TRANSLATIONS[lang].profile_summary}</span>
+          <h2 className="text-2xl md:text-5xl font-extrabold text-white tracking-tight">{TRANSLATIONS[lang].meet_architect}</h2>
         </div>
 
         {/* Bento Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           
           {/* Main Story Card (Spans 8 cols) */}
-          <div className="md:col-span-8 glass-panel p-8 md:p-10 rounded-3xl border border-white/5 flex flex-col justify-between">
+          <div className="md:col-span-8 glass-panel p-6 md:p-10 rounded-3xl border border-white/5 flex flex-col justify-between">
             <div>
-              <span className="text-xs font-bold text-gray-500 uppercase tracking-widest block mb-4">{TRANSLATIONS[lang].biography}</span>
-              <h3 className="text-2xl font-bold mb-4 text-white">Khairan Noor Fadhlillah</h3>
-              <p className="text-[#50FFD9] font-medium text-sm italic mb-6">"{TRANSLATIONS[lang].bio_quote}"</p>
-              <p className="text-gray-400 text-sm md:text-[15px] leading-relaxed mb-8">
+              <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest block mb-3 md:mb-4">{TRANSLATIONS[lang].biography}</span>
+              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-white">Khairan Noor Fadhlillah</h3>
+              <p className="text-[#50FFD9] font-medium text-xs md:text-sm italic mb-4 md:mb-6">"{TRANSLATIONS[lang].bio_quote}"</p>
+              <p className="text-gray-400 text-xs md:text-[15px] leading-relaxed mb-6 md:mb-8">
                 {TRANSLATIONS[lang].bio_body}
               </p>
             </div>
@@ -595,17 +595,17 @@ export default function Home() {
           </div>
 
           {/* Stat Block 1: Projects (Spans 4 cols) */}
-          <div className="md:col-span-4 glass-panel p-8 rounded-3xl border border-white/5 flex flex-col justify-between group hover:border-[#50FFD9]/15">
+          <div className="md:col-span-4 glass-panel p-6 md:p-8 rounded-3xl border border-white/5 flex flex-col justify-between group hover:border-[#50FFD9]/15">
             <div>
-              <div className="w-10 h-10 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#50FFD9] transition-colors mb-6">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#50FFD9] transition-colors mb-4 md:mb-6">
+                <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
               </div>
-              <h4 className="text-4xl font-extrabold text-white tracking-tight mb-2">25+</h4>
-              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">{TRANSLATIONS[lang].completed_works}</p>
+              <h4 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-1 md:mb-2">25+</h4>
+              <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{TRANSLATIONS[lang].completed_works}</p>
             </div>
-            <p className="text-xs text-gray-500 mt-6 leading-relaxed">
+            <p className="text-[10px] md:text-xs text-gray-500 mt-4 md:mt-6 leading-relaxed">
               {TRANSLATIONS[lang].completed_works_desc}
             </p>
           </div>
@@ -652,13 +652,13 @@ export default function Home() {
       </section>
 
       {/* Grid Filtering Tabs Section */}
-      <section id="portfolio" className="py-28 px-6 max-w-5xl mx-auto w-full scroll-mt-24">
+      <section id="portfolio" className="py-16 md:py-28 px-6 max-w-5xl mx-auto w-full scroll-mt-24">
         
         {/* Title and Action Blocks */}
-        <div className="flex flex-col items-center justify-center text-center mb-16">
-          <span className="text-xs font-black text-[#50FFD9] uppercase tracking-widest mb-3 block">{TRANSLATIONS[lang].classifications}</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">{TRANSLATIONS[lang].main_vault}</h2>
-          <p className="text-gray-400 text-xs md:text-sm mt-2 max-w-md leading-relaxed">{TRANSLATIONS[lang].vault_desc}</p>
+        <div className="flex flex-col items-center justify-center text-center mb-10 md:mb-16">
+          <span className="text-[10px] md:text-xs font-black text-[#50FFD9] uppercase tracking-widest mb-2 md:mb-3 block">{TRANSLATIONS[lang].classifications}</span>
+          <h2 className="text-2xl md:text-4xl font-extrabold text-white tracking-tight">{TRANSLATIONS[lang].main_vault}</h2>
+          <p className="text-gray-400 text-[10px] md:text-sm mt-2 max-w-md leading-relaxed">{TRANSLATIONS[lang].vault_desc}</p>
           
           <div className="mt-8 flex flex-col md:flex-row items-center gap-5 w-full justify-center">
             {/* Category Toggle Tabs */}
@@ -723,9 +723,9 @@ export default function Home() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/40 to-transparent"></div>
                       </div>
-                      <div className="p-6 md:p-8 flex flex-col flex-grow">
-                        <h3 className="text-base sm:text-lg font-bold text-white mb-2.5 hover:text-[#50FFD9] transition-colors line-clamp-1">{title}</h3>
-                        <p className="text-gray-400 text-xs md:text-sm line-clamp-3 mb-5 leading-relaxed flex-grow">
+                      <div className="p-5 md:p-8 flex flex-col flex-grow">
+                        <h3 className="text-sm md:text-lg font-bold text-white mb-2 hover:text-[#50FFD9] transition-colors line-clamp-1">{title}</h3>
+                        <p className="text-gray-400 text-[10px] md:text-sm line-clamp-2 md:line-clamp-3 mb-4 md:mb-5 leading-relaxed flex-grow">
                           {cleanDesc}
                         </p>
 
@@ -776,9 +776,9 @@ export default function Home() {
         {activeTab === "skills" && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in">
             {(portfolioData.skills as SkillCategory[]).map((cat, i) => (
-              <div key={i} className="glass-panel p-8 md:p-10 rounded-3xl border border-white/5 flex flex-col gap-6">
-                <h3 className="text-lg font-bold text-white flex items-center gap-3 pb-4 border-b border-white/5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#50FFD9] shadow-[0_0_8px_#50FFD9]"></span>
+              <div key={i} className="glass-panel p-6 md:p-10 rounded-3xl border border-white/5 flex flex-col gap-4 md:gap-6">
+                <h3 className="text-base md:text-lg font-bold text-white flex items-center gap-3 pb-3 md:pb-4 border-b border-white/5">
+                  <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full bg-[#50FFD9] shadow-[0_0_8px_#50FFD9]"></span>
                   {cat.category}
                 </h3>
                 <div className="flex flex-col gap-4">
@@ -811,15 +811,15 @@ export default function Home() {
       </section>
 
       {/* Collaboration and Contact Section */}
-      <section id="contact" className="py-28 px-6 max-w-5xl mx-auto w-full border-t border-white/5 scroll-mt-24">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+      <section id="contact" className="py-16 md:py-28 px-6 max-w-5xl mx-auto w-full border-t border-white/5 scroll-mt-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16">
           
           {/* Connection narrative pane */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
-              <span className="text-xs font-black text-[#50FFD9] uppercase tracking-widest mb-3 block">{TRANSLATIONS[lang].collaboration}</span>
-              <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white tracking-tight">{TRANSLATIONS[lang].let_compile}</h2>
-              <p className="text-gray-400 leading-relaxed mb-10 text-sm md:text-[15px] font-medium">
+              <span className="text-[10px] md:text-xs font-black text-[#50FFD9] uppercase tracking-widest mb-2 md:mb-3 block">{TRANSLATIONS[lang].collaboration}</span>
+              <h2 className="text-2xl md:text-4xl font-extrabold mb-4 md:mb-6 text-white tracking-tight">{TRANSLATIONS[lang].let_compile}</h2>
+              <p className="text-gray-400 leading-relaxed mb-8 md:mb-10 text-[13px] md:text-[15px] font-medium">
                 {TRANSLATIONS[lang].collab_desc}
               </p>
             </div>
@@ -884,9 +884,9 @@ export default function Home() {
 
           {/* Secure interactive request form pane */}
           <div className="lg:col-span-7">
-            <form onSubmit={handleFormSubmit} className="glass-panel p-8 md:p-10 rounded-3xl border border-white/5 flex flex-col gap-6">
+            <form onSubmit={handleFormSubmit} className="glass-panel p-6 md:p-10 rounded-3xl border border-white/5 flex flex-col gap-5 md:gap-6">
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="form-name" className="text-[10px] font-extrabold uppercase tracking-widest text-gray-400">{TRANSLATIONS[lang].full_name}</label>
                   <input 
@@ -895,7 +895,7 @@ export default function Home() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="John Doe" 
-                    className="contact-input"
+                    className="contact-input py-3 md:py-4 px-4 md:px-5"
                     required
                   />
                 </div>
@@ -908,7 +908,7 @@ export default function Home() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="john@example.com" 
-                    className="contact-input"
+                    className="contact-input py-3 md:py-4 px-4 md:px-5"
                     required
                   />
                 </div>
@@ -922,7 +922,7 @@ export default function Home() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder={TRANSLATIONS[lang].describe_spec} 
-                  className="contact-input"
+                  className="contact-input py-3 md:py-4 px-4 md:px-5"
                   required
                 />
               </div>
@@ -967,9 +967,9 @@ export default function Home() {
       )}
 
       {/* Footer */}
-      <footer className="py-14 px-6 max-w-5xl mx-auto w-full border-t border-white/5 text-center text-[11px] text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <footer className="py-10 md:py-14 px-6 max-w-5xl mx-auto w-full border-t border-white/5 text-center text-[10px] md:text-[11px] text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p>© {new Date().getFullYear()} Khairan Noor Fadhlillah. {TRANSLATIONS[lang].all_rights}</p>
-        <p>{TRANSLATIONS[lang].footer_alternative}</p>
+        <p className="hidden sm:block">{TRANSLATIONS[lang].footer_alternative}</p>
       </footer>
 
       {/* AI Assistant */}
