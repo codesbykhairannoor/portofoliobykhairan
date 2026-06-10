@@ -337,17 +337,17 @@ export default function ProjectClientPage({
 
         {/* Compact Hero Header */}
         <section className="pb-3 border-b border-[var(--border-glass)] flex flex-col gap-1.5">
-          <div className="inline-flex self-start items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[var(--bg-card)] border border-[var(--border-glass)] text-[9px] font-bold text-[var(--neon-cyan)] tracking-wider backdrop-blur-md shadow-sm">
+          <div className="inline-flex self-start items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--bg-card)] border border-[var(--border-glass)] text-[10px] md:text-[11px] font-bold text-[var(--neon-cyan)] tracking-wider backdrop-blur-md shadow-sm">
             <span className="w-1 h-1 rounded-full bg-[var(--neon-cyan)] shadow-[0_0_6px_var(--neon-cyan-glow)]"></span>
             {activeType}
           </div>
           
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-black text-[var(--text-primary)] tracking-tight leading-none font-display">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-[var(--text-primary)] tracking-tight leading-none font-display">
             {activeTitle}
           </h1>
           
           {activeDescription && (
-            <p className="text-[var(--text-secondary)] text-[11px] sm:text-xs leading-relaxed max-w-3xl font-medium">
+            <p className="text-[var(--text-secondary)] text-sm md:text-[15px] leading-relaxed max-w-3xl font-medium">
               {activeDescription}
             </p>
           )}
@@ -467,19 +467,19 @@ export default function ProjectClientPage({
           {/* Card 1: Category */}
           <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 group hover:border-[#50FFD9]/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(80,255,217,0.03)] transition-all duration-300">
             <div className="flex items-center justify-between">
-              <span className="text-[9px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "Category" : "Kategori"}</span>
+              <span className="text-[10px] sm:text-[11px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "Category" : "Kategori"}</span>
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--neon-cyan)] shadow-[0_0_8px_var(--neon-cyan-glow)] animate-pulse"></span>
             </div>
             <div className="flex flex-col gap-1">
-              <span className="text-xs font-black text-[var(--text-primary)] tracking-wide group-hover:text-[var(--neon-cyan)] transition-colors line-clamp-1">{activeType}</span>
-              <span className="text-[10px] text-[var(--text-muted)] font-semibold">{lang === "en" ? "Domain Scope" : "Bidang Keahlian"}</span>
+              <span className="text-sm sm:text-base font-black text-[var(--text-primary)] tracking-wide group-hover:text-[var(--neon-cyan)] transition-colors line-clamp-1">{activeType}</span>
+              <span className="text-[12px] sm:text-[13px] text-[var(--text-muted)] font-semibold">{lang === "en" ? "Domain Scope" : "Bidang Keahlian"}</span>
             </div>
           </div>
 
           {/* Card 2: Engineered Stack */}
           <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 sm:col-span-2 group hover:border-violet-500/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(139,92,246,0.03)] transition-all duration-300">
             <div className="flex items-center justify-between">
-              <span className="text-[9px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{TEXTS[lang].engineered_stack}</span>
+              <span className="text-[10px] sm:text-[11px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{TEXTS[lang].engineered_stack}</span>
               <div className="flex gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
                 <span className="w-1.5 h-1.5 rounded-full bg-violet-400"></span>
@@ -489,12 +489,12 @@ export default function ProjectClientPage({
             <div className="flex flex-wrap gap-1.5">
               {techStackBadges.length > 0 ? (
                 techStackBadges.map((badge, bIdx) => (
-                  <span key={bIdx} className="text-[9px] font-black text-[var(--text-secondary)] bg-[var(--bg-card)] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg hover:border-[var(--neon-cyan)]/20 hover:bg-[var(--bg-card)] transition-all">
+                  <span key={bIdx} className="text-[11px] sm:text-xs font-black text-[var(--text-secondary)] bg-[var(--bg-card)] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg hover:border-[var(--neon-cyan)]/20 hover:bg-[var(--bg-card)] transition-all">
                     {badge}
                   </span>
                 ))
               ) : (
-                <span className="text-[9px] font-black text-[var(--text-secondary)] bg-[var(--bg-card)] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg">
+                <span className="text-[11px] sm:text-xs font-black text-[var(--text-secondary)] bg-[var(--bg-card)] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg">
                   {activeType}
                 </span>
               )}
@@ -504,10 +504,10 @@ export default function ProjectClientPage({
           {/* Card 3: DevOps & Integrity Dashboard */}
           <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 group hover:border-fuchsia-500/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(217,70,239,0.03)] transition-all duration-300">
             <div className="flex items-center justify-between">
-              <span className="text-[9px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "DevOps & Cloud" : "DevOps & Cloud"}</span>
+              <span className="text-[10px] sm:text-[11px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "DevOps & Cloud" : "DevOps & Cloud"}</span>
               <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_#10b981] animate-ping"></span>
             </div>
-            <div className="flex flex-col gap-1 text-[10px] font-bold text-[var(--text-secondary)]">
+            <div className="flex flex-col gap-1 text-[12px] sm:text-[13px] font-bold text-[var(--text-secondary)]">
               <div className="flex items-center justify-between">
                 <span>CI/CD Status</span>
                 <span className="text-emerald-400">VERIFIED</span>
