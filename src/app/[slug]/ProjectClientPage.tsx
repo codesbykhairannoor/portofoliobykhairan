@@ -324,7 +324,7 @@ export default function ProjectClientPage({
       />
 
       {/* Main Core Centered Wide Sheet */}
-      <div className="relative z-10 pt-28 md:pt-32 pb-12 px-4 md:px-0 max-w-4xl mx-auto w-full flex flex-col gap-3.5 md:gap-4 animate-fade-in">
+      <div className="relative z-10 pt-28 md:pt-32 pb-12 px-4 max-w-4xl mx-auto w-full flex flex-col gap-3.5 md:gap-4 animate-fade-in">
         
         {/* Minimal Breadcrumb Path */}
         <nav className="flex items-center gap-2 text-[10px] sm:text-xs font-bold text-[var(--text-muted)] select-none">
@@ -347,7 +347,7 @@ export default function ProjectClientPage({
           </h1>
           
           {activeDescription && (
-            <p className="text-[var(--text-secondary)] text-sm md:text-[15px] leading-relaxed max-w-3xl font-medium">
+            <p className="text-[var(--text-secondary)] text-base md:text-lg leading-relaxed max-w-3xl font-medium">
               {activeDescription}
             </p>
           )}

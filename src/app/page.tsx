@@ -347,7 +347,7 @@ export default function Home() {
       <div className="absolute bottom-[20%] left-[5%] w-[650px] h-[650px] bg-gradient-to-tr from-[#50FFD9]/3 to-transparent blur-[150px] pointer-events-none -z-10"></div>
 
       {/* Floating Header */}
-      <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full px-6 max-w-5xl">
+      <header className="fixed top-6 left-0 right-0 mx-auto z-50 w-[calc(100%-2rem)] max-w-5xl">
         <div className="glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-[var(--border-glass)] backdrop-blur-xl relative">
           <div className="flex items-center gap-2">
             <a href="#home" className="text-lg md:text-xl font-black tracking-tighter text-[var(--text-primary)] select-none">
@@ -491,7 +491,7 @@ export default function Home() {
       </header>
 
       {/* Hero Landing Section */}
-      <section className="pt-32 md:pt-40 pb-16 md:pb-24 px-6 max-w-5xl mx-auto w-full flex flex-col items-center justify-center text-center relative">
+      <section className="pt-32 md:pt-40 pb-16 md:pb-24 px-4 max-w-5xl mx-auto w-full flex flex-col items-center justify-center text-center relative">
         {/* Pulsing indicator capsule */}
         <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/[0.02] border border-white/5 text-[10px] md:text-xs font-bold text-gray-300 mb-6 md:mb-8 backdrop-blur-md shadow-inner">
           <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#50FFD9] shadow-[0_0_10px_#50FFD9] animate-pulse"></span>
@@ -550,7 +550,7 @@ export default function Home() {
       </section>
 
       {/* About Section in a Premium Bento Grid Layout */}
-      <section id="about" className="py-16 md:py-28 px-6 max-w-5xl mx-auto w-full scroll-mt-24">
+      <section id="about" className="py-16 md:py-28 px-4 max-w-5xl mx-auto w-full scroll-mt-24">
         <div className="mb-10 md:mb-14">
           <span className="text-[10px] md:text-xs font-black text-[var(--neon-cyan)] uppercase tracking-widest mb-2 md:mb-3 block">{TRANSLATIONS[lang].profile_summary}</span>
           <h2 className="text-2xl md:text-5xl font-extrabold text-[var(--text-primary)] tracking-tight">{TRANSLATIONS[lang].meet_architect}</h2>
@@ -661,7 +661,7 @@ export default function Home() {
       </section>
 
       {/* Grid Filtering Tabs Section */}
-      <section id="portfolio" className="py-16 md:py-28 px-6 max-w-5xl mx-auto w-full scroll-mt-24">
+      <section id="portfolio" className="py-16 md:py-28 px-4 max-w-5xl mx-auto w-full scroll-mt-24">
         
         {/* Title and Action Blocks */}
         <div className="flex flex-col items-center justify-center text-center mb-10 md:mb-16">
@@ -733,8 +733,8 @@ export default function Home() {
                         <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/40 to-transparent"></div>
                       </div>
                       <div className="p-5 md:p-8 flex flex-col flex-grow">
-                        <h3 className="text-[13px] md:text-lg font-bold text-[var(--text-primary)] mb-2 hover:text-[var(--neon-cyan)] transition-colors line-clamp-1">{title}</h3>
-                        <p className="text-[var(--text-secondary)] text-[10px] md:text-sm line-clamp-2 md:line-clamp-3 mb-4 md:mb-5 leading-relaxed flex-grow">
+                        <h3 className="text-sm md:text-lg font-bold text-[var(--text-primary)] mb-2 hover:text-[var(--neon-cyan)] transition-colors line-clamp-1">{title}</h3>
+                        <p className="text-[var(--text-secondary)] text-sm leading-relaxed flex-grow">
                           {cleanDesc}
                         </p>
 
