@@ -293,14 +293,14 @@
       "image": ""
     },
     {
-      "title": "DEXScreener AI Trading Bot",
-      "title_en": "DEXScreener AI Trading Bot",
-      "title_id": "Bot Trading AI DEXScreener",
-      "description": "A Web3-integrated bot that monitors, analyzes, and executes trades on DEX platforms based on real-time market data and AI analysis.",
-      "description_en": "A Web3-integrated bot that monitors, analyzes, and executes trades on DEX platforms based on real-time market data and AI analysis.",
-      "description_id": "Bot terintegrasi Web3 yang memantau, menganalisis, dan mengeksekusi perdagangan di platform DEX berdasarkan data pasar waktu nyata dan analisis AI.",
-      "link": "/dexscreener-ai-bot/",
-      "slug": "dexscreener-ai-bot",
+      "title": "AI Google Maps Lead Prospector",
+      "title_en": "AI Google Maps Lead Prospector",
+      "title_id": "Prospektor Lead Google Maps AI",
+      "description": "An automated B2B lead generation engine that scrapes Google Maps, extracts business contacts, and initiates AI-powered outreach.",
+      "description_en": "An automated B2B lead generation engine that scrapes Google Maps, extracts business contacts, and initiates AI-powered outreach.",
+      "description_id": "Mesin generasi lead B2B otomatis yang memproses Google Maps, mengekstrak kontak bisnis, dan memulai penjangkauan berbasis AI.",
+      "link": "/ai-maps-leadgen/",
+      "slug": "ai-maps-leadgen",
       "image": ""
     }
   ],
