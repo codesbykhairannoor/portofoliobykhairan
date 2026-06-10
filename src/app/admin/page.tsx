@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 
 export default function AdminPage() {
@@ -28,6 +28,12 @@ export default function AdminPage() {
 
   // Interface language state for Admin Panel
   const [adminLang, setAdminLang] = useState<"en" | "id">("en");
+
+  // Media Library / Upload states
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadGallery, setUploadGallery] = useState<string[]>([]);
+  const coverInputRef = useRef<HTMLInputElement>(null);
+  const galleryInputRef = useRef<HTMLInputElement>(null);
 
   // Form states for project payloads (Create & Edit)
   const [originalSlug, setOriginalSlug] = useState("");
@@ -107,6 +113,38 @@ export default function AdminPage() {
 
       setContentId(translated.trim());
       setFormLang("id");
+    }
+  };
+
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>, target: "cover" | "gallery") => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsUploading(true);
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("password", password); // Use the current admin password for auth
+
+    try {
+      const res = await fetch("/api/upload", {
+        method: "POST",
+        body: formData
+      });
+      const data = await res.json();
+      if (data.success) {
+        if (target === "cover") {
+          setImage(data.url);
+        } else {
+          setUploadGallery(prev => [data.url, ...prev]);
+        }
+      } else {
+        alert("Upload failed: " + data.error);
+      }
+    } catch (err) {
+      alert("Error uploading file.");
+    } finally {
+      setIsUploading(false);
+      if (e.target) e.target.value = "";
     }
   };
 
@@ -389,7 +427,13 @@ export default function AdminPage() {
       decompile: "Decompile Node Sequence?",
       confirm_purge: "Confirm Purge",
       purge_desc: "Are you sure you want to permanently delete",
-      purge_desc_2: "This action will permanently purge the metadata card from catalog indexing and delete the case study JSON payload from disk."
+      purge_desc_2: "This action will permanently purge the metadata card from catalog indexing and delete the case study JSON payload from disk.",
+      upload_cover: "Upload Cover",
+      upload_asset: "Upload Visual Asset",
+      gallery: "Project Asset Gallery",
+      gallery_desc: "Upload images for the case study here. Click to copy URL then paste into the HTML editor.",
+      copy_url: "Copy URL",
+      copied: "Copied!"
     },
     id: {
       gateway: "Gerbang Konsol Admin",
@@ -437,7 +481,13 @@ export default function AdminPage() {
       decompile: "Hapus Urutan Node?",
       confirm_purge: "Konfirmasi Penghapusan",
       purge_desc: "Apakah Anda yakin ingin menghapus permanen",
-      purge_desc_2: "Tindakan ini akan menghapus permanen kartu metadata dari pengindeksan katalog dan menghapus payload JSON studi kasus dari disk."
+      purge_desc_2: "Tindakan ini akan menghapus permanen kartu metadata dari pengindeksan katalog dan menghapus payload JSON studi kasus dari disk.",
+      upload_cover: "Unggah Sampul",
+      upload_asset: "Unggah Aset Visual",
+      gallery: "Galeri Aset Proyek",
+      gallery_desc: "Unggah gambar untuk studi kasus di sini. Klik untuk menyalin URL lalu tempel ke editor HTML.",
+      copy_url: "Salin URL",
+      copied: "Disalin!"
     }
   };
 
@@ -713,7 +763,23 @@ export default function AdminPage() {
 
               {/* Cover Image URL */}
               <div className="flex flex-col gap-2">
-                <label htmlFor="proj-image" className="text-[10px] font-extrabold uppercase tracking-widest text-gray-400">{t.cover_url}</label>
+                <div className="flex justify-between items-center">
+                  <label htmlFor="proj-image" className="text-[10px] font-extrabold uppercase tracking-widest text-gray-400">{t.cover_url}</label>
+                  <button 
+                    type="button"
+                    onClick={() => coverInputRef.current?.click()}
+                    className="text-[9px] font-black text-[#50FFD9] uppercase hover:underline cursor-pointer"
+                  >
+                    {isUploading ? "..." : `↑ ${t.upload_cover}`}
+                  </button>
+                  <input 
+                    type="file" 
+                    ref={coverInputRef} 
+                    className="hidden" 
+                    accept="image/*" 
+                    onChange={(e) => handleFileUpload(e, "cover")}
+                  />
+                </div>
                 <input 
                   id="proj-image"
                   type="text" 
@@ -724,6 +790,56 @@ export default function AdminPage() {
                   required
                 />
               </div>
+            </div>
+
+            {/* Asset Gallery / Upload Section */}
+            <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 mb-2">
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#50FFD9] glow-text block mb-1">{t.gallery}</span>
+                  <p className="text-gray-500 text-[11px]">{t.gallery_desc}</p>
+                </div>
+                <button 
+                  type="button"
+                  onClick={() => galleryInputRef.current?.click()}
+                  className="btn-neon text-[10px] py-2 px-4 rounded-lg border border-transparent cursor-pointer"
+                >
+                  {isUploading ? "..." : `↑ ${t.upload_asset}`}
+                </button>
+                <input 
+                  type="file" 
+                  ref={galleryInputRef} 
+                  className="hidden" 
+                  accept="image/*" 
+                  onChange={(e) => handleFileUpload(e, "gallery")}
+                />
+              </div>
+
+              {uploadGallery.length > 0 ? (
+                <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3">
+                  {uploadGallery.map((url, idx) => (
+                    <div key={idx} className="group relative aspect-video bg-black rounded-lg border border-white/10 overflow-hidden">
+                      <img src={url} alt="" className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <button 
+                          type="button"
+                          onClick={() => {
+                            navigator.clipboard.writeText(`<img src="${url}" alt="Project visual" />`);
+                            alert(t.copied);
+                          }}
+                          className="text-[9px] font-black text-[#50FFD9] uppercase tracking-widest"
+                        >
+                          {t.copy_url}
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="h-16 border border-dashed border-white/10 rounded-xl flex items-center justify-center text-[10px] text-gray-600 font-bold uppercase tracking-widest">
+                  No assets uploaded in this session
+                </div>
+              )}
             </div>
 
             {/* Language Content Tabs */}
