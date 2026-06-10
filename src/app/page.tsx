@@ -113,7 +113,8 @@ const TRANSLATIONS = {
     nav_home: "Home",
     nav_about: "About",
     nav_portfolio: "Portfolio",
-    nav_contact: "Contact"
+    nav_contact: "Contact",
+    ai: "Artificial Intelligence"
   },
   id: {
     ready: "Siap untuk Peluang Baru",
@@ -169,13 +170,14 @@ const TRANSLATIONS = {
     nav_home: "Beranda",
     nav_about: "Tentang",
     nav_portfolio: "Portofolio",
-    nav_contact: "Hubungi Saya"
+    nav_contact: "Hubungi Saya",
+    ai: "Kecerdasan Buatan"
   }
 };
 
 export default function Home() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
-  const [activeTab, setActiveTab] = useState<"visual_design" | "website" | "skills">("visual_design");
+  const [activeTab, setActiveTab] = useState<"visual_design" | "website" | "ai" | "skills">("visual_design");
   const [searchQuery, setSearchQuery] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [emailCopied, setEmailCopied] = useState(false);
@@ -332,6 +334,8 @@ export default function Home() {
       return portfolioData.visual_design;
     } else if (activeTab === "website") {
       return portfolioData.website;
+    } else if (activeTab === "ai") {
+      return portfolioData.ai;
     }
     return [];
   };
@@ -683,6 +687,12 @@ export default function Home() {
                 className={`tab-btn ${activeTab === "website" ? "active" : ""}`}
               >
                 {TRANSLATIONS[lang].websites}
+              </button>
+              <button 
+                onClick={() => { setActiveTab("ai"); setSearchQuery(""); }} 
+                className={`tab-btn ${activeTab === "ai" ? "active" : ""}`}
+              >
+                {TRANSLATIONS[lang].ai}
               </button>
               <button 
                 onClick={() => { setActiveTab("skills"); setSearchQuery(""); }} 
