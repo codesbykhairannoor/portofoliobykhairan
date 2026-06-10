@@ -89,8 +89,8 @@ export default function ProjectNavbar({
   };
 
   return (
-    <header className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-5xl">
-      <nav className="glass-panel px-3 md:px-6 py-2.5 md:py-4 rounded-2xl flex items-center justify-between border border-white/5 backdrop-blur-xl">
+    <header className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-full px-4 md:px-0 max-w-4xl">
+      <nav className="glass-panel px-3 md:px-6 py-2.5 md:py-4 rounded-2xl flex items-center justify-between border border-[var(--border-glass)] backdrop-blur-xl">
         <a 
           href="/#portfolio" 
           className="btn-glass text-[9px] sm:text-xs py-2 px-3 sm:px-4.5 rounded-xl flex items-center gap-1.5 sm:gap-2 hover:text-[var(--neon-cyan)] transition-all cursor-pointer"
@@ -144,7 +144,7 @@ export default function ProjectNavbar({
             )}
           </button>
 
-          <a href="/#contact" className="btn-neon text-[9px] sm:text-xs py-2 px-3 sm:px-4.5 rounded-xl border border-transparent transition-all">
+          <a href="/#contact" className="btn-neon text-[10px] sm:text-xs py-2 px-3 sm:px-4.5 rounded-xl border border-transparent transition-all">
             {navText[currentLang].consult}
           </a>
         </div>

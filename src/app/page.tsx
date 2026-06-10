@@ -347,8 +347,8 @@ export default function Home() {
       <div className="absolute bottom-[20%] left-[5%] w-[650px] h-[650px] bg-gradient-to-tr from-[#50FFD9]/3 to-transparent blur-[150px] pointer-events-none -z-10"></div>
 
       {/* Floating Header */}
-      <header className="fixed top-6 left-0 right-0 z-50 px-4 md:px-8">
-        <div className="max-w-5xl mx-auto glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-white/5 backdrop-blur-xl relative">
+      <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full px-6 max-w-5xl">
+        <div className="glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-[var(--border-glass)] backdrop-blur-xl relative">
           <div className="flex items-center gap-2">
             <a href="#home" className="text-lg md:text-xl font-black tracking-tighter text-[var(--text-primary)] select-none">
               Khairan<span className="text-[var(--neon-cyan)] glow-text">.tech</span>
@@ -408,7 +408,7 @@ export default function Home() {
                 </svg>
               )}
             </button>
-            <a href="/#contact" className="btn-neon text-[9px] sm:text-xs py-2 px-3 sm:px-4.5 rounded-xl border border-transparent transition-all">
+            <a href="/#contact" className="btn-neon text-[10px] sm:text-xs py-2 px-3 sm:px-4.5 rounded-xl border border-transparent transition-all">
               {TRANSLATIONS[lang].lets_talk}
             </a>
           </div>
@@ -733,7 +733,7 @@ export default function Home() {
                         <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/40 to-transparent"></div>
                       </div>
                       <div className="p-5 md:p-8 flex flex-col flex-grow">
-                        <h3 className="text-sm md:text-lg font-bold text-[var(--text-primary)] mb-2 hover:text-[var(--neon-cyan)] transition-colors line-clamp-1">{title}</h3>
+                        <h3 className="text-[13px] md:text-lg font-bold text-[var(--text-primary)] mb-2 hover:text-[var(--neon-cyan)] transition-colors line-clamp-1">{title}</h3>
                         <p className="text-[var(--text-secondary)] text-[10px] md:text-sm line-clamp-2 md:line-clamp-3 mb-4 md:mb-5 leading-relaxed flex-grow">
                           {cleanDesc}
                         </p>
@@ -756,7 +756,7 @@ export default function Home() {
 
                         <a 
                           href={`/${item.slug}`} 
-                          className="text-xs font-bold text-[var(--neon-cyan)] hover:underline flex items-center gap-1.5 group/link"
+                          className="text-[10px] md:text-xs font-bold text-[var(--neon-cyan)] hover:underline flex items-center gap-1.5 group/link"
                         >
                           {TRANSLATIONS[lang].read_details}
                           <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
