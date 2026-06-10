@@ -351,24 +351,24 @@ export default function Home() {
         <div className="max-w-5xl mx-auto glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-white/5 backdrop-blur-xl relative">
           <div className="flex items-center gap-2">
             <a href="#home" className="text-lg md:text-xl font-black tracking-tighter text-[var(--text-primary)] select-none">
-              Khairan<span className="text-[#50FFD9] glow-text">.tech</span>
+              Khairan<span className="text-[var(--neon-cyan)] glow-text">.tech</span>
             </a>
           </div>
 
           {/* Desktop Navigation Links - Centered */}
-          <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-xs font-bold tracking-wider text-gray-400">
-            <a href="#home" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "home" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_home}</a>
-            <a href="#about" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "about" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_about}</a>
-            <a href="#portfolio" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "portfolio" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_portfolio}</a>
-            <a href="#contact" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "contact" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_contact}</a>
+          <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-xs font-bold tracking-wider text-[var(--text-secondary)]">
+            <a href="#home" className={`hover:text-[var(--neon-cyan)] transition-colors ${activeSection === "home" ? "text-[var(--neon-cyan)]" : ""}`}>{TRANSLATIONS[lang].nav_home}</a>
+            <a href="#about" className={`hover:text-[var(--neon-cyan)] transition-colors ${activeSection === "about" ? "text-[var(--neon-cyan)]" : ""}`}>{TRANSLATIONS[lang].nav_about}</a>
+            <a href="#portfolio" className={`hover:text-[var(--neon-cyan)] transition-colors ${activeSection === "portfolio" ? "text-[var(--neon-cyan)]" : ""}`}>{TRANSLATIONS[lang].nav_portfolio}</a>
+            <a href="#contact" className={`hover:text-[var(--neon-cyan)] transition-colors ${activeSection === "contact" ? "text-[var(--neon-cyan)]" : ""}`}>{TRANSLATIONS[lang].nav_contact}</a>
           </nav>
 
           {/* Fallback for smaller desktops where absolute centering might overlap */}
-          <nav className="hidden md:flex lg:hidden items-center gap-6 text-[10px] font-bold tracking-wider text-gray-400">
-            <a href="#home" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "home" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_home}</a>
-            <a href="#about" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "about" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_about}</a>
-            <a href="#portfolio" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "portfolio" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_portfolio}</a>
-            <a href="#contact" className={`hover:text-[#50FFD9] transition-colors ${activeSection === "contact" ? "text-[#50FFD9]" : ""}`}>{TRANSLATIONS[lang].nav_contact}</a>
+          <nav className="hidden md:flex lg:hidden items-center gap-6 text-[10px] font-bold tracking-wider text-[var(--text-secondary)]">
+            <a href="#home" className={`hover:text-[var(--neon-cyan)] transition-colors ${activeSection === "home" ? "text-[var(--neon-cyan)]" : ""}`}>{TRANSLATIONS[lang].nav_home}</a>
+            <a href="#about" className={`hover:text-[var(--neon-cyan)] transition-colors ${activeSection === "about" ? "text-[var(--neon-cyan)]" : ""}`}>{TRANSLATIONS[lang].nav_about}</a>
+            <a href="#portfolio" className={`hover:text-[var(--neon-cyan)] transition-colors ${activeSection === "portfolio" ? "text-[var(--neon-cyan)]" : ""}`}>{TRANSLATIONS[lang].nav_portfolio}</a>
+            <a href="#contact" className={`hover:text-[var(--neon-cyan)] transition-colors ${activeSection === "contact" ? "text-[var(--neon-cyan)]" : ""}`}>{TRANSLATIONS[lang].nav_contact}</a>
           </nav>
 
           {/* Language Toggle, Theme Toggle and Let's Talk CTA button */}
@@ -376,7 +376,7 @@ export default function Home() {
             {/* Language Switcher */}
             <button 
               onClick={() => changeLanguage(lang === "en" ? "id" : "en")}
-              className="h-10 px-3.5 rounded-xl bg-white/[0.03] border border-white/5 flex items-center gap-1.5 hover:border-[#50FFD9]/30 text-[10px] font-extrabold tracking-wider text-gray-300 hover:text-[#50FFD9] transition-all focus:outline-none cursor-pointer"
+              className="h-10 px-3.5 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center gap-1.5 hover:border-[var(--neon-cyan)]/30 text-[10px] font-extrabold tracking-wider text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] transition-all focus:outline-none cursor-pointer"
               title={lang === "en" ? "Ubah ke Bahasa Indonesia" : "Switch to English"}
             >
               <span>🌐</span>
@@ -386,7 +386,7 @@ export default function Home() {
             {/* Theme Toggle Button */}
             <button 
               onClick={toggleTheme}
-              className="w-10 h-10 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center hover:border-[#50FFD9]/30 text-gray-300 hover:text-[#50FFD9] transition-all focus:outline-none cursor-pointer"
+              className="w-10 h-10 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center hover:border-[var(--neon-cyan)]/30 text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] transition-all focus:outline-none cursor-pointer"
               aria-label="Toggle Theme"
               title={theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
             >
@@ -416,7 +416,7 @@ export default function Home() {
           {/* Mobile Hamburguer Toggle */}
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden w-10 h-10 flex items-center justify-center rounded-xl bg-white/[0.03] border border-white/5 hover:border-[#50FFD9]/30 text-gray-300 transition-all focus:outline-none"
+            className="md:hidden w-10 h-10 flex items-center justify-center rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] hover:border-[var(--neon-cyan)]/30 text-[var(--text-secondary)] transition-all focus:outline-none"
             aria-label="Toggle Menu"
           >
             {mobileMenuOpen ? (
@@ -436,45 +436,45 @@ export default function Home() {
 
         {/* Mobile Navigation Dropdown Menu (Glassmorphism Overlay) */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-3 max-w-5xl mx-auto glass-panel p-6 rounded-2xl border border-white/5 backdrop-blur-2xl animate-fade-in flex flex-col gap-4">
+          <div className="md:hidden mt-3 w-full glass-panel p-6 rounded-2xl border border-[var(--border-glass)] backdrop-blur-2xl animate-fade-in flex flex-col gap-4">
             <a 
               href="#home" 
               onClick={() => setMobileMenuOpen(false)}
-              className="text-sm font-semibold tracking-wider text-gray-300 hover:text-[#50FFD9] py-2 border-b border-white/[0.03]"
+              className="text-sm font-semibold tracking-wider text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] py-2 border-b border-[var(--border-glass)]"
             >
               {TRANSLATIONS[lang].nav_home}
             </a>
             <a 
               href="#about" 
               onClick={() => setMobileMenuOpen(false)}
-              className="text-sm font-semibold tracking-wider text-gray-300 hover:text-[#50FFD9] py-2 border-b border-white/[0.03]"
+              className="text-sm font-semibold tracking-wider text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] py-2 border-b border-[var(--border-glass)]"
             >
               {TRANSLATIONS[lang].nav_about}
             </a>
             <a 
               href="#portfolio" 
               onClick={() => setMobileMenuOpen(false)}
-              className="text-sm font-semibold tracking-wider text-gray-300 hover:text-[#50FFD9] py-2 border-b border-white/[0.03]"
+              className="text-sm font-semibold tracking-wider text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] py-2 border-b border-[var(--border-glass)]"
             >
               {TRANSLATIONS[lang].nav_portfolio}
             </a>
             <a 
               href="#contact" 
               onClick={() => setMobileMenuOpen(false)}
-              className="text-sm font-semibold tracking-wider text-gray-300 hover:text-[#50FFD9] py-2 border-b border-white/[0.03]"
+              className="text-sm font-semibold tracking-wider text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] py-2 border-b border-[var(--border-glass)]"
             >
               {TRANSLATIONS[lang].nav_contact}
             </a>
             <button 
               onClick={() => { changeLanguage(lang === "en" ? "id" : "en"); setMobileMenuOpen(false); }}
-              className="flex items-center justify-between text-sm font-semibold tracking-wider text-gray-300 hover:text-[#50FFD9] py-2 border-b border-white/[0.03] w-full text-left cursor-pointer"
+              className="flex items-center justify-between text-sm font-semibold tracking-wider text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] py-2 border-b border-[var(--border-glass)] w-full text-left cursor-pointer"
             >
               <span>🌐 Language / Bahasa</span>
-              <span className="text-[#50FFD9] font-bold">{lang === "en" ? "English (EN)" : "Indonesia (ID)"}</span>
+              <span className="text-[var(--neon-cyan)] font-bold">{lang === "en" ? "English (EN)" : "Indonesia (ID)"}</span>
             </button>
             <button 
               onClick={() => { toggleTheme(); setMobileMenuOpen(false); }}
-              className="flex items-center justify-between text-sm font-semibold tracking-wider text-gray-300 hover:text-[#50FFD9] py-2 border-b border-white/[0.03] w-full text-left cursor-pointer"
+              className="flex items-center justify-between text-sm font-semibold tracking-wider text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] py-2 border-b border-[var(--border-glass)] w-full text-left cursor-pointer"
             >
               <span>{TRANSLATIONS[lang].theme_mode}</span>
               <span>{theme === "dark" ? "☀️ Light" : "🌙 Dark"}</span>
@@ -500,13 +500,13 @@ export default function Home() {
 
         <h1 className="custom-hero-title mb-6 md:mb-8 font-extrabold leading-[1.1] tracking-tight">
           {TRANSLATIONS[lang].hero_title_1} <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-primary)] via-[#50FFD9] to-[var(--neon-violet)]">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-primary)] via-[var(--neon-cyan)] to-[var(--neon-violet)]">
             {TRANSLATIONS[lang].hero_title_2}
           </span> <br />
           {TRANSLATIONS[lang].hero_title_3}
         </h1>
 
-        <p className="max-w-2xl text-gray-400 text-xs md:text-base mb-10 md:mb-12 leading-relaxed font-medium px-4 md:px-0">
+        <p className="max-w-2xl text-[var(--text-secondary)] text-xs md:text-base mb-10 md:mb-12 leading-relaxed font-medium px-4 md:px-0">
           {TRANSLATIONS[lang].hero_desc}
         </p>
 
@@ -552,8 +552,8 @@ export default function Home() {
       {/* About Section in a Premium Bento Grid Layout */}
       <section id="about" className="py-16 md:py-28 px-6 max-w-5xl mx-auto w-full scroll-mt-24">
         <div className="mb-10 md:mb-14">
-          <span className="text-[10px] md:text-xs font-black text-[#50FFD9] uppercase tracking-widest mb-2 md:mb-3 block">{TRANSLATIONS[lang].profile_summary}</span>
-          <h2 className="text-2xl md:text-5xl font-extrabold text-white tracking-tight">{TRANSLATIONS[lang].meet_architect}</h2>
+          <span className="text-[10px] md:text-xs font-black text-[var(--neon-cyan)] uppercase tracking-widest mb-2 md:mb-3 block">{TRANSLATIONS[lang].profile_summary}</span>
+          <h2 className="text-2xl md:text-5xl font-extrabold text-[var(--text-primary)] tracking-tight">{TRANSLATIONS[lang].meet_architect}</h2>
         </div>
 
         {/* Bento Grid Container */}
@@ -562,10 +562,10 @@ export default function Home() {
           {/* Main Story Card (Spans 8 cols) */}
           <div className="md:col-span-8 glass-panel p-6 md:p-10 rounded-3xl border border-white/5 flex flex-col justify-between">
             <div>
-              <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest block mb-3 md:mb-4">{TRANSLATIONS[lang].biography}</span>
-              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-white">Khairan Noor Fadhlillah</h3>
-              <p className="text-[#50FFD9] font-medium text-xs md:text-sm italic mb-4 md:mb-6">"{TRANSLATIONS[lang].bio_quote}"</p>
-              <p className="text-gray-400 text-xs md:text-[15px] leading-relaxed mb-6 md:mb-8">
+              <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-widest block mb-3 md:mb-4">{TRANSLATIONS[lang].biography}</span>
+              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-[var(--text-primary)]">Khairan Noor Fadhlillah</h3>
+              <p className="text-[var(--neon-cyan)] font-medium text-xs md:text-sm italic mb-4 md:mb-6">"{TRANSLATIONS[lang].bio_quote}"</p>
+              <p className="text-[var(--text-secondary)] text-xs md:text-[15px] leading-relaxed mb-6 md:mb-8">
                 {TRANSLATIONS[lang].bio_body}
               </p>
             </div>
@@ -596,7 +596,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
               
               <div className="absolute bottom-4 left-4 right-4">
-                <span className="text-[10px] font-extrabold uppercase tracking-wider bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-md border border-white/5 text-gray-300">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider bg-[var(--bg-dark)]/60 backdrop-blur-md px-3 py-1.5 rounded-md border border-[var(--border-glass)] text-[var(--text-secondary)]">
                   Jakarta, ID 🇮🇩
                 </span>
               </div>
@@ -606,15 +606,15 @@ export default function Home() {
           {/* Stat Block 1: Projects (Spans 4 cols) */}
           <div className="md:col-span-4 glass-panel p-6 md:p-8 rounded-3xl border border-white/5 flex flex-col justify-between group hover:border-[#50FFD9]/15">
             <div>
-              <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#50FFD9] transition-colors mb-4 md:mb-6">
+              <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-muted)] group-hover:text-[var(--neon-cyan)] transition-colors mb-4 md:mb-6">
                 <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
               </div>
-              <h4 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-1 md:mb-2">25+</h4>
-              <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{TRANSLATIONS[lang].completed_works}</p>
+              <h4 className="text-3xl md:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-1 md:mb-2">25+</h4>
+              <p className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-widest">{TRANSLATIONS[lang].completed_works}</p>
             </div>
-            <p className="text-[10px] md:text-xs text-gray-500 mt-4 md:mt-6 leading-relaxed">
+            <p className="text-[10px] md:text-xs text-[var(--text-muted)] mt-4 md:mt-6 leading-relaxed">
               {TRANSLATIONS[lang].completed_works_desc}
             </p>
           </div>
@@ -622,15 +622,15 @@ export default function Home() {
           {/* Stat Block 2: Experience (Spans 4 cols) */}
           <div className="md:col-span-4 glass-panel p-8 rounded-3xl border border-white/5 flex flex-col justify-between group hover:border-[#50FFD9]/15">
             <div>
-              <div className="w-10 h-10 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#50FFD9] transition-colors mb-6">
+              <div className="w-10 h-10 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-muted)] group-hover:text-[var(--neon-cyan)] transition-colors mb-6">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h4 className="text-4xl font-extrabold text-white tracking-tight mb-2">3+</h4>
-              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">{TRANSLATIONS[lang].years_active}</p>
+              <h4 className="text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">3+</h4>
+              <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest">{TRANSLATIONS[lang].years_active}</p>
             </div>
-            <p className="text-xs text-gray-500 mt-6 leading-relaxed">
+            <p className="text-xs text-[var(--text-muted)] mt-6 leading-relaxed">
               {TRANSLATIONS[lang].years_active_desc}
             </p>
           </div>
@@ -639,20 +639,20 @@ export default function Home() {
           <div className="md:col-span-4 glass-panel p-8 rounded-3xl border border-white/5 flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-white/[0.005] to-transparent">
             <div>
               <div className="flex justify-between items-start mb-6">
-                <div className="w-10 h-10 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-center text-gray-400">
+                <div className="w-10 h-10 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-muted)]">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#50FFD9]/10 border border-[#50FFD9]/20 text-[10px] font-extrabold text-[#50FFD9] uppercase tracking-wider">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#50FFD9] animate-pulse"></span>
+                <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[var(--neon-cyan)]/10 border border-[var(--neon-cyan)]/20 text-[10px] font-extrabold text-[var(--neon-cyan)] uppercase tracking-wider">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--neon-cyan)] animate-pulse"></span>
                   {TRANSLATIONS[lang].active}
                 </span>
               </div>
-              <h4 className="text-xl font-bold text-white mb-2">Sync: 100%</h4>
-              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">{TRANSLATIONS[lang].global_availability}</p>
+              <h4 className="text-xl font-bold text-[var(--text-primary)] mb-2">Sync: 100%</h4>
+              <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest">{TRANSLATIONS[lang].global_availability}</p>
             </div>
-            <p className="text-xs text-gray-500 mt-6 leading-relaxed">
+            <p className="text-xs text-[var(--text-muted)] mt-6 leading-relaxed">
               {TRANSLATIONS[lang].global_availability_desc}
             </p>
           </div>
@@ -665,9 +665,9 @@ export default function Home() {
         
         {/* Title and Action Blocks */}
         <div className="flex flex-col items-center justify-center text-center mb-10 md:mb-16">
-          <span className="text-[10px] md:text-xs font-black text-[#50FFD9] uppercase tracking-widest mb-2 md:mb-3 block">{TRANSLATIONS[lang].classifications}</span>
-          <h2 className="text-2xl md:text-4xl font-extrabold text-white tracking-tight">{TRANSLATIONS[lang].main_vault}</h2>
-          <p className="text-gray-400 text-[10px] md:text-sm mt-2 max-w-md leading-relaxed">{TRANSLATIONS[lang].vault_desc}</p>
+          <span className="text-[10px] md:text-xs font-black text-[var(--neon-cyan)] uppercase tracking-widest mb-2 md:mb-3 block">{TRANSLATIONS[lang].classifications}</span>
+          <h2 className="text-2xl md:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight">{TRANSLATIONS[lang].main_vault}</h2>
+          <p className="text-[var(--text-muted)] text-[10px] md:text-sm mt-2 max-w-md leading-relaxed">{TRANSLATIONS[lang].vault_desc}</p>
           
           <div className="mt-8 flex flex-col md:flex-row items-center gap-5 w-full justify-center">
             {/* Category Toggle Tabs */}
@@ -733,8 +733,8 @@ export default function Home() {
                         <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/40 to-transparent"></div>
                       </div>
                       <div className="p-5 md:p-8 flex flex-col flex-grow">
-                        <h3 className="text-sm md:text-lg font-bold text-white mb-2 hover:text-[#50FFD9] transition-colors line-clamp-1">{title}</h3>
-                        <p className="text-gray-400 text-[10px] md:text-sm line-clamp-2 md:line-clamp-3 mb-4 md:mb-5 leading-relaxed flex-grow">
+                        <h3 className="text-sm md:text-lg font-bold text-[var(--text-primary)] mb-2 hover:text-[var(--neon-cyan)] transition-colors line-clamp-1">{title}</h3>
+                        <p className="text-[var(--text-secondary)] text-[10px] md:text-sm line-clamp-2 md:line-clamp-3 mb-4 md:mb-5 leading-relaxed flex-grow">
                           {cleanDesc}
                         </p>
 
@@ -756,7 +756,7 @@ export default function Home() {
 
                         <a 
                           href={`/${item.slug}`} 
-                          className="text-xs font-bold text-[#50FFD9] hover:underline flex items-center gap-1.5 group/link"
+                          className="text-xs font-bold text-[var(--neon-cyan)] hover:underline flex items-center gap-1.5 group/link"
                         >
                           {TRANSLATIONS[lang].read_details}
                           <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -771,10 +771,10 @@ export default function Home() {
               </div>
             ) : (
               <div className="glass-panel p-16 rounded-3xl text-center text-gray-500 border border-white/5 max-w-md mx-auto animate-fade-in">
-                <svg className="w-10 h-10 text-gray-600 mx-auto mb-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <svg className="w-10 h-10 text-[var(--text-muted)] mx-auto mb-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>
-                <h4 className="text-white font-bold mb-2">{TRANSLATIONS[lang].no_projects}</h4>
+                <h4 className="text-[var(--text-primary)] font-bold mb-2">{TRANSLATIONS[lang].no_projects}</h4>
                 <p className="text-xs">{TRANSLATIONS[lang].no_projects_desc}</p>
               </div>
             )}
@@ -785,9 +785,9 @@ export default function Home() {
         {activeTab === "skills" && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in">
             {(portfolioData.skills as SkillCategory[]).map((cat, i) => (
-              <div key={i} className="glass-panel p-6 md:p-10 rounded-3xl border border-white/5 flex flex-col gap-4 md:gap-6">
-                <h3 className="text-base md:text-lg font-bold text-white flex items-center gap-3 pb-3 md:pb-4 border-b border-white/5">
-                  <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full bg-[#50FFD9] shadow-[0_0_8px_#50FFD9]"></span>
+              <div key={i} className="glass-panel p-6 md:p-10 rounded-3xl border border-[var(--border-glass)] flex flex-col gap-4 md:gap-6">
+                <h3 className="text-base md:text-lg font-bold text-[var(--text-primary)] flex items-center gap-3 pb-3 md:pb-4 border-b border-[var(--border-glass)]">
+                  <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full bg-[var(--neon-cyan)] shadow-[0_0_8px_var(--neon-cyan-glow)]"></span>
                   {cat.category}
                 </h3>
                 <div className="flex flex-col gap-4">
@@ -798,7 +798,7 @@ export default function Home() {
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-3">
                             <img src={skill.icon} alt={skill.name} className="w-5 h-5 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" loading="lazy" />
-                            <span className="text-xs sm:text-sm font-bold text-gray-300 group-hover:text-white transition-colors">{skill.name}</span>
+                            <span className="text-xs sm:text-sm font-bold text-[var(--text-secondary)] group-hover:text-[var(--neon-cyan)] transition-colors">{skill.name}</span>
                           </div>
                           <span className="text-[10px] font-bold text-gray-500 group-hover:text-[#50FFD9] transition-colors">{prof}% Experience</span>
                         </div>
@@ -827,7 +827,7 @@ export default function Home() {
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
               <span className="text-[10px] md:text-xs font-black text-[#50FFD9] uppercase tracking-widest mb-2 md:mb-3 block">{TRANSLATIONS[lang].collaboration}</span>
-              <h2 className="text-2xl md:text-4xl font-extrabold mb-4 md:mb-6 text-white tracking-tight">{TRANSLATIONS[lang].let_compile}</h2>
+              <h2 className="text-2xl md:text-4xl font-extrabold mb-4 md:mb-6 text-[var(--text-primary)] tracking-tight">{TRANSLATIONS[lang].let_compile}</h2>
               <p className="text-gray-400 leading-relaxed mb-8 md:mb-10 text-[13px] md:text-[15px] font-medium">
                 {TRANSLATIONS[lang].collab_desc}
               </p>
@@ -846,7 +846,7 @@ export default function Home() {
                 </span>
                 <div className="flex-grow">
                   <p className="text-[10px] text-gray-500 uppercase tracking-widest font-extrabold mb-0.5">{TRANSLATIONS[lang].secure_email}</p>
-                  <p className="text-white text-xs sm:text-sm font-bold">erstaunenn@gmail.com</p>
+                  <p className="text-[var(--text-primary)] text-xs sm:text-sm font-bold">erstaunenn@gmail.com</p>
                 </div>
                 <span className="text-[10px] font-black uppercase text-gray-500 group-hover:text-[#50FFD9] px-2 py-1 rounded bg-white/[0.03]">
                   {emailCopied ? (lang === "en" ? "✓ Copied!" : "✓ Tersalin!") : (lang === "en" ? "Copy" : "Salin")}
@@ -864,7 +864,7 @@ export default function Home() {
                 </span>
                 <div className="flex-grow">
                   <p className="text-[10px] text-gray-500 uppercase tracking-widest font-extrabold mb-0.5">LinkedIn</p>
-                  <p className="text-white text-xs sm:text-sm font-bold">khairannoorfadhlillah</p>
+                  <p className="text-[var(--text-primary)] text-xs sm:text-sm font-bold">khairannoorfadhlillah</p>
                 </div>
                 <span className="text-[10px] font-black uppercase text-gray-500 group-hover:text-[#50FFD9] px-2 py-1 rounded bg-white/[0.03]">
                   {TRANSLATIONS[lang].visit}
@@ -882,7 +882,7 @@ export default function Home() {
                 </span>
                 <div className="flex-grow">
                   <p className="text-[10px] text-gray-500 uppercase tracking-widest font-extrabold mb-0.5">Instagram</p>
-                  <p className="text-white text-xs sm:text-sm font-bold">khairannoor.f</p>
+                  <p className="text-[var(--text-primary)] text-xs sm:text-sm font-bold">khairannoor.f</p>
                 </div>
                 <span className="text-[10px] font-black uppercase text-gray-500 group-hover:text-[#50FFD9] px-2 py-1 rounded bg-white/[0.03]">
                   {TRANSLATIONS[lang].follow}

@@ -93,7 +93,7 @@ export default function ProjectNavbar({
       <nav className="glass-panel px-3 md:px-6 py-2.5 md:py-4 rounded-2xl flex items-center justify-between border border-white/5 backdrop-blur-xl">
         <a 
           href="/#portfolio" 
-          className="btn-glass text-[9px] sm:text-xs py-2 px-3 sm:px-4.5 rounded-xl flex items-center gap-1.5 sm:gap-2 hover:text-[#50FFD9] transition-all cursor-pointer"
+          className="btn-glass text-[9px] sm:text-xs py-2 px-3 sm:px-4.5 rounded-xl flex items-center gap-1.5 sm:gap-2 hover:text-[var(--neon-cyan)] transition-all cursor-pointer"
         >
           <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 rotate-180" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -104,14 +104,14 @@ export default function ProjectNavbar({
         </a>
         
         <span className="text-sm font-black tracking-tighter text-[var(--text-primary)] hidden md:inline select-none">
-          Khairan<span className="text-[#50FFD9] glow-text">.tech</span>
+          Khairan<span className="text-[var(--neon-cyan)] glow-text">.tech</span>
         </span>
 
         <div className="flex items-center gap-1.5 sm:gap-3">
           {/* Language Switcher Button */}
           <button 
             onClick={toggleLang}
-            className="h-8 sm:h-10 px-2 sm:px-3.5 rounded-xl bg-white/[0.03] border border-white/5 flex items-center gap-1 hover:border-[#50FFD9]/30 text-[9px] sm:text-[10px] font-extrabold tracking-wider text-gray-300 hover:text-[#50FFD9] transition-all focus:outline-none cursor-pointer"
+            className="h-8 sm:h-10 px-2 sm:px-3.5 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center gap-1 hover:border-[var(--neon-cyan)]/30 text-[9px] sm:text-[10px] font-extrabold tracking-wider text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] transition-all focus:outline-none cursor-pointer"
             title={currentLang === "en" ? "Ubah ke Bahasa Indonesia" : "Switch to English"}
           >
             <span className="hidden sm:inline">🌐</span>
@@ -121,7 +121,7 @@ export default function ProjectNavbar({
           {/* Theme Toggle Button */}
           <button 
             onClick={toggleTheme}
-            className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center hover:border-[#50FFD9]/30 text-gray-300 hover:text-[#50FFD9] transition-all focus:outline-none cursor-pointer"
+            className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center hover:border-[var(--neon-cyan)]/30 text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] transition-all focus:outline-none cursor-pointer"
             aria-label="Toggle Theme"
             title={currentTheme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
           >

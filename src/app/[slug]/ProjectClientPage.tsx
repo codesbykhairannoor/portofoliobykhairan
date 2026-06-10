@@ -337,8 +337,8 @@ export default function ProjectClientPage({
 
         {/* Compact Hero Header */}
         <section className="pb-3 border-b border-[var(--border-glass)] flex flex-col gap-1.5">
-          <div className="inline-flex self-start items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[var(--bg-card)] border border-[var(--border-glass)] text-[9px] font-bold text-[#50FFD9] tracking-wider backdrop-blur-md shadow-sm">
-            <span className="w-1 h-1 rounded-full bg-[#50FFD9] shadow-[0_0_6px_#50FFD9]"></span>
+          <div className="inline-flex self-start items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[var(--bg-card)] border border-[var(--border-glass)] text-[9px] font-bold text-[var(--neon-cyan)] tracking-wider backdrop-blur-md shadow-sm">
+            <span className="w-1 h-1 rounded-full bg-[var(--neon-cyan)] shadow-[0_0_6px_var(--neon-cyan-glow)]"></span>
             {activeType}
           </div>
           
@@ -382,8 +382,8 @@ export default function ProjectClientPage({
 
             {/* Slide Indicator Counter Pill (Top-Right) */}
             {slides.length > 1 && (
-              <div className="absolute top-4 right-4 z-20 px-3 py-1.5 rounded-full bg-black/60 border border-white/5 text-[10px] font-black text-gray-300 backdrop-blur-md shadow-lg select-none">
-                <span className="text-[#50FFD9] glow-text">{activeSlide + 1}</span> / {slides.length}
+              <div className="absolute top-4 right-4 z-20 px-3 py-1.5 rounded-full bg-[var(--bg-dark)]/60 border border-[var(--border-glass)] text-[10px] font-black text-[var(--text-secondary)] backdrop-blur-md shadow-lg select-none">
+                <span className="text-[var(--neon-cyan)] glow-text">{activeSlide + 1}</span> / {slides.length}
               </div>
             )}
 
@@ -394,7 +394,7 @@ export default function ProjectClientPage({
                   e.stopPropagation();
                   setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
                 }}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-black/50 border border-white/5 flex items-center justify-center text-white hover:text-[#50FFD9] hover:border-[#50FFD9]/30 hover:bg-black/75 transition-all opacity-0 group-hover/slider:opacity-100 cursor-pointer z-20 focus:outline-none backdrop-blur-sm"
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-[var(--bg-dark)]/50 border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-primary)] hover:text-[var(--neon-cyan)] hover:border-[var(--neon-cyan)]/30 hover:bg-[var(--bg-dark)]/75 transition-all opacity-0 group-hover/slider:opacity-100 cursor-pointer z-20 focus:outline-none backdrop-blur-sm"
                 aria-label="Previous Slide"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -410,7 +410,7 @@ export default function ProjectClientPage({
                   e.stopPropagation();
                   setActiveSlide((prev) => (prev + 1) % slides.length);
                 }}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-black/50 border border-white/5 flex items-center justify-center text-white hover:text-[#50FFD9] hover:border-[#50FFD9]/30 hover:bg-black/75 transition-all opacity-0 group-hover/slider:opacity-100 cursor-pointer z-20 focus:outline-none backdrop-blur-sm"
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-[var(--bg-dark)]/50 border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-primary)] hover:text-[var(--neon-cyan)] hover:border-[var(--neon-cyan)]/30 hover:bg-[var(--bg-dark)]/75 transition-all opacity-0 group-hover/slider:opacity-100 cursor-pointer z-20 focus:outline-none backdrop-blur-sm"
                 aria-label="Next Slide"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -430,7 +430,7 @@ export default function ProjectClientPage({
                       setActiveSlide(idx);
                     }}
                     className={`h-2 rounded-full transition-all cursor-pointer ${
-                      idx === activeSlide ? "bg-[#50FFD9] w-5 shadow-[0_0_8px_#50FFD9]" : "bg-white/30 w-2 hover:bg-white/65"
+                      idx === activeSlide ? "bg-[var(--neon-cyan)] w-5 shadow-[0_0_8px_var(--neon-cyan-glow)]" : "bg-[var(--text-muted)]/30 w-2 hover:bg-[var(--text-muted)]/65"
                     }`}
                     aria-label={`Go to slide ${idx + 1}`}
                   />
@@ -449,8 +449,8 @@ export default function ProjectClientPage({
                   onClick={() => setActiveSlide(idx)}
                   className={`relative aspect-[16/10] w-20 sm:w-24 rounded-lg overflow-hidden border transition-all shrink-0 snap-start cursor-pointer ${
                     idx === activeSlide 
-                      ? "border-[#50FFD9] ring-1 ring-[#50FFD9]/50 shadow-[0_0_10px_rgba(80,255,217,0.2)] opacity-100 scale-[0.98]" 
-                      : "border-[var(--border-glass)] opacity-50 hover:opacity-100 hover:border-[#50FFD9]/30"
+                      ? "border-[var(--neon-cyan)] ring-1 ring-[var(--neon-cyan)]/50 shadow-[0_0_10px_rgba(80,255,217,0.2)] opacity-100 scale-[0.98]" 
+                      : "border-[var(--border-glass)] opacity-50 hover:opacity-100 hover:border-[var(--neon-cyan)]/30"
                   }`}
                   aria-label={`View slide ${idx + 1}`}
                 >
@@ -468,10 +468,10 @@ export default function ProjectClientPage({
           <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 group hover:border-[#50FFD9]/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(80,255,217,0.03)] transition-all duration-300">
             <div className="flex items-center justify-between">
               <span className="text-[9px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "Category" : "Kategori"}</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#50FFD9] shadow-[0_0_8px_#50FFD9] animate-pulse"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--neon-cyan)] shadow-[0_0_8px_var(--neon-cyan-glow)] animate-pulse"></span>
             </div>
             <div className="flex flex-col gap-1">
-              <span className="text-xs font-black text-[var(--text-primary)] tracking-wide group-hover:text-[#50FFD9] transition-colors line-clamp-1">{activeType}</span>
+              <span className="text-xs font-black text-[var(--text-primary)] tracking-wide group-hover:text-[var(--neon-cyan)] transition-colors line-clamp-1">{activeType}</span>
               <span className="text-[10px] text-[var(--text-muted)] font-semibold">{lang === "en" ? "Domain Scope" : "Bidang Keahlian"}</span>
             </div>
           </div>
@@ -489,12 +489,12 @@ export default function ProjectClientPage({
             <div className="flex flex-wrap gap-1.5">
               {techStackBadges.length > 0 ? (
                 techStackBadges.map((badge, bIdx) => (
-                  <span key={bIdx} className="text-[9px] font-black text-[var(--text-secondary)] bg-white/[0.02] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg hover:border-[#50FFD9]/20 hover:bg-white/[0.04] transition-all">
+                  <span key={bIdx} className="text-[9px] font-black text-[var(--text-secondary)] bg-[var(--bg-card)] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg hover:border-[var(--neon-cyan)]/20 hover:bg-[var(--bg-card)] transition-all">
                     {badge}
                   </span>
                 ))
               ) : (
-                <span className="text-[9px] font-black text-[var(--text-secondary)] bg-white/[0.02] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg">
+                <span className="text-[9px] font-black text-[var(--text-secondary)] bg-[var(--bg-card)] border border-[var(--border-glass)] px-2.5 py-1 rounded-lg">
                   {activeType}
                 </span>
               )}
@@ -514,7 +514,7 @@ export default function ProjectClientPage({
               </div>
               <div className="flex items-center justify-between">
                 <span>Hosting</span>
-                <span className="text-[#50FFD9]">Vercel / Edge</span>
+                <span className="text-[var(--neon-cyan)]">Vercel / Edge</span>
               </div>
             </div>
           </div>
@@ -524,7 +524,7 @@ export default function ProjectClientPage({
         {/* Core Case Study Content Card */}
         <main className="w-full">
           <article className="glass-panel p-4 sm:p-6 md:p-7 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl shadow-xl overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#50FFD9] to-violet-500"></div>
+            <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[var(--neon-cyan)] to-[var(--neon-violet)]"></div>
 
             {/* Rendered HTML content from WordPress */}
             <div 
@@ -548,9 +548,9 @@ export default function ProjectClientPage({
                 <span className="text-[9px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider flex items-center gap-1">
                   <span>←</span> {TEXTS[lang].prev_showcase}
                 </span>
-                <span className="text-xs sm:text-sm font-bold text-[var(--text-primary)] group-hover:text-[#50FFD9] transition-colors truncate">{prevTitle}</span>
+                <span className="text-xs sm:text-sm font-bold text-[var(--text-primary)] group-hover:text-[var(--neon-cyan)] transition-colors truncate">{prevTitle}</span>
               </div>
-              <span className="w-8 h-8 rounded-lg bg-white/[0.02] border border-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#50FFD9] group-hover:bg-white/[0.05] transition-all shrink-0">
+              <span className="w-8 h-8 rounded-lg bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-muted)] group-hover:text-[var(--neon-cyan)] group-hover:bg-[var(--bg-card)] transition-all shrink-0">
                 ←
               </span>
             </a>
@@ -565,9 +565,9 @@ export default function ProjectClientPage({
                 <span className="text-[9px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider flex items-center gap-1">
                   {TEXTS[lang].next_showcase} <span>→</span>
                 </span>
-                <span className="text-xs sm:text-sm font-bold text-[var(--text-primary)] group-hover:text-[#50FFD9] transition-colors truncate">{nextTitle}</span>
+                <span className="text-xs sm:text-sm font-bold text-[var(--text-primary)] group-hover:text-[var(--neon-cyan)] transition-colors truncate">{nextTitle}</span>
               </div>
-              <span className="w-8 h-8 rounded-lg bg-white/[0.02] border border-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#50FFD9] group-hover:bg-white/[0.05] transition-all shrink-0">
+              <span className="w-8 h-8 rounded-lg bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-muted)] group-hover:text-[var(--neon-cyan)] group-hover:bg-[var(--bg-card)] transition-all shrink-0">
                 →
               </span>
             </a>
@@ -589,12 +589,12 @@ export default function ProjectClientPage({
           {/* Top Bar Details */}
           <div className="absolute top-6 left-6 right-6 flex items-center justify-between z-50">
             <div className="flex flex-col">
-              <span className="text-xs font-black text-[#50FFD9] tracking-wider">{activeTitle}</span>
-              <span className="text-[11px] text-gray-400 font-bold">{TEXTS[lang].slide_text} {lightboxIndex + 1} {TEXTS[lang].of} {slides.length}</span>
+              <span className="text-xs font-black text-[var(--neon-cyan)] tracking-wider">{activeTitle}</span>
+              <span className="text-[11px] text-[var(--text-muted)] font-bold">{TEXTS[lang].slide_text} {lightboxIndex + 1} {TEXTS[lang].of} {slides.length}</span>
             </div>
             <button 
               onClick={() => setLightboxOpen(false)}
-              className="w-11 h-11 rounded-xl bg-white/[0.04] border border-white/5 flex items-center justify-center text-gray-300 hover:text-[#50FFD9] hover:bg-white/[0.08] transition-all cursor-pointer focus:outline-none"
+              className="w-11 h-11 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--neon-cyan)] hover:bg-[var(--bg-card)] transition-all cursor-pointer focus:outline-none"
               aria-label="Close Lightbox"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -613,7 +613,7 @@ export default function ProjectClientPage({
                   e.stopPropagation();
                   setLightboxIndex((prev) => (prev - 1 + slides.length) % slides.length);
                 }}
-                className="absolute left-4 md:left-6 w-12 h-12 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center text-white hover:text-[#50FFD9] hover:border-[#50FFD9]/30 hover:bg-white/[0.06] transition-all cursor-pointer z-30 focus:outline-none"
+                className="absolute left-4 md:left-6 w-12 h-12 rounded-xl bg-[var(--bg-dark)]/30 border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-primary)] hover:text-[var(--neon-cyan)] hover:border-[var(--neon-cyan)]/30 hover:bg-[var(--bg-dark)]/60 transition-all cursor-pointer z-30 focus:outline-none"
                 aria-label="Previous Slide"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -638,7 +638,7 @@ export default function ProjectClientPage({
                   e.stopPropagation();
                   setLightboxIndex((prev) => (prev + 1) % slides.length);
                 }}
-                className="absolute right-4 md:right-6 w-12 h-12 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center text-white hover:text-[#50FFD9] hover:border-[#50FFD9]/30 hover:bg-white/[0.06] transition-all cursor-pointer z-30 focus:outline-none"
+                className="absolute right-4 md:right-6 w-12 h-12 rounded-xl bg-[var(--bg-dark)]/30 border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-primary)] hover:text-[var(--neon-cyan)] hover:border-[var(--neon-cyan)]/30 hover:bg-[var(--bg-dark)]/60 transition-all cursor-pointer z-30 focus:outline-none"
                 aria-label="Next Slide"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -655,7 +655,7 @@ export default function ProjectClientPage({
                 key={idx}
                 onClick={() => setLightboxIndex(idx)}
                 className={`h-2 rounded-full transition-all cursor-pointer ${
-                  idx === lightboxIndex ? "bg-[#50FFD9] w-5 shadow-[0_0_8px_#50FFD9]" : "bg-white/20 w-2 hover:bg-white/45"
+                  idx === lightboxIndex ? "bg-[var(--neon-cyan)] w-5 shadow-[0_0_8px_var(--neon-cyan-glow)]" : "bg-[var(--text-muted)]/20 w-2 hover:bg-[var(--text-muted)]/45"
                 }`}
                 aria-label={`Go to slide ${idx + 1}`}
               />
