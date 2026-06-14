@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import portfolioData from "../data/portfolio.json";
 import AIChatBot from "./components/AIChatBot";
+import { motion, AnimatePresence } from "framer-motion";
 
 // Type structures for robust compilation
 interface PortfolioItem {
@@ -726,13 +727,22 @@ export default function Home() {
         {activeTab !== "skills" && (
           <div className="min-h-[80vh] w-full">
             {filteredItems.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
+              <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <AnimatePresence mode="popLayout">
                 {filteredItems.map((item, i) => {
                   const desc = lang === "en" ? (item.description_en || item.description) : (item.description_id || item.description);
                   const title = lang === "en" ? (item.title_en || item.title) : (item.title_id || item.title);
                   const { cleanDesc, tags } = parseTechStack(desc);
                   return (
-                    <div key={i} className="group glass-panel glass-panel-hover rounded-3xl overflow-hidden flex flex-col border border-white/5">
+                    <motion.div 
+                      layout
+                      initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
+                      transition={{ duration: 0.5, delay: i * 0.05, type: "spring", stiffness: 100 }}
+                      key={item.slug || i} 
+                      className="group glass-panel glass-panel-hover rounded-3xl overflow-hidden flex flex-col border border-white/5"
+                    >
                       <div className="w-full aspect-[1024/660] overflow-hidden border-b border-white/5 relative bg-white/[0.003]">
                         <img 
                           src={item.image} 
@@ -775,10 +785,11 @@ export default function Home() {
                           </svg>
                         </a>
                       </div>
-                    </div>
+                    </motion.div>
                   );
                 })}
-              </div>
+                </AnimatePresence>
+              </motion.div>
             ) : (
               <div className="glass-panel p-16 rounded-3xl text-center text-gray-500 border border-white/5 max-w-md mx-auto animate-fade-in">
                 <svg className="w-10 h-10 text-[var(--text-muted)] mx-auto mb-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
