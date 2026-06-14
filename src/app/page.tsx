@@ -177,7 +177,7 @@ const TRANSLATIONS = {
 
 export default function Home() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
-  const [activeTab, setActiveTab] = useState<"visual_design" | "website" | "ai" | "skills">("visual_design");
+  const [activeTab, setActiveTab] = useState<"visual_design" | "website" | "ai" | "skills">("website");
   const [searchQuery, setSearchQuery] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [emailCopied, setEmailCopied] = useState(false);
@@ -343,7 +343,7 @@ export default function Home() {
   const filteredItems = filterItems(activeCategoryItems() as PortfolioItem[]);
 
   return (
-    <div id="home" className="min-h-screen flex flex-col bg-[var(--bg-dark)] text-[var(--text-primary)] relative selection:bg-[#50FFD9]/15 selection:text-[#50FFD9] scroll-smooth">
+    <div id="home" className="min-h-screen flex flex-col bg-[var(--bg-dark)] text-[var(--text-primary)] relative selection:bg-[#50FFD9]/15 selection:text-[#50FFD9] scroll-smooth overflow-x-hidden w-full max-w-[100vw]">
       
       {/* Background Ambience Overlays */}
       <div className="absolute top-0 left-[15%] w-[600px] h-[600px] bg-gradient-to-br from-[#50FFD9]/6 to-transparent blur-[140px] pointer-events-none -z-10"></div>
@@ -677,12 +677,6 @@ export default function Home() {
             {/* Category Toggle Tabs */}
             <div className="tab-list-wrapper">
               <button 
-                onClick={() => { setActiveTab("visual_design"); setSearchQuery(""); }} 
-                className={`tab-btn ${activeTab === "visual_design" ? "active" : ""}`}
-              >
-                {TRANSLATIONS[lang].visual_design}
-              </button>
-              <button 
                 onClick={() => { setActiveTab("website"); setSearchQuery(""); }} 
                 className={`tab-btn ${activeTab === "website" ? "active" : ""}`}
               >
@@ -693,6 +687,12 @@ export default function Home() {
                 className={`tab-btn ${activeTab === "ai" ? "active" : ""}`}
               >
                 {TRANSLATIONS[lang].ai}
+              </button>
+              <button 
+                onClick={() => { setActiveTab("visual_design"); setSearchQuery(""); }} 
+                className={`tab-btn ${activeTab === "visual_design" ? "active" : ""}`}
+              >
+                {TRANSLATIONS[lang].visual_design}
               </button>
               <button 
                 onClick={() => { setActiveTab("skills"); setSearchQuery(""); }} 
@@ -724,7 +724,7 @@ export default function Home() {
 
         {/* Tab 1 & Tab 2: Filterable Design and Code Grids */}
         {activeTab !== "skills" && (
-          <div>
+          <div className="min-h-[80vh] w-full">
             {filteredItems.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
                 {filteredItems.map((item, i) => {
