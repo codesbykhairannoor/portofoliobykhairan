@@ -119,10 +119,10 @@ const TRANSLATIONS = {
   },
   id: {
     ready: "Siap untuk Peluang Baru",
-    hero_title_1: "Halo! Gue Khairan.",
+    hero_title_1: "Halo! Saya Khairan.",
     hero_title_2: "Ngeracik sistem AI pintar, Web super cepat,",
     hero_title_3: "& Desain kelas dunia.",
-    hero_desc: "Gue gak cuma nulis kode—gue ngebangun ekosistem digital. Mulai dari agen AI otonom yang jalan 24/7, sampai web app performa tinggi dengan UI/UX yang gak cuma cantik, tapi juga konversi tinggi. Yuk wujudin ide lo jadi nyata!",
+    hero_desc: "Saya nggak sekadar nulis kode—saya membangun ekosistem digital. Mulai dari agen AI otonom yang jalan 24/7, sampai web app dengan performa tinggi dan UI/UX yang nggak cuma estetik, tapi juga ngasih konversi maksimal. Yuk, kita wujudin ide brilian kamu jadi nyata!",
     get_in_touch: "Hubungi Saya",
     view_my_work: "Lihat Karya Saya",
     profile_summary: "Ringkasan Profil",
