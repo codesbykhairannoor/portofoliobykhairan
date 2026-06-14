@@ -212,7 +212,7 @@ export default function Home() {
     >
       {text.split("").map((char, index) => (
         <motion.span key={`${char}-${index}`} variants={charVariants} className="inline-block">
-          {char === " " ? "\\u00A0" : char}
+          {char === " " ? "\u00A0" : char}
         </motion.span>
       ))}
     </motion.span>
