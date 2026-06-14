@@ -506,8 +506,8 @@ export default function Home() {
           {TRANSLATIONS[lang].hero_title_1} <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-primary)] via-[var(--neon-cyan)] to-[var(--neon-violet)]">
             {TRANSLATIONS[lang].hero_title_2}
-          </span> <br />
-          {TRANSLATIONS[lang].hero_title_3}
+          </span>{" "}
+          <span className="inline-block">{TRANSLATIONS[lang].hero_title_3}</span>
         </h1>
 
         <p className="max-w-2xl text-[var(--text-secondary)] text-xs md:text-base mb-10 md:mb-12 leading-relaxed font-medium px-4 md:px-0">

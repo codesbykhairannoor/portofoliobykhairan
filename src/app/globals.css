@@ -245,6 +245,8 @@ html.light .social-btn {
 /* Tab System Components */
 .tab-list-wrapper {
   display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.01);
   border: 1px solid var(--border-glass);
   border-radius: 16px;
