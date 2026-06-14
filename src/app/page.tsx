@@ -199,7 +199,7 @@ export default function Home() {
 
   const charVariants = {
     hidden: { opacity: 0, y: 15 },
-    visible: { opacity: 1, y: 0, transition: { type: "spring", damping: 12, stiffness: 200 } }
+    visible: { opacity: 1, y: 0, transition: { type: "spring" as const, damping: 12, stiffness: 200 } }
   };
 
   const AnimatedText = ({ text, className = "" }: { text: string, className?: string }) => (
