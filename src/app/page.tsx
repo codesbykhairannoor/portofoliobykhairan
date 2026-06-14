@@ -886,7 +886,7 @@ export default function Home() {
               
               {/* Copyable email element */}
               <button 
-                onClick={() => copyToClipboard("erstaunenn@gmail.com")}
+                onClick={() => copyToClipboard("mykhairannn@gmail.com")}
                 className="flex items-center gap-4 text-left p-3.5 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-[#50FFD9]/20 hover:bg-white/[0.02] transition-all group focus:outline-none cursor-pointer"
               >
                 <span className="w-11 h-11 rounded-xl bg-white/[0.02] flex items-center justify-center border border-white/5 text-[#50FFD9] group-hover:scale-105 transition-all">
@@ -894,7 +894,7 @@ export default function Home() {
                 </span>
                 <div className="flex-grow">
                   <p className="text-[10px] text-gray-500 uppercase tracking-widest font-extrabold mb-0.5">{TRANSLATIONS[lang].secure_email}</p>
-                  <p className="text-[var(--text-primary)] text-xs sm:text-sm font-bold">erstaunenn@gmail.com</p>
+                  <p className="text-[var(--text-primary)] text-xs sm:text-sm font-bold">mykhairannn@gmail.com</p>
                 </div>
                 <span className="text-[10px] font-black uppercase text-gray-500 group-hover:text-[#50FFD9] px-2 py-1 rounded bg-white/[0.03]">
                   {emailCopied ? (lang === "en" ? "✓ Copied!" : "✓ Tersalin!") : (lang === "en" ? "Copy" : "Salin")}
@@ -919,23 +919,7 @@ export default function Home() {
                 </span>
               </a>
 
-              <a 
-                href="https://instagram.com/khairannoor.f" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex items-center gap-4 text-left p-3.5 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-[#50FFD9]/20 hover:bg-white/[0.02] transition-all group"
-              >
-                <span className="w-11 h-11 rounded-xl bg-white/[0.02] flex items-center justify-center border border-white/5 text-[#50FFD9] group-hover:scale-105 transition-all">
-                  📸
-                </span>
-                <div className="flex-grow">
-                  <p className="text-[10px] text-gray-500 uppercase tracking-widest font-extrabold mb-0.5">Instagram</p>
-                  <p className="text-[var(--text-primary)] text-xs sm:text-sm font-bold">khairannoor.f</p>
-                </div>
-                <span className="text-[10px] font-black uppercase text-gray-500 group-hover:text-[#50FFD9] px-2 py-1 rounded bg-white/[0.03]">
-                  {TRANSLATIONS[lang].follow}
-                </span>
-              </a>
+
             </div>
           </div>
 
