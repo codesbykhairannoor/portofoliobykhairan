@@ -63,8 +63,8 @@ const TRANSLATIONS = {
   en: {
     ready: "Ready for New Opportunities",
     hero_title_1: "Hey there! I'm Khairan.",
-    hero_title_2: "Crafting intelligent AI, bold Web experiences,",
-    hero_title_3: "& world-class Design.",
+    hero_title_2: "Crafting intelligent AI & Web,",
+    hero_title_3: "with world-class Design.",
     hero_desc: "I don't just write code—I build digital ecosystems. From autonomous AI agents that work 24/7, to high-performance web applications and stunning UI/UX that actually converts. Let's turn your wildest ideas into reality.",
     get_in_touch: "Contact Me",
     view_my_work: "View My Work",
@@ -120,8 +120,8 @@ const TRANSLATIONS = {
   id: {
     ready: "Siap untuk Peluang Baru",
     hero_title_1: "Halo! Saya Khairan.",
-    hero_title_2: "Ngeracik sistem AI pintar, Web super cepat,",
-    hero_title_3: "& Desain kelas dunia.",
+    hero_title_2: "Ngeracik AI & Web super cepat,",
+    hero_title_3: "dengan Desain kelas dunia.",
     hero_desc: "Saya nggak sekadar nulis kode—saya membangun ekosistem digital. Mulai dari agen AI otonom yang jalan 24/7, sampai web app dengan performa tinggi dan UI/UX yang nggak cuma estetik, tapi juga ngasih konversi maksimal. Yuk, kita wujudin ide brilian kamu jadi nyata!",
     get_in_touch: "Hubungi Saya",
     view_my_work: "Lihat Karya Saya",
@@ -526,12 +526,7 @@ export default function Home() {
       </header>
 
       {/* Hero Landing Section */}
-      <section className="pt-32 md:pt-40 pb-16 md:pb-24 px-4 max-w-5xl mx-auto w-full flex flex-col items-center justify-center text-center relative">
-        {/* Pulsing indicator capsule */}
-        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/[0.02] border border-white/5 text-[10px] md:text-xs font-bold text-gray-300 mb-6 md:mb-8 backdrop-blur-md shadow-inner">
-          <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#50FFD9] shadow-[0_0_10px_#50FFD9] animate-pulse"></span>
-          {TRANSLATIONS[lang].ready}
-        </div>
+      <section className="relative z-10 pt-32 pb-20 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
 
         <h1 className="custom-hero-title mb-6 md:mb-8 font-extrabold leading-[1.1] tracking-tight">
           <AnimatedText text={TRANSLATIONS[lang].hero_title_1} />
