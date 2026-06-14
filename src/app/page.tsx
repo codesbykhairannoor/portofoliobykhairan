@@ -351,7 +351,7 @@ export default function Home() {
       <div className="absolute bottom-[20%] left-[5%] w-[650px] h-[650px] bg-gradient-to-tr from-[#50FFD9]/3 to-transparent blur-[150px] pointer-events-none -z-10"></div>
 
       {/* Floating Header */}
-      <header className="fixed top-6 left-0 right-0 mx-auto z-50 w-[calc(100%-2rem)] max-w-5xl">
+      <header className="fixed top-6 inset-x-4 md:inset-x-8 mx-auto z-50 max-w-5xl">
         <div className="glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-[var(--border-glass)] backdrop-blur-xl relative">
           <div className="flex items-center gap-2">
             <a href="#home" className="text-lg md:text-xl font-black tracking-tighter text-[var(--text-primary)] select-none">

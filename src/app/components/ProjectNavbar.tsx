@@ -89,7 +89,7 @@ export default function ProjectNavbar({
   };
 
   return (
-    <header className="fixed top-4 md:top-6 left-0 right-0 mx-auto z-50 w-[calc(100%-2rem)] max-w-4xl">
+    <header className="fixed top-4 md:top-6 inset-x-4 md:inset-x-8 mx-auto z-50 max-w-4xl">
       <nav className="glass-panel px-3 md:px-6 py-2.5 md:py-4 rounded-2xl flex items-center justify-between border border-[var(--border-glass)] backdrop-blur-xl">
         <a 
           href="/#portfolio" 
