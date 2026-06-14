@@ -62,10 +62,10 @@ const SKILL_PROFICIENCY_MAP: Record<string, number> = {
 const TRANSLATIONS = {
   en: {
     ready: "Ready for New Opportunities",
-    hero_title_1: "Hi, I'm Khairan.",
-    hero_title_2: "Engineering AI, Web,",
-    hero_title_3: "& Premium Design.",
-    hero_desc: "Hi! I am Khairan Noor Fadhlillah, a Hybrid Developer, AI Specialist, and UI/UX Designer. I build high-performance AI agents, enterprise-grade websites, and stunning visual experiences that transform complex ideas into scalable digital assets.",
+    hero_title_1: "Hey there! I'm Khairan.",
+    hero_title_2: "Crafting intelligent AI, bold Web experiences,",
+    hero_title_3: "& world-class Design.",
+    hero_desc: "I don't just write code—I build digital ecosystems. From autonomous AI agents that work 24/7, to high-performance web applications and stunning UI/UX that actually converts. Let's turn your wildest ideas into reality.",
     get_in_touch: "Contact Me",
     view_my_work: "View My Work",
     profile_summary: "Profile Summary",
@@ -119,10 +119,10 @@ const TRANSLATIONS = {
   },
   id: {
     ready: "Siap untuk Peluang Baru",
-    hero_title_1: "Hi, Saya Khairan.",
-    hero_title_2: "Membangun AI, Web,",
-    hero_title_3: "& Desain Premium.",
-    hero_desc: "Hai! Saya Khairan Noor Fadhlillah, seorang Hybrid Developer, Spesialis AI, dan UI/UX Designer. Saya membangun agen AI berperforma tinggi, situs web kelas perusahaan, dan pengalaman visual memukau yang mengubah ide kompleks menjadi aset digital yang skalabel.",
+    hero_title_1: "Halo! Gue Khairan.",
+    hero_title_2: "Ngeracik sistem AI pintar, Web super cepat,",
+    hero_title_3: "& Desain kelas dunia.",
+    hero_desc: "Gue gak cuma nulis kode—gue ngebangun ekosistem digital. Mulai dari agen AI otonom yang jalan 24/7, sampai web app performa tinggi dengan UI/UX yang gak cuma cantik, tapi juga konversi tinggi. Yuk wujudin ide lo jadi nyata!",
     get_in_touch: "Hubungi Saya",
     view_my_work: "Lihat Karya Saya",
     profile_summary: "Ringkasan Profil",
@@ -187,6 +187,36 @@ export default function Home() {
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [lang, setLang] = useState<"id" | "en">("id");
+
+  // Typing animation variants
+  const typingVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.04 }
+    }
+  };
+
+  const charVariants = {
+    hidden: { opacity: 0, y: 15 },
+    visible: { opacity: 1, y: 0, transition: { type: "spring", damping: 12, stiffness: 200 } }
+  };
+
+  const AnimatedText = ({ text, className = "" }: { text: string, className?: string }) => (
+    <motion.span 
+      variants={typingVariants} 
+      initial="hidden" 
+      animate="visible" 
+      className={className}
+      key={text}
+    >
+      {text.split("").map((char, index) => (
+        <motion.span key={`${char}-${index}`} variants={charVariants} className="inline-block">
+          {char === " " ? "\\u00A0" : char}
+        </motion.span>
+      ))}
+    </motion.span>
+  );
 
   // Sync language with localStorage on mount
   useEffect(() => {
@@ -504,11 +534,13 @@ export default function Home() {
         </div>
 
         <h1 className="custom-hero-title mb-6 md:mb-8 font-extrabold leading-[1.1] tracking-tight">
-          {TRANSLATIONS[lang].hero_title_1} <br />
+          <AnimatedText text={TRANSLATIONS[lang].hero_title_1} />
+          <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-primary)] via-[var(--neon-cyan)] to-[var(--neon-violet)]">
-            {TRANSLATIONS[lang].hero_title_2}
+            <AnimatedText text={TRANSLATIONS[lang].hero_title_2} />
           </span>{" "}
-          <span className="inline-block">{TRANSLATIONS[lang].hero_title_3}</span>
+          <br className="hidden md:block" />
+          <AnimatedText text={TRANSLATIONS[lang].hero_title_3} className="inline-block" />
         </h1>
 
         <p className="max-w-2xl text-[var(--text-secondary)] text-xs md:text-base mb-10 md:mb-12 leading-relaxed font-medium px-4 md:px-0">

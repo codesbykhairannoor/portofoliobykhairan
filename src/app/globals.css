@@ -244,15 +244,21 @@ html.light .social-btn {
 
 /* Tab System Components */
 .tab-list-wrapper {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: flex;
   background: rgba(255, 255, 255, 0.01);
   border: 1px solid var(--border-glass);
   border-radius: 16px;
   padding: 6px;
   gap: 6px;
   backdrop-filter: blur(12px);
+  max-width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tab-list-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 html.light .tab-list-wrapper {
@@ -268,6 +274,8 @@ html.light .tab-list-wrapper {
   color: var(--text-secondary);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .tab-btn:hover {
