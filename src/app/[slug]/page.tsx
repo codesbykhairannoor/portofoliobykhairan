@@ -17,6 +17,7 @@ interface ProjectData {
   content: string;
   content_en?: string;
   content_id?: string;
+  images?: string[];
 }
 
 interface PortfolioItem {
@@ -371,7 +372,8 @@ export default async function ProjectPage({ params }: PageProps) {
   const allProjects = [
     ...portfolioData.website,
     ...portfolioData.visual_design,
-    ...portfolioData.carousel
+    ...portfolioData.carousel,
+    ...(portfolioData.ai || [])
   ];
   
   // Filter unique items by slug
@@ -426,8 +428,8 @@ export default async function ProjectPage({ params }: PageProps) {
   const { strippedHtml, images } = extractProjectImages(project.content);
   const cleanedContent = cleanProjectHtml(strippedHtml);
 
-  // Combine unique screenshots extracted across all languages
-  const combinedImages = Array.from(new Set([...images, ...images_en, ...images_id]));
+  // Combine unique screenshots extracted across all languages, plus the explicit images array from the json
+  const combinedImages = Array.from(new Set([...images, ...images_en, ...images_id, ...(project.images || [])]));
 
   const coverImage = projectDetails?.image || "/wp-content/uploads/2025/07/2-3.png";
 
