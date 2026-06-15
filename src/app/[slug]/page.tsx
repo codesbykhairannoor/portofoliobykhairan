@@ -441,6 +441,12 @@ export default async function ProjectPage({ params }: PageProps) {
     slug.toLowerCase().includes("logo") || 
     slug.toLowerCase().includes("social-media");
 
+  const isAIProject = 
+    project.type?.toLowerCase().includes("ai") || 
+    project.type?.toLowerCase().includes("artificial") || 
+    slug.toLowerCase().includes("ai") ||
+    slug.toLowerCase().includes("dopamind");
+
   return (
     <ProjectClientPage
       project={project}
@@ -452,6 +458,7 @@ export default async function ProjectPage({ params }: PageProps) {
       cleanedContent_en={cleanedContent_en}
       cleanedContent_id={cleanedContent_id}
       isDesignProject={isDesignProject}
+      isAIProject={isAIProject}
       images={combinedImages}
       description={projectDescription}
       description_en={projectDescription_en}

@@ -37,6 +37,7 @@ interface ProjectClientPageProps {
   cleanedContent_en?: string;
   cleanedContent_id?: string;
   isDesignProject?: boolean;
+  isAIProject?: boolean;
   images?: string[];
   description?: string;
   description_en?: string;
@@ -53,6 +54,7 @@ export default function ProjectClientPage({
   cleanedContent_en,
   cleanedContent_id,
   isDesignProject = false,
+  isAIProject = false,
   images = [],
   description = "",
   description_en = "",
@@ -148,6 +150,7 @@ export default function ProjectClientPage({
       of: "of",
       fallback_design: "Visual Design Showcase",
       fallback_web: "Web Development Showcase",
+      fallback_ai: "Artificial Intelligence Showcase",
       all_rights: "All Rights Reserved.",
       footer_alternative: "WordPress Alternative Engine. Compiled using Next.js & React."
     },
@@ -165,6 +168,7 @@ export default function ProjectClientPage({
       of: "dari",
       fallback_design: "Showcase Desain Visual",
       fallback_web: "Showcase Pengembangan Web",
+      fallback_ai: "Showcase Kecerdasan Buatan",
       all_rights: "Hak Cipta Dilindungi Undang-Undang.",
       footer_alternative: "Mesin Alternatif WordPress. Dikompilasi menggunakan Next.js & React."
     }
@@ -254,7 +258,7 @@ export default function ProjectClientPage({
   // Bilingual dynamic field selectors
   const activeTitle = lang === "en" ? (project.title_en || project.title) : (project.title_id || project.title);
   
-  const defaultType = project.type && project.type !== "page" ? project.type : (isDesignProject ? TEXTS[lang].fallback_design : TEXTS[lang].fallback_web);
+  const defaultType = project.type && project.type !== "page" ? project.type : (isAIProject ? TEXTS[lang].fallback_ai : (isDesignProject ? TEXTS[lang].fallback_design : TEXTS[lang].fallback_web));
   const activeType = lang === "en" ? (project.type_en || defaultType) : (project.type_id || defaultType);
   
   const activeDescription = lang === "en" ? (description_en || description) : (description_id || description);

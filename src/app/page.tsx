@@ -765,7 +765,7 @@ export default function Home() {
 
         {/* Tab 1 & Tab 2: Filterable Design and Code Grids */}
         {activeTab !== "skills" && (
-          <div className="min-h-[80vh] w-full">
+          <div className="min-h-[120vh] w-full" style={{ overflowAnchor: 'none' }}>
             {filteredItems.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredItems.map((item, i) => {
