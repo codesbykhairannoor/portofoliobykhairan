@@ -211,10 +211,19 @@ export default function Home() {
       className={className}
       key={text}
     >
-      {text.split("").map((char, index) => (
-        <motion.span key={`${char}-${index}`} variants={charVariants} className="inline-block">
-          {char === " " ? "\u00A0" : char}
-        </motion.span>
+      {text.split(" ").map((word, wordIndex, array) => (
+        <span key={`word-${wordIndex}`} className="inline-block whitespace-nowrap">
+          {word.split("").map((char, charIndex) => (
+            <motion.span key={`${char}-${charIndex}`} variants={charVariants} className="inline-block">
+              {char}
+            </motion.span>
+          ))}
+          {wordIndex !== array.length - 1 && (
+            <motion.span variants={charVariants} className="inline-block">
+              {"\u00A0"}
+            </motion.span>
+          )}
+        </span>
       ))}
     </motion.span>
   );
