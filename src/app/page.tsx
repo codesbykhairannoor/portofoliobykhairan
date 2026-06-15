@@ -212,18 +212,16 @@ export default function Home() {
       key={text}
     >
       {text.split(" ").map((word, wordIndex, array) => (
-        <span key={`word-${wordIndex}`} className="inline-block whitespace-nowrap">
-          {word.split("").map((char, charIndex) => (
-            <motion.span key={`${char}-${charIndex}`} variants={charVariants} className="inline-block">
-              {char}
-            </motion.span>
-          ))}
-          {wordIndex !== array.length - 1 && (
-            <motion.span variants={charVariants} className="inline-block">
-              {"\u00A0"}
-            </motion.span>
-          )}
-        </span>
+        <React.Fragment key={`word-${wordIndex}`}>
+          <span className="inline-block whitespace-nowrap">
+            {word.split("").map((char, charIndex) => (
+              <motion.span key={`${char}-${charIndex}`} variants={charVariants} className="inline-block">
+                {char}
+              </motion.span>
+            ))}
+          </span>
+          {wordIndex !== array.length - 1 && " "}
+        </React.Fragment>
       ))}
     </motion.span>
   );
@@ -540,12 +538,12 @@ export default function Home() {
 
         <h1 className="custom-hero-title mb-6 md:mb-8 font-extrabold leading-[1.1] tracking-tight">
           <AnimatedText text={TRANSLATIONS[lang].hero_title_1} />
-          <br className="hidden md:block" />
+          {" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-primary)] via-[var(--neon-cyan)] to-[var(--neon-violet)]">
             <AnimatedText text={TRANSLATIONS[lang].hero_title_2} />
-          </span>{" "}
-          <br className="hidden md:block" />
-          <AnimatedText text={TRANSLATIONS[lang].hero_title_3} className="inline-block" />
+          </span>
+          {" "}
+          <AnimatedText text={TRANSLATIONS[lang].hero_title_3} />
         </h1>
 
         <p className="max-w-2xl text-[var(--text-secondary)] text-xs md:text-base mb-10 md:mb-12 leading-relaxed font-medium px-4 md:px-0">
