@@ -189,6 +189,17 @@ export default function Home() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [lang, setLang] = useState<"id" | "en">("id");
 
+  const handleTabChange = (tab: "visual_design" | "website" | "ai" | "skills") => {
+    setActiveTab(tab);
+    setSearchQuery("");
+    const portfolioSection = document.getElementById("portfolio");
+    if (portfolioSection) {
+      // Offset for sticky header
+      const y = portfolioSection.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   // Typing animation variants
   const typingVariants = {
     hidden: { opacity: 0 },
@@ -713,25 +724,25 @@ export default function Home() {
             {/* Category Toggle Tabs */}
             <div className="tab-list-wrapper">
               <button 
-                onClick={() => { setActiveTab("website"); setSearchQuery(""); }} 
+                onClick={() => handleTabChange("website")} 
                 className={`tab-btn ${activeTab === "website" ? "active" : ""}`}
               >
                 {TRANSLATIONS[lang].websites}
               </button>
               <button 
-                onClick={() => { setActiveTab("ai"); setSearchQuery(""); }} 
+                onClick={() => handleTabChange("ai")} 
                 className={`tab-btn ${activeTab === "ai" ? "active" : ""}`}
               >
                 {TRANSLATIONS[lang].ai}
               </button>
               <button 
-                onClick={() => { setActiveTab("visual_design"); setSearchQuery(""); }} 
+                onClick={() => handleTabChange("visual_design")} 
                 className={`tab-btn ${activeTab === "visual_design" ? "active" : ""}`}
               >
                 {TRANSLATIONS[lang].visual_design}
               </button>
               <button 
-                onClick={() => { setActiveTab("skills"); setSearchQuery(""); }} 
+                onClick={() => handleTabChange("skills")} 
                 className={`tab-btn ${activeTab === "skills" ? "active" : ""}`}
               >
                 {TRANSLATIONS[lang].tooling_stack}
@@ -760,7 +771,7 @@ export default function Home() {
 
         {/* Tab 1 & Tab 2: Filterable Design and Code Grids */}
         {activeTab !== "skills" && (
-          <div className="min-h-[80vh] w-full">
+          <div className="min-h-[150vh] w-full">
             {filteredItems.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredItems.map((item, i) => {
