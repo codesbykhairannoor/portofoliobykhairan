@@ -65,30 +65,46 @@ export default function ProjectClientPage({
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const [activeSlide, setActiveSlide] = useState(0);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const parallaxRef1 = useRef<HTMLDivElement>(null);
+  const parallaxRef2 = useRef<HTMLDivElement>(null);
+  const scrollProgressRef = useRef<HTMLDivElement>(null);
 
-  // Mouse move parallax ambient lighting effect
+  // Mouse move parallax ambient lighting effect via raw DOM (0% React re-render overhead)
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePos({
-        x: (e.clientX / window.innerWidth - 0.5) * 25, // max 25px offset
-        y: (e.clientY / window.innerHeight - 0.5) * 25,
-      });
+      if (!parallaxRef1.current || !parallaxRef2.current) return;
+      
+      // Throttle slightly by using requestAnimationFrame if needed, or just apply directly
+      // Since it's raw DOM, it's very fast
+      const x = (e.clientX / window.innerWidth - 0.5) * 25;
+      const y = (e.clientY / window.innerHeight - 0.5) * 25;
+      
+      parallaxRef1.current.style.transform = `translate(${x}px, ${y}px)`;
+      parallaxRef2.current.style.transform = `translate(${-x}px, ${-y}px)`;
     };
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  // Sticky top reading scroll progress meter
+  // Sticky top reading scroll progress meter via raw DOM (0% React re-render overhead)
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
-      if (totalScroll > 0) {
-        setScrollProgress((window.scrollY / totalScroll) * 100);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (scrollProgressRef.current) {
+            const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+            if (totalScroll > 0) {
+              const progress = (window.scrollY / totalScroll) * 100;
+              scrollProgressRef.current.style.width = `${progress}%`;
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -302,18 +318,19 @@ export default function ProjectClientPage({
       
       {/* Premium Top Reading Progress Indicator */}
       <div 
+        ref={scrollProgressRef}
         className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#50FFD9] via-teal-400 to-violet-500 z-[110] transition-all duration-100 pointer-events-none"
-        style={{ width: `${scrollProgress}%` }}
+        style={{ width: "0%" }}
       />
 
       {/* Interactive Floating Mouse Parallax Glow Orbs */}
       <div 
-        className="absolute top-20 left-10 w-72 h-72 rounded-full bg-[#50FFD9]/6 blur-[100px] pointer-events-none transition-transform duration-700 ease-out z-0"
-        style={{ transform: `translate(${mousePos.x}px, ${mousePos.y}px)` }}
+        ref={parallaxRef1}
+        className="absolute top-20 left-10 w-72 h-72 rounded-full bg-[#50FFD9]/6 blur-[100px] pointer-events-none transition-transform duration-75 ease-out z-0"
       />
       <div 
-        className="absolute top-[40vh] right-10 w-96 h-96 rounded-full bg-violet-500/5 blur-[120px] pointer-events-none transition-transform duration-1000 ease-out z-0"
-        style={{ transform: `translate(${-mousePos.x}px, ${-mousePos.y}px)` }}
+        ref={parallaxRef2}
+        className="absolute top-[40vh] right-10 w-96 h-96 rounded-full bg-violet-500/5 blur-[120px] pointer-events-none transition-transform duration-75 ease-out z-0"
       />
       
       {/* Soft Blurred Background Radial Gradients */}
@@ -380,6 +397,8 @@ export default function ProjectClientPage({
                 src={slides[activeSlide]} 
                 alt={`${activeTitle} Slide ${activeSlide + 1}`} 
                 className="max-w-full max-h-full w-auto h-auto object-contain rounded-lg transition-all duration-700 hover:scale-[1.012]"
+                fetchPriority="high"
+                decoding="async"
               />
               <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none z-20"></div>
             </div>
@@ -458,7 +477,7 @@ export default function ProjectClientPage({
                   }`}
                   aria-label={`View slide ${idx + 1}`}
                 >
-                  <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
+                  <img src={img} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                 </button>
               ))}
             </div>
