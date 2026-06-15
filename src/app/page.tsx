@@ -762,21 +762,17 @@ export default function Home() {
         {activeTab !== "skills" && (
           <div className="min-h-[80vh] w-full">
             {filteredItems.length > 0 ? (
-              <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <AnimatePresence mode="popLayout">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredItems.map((item, i) => {
                   const desc = lang === "en" ? (item.description_en || item.description) : (item.description_id || item.description);
                   const title = lang === "en" ? (item.title_en || item.title) : (item.title_id || item.title);
                   const { cleanDesc, tags } = parseTechStack(desc);
                   return (
-                    <motion.div 
-                      initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
-                      transition={{ duration: 0.5, delay: i * 0.05, type: "spring", stiffness: 100 }}
+                    <div 
                       key={item.slug || i} 
-                      className="group glass-panel glass-panel-hover rounded-3xl overflow-hidden flex flex-col border border-white/5"
+                      className="group glass-panel glass-panel-hover rounded-3xl overflow-hidden flex flex-col border border-white/5 relative"
                     >
+                      <a href={item.link} className="absolute inset-0 z-20" aria-label={`View details of ${title}`}></a>
                       <div className="w-full aspect-[1024/660] overflow-hidden border-b border-white/5 relative bg-white/[0.003]">
                         <Image 
                           src={item.image} 
@@ -810,22 +806,20 @@ export default function Home() {
                           </div>
                         )}
 
-                        <a 
-                          href={`/${item.slug}`} 
-                          className="text-[10px] md:text-xs font-bold text-[var(--neon-cyan)] hover:underline flex items-center gap-1.5 group/link"
+                        <span 
+                          className="text-[10px] md:text-xs font-bold text-[var(--neon-cyan)] group-hover:underline flex items-center gap-1.5 group/link mt-2"
                         >
                           {TRANSLATIONS[lang].read_details}
-                          <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover/link:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                          <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                             <polyline points="12 5 19 12 12 19"></polyline>
                           </svg>
-                        </a>
+                        </span>
                       </div>
-                    </motion.div>
+                    </div>
                   );
                 })}
-                </AnimatePresence>
-              </motion.div>
+              </div>
             ) : (
               <div className="glass-panel p-16 rounded-3xl text-center text-gray-500 border border-white/5 max-w-md mx-auto animate-fade-in">
                 <svg className="w-10 h-10 text-[var(--text-muted)] mx-auto mb-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
