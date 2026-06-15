@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import portfolioData from "../data/portfolio.json";
 import AIChatBot from "./components/AIChatBot";
 import { motion, AnimatePresence } from "framer-motion";
@@ -771,10 +772,12 @@ export default function Home() {
                       className="group glass-panel glass-panel-hover rounded-3xl overflow-hidden flex flex-col border border-white/5"
                     >
                       <div className="w-full aspect-[1024/660] overflow-hidden border-b border-white/5 relative bg-white/[0.003]">
-                        <img 
+                        <Image 
                           src={item.image} 
                           alt={title} 
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-700 group-hover:scale-105"
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/40 to-transparent"></div>
@@ -845,7 +848,7 @@ export default function Home() {
                       <div key={j} className="flex flex-col gap-1.5 group">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-3">
-                            <img src={skill.icon} alt={skill.name} className="w-5 h-5 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" loading="lazy" />
+                            <Image src={skill.icon} alt={skill.name} width={20} height={20} className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" loading="lazy" />
                             <span className="text-xs sm:text-sm font-bold text-[var(--text-secondary)] group-hover:text-[var(--neon-cyan)] transition-colors">{skill.name}</span>
                           </div>
                           <span className="text-[10px] font-bold text-gray-500 group-hover:text-[#50FFD9] transition-colors">{prof}% Experience</span>

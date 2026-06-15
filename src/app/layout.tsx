@@ -12,38 +12,59 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#030303",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://khairan.tech"),
   title: {
     default: "Khairan Noor Fadhlillah | AI, DevOps, & Software Engineering Expert Portfolio",
-    template: "%s | Khairan Noor Fadhlillah - AI, DevOps & Engineering"
+    template: "%s | Khairan Noor Fadhlillah"
   },
-  description: "Explore the professional portfolio of Khairan Noor Fadhlillah, an elite specialist in Artificial Intelligence systems, DevOps automation pipelines, cloud architecture, and modern full-stack software engineering. View production-ready case studies and AI solutions.",
+  description: "Explore the professional portfolio of Khairan Noor Fadhlillah, an elite specialist in Artificial Intelligence systems, DevOps automation pipelines, cloud architecture, and modern full-stack software engineering based in Indonesia.",
   keywords: [
     "Khairan Noor Fadhlillah",
     "Khairan Noor Fadhlillah Portfolio",
-    "Khairan Noor Fadhlillah Tech",
-    "Khairan Noor",
-    "Khairan Fadhlillah",
     "Khairan tech",
     "Best AI Engineer Indonesia",
     "AI Agent Specialist Indonesia",
-    "LLM Integration Expert",
-    "Social Media Automation AI",
     "Top DevOps Specialist Indonesia",
     "Senior Software Engineer Jakarta",
     "Expert Software Engineering Specialist",
-    "Artificial Intelligence Deployment Engineer",
-    "Enterprise DevOps Automation",
-    "Kubernetes CI/CD Expert",
-    "Cloud Architecture Solutions",
     "Next.js React Development Indonesia",
     "Full Stack Web Developer Jakarta",
-    "Khairan Noor Fadhlillah Projects",
-    "Autonomous AI Agents VPS"
+    "Konsultan AI Indonesia",
+    "Jasa Pembuatan Website Profesional"
   ],
   authors: [{ name: "Khairan Noor Fadhlillah", url: "https://khairan.tech" }],
   creator: "Khairan Noor Fadhlillah",
+  publisher: "Khairan Noor Fadhlillah",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://khairan.tech",
+  },
+  other: {
+    "geo.region": "ID-JK",
+    "geo.placename": "Jakarta",
+    "geo.position": "-6.2088;106.8456",
+    "ICBM": "-6.2088, 106.8456",
+  },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -54,21 +75,21 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: "https://khairan.tech",
     siteName: "Khairan Noor Fadhlillah Portfolio",
-    title: "Khairan Noor Fadhlillah | AI, DevOps, & Software Engineering Expert Portfolio",
-    description: "Professional portfolio of Khairan Noor Fadhlillah, showcasing elite AI deployments, automated DevOps workflows, and enterprise-grade software engineering solutions.",
+    title: "Khairan Noor Fadhlillah | Premium Web & AI Solutions",
+    description: "Professional portfolio showcasing elite AI deployments, automated DevOps workflows, and enterprise-grade software engineering solutions by Khairan Noor Fadhlillah.",
     images: [
       {
         url: "/favicon.ico",
         width: 512,
         height: 512,
-        alt: "Khairan Noor Fadhlillah - AI, DevOps, & Software Engineering",
+        alt: "Khairan Noor Fadhlillah",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khairan Noor Fadhlillah | AI, DevOps, & Software Engineering Expert Portfolio",
-    description: "Professional portfolio of Khairan Noor Fadhlillah, showcasing elite AI deployments and automated DevOps workflows.",
+    title: "Khairan Noor Fadhlillah | AI & Engineering Expert",
+    description: "Discover top-tier digital ecosystems, AI autonomous agents, and enterprise web applications.",
   },
 };
 
