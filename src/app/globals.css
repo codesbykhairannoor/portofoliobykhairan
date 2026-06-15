@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
+html, body {
+  overflow-anchor: none;
+}
+
 :root {
   --neon-cyan: #50FFD9;
   --neon-cyan-glow: rgba(80, 255, 217, 0.4);
