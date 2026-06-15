@@ -279,18 +279,18 @@
       "description_id": "Mesin konten yang sepenuhnya otomatis yang mendesain dan mengunggah postingan 5x sehari di Threads, Instagram, dan Facebook menggunakan pemicu AI canggih.",
       "link": "/ai-social-automation/",
       "slug": "ai-social-automation",
-      "image": "/ai/social_automation.png"
+      "image": "/ai/imagecuan_2.png"
     },
     {
-      "title": "24/7 Autonomous AI Web Agent",
-      "title_en": "24/7 Autonomous AI Web Agent",
-      "title_id": "Agen Web AI Otonom 24/7",
-      "description": "An autonomous agent running 24/7 on a VPS that researches, writes, tests, and deploys high-traffic utility websites daily.",
-      "description_en": "An autonomous agent running 24/7 on a VPS that researches, writes, tests, and deploys high-traffic utility websites daily.",
-      "description_id": "Agen otonom yang berjalan 24/7 di VPS yang meneliti, menulis, menguji, dan meluncurkan situs web utilitas trafik tinggi setiap hari.",
-      "link": "/ai-web-agent-vps/",
-      "slug": "ai-web-agent-vps",
-      "image": "/ai/web_agent.png"
+      "title": "AI Image Upload Automation",
+      "title_en": "AI Stock Image Automation",
+      "title_id": "Otomasi Gambar Mikrostock AI",
+      "description": "An autonomous AI system that generates, upscales, and auto-uploads 50+ stock images daily to platforms like Dreamstime and Pond5.",
+      "description_en": "An autonomous AI system that generates, upscales, and auto-uploads 50+ stock images daily to platforms like Dreamstime and Pond5.",
+      "description_id": "Sistem AI otonom yang menghasilkan, meningkatkan resolusi, dan mengunggah otomatis 50+ gambar stok setiap hari ke platform seperti Dreamstime dan Pond5.",
+      "link": "/ai-image-upload-automation/",
+      "slug": "ai-image-upload-automation",
+      "image": "/ai/imagecuan_1.png"
     },
     {
       "title": "AI Google Maps Lead Prospector",
@@ -301,7 +301,7 @@
       "description_id": "Mesin generasi lead B2B otomatis yang memproses Google Maps, mengekstrak kontak bisnis, dan memulai penjangkauan berbasis AI.",
       "link": "/ai-maps-leadgen/",
       "slug": "ai-maps-leadgen",
-      "image": "/ai/maps_leadgen.png"
+      "image": "/ai/workflow_maps_leadgen.png"
     }
   ],
   "skills": [
