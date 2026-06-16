@@ -95,8 +95,8 @@ export default function ProjectClientPage({
           if (scrollProgressRef.current) {
             const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
             if (totalScroll > 0) {
-              const progress = (window.scrollY / totalScroll) * 100;
-              scrollProgressRef.current.style.width = `${progress}%`;
+              const progress = window.scrollY / totalScroll;
+              scrollProgressRef.current.style.transform = `scaleX(${progress})`;
             }
           }
           ticking = false;
@@ -319,8 +319,8 @@ export default function ProjectClientPage({
       {/* Premium Top Reading Progress Indicator */}
       <div 
         ref={scrollProgressRef}
-        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#50FFD9] via-teal-400 to-violet-500 z-[110] transition-all duration-100 pointer-events-none"
-        style={{ width: "0%" }}
+        className="fixed top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#50FFD9] via-teal-400 to-violet-500 z-[110] origin-left pointer-events-none"
+        style={{ transform: "scaleX(0)", willChange: "transform" }}
       />
 
       {/* Interactive Floating Mouse Parallax Glow Orbs */}
@@ -490,7 +490,7 @@ export default function ProjectClientPage({
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full relative z-10">
           
           {/* Card 1: Category */}
-          <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 group hover:border-[#50FFD9]/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(80,255,217,0.03)] transition-all duration-300">
+          <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] bg-slate-900/60 flex flex-col justify-between gap-4 group hover:border-[#50FFD9]/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(80,255,217,0.03)] transition-all duration-300">
             <div className="flex items-center justify-between">
               <span className="text-[10px] sm:text-[11px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "Category" : "Kategori"}</span>
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--neon-cyan)] shadow-[0_0_8px_var(--neon-cyan-glow)] animate-pulse"></span>
@@ -502,7 +502,7 @@ export default function ProjectClientPage({
           </div>
 
           {/* Card 2: Engineered Stack */}
-          <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 sm:col-span-2 group hover:border-violet-500/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(139,92,246,0.03)] transition-all duration-300">
+          <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] bg-slate-900/60 flex flex-col justify-between gap-4 sm:col-span-2 group hover:border-violet-500/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(139,92,246,0.03)] transition-all duration-300">
             <div className="flex items-center justify-between">
               <span className="text-[10px] sm:text-[11px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{TEXTS[lang].engineered_stack}</span>
               <div className="flex gap-1.5">
@@ -527,7 +527,7 @@ export default function ProjectClientPage({
           </div>
 
           {/* Card 3: DevOps & Integrity Dashboard */}
-          <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl flex flex-col justify-between gap-4 group hover:border-fuchsia-500/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(217,70,239,0.03)] transition-all duration-300">
+          <div className="glass-panel p-5 rounded-2xl border border-[var(--border-glass)] bg-slate-900/60 flex flex-col justify-between gap-4 group hover:border-fuchsia-500/20 hover:scale-[1.01] hover:shadow-[0_12px_40px_rgba(217,70,239,0.03)] transition-all duration-300">
             <div className="flex items-center justify-between">
               <span className="text-[10px] sm:text-[11px] font-extrabold text-[var(--text-muted)] uppercase tracking-wider">{lang === "en" ? "DevOps & Cloud" : "DevOps & Cloud"}</span>
               <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_#10b981] animate-ping"></span>
