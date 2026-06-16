@@ -137,39 +137,6 @@
   ],
   "website": [
     {
-      "title": "PlayForCalm - Logic Arcade Game",
-      "title_en": "PlayForCalm - Logic Arcade Game",
-      "title_id": "PlayForCalm - Game Arkade Logika",
-      "description": "A mental-clarity focused game suite. Featuring a custom-built Sudoku engine designed to train focus and logic in a minimal, zen environment.Tech Stack:React 15, JavaScript (Pure Logic), CSS3.",
-      "description_en": "A mental-clarity focused game suite. Featuring a custom-built Sudoku engine designed to train focus and logic in a minimal, zen environment.Tech Stack:React 15, JavaScript (Pure Logic), CSS3.",
-      "description_id": "Seri game yang berfokus pada kejelasan mental. Menampilkan mesin Sudoku khusus yang dirancang untuk melatih fokus dan logika dalam lingkungan minimalis bernuansa zen.Tech Stack:React 15, JavaScript (Pure Logic), CSS3.",
-      "link": "/playforcalm/",
-      "slug": "playforcalm",
-      "image": "/wp-content/uploads/2025/07/1-4.png"
-    },
-    {
-      "title": "ZeroCloud - Local Image Suite",
-      "title_en": "ZeroCloud - Local Image Suite",
-      "title_id": "ZeroCloud - Utilitas Gambar Lokal",
-      "description": "Privacy-first image processing tool. Perform bulk compression and optimization directly in the browser without ever uploading data to a server.Tech Stack:Nuxt 3, Web Workers API, Tailwind CSS.",
-      "description_en": "Privacy-first image processing tool. Perform bulk compression and optimization directly in the browser without ever uploading data to a server.Tech Stack:Nuxt 3, Web Workers API, Tailwind CSS.",
-      "description_id": "Alat pemrosesan gambar yang mengutamakan privasi. Lakukan kompresi dan optimalisasi massal langsung di peramban tanpa mengunggah data ke server.Tech Stack:Nuxt 3, Web Workers API, Tailwind CSS.",
-      "link": "/zerocloud/",
-      "slug": "zerocloud",
-      "image": "/wp-content/uploads/2025/07/4-1.png"
-    },
-    {
-      "title": "EstimateScopeAI - Smart Auditor",
-      "title_en": "EstimateScopeAI - Smart Auditor",
-      "title_id": "EstimateScopeAI - Auditor Pintar",
-      "description": "An enterprise-grade tool for project estimation and auditing. Leveraging AI to analyze complexity and provide precise development scopes.Tech Stack:.NET 8, Angular 19, Gemini AI API.",
-      "description_en": "An enterprise-grade tool for project estimation and auditing. Leveraging AI to analyze complexity and provide precise development scopes.Tech Stack:.NET 8, Angular 19, Gemini AI API.",
-      "description_id": "Alat kelas perusahaan untuk estimasi dan audit proyek. Memanfaatkan AI untuk menganalisis kompleksitas dan memberikan ruang lingkup pengembangan yang tepat.Tech Stack:.NET 8, Angular 19, Gemini AI API.",
-      "link": "/estimatescopeai/",
-      "slug": "estimatescopeai",
-      "image": "/wp-content/uploads/2025/07/8-2.png"
-    },
-    {
       "title": "Sharesa Digital - Agency Suite",
       "title_en": "Sharesa Digital - Agency Suite",
       "title_id": "Sharesa Digital - Solusi Agensi",
@@ -181,25 +148,25 @@
       "image": "/wp-content/uploads/2025/07/12-2.png"
     },
     {
-      "title": "KarsaChain - Eternal Archive Web3",
-      "title_en": "KarsaChain - Eternal Archive Web3",
-      "title_id": "KarsaChain - Arsip Abadi Web3",
-      "description": "A decentralized asset storage solution ensuring data immortality. Features secure blockchain-based archiving with IPFS for tamper-proof records.Tech Stack:Solidity, Ethereum/Polygon, Next.js 15, IPFS.",
-      "description_en": "A decentralized asset storage solution ensuring data immortality. Features secure blockchain-based archiving with IPFS for tamper-proof records.Tech Stack:Solidity, Ethereum/Polygon, Next.js 15, IPFS.",
-      "description_id": "Solusi penyimpanan aset terdesentralisasi untuk memastikan keabadian data. Menampilkan pengarsipan berbasis blockchain yang aman dengan IPFS untuk catatan tahan rusak.Tech Stack:Solidity, Ethereum/Polygon, Next.js 15, IPFS.",
-      "link": "/karsachain/",
-      "slug": "karsachain",
+      "title": "Dlibration - Transparent Democracy",
+      "title_en": "Dlibration - Transparent Democracy & Immutable Governance",
+      "title_id": "Dlibration - Demokrasi Transparan & Tata Kelola Abadi",
+      "description": "Advanced AI + Blockchain platform for public deliberation and secure governance.",
+      "description_en": "Advanced AI + Blockchain platform for public deliberation and secure governance.",
+      "description_id": "Platform deliberasi publik pertama yang menggabungkan AI Generative AI Pro dan Blockchain Base untuk memastikan setiap suara rakyat abadi dan berimpact.",
+      "link": "/dlibration/",
+      "slug": "dlibration",
       "image": "/wp-content/uploads/2025/07/16.png"
     },
     {
-      "title": "DopaMind - Productivity OS Tracker",
-      "title_en": "DopaMind - Productivity OS Tracker",
-      "title_id": "DopaMind - Pelacak OS Produktivitas",
+      "title": "Oneformind - Productivity OS Tracker",
+      "title_en": "Oneformind - Productivity OS Tracker",
+      "title_id": "Oneformind - Pelacak OS Produktivitas",
       "description": "A holistic personal growth platform integrating finance tracking, atomic habits, and intentional planning into a seamless Modern Monolith experience.Tech Stack:Laravel 11, Vue 3, Inertia.js, Tailwind CSS.",
       "description_en": "A holistic personal growth platform integrating finance tracking, atomic habits, and intentional planning into a seamless Modern Monolith experience.Tech Stack:Laravel 11, Vue 3, Inertia.js, Tailwind CSS.",
       "description_id": "Platform pertumbuhan pribadi holistik yang mengintegrasikan pelacakan keuangan, kebiasaan atom, dan perencanaan terarah ke dalam pengalaman Modern Monolith yang mulus.Tech Stack:Laravel 11, Vue 3, Inertia.js, Tailwind CSS.",
-      "link": "/dopamind/",
-      "slug": "dopamind",
+      "link": "/oneformind/",
+      "slug": "oneformind",
       "image": "/wp-content/uploads/2025/07/20.png"
     },
     {
@@ -267,6 +234,39 @@
       "link": "/multi-asset-investment-analysis/",
       "slug": "multi-asset-investment-analysis",
       "image": "/wp-content/uploads/2025/07/Screenshot-2025-11-14-184625.png"
+    },
+    {
+      "title": "PlayForCalm - Logic Arcade Game",
+      "title_en": "PlayForCalm - Logic Arcade Game",
+      "title_id": "PlayForCalm - Game Arkade Logika",
+      "description": "A mental-clarity focused game suite. Featuring a custom-built Sudoku engine designed to train focus and logic in a minimal, zen environment.Tech Stack:React 15, JavaScript (Pure Logic), CSS3.",
+      "description_en": "A mental-clarity focused game suite. Featuring a custom-built Sudoku engine designed to train focus and logic in a minimal, zen environment.Tech Stack:React 15, JavaScript (Pure Logic), CSS3.",
+      "description_id": "Seri game yang berfokus pada kejelasan mental. Menampilkan mesin Sudoku khusus yang dirancang untuk melatih fokus dan logika dalam lingkungan minimalis bernuansa zen.Tech Stack:React 15, JavaScript (Pure Logic), CSS3.",
+      "link": "/playforcalm/",
+      "slug": "playforcalm",
+      "image": "/wp-content/uploads/2025/07/1-4.png"
+    },
+    {
+      "title": "ZeroCloud - Local Image Suite",
+      "title_en": "ZeroCloud - Local Image Suite",
+      "title_id": "ZeroCloud - Utilitas Gambar Lokal",
+      "description": "Privacy-first image processing tool. Perform bulk compression and optimization directly in the browser without ever uploading data to a server.Tech Stack:Nuxt 3, Web Workers API, Tailwind CSS.",
+      "description_en": "Privacy-first image processing tool. Perform bulk compression and optimization directly in the browser without ever uploading data to a server.Tech Stack:Nuxt 3, Web Workers API, Tailwind CSS.",
+      "description_id": "Alat pemrosesan gambar yang mengutamakan privasi. Lakukan kompresi dan optimalisasi massal langsung di peramban tanpa mengunggah data ke server.Tech Stack:Nuxt 3, Web Workers API, Tailwind CSS.",
+      "link": "/zerocloud/",
+      "slug": "zerocloud",
+      "image": "/wp-content/uploads/2025/07/4-1.png"
+    },
+    {
+      "title": "EstimateScopeAI - Smart Auditor",
+      "title_en": "EstimateScopeAI - Smart Auditor",
+      "title_id": "EstimateScopeAI - Auditor Pintar",
+      "description": "An enterprise-grade tool for project estimation and auditing. Leveraging AI to analyze complexity and provide precise development scopes.Tech Stack:.NET 8, Angular 19, Gemini AI API.",
+      "description_en": "An enterprise-grade tool for project estimation and auditing. Leveraging AI to analyze complexity and provide precise development scopes.Tech Stack:.NET 8, Angular 19, Gemini AI API.",
+      "description_id": "Alat kelas perusahaan untuk estimasi dan audit proyek. Memanfaatkan AI untuk menganalisis kompleksitas dan memberikan ruang lingkup pengembangan yang tepat.Tech Stack:.NET 8, Angular 19, Gemini AI API.",
+      "link": "/estimatescopeai/",
+      "slug": "estimatescopeai",
+      "image": "/wp-content/uploads/2025/07/8-2.png"
     }
   ],
   "ai": [
