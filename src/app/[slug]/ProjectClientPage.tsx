@@ -326,11 +326,13 @@ export default function ProjectClientPage({
       {/* Interactive Floating Mouse Parallax Glow Orbs */}
       <div 
         ref={parallaxRef1}
-        className="absolute top-20 left-10 w-72 h-72 rounded-full bg-[#50FFD9]/6 blur-[100px] pointer-events-none transition-transform duration-75 ease-out z-0"
+        className="absolute top-20 left-10 w-72 h-72 rounded-full bg-[#50FFD9]/6 blur-[100px] pointer-events-none z-0"
+        style={{ willChange: "transform" }}
       />
       <div 
         ref={parallaxRef2}
-        className="absolute top-[40vh] right-10 w-96 h-96 rounded-full bg-violet-500/5 blur-[120px] pointer-events-none transition-transform duration-75 ease-out z-0"
+        className="absolute top-[40vh] right-10 w-96 h-96 rounded-full bg-violet-500/5 blur-[120px] pointer-events-none z-0"
+        style={{ willChange: "transform" }}
       />
       
       {/* Soft Blurred Background Radial Gradients */}
@@ -546,7 +548,7 @@ export default function ProjectClientPage({
 
         {/* Core Case Study Content Card */}
         <main className="w-full">
-          <article className="glass-panel p-4 sm:p-6 md:p-7 rounded-2xl border border-[var(--border-glass)] backdrop-blur-xl shadow-xl overflow-hidden relative">
+          <article className="glass-panel p-4 sm:p-6 md:p-7 rounded-2xl border border-[var(--border-glass)] bg-slate-900/60 shadow-xl overflow-hidden relative">
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[var(--neon-cyan)] to-[var(--neon-violet)]"></div>
 
             {/* Rendered HTML content from WordPress */}
