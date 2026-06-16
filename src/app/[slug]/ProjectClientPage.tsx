@@ -67,7 +67,7 @@ export default function ProjectClientPage({
   const [activeSlide, setActiveSlide] = useState(0);
   const parallaxRef1 = useRef<HTMLDivElement>(null);
   const parallaxRef2 = useRef<HTMLDivElement>(null);
-  const scrollProgressRef = useRef<HTMLDivElement>(null);
+
 
   // Mouse move parallax ambient lighting effect via raw DOM (0% React re-render overhead)
   useEffect(() => {
@@ -86,27 +86,7 @@ export default function ProjectClientPage({
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  // Sticky top reading scroll progress meter via raw DOM (0% React re-render overhead)
-  useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          if (scrollProgressRef.current) {
-            const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
-            if (totalScroll > 0) {
-              const progress = window.scrollY / totalScroll;
-              scrollProgressRef.current.style.transform = `scaleX(${progress})`;
-            }
-          }
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+
 
   // Load and synchronize theme on mount
   useEffect(() => {
@@ -316,12 +296,7 @@ export default function ProjectClientPage({
   return (
     <div className={`min-h-screen bg-[var(--bg-dark)] text-[var(--text-primary)] transition-colors duration-500 relative overflow-x-hidden selection:bg-[#50FFD9]/15 selection:text-[#50FFD9] ${theme}`}>
       
-      {/* Premium Top Reading Progress Indicator */}
-      <div 
-        ref={scrollProgressRef}
-        className="fixed top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#50FFD9] via-teal-400 to-violet-500 z-[110] origin-left pointer-events-none"
-        style={{ transform: "scaleX(0)", willChange: "transform" }}
-      />
+
 
       {/* Interactive Floating Mouse Parallax Glow Orbs */}
       <div 

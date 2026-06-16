@@ -278,32 +278,37 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      // Toggle back to top button visibility
-      if (window.scrollY > 400) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
-
-      // Simple scrollspy logic
-      const sections = ["home", "about", "portfolio", "contact"];
-      const scrollPos = window.scrollY + 200;
-
-      for (const section of sections) {
-        const el = document.getElementById(section);
-        if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPos >= top && scrollPos < top + height) {
-            setActiveSection(section);
-            break;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > 400) {
+            setShowScrollTop(true);
+          } else {
+            setShowScrollTop(false);
           }
-        }
+
+          const sections = ["home", "about", "portfolio", "contact"];
+          const scrollPos = window.scrollY + 200;
+
+          for (const section of sections) {
+            const el = document.getElementById(section);
+            if (el) {
+              const top = el.offsetTop;
+              const height = el.offsetHeight;
+              if (scrollPos >= top && scrollPos < top + height) {
+                setActiveSection(section);
+                break;
+              }
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -396,7 +401,7 @@ export default function Home() {
 
       {/* Floating Header */}
       <header className="fixed top-6 inset-x-4 md:inset-x-8 mx-auto z-50 max-w-5xl">
-        <div className="glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-[var(--border-glass)] backdrop-blur-xl relative">
+        <div className="glass-panel px-4 md:px-6 py-3 md:py-4 rounded-2xl flex items-center justify-between border border-[var(--border-glass)] bg-[var(--bg-card)] shadow-xl relative">
           <div className="flex items-center gap-2">
             <a href="#home" className="text-lg md:text-xl font-black tracking-tighter text-[var(--text-primary)] select-none">
               Khairan<span className="text-[var(--neon-cyan)] glow-text">.tech</span>
@@ -484,7 +489,7 @@ export default function Home() {
 
         {/* Mobile Navigation Dropdown Menu (Glassmorphism Overlay) */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-3 w-full glass-panel p-6 rounded-2xl border border-[var(--border-glass)] backdrop-blur-2xl animate-fade-in flex flex-col gap-4">
+          <div className="md:hidden mt-3 w-full glass-panel p-6 rounded-2xl border border-[var(--border-glass)] bg-[var(--bg-card)] animate-fade-in flex flex-col gap-4 shadow-xl">
             <a 
               href="#home" 
               onClick={() => setMobileMenuOpen(false)}
