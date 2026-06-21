@@ -528,7 +528,7 @@ export default function ProjectClientPage({
 
             {/* Rendered HTML content from WordPress */}
             <div 
-              className="project-content-html text-sm leading-relaxed" 
+              className="project-content-html" 
               dangerouslySetInnerHTML={{ __html: localizedContent }} 
               onClick={handleContentClick}
             />

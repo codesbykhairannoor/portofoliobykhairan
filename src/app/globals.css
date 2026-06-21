@@ -719,6 +719,12 @@ html.light .progress-bar-v2 {
 }
 
 /* Content HTML Typography Styles */
+.project-content-html {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
 .project-content-html p {
   font-size: 15px;
   line-height: 1.8;
