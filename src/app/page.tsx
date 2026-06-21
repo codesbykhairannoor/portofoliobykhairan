@@ -64,16 +64,16 @@ const TRANSLATIONS = {
   en: {
     ready: "Ready for New Opportunities",
     hero_title_1: "Hey there! I'm Khairan.",
-    hero_title_2: "Crafting intelligent AI & Web,",
-    hero_title_3: "with world-class Design.",
-    hero_desc: "I don't just write code—I build digital ecosystems. From autonomous AI agents that work 24/7, to high-performance web applications and stunning UI/UX that actually converts. Let's turn your wildest ideas into reality.",
+    hero_title_2: "Architecting intelligent AI,",
+    hero_title_3: "DevOps & Enterprise Software.",
+    hero_desc: "I build robust digital ecosystems. From autonomous AI agents that operate 24/7, to automated CI/CD pipelines, and high-performance software architecture. Let's engineer your wildest ideas into production.",
     get_in_touch: "Contact Me",
     view_my_work: "View My Work",
     profile_summary: "Profile Summary",
     meet_architect: "Meet The Architect",
     biography: "Biography",
-    bio_quote: "Good code needs good design, and good design needs pristine execution.",
-    bio_body: "I am a hybrid Full-Stack Developer, AI Specialist, and UI/UX Designer. Over the past 3 years, I've engineered dozens of production systems, from interactive software suites to autonomous AI agents running 24/7 on private VPS. I specialize in LLM integration, social media automation, and structural engineering that bridges human intuition with machine intelligence.",
+    bio_quote: "Scalable software requires robust architecture, and robust architecture requires precise engineering.",
+    bio_body: "I am an AI Specialist, DevOps Engineer, and Software Architect. I've engineered dozens of production systems, from complex distributed architectures to autonomous AI agents running 24/7 on private cloud servers. I specialize in LLM automation, robust deployment pipelines, and building highly scalable, enterprise-grade digital infrastructures.",
     download_cv: "Download CV",
     my_projects: "My Projects",
     completed_works: "Completed Works",
@@ -121,16 +121,16 @@ const TRANSLATIONS = {
   id: {
     ready: "Siap untuk Peluang Baru",
     hero_title_1: "Halo! Saya Khairan.",
-    hero_title_2: "Ngeracik AI & Web super cepat,",
-    hero_title_3: "dengan Desain kelas dunia.",
-    hero_desc: "Saya nggak sekadar nulis kode—saya membangun ekosistem digital. Mulai dari agen AI otonom yang jalan 24/7, sampai web app dengan performa tinggi dan UI/UX yang nggak cuma estetik, tapi juga ngasih konversi maksimal. Yuk, kita wujudin ide brilian kamu jadi nyata!",
+    hero_title_2: "Merancang arsitektur cerdas AI,",
+    hero_title_3: "DevOps & Enterprise Software.",
+    hero_desc: "Saya membangun ekosistem digital yang kuat dan terukur. Mulai dari agen AI otonom yang beroperasi 24/7, otomatisasi pipeline CI/CD, hingga arsitektur perangkat lunak berkinerja tinggi. Mari wujudkan ide brilian Anda menjadi kenyataan.",
     get_in_touch: "Hubungi Saya",
     view_my_work: "Lihat Karya Saya",
     profile_summary: "Ringkasan Profil",
     meet_architect: "Kenali Sang Kreator",
     biography: "Biografi",
-    bio_quote: "Kode yang baik butuh desain yang baik, dan desain yang baik butuh eksekusi yang sempurna.",
-    bio_body: "Saya adalah seorang Full-Stack Developer, Spesialis AI, dan UI/UX Designer hybrid. Selama 3 tahun terakhir, saya telah merancang puluhan sistem produksi, mulai dari rangkaian perangkat lunak interaktif hingga agen AI otonom yang berjalan 24/7 di VPS pribadi. Saya berspesialisasi dalam integrasi LLM, otomatisasi media sosial, dan rekayasa struktural yang menjembatani intuisi manusia dengan kecerdasan mesin.",
+    bio_quote: "Perangkat lunak yang scalable membutuhkan arsitektur yang kuat, dan arsitektur yang kuat membutuhkan rekayasa presisi.",
+    bio_body: "Saya adalah seorang Spesialis AI, DevOps Engineer, dan Arsitek Perangkat Lunak. Saya telah merekayasa puluhan sistem produksi, mulai dari arsitektur terdistribusi yang kompleks hingga agen AI otonom yang berjalan 24/7 di server cloud pribadi. Saya berspesialisasi dalam otomatisasi LLM, pipeline deployment yang tangguh, dan membangun infrastruktur digital berskala perusahaan.",
     download_cv: "Unduh CV",
     my_projects: "Proyek Saya",
     completed_works: "Karya Selesai",
@@ -639,7 +639,7 @@ export default function Home() {
           <div className="md:col-span-4 glass-panel p-6 rounded-3xl border border-white/5 flex flex-col justify-center items-center group relative overflow-hidden bg-white/[0.005]">
             <div className="relative w-full aspect-[1024/660] md:aspect-square rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
               <img 
-                src="/wp-content/uploads/2025/07/buatwp.png" 
+                src="/foto.jpeg" 
                 alt="Portrait of Khairan Noor Fadhlillah" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
