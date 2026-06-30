@@ -638,10 +638,13 @@ export default function Home() {
           {/* Profile Picture Frame Card (Spans 4 cols) */}
           <div className="md:col-span-4 glass-panel p-6 rounded-3xl border border-white/5 flex flex-col justify-center items-center group relative overflow-hidden bg-white/[0.005]">
             <div className="relative w-full aspect-[1024/660] md:aspect-square rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
-              <img 
+              <Image 
                 src="/foto.jpeg" 
                 alt="Portrait of Khairan Noor Fadhlillah" 
-                className="w-full h-full object-cover object-[center_15%] transition-transform duration-700 group-hover:scale-105"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 350px"
+                className="object-cover object-[center_15%] transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
               

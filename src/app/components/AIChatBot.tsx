@@ -152,7 +152,8 @@ export default function AIChatBot({ lang }: { lang: "id" | "en" }) {
       {/* Toggle Button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="w-16 h-16 rounded-3xl bg-gradient-to-tr from-[#50FFD9] to-[#a78bfa] shadow-[0_15px_40px_rgba(80,255,217,0.4)] flex items-center justify-center hover:scale-105 transition-all duration-500 active:scale-90 group relative overflow-hidden"
+        aria-label="Toggle AI Assistant Chat"
+        className="w-16 h-16 rounded-3xl bg-gradient-to-tr from-[#50FFD9] to-[#a78bfa] shadow-[0_15px_40px_rgba(80,255,217,0.4)] flex items-center justify-center hover:scale-105 transition-all duration-500 active:scale-90 group relative overflow-hidden text-black cursor-pointer"
       >
         <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
         {isOpen ? (
