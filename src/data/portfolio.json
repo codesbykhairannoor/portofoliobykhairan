@@ -159,14 +159,14 @@
       "image": "/wp-content/uploads/2025/07/16.png"
     },
     {
-      "title": "Oneformind - Productivity OS Tracker",
-      "title_en": "Oneformind - Productivity OS Tracker",
-      "title_id": "Oneformind - Pelacak OS Produktivitas",
-      "description": "A holistic personal growth platform integrating finance tracking, atomic habits, and intentional planning into a seamless Modern Monolith experience.Tech Stack:Laravel 11, Vue 3, Inertia.js, Tailwind CSS.",
-      "description_en": "A holistic personal growth platform integrating finance tracking, atomic habits, and intentional planning into a seamless Modern Monolith experience.Tech Stack:Laravel 11, Vue 3, Inertia.js, Tailwind CSS.",
-      "description_id": "Platform pertumbuhan pribadi holistik yang mengintegrasikan pelacakan keuangan, kebiasaan atom, dan perencanaan terarah ke dalam pengalaman Modern Monolith yang mulus.Tech Stack:Laravel 11, Vue 3, Inertia.js, Tailwind CSS.",
-      "link": "/oneformind/",
-      "slug": "oneformind",
+      "title": "Tranvas - Productivity OS Tracker",
+      "title_en": "Tranvas - Productivity OS Tracker",
+      "title_id": "Tranvas - Pelacak OS Produktivitas",
+      "description": "A holistic personal growth platform integrating finance tracking, atomic habits, and intentional planning into a seamless modern experience.Tech Stack:NextJs, Golang, Tailwind CSS.",
+      "description_en": "A holistic personal growth platform integrating finance tracking, atomic habits, and intentional planning into a seamless modern experience.Tech Stack:NextJs, Golang, Tailwind CSS.",
+      "description_id": "Platform pertumbuhan pribadi holistik yang mengintegrasikan pelacakan keuangan, kebiasaan atom, dan perencanaan terarah ke dalam pengalaman modern yang mulus.Tech Stack:NextJs, Golang, Tailwind CSS.",
+      "link": "/tranvas/",
+      "slug": "tranvas",
       "image": "/wp-content/uploads/2025/07/20.png"
     },
     {
