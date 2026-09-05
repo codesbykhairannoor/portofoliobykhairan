@@ -29,10 +29,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://khairan.tech"),
   title: {
-    default: "Khairan Noor Fadhlillah | AI, DevOps, & Software Engineering Expert Portfolio",
+    default: "Khairan Noor Fadhlillah | AI & DevOps Engineer Portfolio",
     template: "%s | Khairan Noor Fadhlillah"
   },
-  description: "Explore the professional portfolio of Khairan Noor Fadhlillah, an elite specialist in Artificial Intelligence systems, DevOps automation pipelines, cloud architecture, and modern full-stack software engineering based in Indonesia.",
+  description: "Portfolio of Khairan Noor Fadhlillah: Specialist in autonomous AI agents, DevOps cloud pipelines, and modern full-stack engineering based in Indonesia.",
   keywords: [
     "Khairan Noor Fadhlillah",
     "Khairan Noor Fadhlillah Portfolio",

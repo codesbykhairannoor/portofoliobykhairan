@@ -780,12 +780,13 @@ export default function Home() {
                   const desc = lang === "en" ? (item.description_en || item.description) : (item.description_id || item.description);
                   const title = lang === "en" ? (item.title_en || item.title) : (item.title_id || item.title);
                   const { cleanDesc, tags } = parseTechStack(desc);
+                  const itemLink = item.link ? item.link.replace(/\/+$/, '') : `/${item.slug}`;
                   return (
                     <div 
                       key={item.slug || i} 
                       className="group glass-panel glass-panel-hover rounded-3xl overflow-hidden flex flex-col border border-white/5 relative"
                     >
-                      <a href={item.link} className="absolute inset-0 z-20" aria-label={`View details of ${title}`}></a>
+                      <a href={itemLink} className="absolute inset-0 z-20" aria-label={`View details of ${title}`}></a>
                       <div className="w-full aspect-[1024/660] overflow-hidden border-b border-white/5 relative bg-white/[0.003]">
                         <Image 
                           src={item.image} 

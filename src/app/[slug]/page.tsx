@@ -44,19 +44,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const titleText = data.title_en || data.title;
     const typeText = data.type_en || data.type;
     return {
-      title: `${titleText} | Khairan Noor Fadhlillah - AI, DevOps & Engineering`,
-      description: `In-depth architectural analysis of ${titleText} (${typeText}), engineered by Khairan Noor Fadhlillah with specialized AI algorithms, cloud DevOps automation, and robust system designs.`,
+      title: titleText,
+      description: `Architectural analysis of ${titleText}, engineered by Khairan Noor Fadhlillah with custom AI workflows, cloud DevOps pipelines, and modern system design.`,
       openGraph: {
-        title: `${titleText} | Khairan Noor Fadhlillah - AI, DevOps & Engineering`,
-        description: `Explore the code architecture, CI/CD pipelines, and custom designs of ${titleText} built by Khairan Noor Fadhlillah.`,
+        title: `${titleText} | Khairan Noor Fadhlillah`,
+        description: `Explore code architecture, DevOps pipelines, and designs of ${titleText} by Khairan Noor Fadhlillah.`,
         type: "article",
         url: `https://khairan.tech/${slug}`,
         siteName: "Khairan Noor Fadhlillah Portfolio",
       },
       twitter: {
         card: "summary_large_image",
-        title: `${titleText} | Khairan Noor Fadhlillah Showcase`,
-        description: `In-depth architectural analysis of ${titleText} (${typeText}), engineered by Khairan Noor Fadhlillah with specialized AI algorithms and cloud DevOps automation.`,
+        title: `${titleText} | Khairan Noor Fadhlillah`,
+        description: `Architectural analysis and implementation details of ${titleText}.`,
       }
     };
   } catch {
