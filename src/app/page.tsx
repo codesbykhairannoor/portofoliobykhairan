@@ -622,7 +622,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4 items-center mt-4">
               <a 
-                href="https://drive.google.com/file/d/1YeO72MMXqdKFJkcjIKJNk0cMOw3wyohE/view?usp=sharing" 
+                href="https://drive.google.com/drive/folders/1yFVit9tC_41PA1iyHpO6ByWZcKuRYq05?usp=drive_link" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-neon"
