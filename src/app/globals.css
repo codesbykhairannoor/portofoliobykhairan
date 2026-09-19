@@ -39,12 +39,17 @@ html.light, body.light, .light {
   --neon-violet-glow: rgba(79, 70, 229, 0.3);
 }
 
-html.light p, html.light span, html.light li {
+html.light p, html.light li {
   font-weight: 500; /* Thicker text for light mode */
 }
 
-html.light h1, html.light h2, html.light h3, html.light strong, html.light b, html.light p, html.light span {
-  color: #0f172a !important; /* Force visibility for all text elements in light mode */
+html.light h1, html.light h2, html.light h3, html.light strong, html.light b, html.light p {
+  color: #0f172a;
+}
+
+/* Ensure dark badges, pills, and buttons always preserve crisp white text */
+.badge-dark, .badge-dark span, .badge-dark * {
+  color: #ffffff !important;
 }
 html.light h1, html.light h2, html.light h3, html.light strong, html.light b {
   font-weight: 800;

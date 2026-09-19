@@ -808,8 +808,8 @@ export default function Home() {
 
                         {/* Top-Left: Brand Logo Badge */}
                         {item.logo && (
-                          <div className="absolute top-3 left-3 z-30 flex items-center gap-2 px-2.5 py-1.5 rounded-2xl bg-[#030712]/85 border border-white/15 backdrop-blur-md shadow-lg pointer-events-none">
-                            <div className="w-5 h-5 rounded-md overflow-hidden relative flex-shrink-0 flex items-center justify-center">
+                          <div className="badge-dark absolute top-3 left-3 z-30 flex items-center gap-2 px-2.5 py-1.5 rounded-2xl bg-[#030712]/90 border border-white/20 backdrop-blur-md shadow-lg pointer-events-none">
+                            <div className="w-5 h-5 rounded-md overflow-hidden relative flex-shrink-0 flex items-center justify-center bg-white/10 p-0.5">
                               <Image
                                 src={item.logo}
                                 alt={`${title} logo`}
@@ -818,7 +818,7 @@ export default function Home() {
                                 className="w-full h-full object-contain"
                               />
                             </div>
-                            <span className="text-[11px] font-extrabold text-white tracking-wide truncate max-w-[105px]">
+                            <span className="text-[11px] font-extrabold !text-white tracking-wide truncate max-w-[105px]">
                               {title.split(" - ")[0]}
                             </span>
                           </div>
@@ -831,12 +831,12 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}
-                            className="absolute top-3 right-3 z-30 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#030712]/80 hover:bg-black border border-cyan-400/50 hover:border-cyan-300 text-[#50FFD9] hover:text-white text-[11px] font-bold backdrop-blur-md shadow-lg transition-all hover:scale-105 hover:shadow-[0_0_15px_rgba(80,255,217,0.4)] cursor-pointer"
+                            className="badge-dark absolute top-3 right-3 z-30 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-950/95 hover:bg-black border border-emerald-400/80 hover:border-emerald-300 text-white hover:text-white text-[11px] font-bold backdrop-blur-md shadow-lg transition-all hover:scale-105 hover:shadow-[0_0_15px_rgba(16,185,129,0.5)] cursor-pointer"
                             title={`${TRANSLATIONS[lang].visit_website}: ${title}`}
                           >
-                            <span className="w-2 h-2 rounded-full bg-[#50FFD9] animate-pulse"></span>
-                            <span>{TRANSLATIONS[lang].visit_website}</span>
-                            <svg className="w-3 h-3 ml-0.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                            <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse flex-shrink-0"></span>
+                            <span className="!text-white font-bold text-xs">{TRANSLATIONS[lang].visit_website}</span>
+                            <svg className="w-3.5 h-3.5 ml-0.5 !text-white flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
                           </a>
@@ -852,21 +852,21 @@ export default function Home() {
                         {tags.length > 0 && (
                           <div className="flex flex-wrap gap-1.5 mb-5 mt-auto">
                             {tags.slice(0, 3).map((tag, tagIdx) => (
-                              <span key={tagIdx} className="text-[9px] font-extrabold text-gray-500 bg-white/[0.02] border border-white/5 px-2 py-0.5 rounded-md">
+                              <span key={tagIdx} className="text-[10px] font-bold text-slate-600 dark:text-gray-400 bg-slate-100 dark:bg-white/[0.04] border border-slate-200 dark:border-white/10 px-2 py-0.5 rounded-md">
                                 {tag}
                               </span>
                             ))}
                             {tags.length > 3 && (
-                              <span className="text-[9px] font-extrabold text-[#50FFD9] bg-[#50FFD9]/5 px-1.5 py-0.5 rounded-md">
+                              <span className="text-[10px] font-bold text-teal-700 dark:text-[#50FFD9] bg-teal-50 dark:bg-[#50FFD9]/10 border border-teal-200 dark:border-transparent px-1.5 py-0.5 rounded-md">
                                 +{tags.length - 3}
                               </span>
                             )}
                           </div>
                         )}
 
-                        <div className="flex items-center justify-between mt-auto pt-3 border-t border-white/5 relative z-30">
+                        <div className="flex items-center justify-between mt-auto pt-3 border-t border-black/5 dark:border-white/5 relative z-30">
                           <span 
-                            className="text-[10px] md:text-xs font-bold text-[var(--neon-cyan)] group-hover:underline flex items-center gap-1.5 group/link"
+                            className="text-[11px] md:text-xs font-bold text-teal-600 dark:text-[var(--neon-cyan)] group-hover:underline flex items-center gap-1.5 group/link"
                           >
                             {TRANSLATIONS[lang].read_details}
                             <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -881,7 +881,7 @@ export default function Home() {
                               target="_blank"
                               rel="noopener noreferrer"
                               onClick={(e) => e.stopPropagation()}
-                              className="inline-flex items-center gap-1.5 text-[10px] md:text-xs font-bold text-gray-300 hover:text-[#50FFD9] transition-colors py-1 px-2.5 rounded-lg hover:bg-white/5 border border-white/5 hover:border-cyan-400/30"
+                              className="inline-flex items-center gap-1.5 text-[11px] md:text-xs font-bold text-slate-700 dark:text-gray-200 hover:text-teal-600 dark:hover:text-[#50FFD9] transition-colors py-1.5 px-3 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-white/5 dark:hover:bg-white/10 border border-slate-200 dark:border-white/10 hover:border-teal-500/30"
                               title={`${TRANSLATIONS[lang].visit_website}: ${title}`}
                             >
                               <span>{TRANSLATIONS[lang].visit_website}</span>
