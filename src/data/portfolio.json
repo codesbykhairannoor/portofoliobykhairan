@@ -9,7 +9,8 @@
       "description_id": "Platform pertumbuhan pribadi holistik yang mengintegrasikan pelacakan keuangan, kebiasaan atom, dan perencanaan terarah ke dalam pengalaman modern yang mulus.Tech Stack:NextJs, Golang, Tailwind CSS.",
       "link": "/tranvas",
       "slug": "tranvas",
-      "image": "/wp-content/uploads/2025/07/20.png"
+      "image": "/projects/tranvas-cover.png",
+      "live_url": "https://tranvas.com"
     },
     {
       "title": "HandleMyFile - Client-Side Document Tools",
@@ -20,7 +21,8 @@
       "description_id": "Gabungkan, pisahkan, kompres, konversi file Office, dan OCR langsung di browser. 100% diproses offline via WebAssembly.Tech Stack:Next.js, WebAssembly, PDF.js, Tailwind CSS.",
       "link": "/handlemyfile",
       "slug": "handlemyfile",
-      "image": "/wp-content/uploads/2025/07/16.png"
+      "image": "/projects/handlemyfile-cover.png",
+      "live_url": "https://handlemyfile.com"
     },
     {
       "title": "HelpMyIMG - Browser-Native Image Tools",
@@ -31,7 +33,8 @@
       "description_id": "Gabungkan, potong, kompres, konversi, dan edit foto langsung di browser. 100% offline via WebAssembly.Tech Stack:Next.js, WebAssembly, Canvas API, Tailwind CSS.",
       "link": "/helpmyimg",
       "slug": "helpmyimg",
-      "image": "/wp-content/uploads/2025/07/15.png"
+      "image": "/projects/helpmyimg-cover.png",
+      "live_url": "https://helpmyimg.com"
     },
     {
       "title": "CreateMy-QR - 37 QR & Barcode Tools",
@@ -42,7 +45,8 @@
       "description_id": "Buat dan pindai 37 jenis kode QR dan barcode secara gratis. 100% client-side, tanpa pelacakan data, standar ISO/IEC 18004.Tech Stack:Next.js, Canvas & SVG API, Tailwind CSS.",
       "link": "/createmy-qr",
       "slug": "createmy-qr",
-      "image": "/wp-content/uploads/2025/07/14.png"
+      "image": "/projects/createmy-qr-cover.png",
+      "live_url": "https://createmy-qr.com"
     },
     {
       "title": "SolveMyMedia - Offline Audio & Video Suite",
@@ -53,7 +57,8 @@
       "description_id": "Optimalkan, kompres, konversi, dan edit file audio dan video dengan aman di browser. Tanpa upload ke server dengan 100% pemrosesan offline edge.Tech Stack:Next.js, FFmpeg.wasm, WebCodecs, Tailwind CSS.",
       "link": "/solvemymedia",
       "slug": "solvemymedia",
-      "image": "/wp-content/uploads/2025/07/13.png"
+      "image": "/projects/solvemymedia-cover.png",
+      "live_url": "https://solvemymedia.com"
     },
     {
       "title": "Visit Banjarmasin - Tourism & Culture Portal",
@@ -64,7 +69,8 @@
       "description_id": "Portal resmi eksplorasi Kota Seribu Sungai. Panduan wisata interaktif, kebudayaan Banjar, dan integrasi inovasi Smart City.Tech Stack:Next.js, Leaflet/Mapbox, Tailwind CSS.",
       "link": "/visitbanjarmasin",
       "slug": "visitbanjarmasin",
-      "image": "/wp-content/uploads/2025/07/11.png"
+      "image": "/projects/visitbanjarmasin-cover.png",
+      "live_url": "https://visitbanjarmasin.id"
     },
     {
       "title": "Sasirangan Metaverse 3D - SDGs Cultural Heritage",
@@ -75,7 +81,8 @@
       "description_id": "Museum virtual 3D mengeksplorasi kain tradisional Sasirangan Kalimantan Selatan dengan rendering WebGL real-time dan gamified scrollytelling.Tech Stack:Next.js, Three.js, WebGL, GSAP, Tailwind CSS.",
       "link": "/sasiranganshowcase3d",
       "slug": "sasiranganshowcase3d",
-      "image": "/wp-content/uploads/2025/07/10.png"
+      "image": "/wp-content/uploads/2025/07/10.png",
+      "live_url": "https://sasiranganshowcase3d.vercel.app"
     },
     {
       "title": "Sharesa Digital - Agency Suite",
@@ -86,7 +93,8 @@
       "description_id": "Platform berkinerja tinggi untuk agensi digital. Sistem manajemen portofolio dan penerimaan klien yang berfokus pada kecepatan dan integrasi yang mulus.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
       "link": "/sharesa-digital",
       "slug": "sharesa-digital",
-      "image": "/wp-content/uploads/2025/07/12-2.png"
+      "image": "/wp-content/uploads/2025/07/12-2.png",
+      "live_url": "https://sharesa.space"
     },
     {
       "title": "Taman Kuliner Sukatani - Pusat Jajanan & UMKM",
@@ -97,7 +105,8 @@
       "description_id": "Pusat UMKM kuliner RW 17 yang bersih, nyaman, dan ramah keluarga. Menghadirkan beragam pilihan jajanan dan direktori pedagang.Tech Stack:WordPress, Next.js, Tailwind CSS.",
       "link": "/tamankulinersukatani",
       "slug": "tamankulinersukatani",
-      "image": "/wp-content/uploads/2025/11/galeriumkm.png"
+      "image": "/wp-content/uploads/2025/11/galeriumkm.png",
+      "live_url": "https://tamankulinersukatani.com"
     }
   ],
   "visual_design": [],
@@ -111,7 +120,8 @@
       "description_id": "Platform pertumbuhan pribadi holistik yang mengintegrasikan pelacakan keuangan, kebiasaan atom, dan perencanaan terarah ke dalam pengalaman modern yang mulus.Tech Stack:NextJs, Golang, Tailwind CSS.",
       "link": "/tranvas",
       "slug": "tranvas",
-      "image": "/wp-content/uploads/2025/07/20.png"
+      "image": "/projects/tranvas-cover.png",
+      "live_url": "https://tranvas.com"
     },
     {
       "title": "HandleMyFile - Client-Side Document Tools",
@@ -122,7 +132,8 @@
       "description_id": "Gabungkan, pisahkan, kompres, konversi file Office, dan OCR langsung di browser. 100% diproses offline via WebAssembly.Tech Stack:Next.js, WebAssembly, PDF.js, Tailwind CSS.",
       "link": "/handlemyfile",
       "slug": "handlemyfile",
-      "image": "/wp-content/uploads/2025/07/16.png"
+      "image": "/projects/handlemyfile-cover.png",
+      "live_url": "https://handlemyfile.com"
     },
     {
       "title": "HelpMyIMG - Browser-Native Image Tools",
@@ -133,7 +144,8 @@
       "description_id": "Gabungkan, potong, kompres, konversi, dan edit foto langsung di browser. 100% offline via WebAssembly.Tech Stack:Next.js, WebAssembly, Canvas API, Tailwind CSS.",
       "link": "/helpmyimg",
       "slug": "helpmyimg",
-      "image": "/wp-content/uploads/2025/07/15.png"
+      "image": "/projects/helpmyimg-cover.png",
+      "live_url": "https://helpmyimg.com"
     },
     {
       "title": "CreateMy-QR - 37 QR & Barcode Tools",
@@ -144,7 +156,8 @@
       "description_id": "Buat dan pindai 37 jenis kode QR dan barcode secara gratis. 100% client-side, tanpa pelacakan data, standar ISO/IEC 18004.Tech Stack:Next.js, Canvas & SVG API, Tailwind CSS.",
       "link": "/createmy-qr",
       "slug": "createmy-qr",
-      "image": "/wp-content/uploads/2025/07/14.png"
+      "image": "/projects/createmy-qr-cover.png",
+      "live_url": "https://createmy-qr.com"
     },
     {
       "title": "SolveMyMedia - Offline Audio & Video Suite",
@@ -155,7 +168,8 @@
       "description_id": "Optimalkan, kompres, konversi, dan edit file audio dan video dengan aman di browser. Tanpa upload ke server dengan 100% pemrosesan offline edge.Tech Stack:Next.js, FFmpeg.wasm, WebCodecs, Tailwind CSS.",
       "link": "/solvemymedia",
       "slug": "solvemymedia",
-      "image": "/wp-content/uploads/2025/07/13.png"
+      "image": "/projects/solvemymedia-cover.png",
+      "live_url": "https://solvemymedia.com"
     },
     {
       "title": "Visit Banjarmasin - Tourism & Culture Portal",
@@ -166,7 +180,8 @@
       "description_id": "Portal resmi eksplorasi Kota Seribu Sungai. Panduan wisata interaktif, kebudayaan Banjar, dan integrasi inovasi Smart City.Tech Stack:Next.js, Leaflet/Mapbox, Tailwind CSS.",
       "link": "/visitbanjarmasin",
       "slug": "visitbanjarmasin",
-      "image": "/wp-content/uploads/2025/07/11.png"
+      "image": "/projects/visitbanjarmasin-cover.png",
+      "live_url": "https://visitbanjarmasin.id"
     },
     {
       "title": "Sasirangan Metaverse 3D - SDGs Cultural Heritage",
@@ -177,7 +192,8 @@
       "description_id": "Museum virtual 3D mengeksplorasi kain tradisional Sasirangan Kalimantan Selatan dengan rendering WebGL real-time dan gamified scrollytelling.Tech Stack:Next.js, Three.js, WebGL, GSAP, Tailwind CSS.",
       "link": "/sasiranganshowcase3d",
       "slug": "sasiranganshowcase3d",
-      "image": "/wp-content/uploads/2025/07/10.png"
+      "image": "/wp-content/uploads/2025/07/10.png",
+      "live_url": "https://sasiranganshowcase3d.vercel.app"
     },
     {
       "title": "Sharesa Digital - Agency Suite",
@@ -188,7 +204,8 @@
       "description_id": "Platform berkinerja tinggi untuk agensi digital. Sistem manajemen portofolio dan penerimaan klien yang berfokus pada kecepatan dan integrasi yang mulus.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
       "link": "/sharesa-digital",
       "slug": "sharesa-digital",
-      "image": "/wp-content/uploads/2025/07/12-2.png"
+      "image": "/wp-content/uploads/2025/07/12-2.png",
+      "live_url": "https://sharesa.space"
     },
     {
       "title": "Taman Kuliner Sukatani - Pusat Jajanan & UMKM",
@@ -199,7 +216,8 @@
       "description_id": "Pusat UMKM kuliner RW 17 yang bersih, nyaman, dan ramah keluarga. Menghadirkan beragam pilihan jajanan dan direktori pedagang.Tech Stack:WordPress, Next.js, Tailwind CSS.",
       "link": "/tamankulinersukatani",
       "slug": "tamankulinersukatani",
-      "image": "/wp-content/uploads/2025/11/galeriumkm.png"
+      "image": "/wp-content/uploads/2025/11/galeriumkm.png",
+      "live_url": "https://tamankulinersukatani.com"
     }
   ],
   "ai": [],

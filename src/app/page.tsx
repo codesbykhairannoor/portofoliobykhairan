@@ -18,6 +18,7 @@ interface PortfolioItem {
   slug: string;
   image: string;
   tags?: string[];
+  live_url?: string;
 }
 
 interface Skill {
@@ -91,6 +92,7 @@ const TRANSLATIONS = {
     tooling_stack: "Tooling Stack",
     search_placeholder: "Search by title, stack, or term...",
     read_details: "Read Details",
+    visit_website: "Visit Website",
     no_projects: "No Projects Found",
     no_projects_desc: "There are no projects matching other fields under this category. Try adjusting your keywords.",
     experience: "Experience",
@@ -148,6 +150,7 @@ const TRANSLATIONS = {
     tooling_stack: "Alat & Teknologi",
     search_placeholder: "Cari berdasarkan judul, teknologi, atau kata kunci...",
     read_details: "Baca Detail",
+    visit_website: "Lihat Website",
     no_projects: "Proyek Tidak Ditemukan",
     no_projects_desc: "Tidak ada proyek yang cocok dengan kata kunci di bawah kategori ini. Coba sesuaikan kata pencarian Anda.",
     experience: "Pengalaman",
@@ -800,7 +803,25 @@ export default function Home() {
                           className="object-cover transition-transform duration-700 group-hover:scale-105"
                           priority={true}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/40 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/40 to-transparent pointer-events-none"></div>
+
+                        {/* Floating Direct Visit Badge */}
+                        {item.live_url && (
+                          <a
+                            href={item.live_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="absolute top-3 right-3 z-30 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#030712]/80 hover:bg-black border border-cyan-400/50 hover:border-cyan-300 text-[#50FFD9] hover:text-white text-[11px] font-bold backdrop-blur-md shadow-lg transition-all hover:scale-105 hover:shadow-[0_0_15px_rgba(80,255,217,0.4)] cursor-pointer"
+                            title={`${TRANSLATIONS[lang].visit_website}: ${title}`}
+                          >
+                            <span className="w-2 h-2 rounded-full bg-[#50FFD9] animate-pulse"></span>
+                            <span>{TRANSLATIONS[lang].visit_website}</span>
+                            <svg className="w-3 h-3 ml-0.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                          </a>
+                        )}
                       </div>
                       <div className="p-5 md:p-8 flex flex-col flex-grow">
                         <h3 className="text-sm md:text-lg font-bold text-[var(--text-primary)] mb-2 hover:text-[var(--neon-cyan)] transition-colors line-clamp-1">{title}</h3>
@@ -824,15 +845,33 @@ export default function Home() {
                           </div>
                         )}
 
-                        <span 
-                          className="text-[10px] md:text-xs font-bold text-[var(--neon-cyan)] group-hover:underline flex items-center gap-1.5 group/link mt-2"
-                        >
-                          {TRANSLATIONS[lang].read_details}
-                          <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                          </svg>
-                        </span>
+                        <div className="flex items-center justify-between mt-auto pt-3 border-t border-white/5 relative z-30">
+                          <span 
+                            className="text-[10px] md:text-xs font-bold text-[var(--neon-cyan)] group-hover:underline flex items-center gap-1.5 group/link"
+                          >
+                            {TRANSLATIONS[lang].read_details}
+                            <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                              <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                          </span>
+
+                          {item.live_url && (
+                            <a
+                              href={item.live_url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={(e) => e.stopPropagation()}
+                              className="inline-flex items-center gap-1.5 text-[10px] md:text-xs font-bold text-gray-300 hover:text-[#50FFD9] transition-colors py-1 px-2.5 rounded-lg hover:bg-white/5 border border-white/5 hover:border-cyan-400/30"
+                              title={`${TRANSLATIONS[lang].visit_website}: ${title}`}
+                            >
+                              <span>{TRANSLATIONS[lang].visit_website}</span>
+                              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                              </svg>
+                            </a>
+                          )}
+                        </div>
                       </div>
                     </div>
                   );

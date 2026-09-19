@@ -42,3 +42,6 @@ next-env.d.ts
 
 # large database dumps
 *.sql
+
+# temporary drop folders
+src/app/foitobaru/
