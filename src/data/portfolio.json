@@ -21,7 +21,7 @@
       "description_id": "Gabungkan, pisahkan, kompres, konversi file Office, dan OCR langsung di browser. 100% diproses offline via WebAssembly.Tech Stack:Next.js, WebAssembly, PDF.js, Tailwind CSS.",
       "link": "/handlemyfile",
       "slug": "handlemyfile",
-      "image": "/projects/handlemyfile-cover.png",
+      "image": "/projects/handlemyfile-3.png",
       "live_url": "https://handlemyfile.com"
     },
     {
@@ -33,7 +33,7 @@
       "description_id": "Gabungkan, potong, kompres, konversi, dan edit foto langsung di browser. 100% offline via WebAssembly.Tech Stack:Next.js, WebAssembly, Canvas API, Tailwind CSS.",
       "link": "/helpmyimg",
       "slug": "helpmyimg",
-      "image": "/projects/helpmyimg-cover.png",
+      "image": "/projects/helpmyimg-1.png",
       "live_url": "https://helpmyimg.com"
     },
     {
@@ -45,7 +45,7 @@
       "description_id": "Buat dan pindai 37 jenis kode QR dan barcode secara gratis. 100% client-side, tanpa pelacakan data, standar ISO/IEC 18004.Tech Stack:Next.js, Canvas & SVG API, Tailwind CSS.",
       "link": "/createmy-qr",
       "slug": "createmy-qr",
-      "image": "/projects/createmy-qr-cover.png",
+      "image": "/projects/createmy-qr-2.png",
       "live_url": "https://createmy-qr.com"
     },
     {
@@ -57,7 +57,7 @@
       "description_id": "Optimalkan, kompres, konversi, dan edit file audio dan video dengan aman di browser. Tanpa upload ke server dengan 100% pemrosesan offline edge.Tech Stack:Next.js, FFmpeg.wasm, WebCodecs, Tailwind CSS.",
       "link": "/solvemymedia",
       "slug": "solvemymedia",
-      "image": "/projects/solvemymedia-cover.png",
+      "image": "/projects/solvemymedia-1.png",
       "live_url": "https://solvemymedia.com"
     },
     {
@@ -81,7 +81,7 @@
       "description_id": "Museum virtual 3D mengeksplorasi kain tradisional Sasirangan Kalimantan Selatan dengan rendering WebGL real-time dan gamified scrollytelling.Tech Stack:Next.js, Three.js, WebGL, GSAP, Tailwind CSS.",
       "link": "/sasiranganshowcase3d",
       "slug": "sasiranganshowcase3d",
-      "image": "/wp-content/uploads/2025/07/10.png",
+      "image": "/projects/sasirangan-cover.png",
       "live_url": "https://sasiranganshowcase3d.vercel.app"
     },
     {
@@ -132,7 +132,7 @@
       "description_id": "Gabungkan, pisahkan, kompres, konversi file Office, dan OCR langsung di browser. 100% diproses offline via WebAssembly.Tech Stack:Next.js, WebAssembly, PDF.js, Tailwind CSS.",
       "link": "/handlemyfile",
       "slug": "handlemyfile",
-      "image": "/projects/handlemyfile-cover.png",
+      "image": "/projects/handlemyfile-3.png",
       "live_url": "https://handlemyfile.com"
     },
     {
@@ -144,7 +144,7 @@
       "description_id": "Gabungkan, potong, kompres, konversi, dan edit foto langsung di browser. 100% offline via WebAssembly.Tech Stack:Next.js, WebAssembly, Canvas API, Tailwind CSS.",
       "link": "/helpmyimg",
       "slug": "helpmyimg",
-      "image": "/projects/helpmyimg-cover.png",
+      "image": "/projects/helpmyimg-1.png",
       "live_url": "https://helpmyimg.com"
     },
     {
@@ -156,7 +156,7 @@
       "description_id": "Buat dan pindai 37 jenis kode QR dan barcode secara gratis. 100% client-side, tanpa pelacakan data, standar ISO/IEC 18004.Tech Stack:Next.js, Canvas & SVG API, Tailwind CSS.",
       "link": "/createmy-qr",
       "slug": "createmy-qr",
-      "image": "/projects/createmy-qr-cover.png",
+      "image": "/projects/createmy-qr-2.png",
       "live_url": "https://createmy-qr.com"
     },
     {
@@ -168,7 +168,7 @@
       "description_id": "Optimalkan, kompres, konversi, dan edit file audio dan video dengan aman di browser. Tanpa upload ke server dengan 100% pemrosesan offline edge.Tech Stack:Next.js, FFmpeg.wasm, WebCodecs, Tailwind CSS.",
       "link": "/solvemymedia",
       "slug": "solvemymedia",
-      "image": "/projects/solvemymedia-cover.png",
+      "image": "/projects/solvemymedia-1.png",
       "live_url": "https://solvemymedia.com"
     },
     {
@@ -192,7 +192,7 @@
       "description_id": "Museum virtual 3D mengeksplorasi kain tradisional Sasirangan Kalimantan Selatan dengan rendering WebGL real-time dan gamified scrollytelling.Tech Stack:Next.js, Three.js, WebGL, GSAP, Tailwind CSS.",
       "link": "/sasiranganshowcase3d",
       "slug": "sasiranganshowcase3d",
-      "image": "/wp-content/uploads/2025/07/10.png",
+      "image": "/projects/sasirangan-cover.png",
       "live_url": "https://sasiranganshowcase3d.vercel.app"
     },
     {
