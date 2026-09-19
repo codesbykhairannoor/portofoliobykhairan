@@ -19,6 +19,7 @@ interface PortfolioItem {
   image: string;
   tags?: string[];
   live_url?: string;
+  logo?: string;
 }
 
 interface Skill {
@@ -804,6 +805,24 @@ export default function Home() {
                           priority={true}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/40 to-transparent pointer-events-none"></div>
+
+                        {/* Top-Left: Brand Logo Badge */}
+                        {item.logo && (
+                          <div className="absolute top-3 left-3 z-30 flex items-center gap-2 px-2.5 py-1.5 rounded-2xl bg-[#030712]/85 border border-white/15 backdrop-blur-md shadow-lg pointer-events-none">
+                            <div className="w-5 h-5 rounded-md overflow-hidden relative flex-shrink-0 flex items-center justify-center">
+                              <Image
+                                src={item.logo}
+                                alt={`${title} logo`}
+                                width={20}
+                                height={20}
+                                className="w-full h-full object-contain"
+                              />
+                            </div>
+                            <span className="text-[11px] font-extrabold text-white tracking-wide truncate max-w-[105px]">
+                              {title.split(" - ")[0]}
+                            </span>
+                          </div>
+                        )}
 
                         {/* Floating Direct Visit Badge */}
                         {item.live_url && (

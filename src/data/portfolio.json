@@ -10,6 +10,7 @@
       "link": "/tranvas",
       "slug": "tranvas",
       "image": "/projects/tranvas-cover.png",
+      "logo": "/projects/logos/tranvas.ico",
       "live_url": "https://tranvas.com"
     },
     {
@@ -22,6 +23,7 @@
       "link": "/handlemyfile",
       "slug": "handlemyfile",
       "image": "/projects/handlemyfile-3.png",
+      "logo": "/projects/logos/handlemyfile.png",
       "live_url": "https://handlemyfile.com"
     },
     {
@@ -34,6 +36,7 @@
       "link": "/helpmyimg",
       "slug": "helpmyimg",
       "image": "/projects/helpmyimg-1.png",
+      "logo": "/projects/logos/helpmyimg.png",
       "live_url": "https://helpmyimg.com"
     },
     {
@@ -46,6 +49,7 @@
       "link": "/createmy-qr",
       "slug": "createmy-qr",
       "image": "/projects/createmy-qr-2.png",
+      "logo": "/projects/logos/createmy-qr.png",
       "live_url": "https://createmy-qr.com"
     },
     {
@@ -58,6 +62,7 @@
       "link": "/solvemymedia",
       "slug": "solvemymedia",
       "image": "/projects/solvemymedia-1.png",
+      "logo": "/projects/logos/solvemymedia.png",
       "live_url": "https://solvemymedia.com"
     },
     {
@@ -70,6 +75,7 @@
       "link": "/visitbanjarmasin",
       "slug": "visitbanjarmasin",
       "image": "/projects/visitbanjarmasin-cover.png",
+      "logo": "/projects/logos/visitbanjarmasin.png",
       "live_url": "https://visitbanjarmasin.id"
     },
     {
@@ -82,6 +88,7 @@
       "link": "/sasiranganshowcase3d",
       "slug": "sasiranganshowcase3d",
       "image": "/projects/sasirangan-cover.png",
+      "logo": "/projects/logos/sasirangan.svg",
       "live_url": "https://sasiranganshowcase3d.vercel.app"
     },
     {
@@ -94,6 +101,7 @@
       "link": "/sharesa-digital",
       "slug": "sharesa-digital",
       "image": "/wp-content/uploads/2025/07/12-2.png",
+      "logo": "/projects/logos/sharesa-digital.png",
       "live_url": "https://sharesa.space"
     },
     {
@@ -106,6 +114,7 @@
       "link": "/tamankulinersukatani",
       "slug": "tamankulinersukatani",
       "image": "/wp-content/uploads/2025/11/galeriumkm.png",
+      "logo": "/projects/logos/tamankulinersukatani.png",
       "live_url": "https://tamankulinersukatani.com"
     }
   ],
@@ -121,6 +130,7 @@
       "link": "/tranvas",
       "slug": "tranvas",
       "image": "/projects/tranvas-cover.png",
+      "logo": "/projects/logos/tranvas.ico",
       "live_url": "https://tranvas.com"
     },
     {
@@ -133,6 +143,7 @@
       "link": "/handlemyfile",
       "slug": "handlemyfile",
       "image": "/projects/handlemyfile-3.png",
+      "logo": "/projects/logos/handlemyfile.png",
       "live_url": "https://handlemyfile.com"
     },
     {
@@ -145,6 +156,7 @@
       "link": "/helpmyimg",
       "slug": "helpmyimg",
       "image": "/projects/helpmyimg-1.png",
+      "logo": "/projects/logos/helpmyimg.png",
       "live_url": "https://helpmyimg.com"
     },
     {
@@ -157,6 +169,7 @@
       "link": "/createmy-qr",
       "slug": "createmy-qr",
       "image": "/projects/createmy-qr-2.png",
+      "logo": "/projects/logos/createmy-qr.png",
       "live_url": "https://createmy-qr.com"
     },
     {
@@ -169,6 +182,7 @@
       "link": "/solvemymedia",
       "slug": "solvemymedia",
       "image": "/projects/solvemymedia-1.png",
+      "logo": "/projects/logos/solvemymedia.png",
       "live_url": "https://solvemymedia.com"
     },
     {
@@ -181,6 +195,7 @@
       "link": "/visitbanjarmasin",
       "slug": "visitbanjarmasin",
       "image": "/projects/visitbanjarmasin-cover.png",
+      "logo": "/projects/logos/visitbanjarmasin.png",
       "live_url": "https://visitbanjarmasin.id"
     },
     {
@@ -193,8 +208,36 @@
       "link": "/sasiranganshowcase3d",
       "slug": "sasiranganshowcase3d",
       "image": "/projects/sasirangan-cover.png",
+      "logo": "/projects/logos/sasirangan.svg",
       "live_url": "https://sasiranganshowcase3d.vercel.app"
     },
+    {
+      "title": "Sharesa Digital - Agency Suite",
+      "title_en": "Sharesa Digital - Agency Suite",
+      "title_id": "Sharesa Digital - Solusi Agensi",
+      "description": "A high-performance platform for digital agencies. Managed portfolio and client intake system with a focus on speed and seamless integrations.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
+      "description_en": "A high-performance platform for digital agencies. Managed portfolio and client intake system with a focus on speed and seamless integrations.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
+      "description_id": "Platform berkinerja tinggi untuk agensi digital. Sistem manajemen portofolio dan penerimaan klien yang berfokus pada kecepatan dan integrasi yang mulus.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
+      "link": "/sharesa-digital",
+      "slug": "sharesa-digital",
+      "image": "/wp-content/uploads/2025/07/12-2.png",
+      "logo": "/projects/logos/sharesa-digital.png",
+      "live_url": "https://sharesa.space"
+    },
+    {
+      "title": "Taman Kuliner Sukatani - Pusat Jajanan & UMKM",
+      "title_en": "Taman Kuliner Sukatani - MSME & Culinary Hub",
+      "title_id": "Taman Kuliner Sukatani - Pusat Jajanan & UMKM",
+      "description": "Pusat UMKM kuliner RW 17 yang bersih, nyaman, dan ramah keluarga. Menghadirkan beragam pilihan jajanan dan direktori pedagang.Tech Stack:WordPress, Next.js, Tailwind CSS.",
+      "description_en": "Community-driven culinary and MSME portal for RW 17 Sukatani. Clean, family-friendly food hub with merchant directories.Tech Stack:WordPress, Next.js, Tailwind CSS.",
+      "description_id": "Pusat UMKM kuliner RW 17 yang bersih, nyaman, dan ramah keluarga. Menghadirkan beragam pilihan jajanan dan direktori pedagang.Tech Stack:WordPress, Next.js, Tailwind CSS.",
+      "link": "/tamankulinersukatani",
+      "slug": "tamankulinersukatani",
+      "image": "/wp-content/uploads/2025/11/galeriumkm.png",
+      "logo": "/projects/logos/tamankulinersukatani.png",
+      "live_url": "https://tamankulinersukatani.com"
+    }
+  ],,
     {
       "title": "Sharesa Digital - Agency Suite",
       "title_en": "Sharesa Digital - Agency Suite",

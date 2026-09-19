@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="sasiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0815" />
+      <stop offset="50%" stop-color="#4a0e24" />
+      <stop offset="100%" stop-color="#18040b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="url(#sasiGrad)" stroke="#EAB308" stroke-width="2" stroke-opacity="0.5"/>
+  <!-- Diamond Motif Traditional Sasirangan -->
+  <g transform="translate(60, 60)">
+    <!-- Outer rotated diamond -->
+    <path d="M 0 -34 L 34 0 L 0 34 L -34 0 Z" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Inner diamond -->
+    <path d="M 0 -22 L 22 0 L 0 22 L -22 0 Z" fill="url(#goldGrad)" fill-opacity="0.2" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Center star/sparkle -->
+    <circle cx="0" cy="0" r="5" fill="url(#goldGrad)"/>
+    <circle cx="0" cy="-34" r="3" fill="#FDE047"/>
+    <circle cx="34" cy="0" r="3" fill="#FDE047"/>
+    <circle cx="0" cy="34" r="3" fill="#FDE047"/>
+    <circle cx="-34" cy="0" r="3" fill="#FDE047"/>
+    <!-- 4 corner dots representing stitches (jelujur) -->
+    <circle cx="-14" cy="-14" r="2" fill="#FDE047"/>
+    <circle cx="14" cy="-14" r="2" fill="#FDE047"/>
+    <circle cx="14" cy="14" r="2" fill="#FDE047"/>
+    <circle cx="-14" cy="14" r="2" fill="#FDE047"/>
+  </g>
+</svg>
