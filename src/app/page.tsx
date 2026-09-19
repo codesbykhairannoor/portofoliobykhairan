@@ -731,18 +731,22 @@ export default function Home() {
               >
                 {TRANSLATIONS[lang].websites}
               </button>
-              <button 
-                onClick={() => handleTabChange("ai")} 
-                className={`tab-btn ${activeTab === "ai" ? "active" : ""}`}
-              >
-                {TRANSLATIONS[lang].ai}
-              </button>
-              <button 
-                onClick={() => handleTabChange("visual_design")} 
-                className={`tab-btn ${activeTab === "visual_design" ? "active" : ""}`}
-              >
-                {TRANSLATIONS[lang].visual_design}
-              </button>
+              {portfolioData.ai && portfolioData.ai.length > 0 && (
+                <button 
+                  onClick={() => handleTabChange("ai")} 
+                  className={`tab-btn ${activeTab === "ai" ? "active" : ""}`}
+                >
+                  {TRANSLATIONS[lang].ai}
+                </button>
+              )}
+              {portfolioData.visual_design && portfolioData.visual_design.length > 0 && (
+                <button 
+                  onClick={() => handleTabChange("visual_design")} 
+                  className={`tab-btn ${activeTab === "visual_design" ? "active" : ""}`}
+                >
+                  {TRANSLATIONS[lang].visual_design}
+                </button>
+              )}
               <button 
                 onClick={() => handleTabChange("skills")} 
                 className={`tab-btn ${activeTab === "skills" ? "active" : ""}`}
