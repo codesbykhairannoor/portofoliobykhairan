@@ -29,23 +29,23 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://khairan.tech"),
   title: {
-    default: "Khairan Noor Fadhlillah | AI & DevOps Engineer Portfolio",
+    default: "Khairan Noor Fadhlillah | AI Software Engineer",
     template: "%s | Khairan Noor Fadhlillah"
   },
-  description: "Portfolio of Khairan Noor Fadhlillah: Specialist in autonomous AI agents, DevOps cloud pipelines, and modern full-stack engineering based in Indonesia.",
+  description: "Portfolio of Khairan Noor Fadhlillah: AI Software Engineer specializing in intelligent web platforms, autonomous AI agents, and cloud-native architectures.",
   keywords: [
     "Khairan Noor Fadhlillah",
-    "Khairan Noor Fadhlillah Portfolio",
-    "Khairan tech",
-    "Best AI Engineer Indonesia",
-    "AI Agent Specialist Indonesia",
-    "Top DevOps Specialist Indonesia",
-    "Senior Software Engineer Jakarta",
-    "Expert Software Engineering Specialist",
-    "Next.js React Development Indonesia",
-    "Full Stack Web Developer Jakarta",
-    "Konsultan AI Indonesia",
-    "Jasa Pembuatan Website Profesional"
+    "AI Software Engineer",
+    "AI Engineer Indonesia",
+    "Software Engineer Jakarta",
+    "Autonomous AI Agents",
+    "Python Developer",
+    "Python TypeScript .NET Full Stack",
+    "Graph RAG Neo4j",
+    "Harvard CS50 Certified",
+    "Oracle Cloud Infrastructure Certified",
+    "Intelligent Web Systems",
+    "khairan.tech"
   ],
   authors: [{ name: "Khairan Noor Fadhlillah", url: "https://khairan.tech" }],
   creator: "Khairan Noor Fadhlillah",
@@ -80,8 +80,8 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: "https://khairan.tech",
     siteName: "Khairan Noor Fadhlillah Portfolio",
-    title: "Khairan Noor Fadhlillah | Premium Web & AI Solutions",
-    description: "Professional portfolio showcasing elite AI deployments, automated DevOps workflows, and enterprise-grade software engineering solutions by Khairan Noor Fadhlillah.",
+    title: "Khairan Noor Fadhlillah | AI Software Engineer",
+    description: "AI Software Engineer crafting intelligent web platforms, autonomous agents, and cloud-native systems — from Jakarta to the world.",
     images: [
       {
         url: "/favicon.ico",
@@ -93,8 +93,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khairan Noor Fadhlillah | AI & Engineering Expert",
-    description: "Discover top-tier digital ecosystems, AI autonomous agents, and enterprise web applications.",
+    title: "Khairan Noor Fadhlillah | AI Software Engineer",
+    description: "AI Software Engineer crafting intelligent web platforms, autonomous agents, and cloud-native systems.",
   },
 };
 
@@ -108,9 +108,9 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Khairan Noor Fadhlillah",
     "url": "https://khairan.tech",
-    "jobTitle": "AI & DevOps Engineering Specialist",
+    "jobTitle": "AI Software Engineer",
     "alumniOf": "Universitas Ahmad Dahlan",
-    "knowsAbout": ["Artificial Intelligence", "DevOps", "Software Engineering", "Cloud Computing", "Next.js", "Laravel"],
+    "knowsAbout": ["Artificial Intelligence", "Autonomous AI Agents", "Software Engineering", "Cloud Computing", "Python", ".NET 8", "FastAPI", "Next.js", "TypeScript"],
     "sameAs": [
       "https://github.com/codesbykhairannoor",
       "https://www.linkedin.com/in/khairannoorfadhlillah/",

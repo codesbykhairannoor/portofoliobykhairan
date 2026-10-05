@@ -237,33 +237,57 @@
       "logo": "/projects/logos/tamankulinersukatani.png",
       "live_url": "https://tamankulinersukatani.com"
     }
-  ],,
+  ],
+  "ai": [
     {
-      "title": "Sharesa Digital - Agency Suite",
-      "title_en": "Sharesa Digital - Agency Suite",
-      "title_id": "Sharesa Digital - Solusi Agensi",
-      "description": "A high-performance platform for digital agencies. Managed portfolio and client intake system with a focus on speed and seamless integrations.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
-      "description_en": "A high-performance platform for digital agencies. Managed portfolio and client intake system with a focus on speed and seamless integrations.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
-      "description_id": "Platform berkinerja tinggi untuk agensi digital. Sistem manajemen portofolio dan penerimaan klien yang berfokus pada kecepatan dan integrasi yang mulus.Tech Stack:Laravel 11, Supabase, Cloudinary, Tailwind CSS.",
-      "link": "/sharesa-digital",
-      "slug": "sharesa-digital",
-      "image": "/wp-content/uploads/2025/07/12-2.png",
-      "live_url": "https://sharesa.space"
+      "title": "Autonomous Multi-Agent AI Engine",
+      "title_en": "Autonomous Multi-Agent AI Engine",
+      "title_id": "Mesin Otomasi Multi-Agen AI Otonom",
+      "description": "Production autonomous agent system running 24/7 on private cloud VPS. Features multi-agent collaboration, LLM content synthesis, automated fact-checking, and cross-platform publishing.Tech Stack:Python, Gemini API, Docker, Linux VPS, Cron.",
+      "description_en": "Production autonomous agent system running 24/7 on private cloud VPS. Features multi-agent collaboration, LLM content synthesis, automated fact-checking, and cross-platform publishing.Tech Stack:Python, Gemini API, Docker, Linux VPS, Cron.",
+      "description_id": "Sistem agen otonom produksi yang beroperasi 24/7 di private cloud VPS. Dilengkapi kolaborasi multi-agen, sintesis konten LLM, fact-checking otomatis, dan distribusi lintas platform.Tech Stack:Python, Gemini API, Docker, Linux VPS, Cron.",
+      "link": "#",
+      "slug": "autonomous-multiagent-ai",
+      "image": "/ai/social_automation.png",
+      "live_url": ""
     },
     {
-      "title": "Taman Kuliner Sukatani - Pusat Jajanan & UMKM",
-      "title_en": "Taman Kuliner Sukatani - MSME & Culinary Hub",
-      "title_id": "Taman Kuliner Sukatani - Pusat Jajanan & UMKM",
-      "description": "Pusat UMKM kuliner RW 17 yang bersih, nyaman, dan ramah keluarga. Menghadirkan beragam pilihan jajanan dan direktori pedagang.Tech Stack:WordPress, Next.js, Tailwind CSS.",
-      "description_en": "Community-driven culinary and MSME portal for RW 17 Sukatani. Clean, family-friendly food hub with merchant directories.Tech Stack:WordPress, Next.js, Tailwind CSS.",
-      "description_id": "Pusat UMKM kuliner RW 17 yang bersih, nyaman, dan ramah keluarga. Menghadirkan beragam pilihan jajanan dan direktori pedagang.Tech Stack:WordPress, Next.js, Tailwind CSS.",
-      "link": "/tamankulinersukatani",
-      "slug": "tamankulinersukatani",
-      "image": "/wp-content/uploads/2025/11/galeriumkm.png",
-      "live_url": "https://tamankulinersukatani.com"
+      "title": "Production NLP Document Vetting Engine",
+      "title_en": "Production NLP Document Vetting Engine",
+      "title_id": "Engine Vetting Dokumen NLP Produksi",
+      "description": "High-throughput machine learning NLP classifier achieving 100% accuracy across 5,204 samples with 600 req/s peak performance and 63% reduced cloud cost.Tech Stack:Python, Scikit-Learn, TF-IDF, FastAPI, PostgreSQL.",
+      "description_en": "High-throughput machine learning NLP classifier achieving 100% accuracy across 5,204 samples with 600 req/s peak performance and 63% reduced cloud cost.Tech Stack:Python, Scikit-Learn, TF-IDF, FastAPI, PostgreSQL.",
+      "description_id": "Pengklasifikasi NLP machine learning berkinerja tinggi dengan akurasi 100% pada 5.204 sampel dokumen dan throughput puncak 600 req/detik, menghemat biaya cloud 63%.Tech Stack:Python, Scikit-Learn, TF-IDF, FastAPI, PostgreSQL.",
+      "link": "#",
+      "slug": "nlp-vetting-pipeline",
+      "image": "/ai/workflow_maps_leadgen.png",
+      "live_url": ""
+    },
+    {
+      "title": "ImageCuan - Automated Visual Synthesis Pipeline",
+      "title_en": "ImageCuan - Automated Visual Synthesis Pipeline",
+      "title_id": "ImageCuan - Pipeline Sintesis Visual Otomatis",
+      "description": "End-to-end automated asset generation pipeline leveraging LLMs and generative vision models for rapid high-volume commercial graphic production.Tech Stack:Python, Pillow, Gemini Vision, Node.js.",
+      "description_en": "End-to-end automated asset generation pipeline leveraging LLMs and generative vision models for rapid high-volume commercial graphic production.Tech Stack:Python, Pillow, Gemini Vision, Node.js.",
+      "description_id": "Pipeline pembuatan aset visual otomatis terintegrasi memanfaatkan model LLM dan generative vision untuk produksi materi grafis komersial berskala tinggi.Tech Stack:Python, Pillow, Gemini Vision, Node.js.",
+      "link": "#",
+      "slug": "imagecuan-ai-pipeline",
+      "image": "/ai/imagecuan_1.png",
+      "live_url": ""
+    },
+    {
+      "title": "Autonomous Web Data Extraction & Intelligence Agent",
+      "title_en": "Autonomous Web Data Extraction & Intelligence Agent",
+      "title_id": "Agen AI Ekstraksi Data & Riset Web Otonom",
+      "description": "Intelligent web crawling agent with headless browser automation, structured schema extraction, and semantic enrichment using LLMs.Tech Stack:Python, Playwright, Gemini API, Neo4j Graph.",
+      "description_en": "Intelligent web crawling agent with headless browser automation, structured schema extraction, and semantic enrichment using LLMs.Tech Stack:Python, Playwright, Gemini API, Neo4j Graph.",
+      "description_id": "Agen penjelajah web cerdas dengan otomasi headless browser, ekstraksi skema terstruktur, dan pengayaan semantik menggunakan LLM dan Graph Database.Tech Stack:Python, Playwright, Gemini API, Neo4j Graph.",
+      "link": "#",
+      "slug": "web-intelligence-agent",
+      "image": "/ai/web_agent.png",
+      "live_url": ""
     }
   ],
-  "ai": [],
   "skills": [
     {
       "category": "Frontend Ecosystem",
@@ -303,11 +327,23 @@
       ]
     },
     {
-      "category": "Backend, AI & Web3",
+      "category": "AI, ML & Backend Engineering",
       "items": [
         {
-          "name": "Laravel 11",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+          "name": "Python",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        },
+        {
+          "name": "Gemini AI",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg"
+        },
+        {
+          "name": "Agentic AI",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
         },
         {
           "name": ".NET 8",
@@ -318,59 +354,51 @@
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
         },
         {
-          "name": "PHP",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+          "name": "Scikit-Learn",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
         },
         {
           "name": "Solidity",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
-        },
-        {
-          "name": "IPFS",
-          "icon": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ipfs-logo-1024-ice-text.png"
-        },
-        {
-          "name": "Gemini AI",
-          "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg"
         }
       ]
     },
     {
-      "category": "Database & Infrastructure",
+      "category": "Cloud, Graph & Database",
       "items": [
+        {
+          "name": "Oracle Cloud",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+        },
+        {
+          "name": "Docker",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+        },
+        {
+          "name": "Neo4j",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+        },
         {
           "name": "MySQL",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
         },
         {
           "name": "Supabase",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"
         },
         {
           "name": "Firebase",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-        },
-        {
-          "name": "Docker",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
         }
       ]
     },
     {
-      "category": "Creative & Tools",
+      "category": "Developer Tooling",
       "items": [
-        {
-          "name": "Figma",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-        },
-        {
-          "name": "Canva",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
-        },
-        {
-          "name": "WordPress",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
-        },
         {
           "name": "Git",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
@@ -382,6 +410,10 @@
         {
           "name": "Postman",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+        },
+        {
+          "name": "Figma",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
         }
       ]
     }

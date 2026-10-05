@@ -25,7 +25,6 @@ interface PortfolioItem {
 interface Skill {
   name: string;
   icon: string;
-  proficiency?: number; // Added mastery rating for modern dashboard layout
 }
 
 interface SkillCategory {
@@ -33,63 +32,36 @@ interface SkillCategory {
   items: Skill[];
 }
 
-// Add proficiency ratings to standard tools for dashboard visual excellence
-const SKILL_PROFICIENCY_MAP: Record<string, number> = {
-  "React 19": 95,
-  "Next.js 15": 92,
-  "Vue 3": 85,
-  "Nuxt 3": 80,
-  "Angular 19": 75,
-  "Tailwind": 98,
-  "TypeScript": 90,
-  "JavaScript": 95,
-  "Laravel 11": 90,
-  ".NET 8": 78,
-  "Node.js": 88,
-  "PHP": 92,
-  "Solidity": 70,
-  "IPFS": 65,
-  "Gemini AI": 85,
-  "MySQL": 92,
-  "Supabase": 88,
-  "Firebase": 85,
-  "Docker": 75,
-  "Figma": 95,
-  "Canva": 90,
-  "WordPress": 95,
-  "Git": 90,
-  "VS Code": 95,
-  "Postman": 88,
-};
-
 const TRANSLATIONS = {
   en: {
     ready: "Ready for New Opportunities",
     hero_title_1: "Hey there! I'm Khairan.",
-    hero_title_2: "Architecting intelligent AI,",
-    hero_title_3: "DevOps & Enterprise Software.",
-    hero_desc: "I build robust digital ecosystems. From autonomous AI agents that operate 24/7, to automated CI/CD pipelines, and high-performance software architecture. Let's engineer your wildest ideas into production.",
+    hero_title_2: "I build software",
+    hero_title_3: "that thinks.",
+    hero_desc: "AI Software Engineer crafting intelligent web platforms, autonomous agents, and cloud-native systems — from Jakarta to the world.",
     get_in_touch: "Contact Me",
     view_my_work: "View My Work",
     profile_summary: "Profile Summary",
-    meet_architect: "Meet The Architect",
+    meet_architect: "Meet The AI Software Engineer",
     biography: "Biography",
-    bio_quote: "Scalable software requires robust architecture, and robust architecture requires precise engineering.",
-    bio_body: "I am an AI Specialist, DevOps Engineer, and Software Architect. I've engineered dozens of production systems, from complex distributed architectures to autonomous AI agents running 24/7 on private cloud servers. I specialize in LLM automation, robust deployment pipelines, and building highly scalable, enterprise-grade digital infrastructures.",
+    bio_quote: "Making AI actually useful — not just impressive on a slide deck, but reliable in production.",
+    bio_body: "I'm a Software Engineer from Jakarta who's obsessed with making AI actually useful. I work across the modern stack: Python and FastAPI for high-performance AI microservices, TypeScript with Next.js and React for responsive interfaces, and cloud-native Docker infrastructure. From automated NLP pipelines processing thousands of documents to autonomous AI agents running 24/7 on private cloud servers — I focus on systems that are observable, resilient, and production-ready. What drives me is the craft of building systems that are not just functional, but intentional: well-architected and built to last. Currently pursuing my degree in Information Systems while actively shipping production code and earning credentials from Harvard, Oracle, and Neo4j.",
     download_cv: "Download CV",
     my_projects: "My Projects",
-    completed_works: "Completed Works",
-    completed_works_desc: "Design files, codebases, custom plugins, and enterprise-grade websites.",
-    years_active: "Years Active",
-    years_active_desc: "In freelance, consulting, and project-based product development structures.",
-    active: "Active",
-    global_availability: "Global Availability",
-    global_availability_desc: "Serving remote clients worldwide with responsive overlap hours and rapid feedback loops.",
+    stat_1_val: "12",
+    stat_1_title: "Professional Certifications",
+    stat_1_desc: "Harvard CS50, Oracle Cloud, Neo4j Graph, and HackerRank credentials.",
+    stat_2_val: "600 req/s",
+    stat_2_title: "Peak Pipeline Throughput",
+    stat_2_desc: "Production NLP classification & vetting pipeline handling large-scale throughput.",
+    stat_3_val: "100%",
+    stat_3_title: "Classification Accuracy",
+    stat_3_desc: "Validated across 5,204 document samples, reducing cloud overhead by 63%.",
     classifications: "Classifications",
     main_vault: "Main Digital Vault",
-    vault_desc: "Filter instantly through designer portfolios, high-performance web products, or complete technical stacks.",
+    vault_desc: "Filter instantly through high-performance web products, autonomous AI agents, or complete technical stacks.",
     visual_design: "Visual Design",
-    websites: "Websites",
+    websites: "Websites & Systems",
     tooling_stack: "Tooling Stack",
     search_placeholder: "Search by title, stack, or term...",
     read_details: "Read Details",
@@ -111,7 +83,7 @@ const TRANSLATIONS = {
     msg_error: "Verification failed: Please check empty form inputs before sending.",
     btn_send: "Compile & Send Message",
     btn_sending: "Compiling Query...",
-    footer_alternative: "WordPress Alternative System. Handcrafted with Next.js 15 & React 19.",
+    footer_alternative: "Custom Engineering System. Handcrafted with Next.js 15 & React 19.",
     theme_mode: "Theme Mode",
     lets_talk: "Contact Me",
     all_rights: "All Rights Reserved.",
@@ -124,30 +96,32 @@ const TRANSLATIONS = {
   id: {
     ready: "Siap untuk Peluang Baru",
     hero_title_1: "Halo! Saya Khairan.",
-    hero_title_2: "Merancang arsitektur cerdas AI,",
-    hero_title_3: "DevOps & Enterprise Software.",
-    hero_desc: "Saya membangun ekosistem digital yang kuat dan terukur. Mulai dari agen AI otonom yang beroperasi 24/7, otomatisasi pipeline CI/CD, hingga arsitektur perangkat lunak berkinerja tinggi. Mari wujudkan ide brilian Anda menjadi kenyataan.",
+    hero_title_2: "Membangun sistem cerdas",
+    hero_title_3: "yang berpikir mandiri.",
+    hero_desc: "AI Software Engineer yang merancang platform web cerdas, agen otonom, dan sistem cloud-native — dari Jakarta untuk dunia.",
     get_in_touch: "Hubungi Saya",
     view_my_work: "Lihat Karya Saya",
     profile_summary: "Ringkasan Profil",
-    meet_architect: "Kenali Sang Kreator",
+    meet_architect: "Kenali Sang Engineer",
     biography: "Biografi",
-    bio_quote: "Perangkat lunak yang scalable membutuhkan arsitektur yang kuat, dan arsitektur yang kuat membutuhkan rekayasa presisi.",
-    bio_body: "Saya adalah seorang Spesialis AI, DevOps Engineer, dan Arsitek Perangkat Lunak. Saya telah merekayasa puluhan sistem produksi, mulai dari arsitektur terdistribusi yang kompleks hingga agen AI otonom yang berjalan 24/7 di server cloud pribadi. Saya berspesialisasi dalam otomatisasi LLM, pipeline deployment yang tangguh, dan membangun infrastruktur digital berskala perusahaan.",
+    bio_quote: "Membuat AI benar-benar berguna — bukan sekadar memukau di slide presentasi, tapi tangguh di tahap produksi.",
+    bio_body: "Saya adalah Software Engineer asal Jakarta yang berfokus membuat teknologi AI benar-benar bermanfaat di dunia nyata. Saya bekerja lintas stack modern: Python dan FastAPI untuk microservices AI berkinerja tinggi, TypeScript dengan Next.js dan React untuk antarmuka modern yang responsif, serta infrastruktur cloud-native berbasis Docker. Mulai dari pipeline NLP pemroses ribuan dokumen hingga agen AI otonom yang beroperasi 24/7 di server cloud pribadi — fokus saya adalah membangun sistem yang teruji, tangguh, dan siap produksi. Saat ini menempuh studi Sistem Informasi sambil aktif merilis kode produksi dan meraih sertifikasi profesional dari Harvard, Oracle, dan Neo4j.",
     download_cv: "Unduh CV",
     my_projects: "Proyek Saya",
-    completed_works: "Karya Selesai",
-    completed_works_desc: "Berkas desain, basis kode, plugin khusus, dan situs web tingkat perusahaan.",
-    years_active: "Tahun Aktif",
-    years_active_desc: "Dalam struktur freelance, konsultasi, dan pengembangan produk berbasis proyek.",
-    active: "Aktif",
-    global_availability: "Ketersediaan Global",
-    global_availability_desc: "Melayani klien jarak jauh di seluruh dunia dengan jam tumpang tindih yang responsif dan umpan balik yang cepat.",
+    stat_1_val: "12",
+    stat_1_title: "Sertifikasi Profesional",
+    stat_1_desc: "Kredensial dari Harvard CS50, Oracle Cloud, Neo4j Graph, dan HackerRank.",
+    stat_2_val: "600 req/s",
+    stat_2_title: "Throughput Pipeline Puncak",
+    stat_2_desc: "Kinerja produksi pipeline NLP vetting yang menangani throughput skala tinggi.",
+    stat_3_val: "100%",
+    stat_3_title: "Akurasi Klasifikasi",
+    stat_3_desc: "Tervalidasi pada 5.204 sampel dokumen dan memangkas biaya cloud hingga 63%.",
     classifications: "Klasifikasi",
     main_vault: "Gudang Digital Utama",
-    vault_desc: "Filter secara instan melalui portofolio desainer, produk web berkinerja tinggi, atau tumpukan teknis lengkap.",
+    vault_desc: "Filter secara instan melalui sistem web berkinerja tinggi, agen AI otonom, atau tumpukan teknis lengkap.",
     visual_design: "Desain Visual",
-    websites: "Situs Web",
+    websites: "Sistem & Web",
     tooling_stack: "Alat & Teknologi",
     search_placeholder: "Cari berdasarkan judul, teknologi, atau kata kunci...",
     read_details: "Baca Detail",
@@ -164,12 +138,12 @@ const TRANSLATIONS = {
     full_name: "Nama Lengkap",
     email_address: "Alamat Email",
     project_details: "Detail Proyek / Ruang Lingkup",
-    describe_spec: "Jelaskan spesifikasi desain atau kompleksitas perangkat lunak Anda...",
+    describe_spec: "Jelaskan spesifikasi kebutuhan atau arsitektur perangkat lunak Anda...",
     msg_success: "Permintaan terkirim! Saya akan memverifikasi pertanyaan Anda dan menindaklanjutinya dalam waktu 12 jam.",
     msg_error: "Verifikasi gagal: Silakan periksa kolom formulir yang kosong sebelum mengirim.",
     btn_send: "Kompilasi & Kirim Pesan",
     btn_sending: "Mengirim Pesan...",
-    footer_alternative: "Sistem Alternatif WordPress. Dibuat dengan Next.js 15 & React 19.",
+    footer_alternative: "Sistem Rekayasa Mandiri. Dibuat dengan Next.js 15 & React 19.",
     theme_mode: "Mode Tema",
     lets_talk: "Hubungi Saya",
     all_rights: "Hak Cipta Dilindungi Undang-Undang.",
@@ -177,7 +151,7 @@ const TRANSLATIONS = {
     nav_about: "Tentang",
     nav_portfolio: "Portofolio",
     nav_contact: "Hubungi Saya",
-    ai: "Kecerdasan Buatan"
+    ai: "Artificial Intelligence"
   }
 };
 
@@ -660,45 +634,45 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Stat Block 1: Projects (Spans 4 cols) */}
+          {/* Stat Block 1: Certifications (Spans 4 cols) */}
           <div className="md:col-span-4 glass-panel p-6 md:p-8 rounded-3xl border border-white/5 flex flex-col justify-between group hover:border-[#50FFD9]/15">
             <div>
               <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-muted)] group-hover:text-[var(--neon-cyan)] transition-colors mb-4 md:mb-6">
                 <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
-              <h4 className="text-3xl md:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-1 md:mb-2">25+</h4>
-              <p className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-widest">{TRANSLATIONS[lang].completed_works}</p>
+              <h4 className="text-3xl md:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-1 md:mb-2">{TRANSLATIONS[lang].stat_1_val}</h4>
+              <p className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-widest">{TRANSLATIONS[lang].stat_1_title}</p>
             </div>
             <p className="text-[10px] md:text-xs text-[var(--text-muted)] mt-4 md:mt-6 leading-relaxed">
-              {TRANSLATIONS[lang].completed_works_desc}
+              {TRANSLATIONS[lang].stat_1_desc}
             </p>
           </div>
 
-          {/* Stat Block 2: Experience (Spans 4 cols) */}
+          {/* Stat Block 2: Throughput (Spans 4 cols) */}
           <div className="md:col-span-4 glass-panel p-8 rounded-3xl border border-white/5 flex flex-col justify-between group hover:border-[#50FFD9]/15">
             <div>
               <div className="w-10 h-10 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-muted)] group-hover:text-[var(--neon-cyan)] transition-colors mb-6">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h4 className="text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">3+</h4>
-              <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest">{TRANSLATIONS[lang].years_active}</p>
+              <h4 className="text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">{TRANSLATIONS[lang].stat_2_val}</h4>
+              <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest">{TRANSLATIONS[lang].stat_2_title}</p>
             </div>
             <p className="text-xs text-[var(--text-muted)] mt-6 leading-relaxed">
-              {TRANSLATIONS[lang].years_active_desc}
+              {TRANSLATIONS[lang].stat_2_desc}
             </p>
           </div>
 
-          {/* Availability Status Card (Spans 4 cols) */}
-          <div className="md:col-span-4 glass-panel p-8 rounded-3xl border border-white/5 flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-white/[0.005] to-transparent">
+          {/* Stat Block 3: Accuracy (Spans 4 cols) */}
+          <div className="md:col-span-4 glass-panel p-8 rounded-3xl border border-white/5 flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-white/[0.005] to-transparent group hover:border-[#50FFD9]/15">
             <div>
               <div className="flex justify-between items-start mb-6">
-                <div className="w-10 h-10 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-muted)]">
+                <div className="w-10 h-10 rounded-xl bg-[var(--bg-card)] border border-[var(--border-glass)] flex items-center justify-center text-[var(--text-muted)] group-hover:text-[var(--neon-cyan)] transition-colors">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[var(--neon-cyan)]/10 border border-[var(--neon-cyan)]/20 text-[10px] font-extrabold text-[var(--neon-cyan)] uppercase tracking-wider">
@@ -706,11 +680,11 @@ export default function Home() {
                   {TRANSLATIONS[lang].active}
                 </span>
               </div>
-              <h4 className="text-xl font-bold text-[var(--text-primary)] mb-2">Sync: 100%</h4>
-              <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest">{TRANSLATIONS[lang].global_availability}</p>
+              <h4 className="text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">{TRANSLATIONS[lang].stat_3_val}</h4>
+              <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest">{TRANSLATIONS[lang].stat_3_title}</p>
             </div>
             <p className="text-xs text-[var(--text-muted)] mt-6 leading-relaxed">
-              {TRANSLATIONS[lang].global_availability_desc}
+              {TRANSLATIONS[lang].stat_3_desc}
             </p>
           </div>
 
@@ -908,37 +882,36 @@ export default function Home() {
           </div>
         )}
 
-        {/* Tab 3: Advanced Skills Categories Board with proficiency meters */}
+        {/* Tab 3: Advanced Skills Categories Board - Modern Clean Badge Grid */}
         {activeTab === "skills" && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in">
             {(portfolioData.skills as SkillCategory[]).map((cat, i) => (
-              <div key={i} className="glass-panel p-6 md:p-10 rounded-3xl border border-[var(--border-glass)] flex flex-col gap-4 md:gap-6">
-                <h3 className="text-base md:text-lg font-bold text-[var(--text-primary)] flex items-center gap-3 pb-3 md:pb-4 border-b border-[var(--border-glass)]">
-                  <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full bg-[var(--neon-cyan)] shadow-[0_0_8px_var(--neon-cyan-glow)]"></span>
+              <div key={i} className="glass-panel p-6 md:p-8 rounded-3xl border border-[var(--border-glass)] flex flex-col gap-5">
+                <h3 className="text-sm md:text-base font-extrabold text-[var(--text-primary)] flex items-center gap-2.5 pb-3 border-b border-[var(--border-glass)]">
+                  <span className="w-2 h-2 rounded-full bg-[var(--neon-cyan)] shadow-[0_0_8px_var(--neon-cyan-glow)]"></span>
                   {cat.category}
                 </h3>
-                <div className="flex flex-col gap-4">
-                  {cat.items.map((skill, j) => {
-                    const prof = SKILL_PROFICIENCY_MAP[skill.name] || 85;
-                    return (
-                      <div key={j} className="flex flex-col gap-1.5 group">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <Image src={skill.icon} alt={skill.name} width={20} height={20} className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" loading="lazy" />
-                            <span className="text-xs sm:text-sm font-bold text-[var(--text-secondary)] group-hover:text-[var(--neon-cyan)] transition-colors">{skill.name}</span>
-                          </div>
-                          <span className="text-[10px] font-bold text-gray-500 group-hover:text-[#50FFD9] transition-colors">{prof}% Experience</span>
-                        </div>
-                        {/* Dynamic Progress Indicator bar */}
-                        <div className="w-full h-1.5 bg-white/[0.02] border border-white/5 rounded-full overflow-hidden">
-                          <div 
-                            className="h-full bg-gradient-to-r from-[#50FFD9] to-[#a78bfa] rounded-full transition-all duration-1000 group-hover:opacity-100 opacity-80"
-                            style={{ width: `${prof}%` }}
-                          ></div>
-                        </div>
+                <div className="grid grid-cols-2 gap-3">
+                  {cat.items.map((skill, j) => (
+                    <div 
+                      key={j} 
+                      className="group flex items-center gap-3 p-3 rounded-2xl bg-white/[0.02] dark:bg-white/[0.02] border border-black/5 dark:border-white/5 hover:border-[var(--neon-cyan)]/30 hover:bg-[var(--neon-cyan)]/[0.04] transition-all duration-300"
+                    >
+                      <div className="w-8 h-8 rounded-xl bg-white/[0.04] dark:bg-white/[0.04] border border-black/5 dark:border-white/5 flex items-center justify-center p-1.5 flex-shrink-0 group-hover:scale-110 transition-transform shadow-sm">
+                        <Image 
+                          src={skill.icon} 
+                          alt={skill.name} 
+                          width={20} 
+                          height={20} 
+                          className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" 
+                          loading="lazy" 
+                        />
                       </div>
-                    );
-                  })}
+                      <span className="text-xs sm:text-sm font-bold text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors line-clamp-1">
+                        {skill.name}
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
