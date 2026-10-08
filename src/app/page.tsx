@@ -91,7 +91,8 @@ const TRANSLATIONS = {
     nav_about: "About",
     nav_portfolio: "Portfolio",
     nav_contact: "Contact",
-    ai: "Artificial Intelligence"
+    ai: "Artificial Intelligence",
+    active: "Active"
   },
   id: {
     ready: "Siap untuk Peluang Baru",
@@ -151,7 +152,8 @@ const TRANSLATIONS = {
     nav_about: "Tentang",
     nav_portfolio: "Portofolio",
     nav_contact: "Hubungi Saya",
-    ai: "Artificial Intelligence"
+    ai: "Artificial Intelligence",
+    active: "Aktif"
   }
 };
 
@@ -600,7 +602,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4 items-center mt-4">
               <a 
-                href="https://drive.google.com/drive/folders/1yFVit9tC_41PA1iyHpO6ByWZcKuRYq05?usp=drive_link" 
+                href="https://drive.google.com/file/d/1Tw5VSOyf4hSmlp9dmiNh8nV9U3Un9EDI/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-neon"
