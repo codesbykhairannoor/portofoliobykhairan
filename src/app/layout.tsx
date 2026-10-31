@@ -29,15 +29,17 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://khairan.tech"),
   title: {
-    default: "Khairan Noor Fadhlillah | AI Software Engineer",
+    default: "Khairan Noor Fadhlillah | Software Engineer",
     template: "%s | Khairan Noor Fadhlillah"
   },
-  description: "Portfolio of Khairan Noor Fadhlillah: AI Software Engineer specializing in intelligent web platforms, autonomous AI agents, and cloud-native architectures.",
+  description: "Portfolio of Khairan Noor Fadhlillah: Software Engineer specializing in scalable full-stack web architectures, high-concurrency Golang microservices, and modern distributed systems.",
   keywords: [
     "Khairan Noor Fadhlillah",
-    "AI Software Engineer",
-    "AI Engineer Indonesia",
+    "Software Engineer",
+    "Full-Stack Developer",
     "Software Engineer Jakarta",
+    "Software Engineer Indonesia",
+    "Golang Developer",
     "Autonomous AI Agents",
     "Python Developer",
     "Python TypeScript .NET Full Stack",
@@ -80,8 +82,8 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: "https://khairan.tech",
     siteName: "Khairan Noor Fadhlillah Portfolio",
-    title: "Khairan Noor Fadhlillah | AI Software Engineer",
-    description: "AI Software Engineer crafting intelligent web platforms, autonomous agents, and cloud-native systems — from Jakarta to the world.",
+    title: "Khairan Noor Fadhlillah | Software Engineer",
+    description: "Software Engineer crafting scalable web platforms, high-concurrency microservices, and distributed cloud systems — from Jakarta to the world.",
     images: [
       {
         url: "/favicon.ico",
@@ -93,8 +95,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khairan Noor Fadhlillah | AI Software Engineer",
-    description: "AI Software Engineer crafting intelligent web platforms, autonomous agents, and cloud-native systems.",
+    title: "Khairan Noor Fadhlillah | Software Engineer",
+    description: "Software Engineer crafting scalable web platforms, high-concurrency microservices, and distributed cloud systems.",
   },
 };
 
@@ -108,9 +110,9 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Khairan Noor Fadhlillah",
     "url": "https://khairan.tech",
-    "jobTitle": "AI Software Engineer",
-    "alumniOf": "Universitas Ahmad Dahlan",
-    "knowsAbout": ["Artificial Intelligence", "Autonomous AI Agents", "Software Engineering", "Cloud Computing", "Python", ".NET 8", "FastAPI", "Next.js", "TypeScript"],
+    "jobTitle": "Software Engineer",
+    "alumniOf": "Ary Ginanjar University",
+    "knowsAbout": ["Software Engineering", "Full-Stack Development", "Golang Microservices", "Distributed Systems", "Cloud Computing", "Python", "Next.js", "TypeScript", "PostgreSQL", "Docker", "Artificial Intelligence"],
     "sameAs": [
       "https://github.com/codesbykhairannoor",
       "https://www.linkedin.com/in/khairannoorfadhlillah/",

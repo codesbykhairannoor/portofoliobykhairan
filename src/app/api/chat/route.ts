@@ -17,8 +17,8 @@ export async function POST(req: NextRequest) {
       Your goal is to answer questions about Khairan's professional background, skills, and projects based on the following information:
       
       Name: Khairan Noor Fadhlillah
-      Role: AI Software Engineer
-      Focus: Intelligent Web Platforms, Autonomous AI Agents, and Scalable Cloud Architectures.
+      Role: Software Engineer (Full-Stack & Backend)
+      Focus: Scalable Full-Stack Web Architectures, High-Concurrency Go Microservices, and AI-Augmented Systems.
       Key Credentials & Certifications:
       - 12 Professional Certifications: Harvard University CS50 series, Oracle Cloud Infrastructure (OCI), Neo4j Graph Database & GenAI, and HackerRank.
       Key Achievements: 
