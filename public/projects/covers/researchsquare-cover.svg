@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 660" width="1024" height="660">
+  <defs>
+    <radialGradient id="rs-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3aae74" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#15324e" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="660" fill="#070a12"/>
+  <rect width="1024" height="660" fill="url(#grid)"/>
+  <circle cx="512" cy="330" r="380" fill="url(#rs-glow)"/>
+
+  <!-- Subtle card container outline -->
+  <rect x="212" y="150" width="600" height="360" rx="24" fill="#0d1322" fill-opacity="0.75" stroke="rgba(58,174,116,0.3)" stroke-width="1.5"/>
+
+  <!-- Centered Research Square Mark & Wordmark -->
+  <g transform="translate(302, 230)">
+    <!-- Research Square Isometric Cube Mark -->
+    <g transform="scale(0.85)">
+      <path d="M108,46.063L216,0V36.81L108,82.873Z" fill="#15324e"/>
+      <path d="M108,46.063L0,0V36.81L108,82.873Z" fill="#ebcc5f"/>
+      <path d="M216,92.197L108,46.134v36.81l108,46.063Z" fill="#3aae74"/>
+      <path d="M0,92.197L108,46.134v36.81L0,129.007Z" fill="#8bcb83"/>
+      <path d="M108,138.331l108-46.063v36.81l-108,46.063Z" fill="#15324e"/>
+      <path d="M108,138.331L0,92.268v36.81l108,46.063Z" fill="#3aae74"/>
+    </g>
+
+    <!-- Typography -->
+    <g transform="translate(205, 52)">
+      <text x="0" y="0" fill="#ffffff" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">Research Square</text>
+      <text x="2" y="26" fill="#8bcb83" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="14" font-weight="600" letter-spacing="1.5">PART OF SPRINGER NATURE</text>
+    </g>
+  </g>
+
+  <!-- Subtitle Badge -->
+  <g transform="translate(512, 435)" text-anchor="middle">
+    <rect x="-155" y="-18" width="310" height="36" rx="18" fill="rgba(58,174,116,0.12)" stroke="rgba(58,174,116,0.4)" stroke-width="1"/>
+    <circle cx="-127" cy="0" r="4" fill="#3aae74"/>
+    <text x="10" y="5" fill="#34d399" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="2">DOI-INDEXED RESEARCH PREPRINT</text>
+  </g>
+</svg>

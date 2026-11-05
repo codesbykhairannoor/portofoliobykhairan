@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 660" width="1024" height="660">
+  <defs>
+    <radialGradient id="pypi-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3775a9" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#ffd43b" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="py-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3775a9"/>
+      <stop offset="100%" stop-color="#1e415f"/>
+    </linearGradient>
+    <linearGradient id="py-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd43b"/>
+      <stop offset="100%" stop-color="#ffe873"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="660" fill="#070a12"/>
+  <rect width="1024" height="660" fill="url(#grid)"/>
+  <circle cx="512" cy="330" r="380" fill="url(#pypi-glow)"/>
+
+  <!-- Subtle card container outline -->
+  <rect x="232" y="160" width="560" height="340" rx="24" fill="#0d1322" fill-opacity="0.7" stroke="rgba(55,117,169,0.3)" stroke-width="1.5"/>
+
+  <!-- Centered Python Logo -->
+  <g transform="translate(372, 205)">
+    <svg viewBox="0 0 110 110" width="90" height="90">
+      <path fill="url(#py-blue)" d="M54.5,2 C30.6,2 32.1,12.3 32.1,12.3 L32.1,23 L55,23 L55,26.3 L23.5,26.3 C14.3,26.3 6.1,31.7 6.1,44.7 C6.1,57.7 13.3,58.8 13.3,58.8 L21,58.8 L21,50.7 C21,41.4 28.9,41.4 28.9,41.4 L51.9,41.4 C58.9,41.4 64.6,35.6 64.6,28.7 L64.6,15.3 C64.6,8.4 58.7,2 54.5,2 Z M43.2,8.8 C45.8,8.8 47.9,10.9 47.9,13.5 C47.9,16.1 45.8,18.2 43.2,18.2 C40.6,18.2 38.5,16.1 38.5,13.5 C38.5,10.9 40.6,8.8 43.2,8.8 Z"/>
+      <path fill="url(#py-yellow)" d="M55.5,108 C79.4,108 77.9,97.7 77.9,97.7 L77.9,87 L55,87 L55,83.7 L86.5,83.7 C95.7,83.7 103.9,78.3 103.9,65.3 C103.9,52.3 96.7,51.2 96.7,51.2 L89,51.2 L89,59.3 C89,68.6 81.1,68.6 81.1,68.6 L58.1,68.6 C51.1,68.6 45.4,74.4 45.4,81.3 L45.4,94.7 C45.4,101.6 51.3,108 55.5,108 Z M66.8,101.2 C64.2,101.2 62.1,99.1 62.1,96.5 C62.1,93.9 64.2,91.8 66.8,91.8 C69.4,91.8 71.5,93.9 71.5,96.5 C71.5,99.1 69.4,101.2 66.8,101.2 Z"/>
+    </svg>
+    <text x="110" y="60" fill="#ffffff" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">PyPI</text>
+  </g>
+
+  <!-- Subtitle Badge -->
+  <g transform="translate(512, 420)" text-anchor="middle">
+    <rect x="-140" y="-18" width="280" height="36" rx="18" fill="rgba(55,117,169,0.12)" stroke="rgba(55,117,169,0.4)" stroke-width="1"/>
+    <circle cx="-112" cy="0" r="4" fill="#ffd43b"/>
+    <text x="10" y="5" fill="#60a5fa" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="2">PYTHON PACKAGE INDEX</text>
+  </g>
+</svg>

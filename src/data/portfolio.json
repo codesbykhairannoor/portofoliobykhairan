@@ -428,7 +428,7 @@
       "description_id": "Engine kalkulasi Zakat Mal otoritatif dan presisi secara matematis serta tervalidasi Fiqh berdasarkan AAOIFI Standar 35 dan Fatwa MUI/BAZNAS.Tech Stack:TypeScript, Node.js, Islamic Fintech, AAOIFI 35.",
       "link": "https://www.npmjs.com/package/zakat-mal",
       "slug": "zakat-mal-npm",
-      "image": "/projects/tranvas-cover.png",
+      "image": "/projects/covers/npm-cover.svg",
       "logo": "/projects/logos/npm.svg",
       "live_url": "https://www.npmjs.com/package/zakat-mal",
       "metric_key": "zakat-mal"
@@ -442,7 +442,7 @@
       "description_id": "Firewall tanpa dependensi eksternal untuk mendeteksi dan menetralkan injeksi prompt tak terlihat serta ASCII smuggling pada LLM dan Agen AI.Tech Stack:TypeScript, AI Security, Steganography, OWASP LLM.",
       "link": "https://www.npmjs.com/package/smuggle-shield",
       "slug": "smuggle-shield-npm",
-      "image": "/ai/social_automation.png",
+      "image": "/projects/covers/npm-cover.svg",
       "logo": "/projects/logos/npm.svg",
       "live_url": "https://www.npmjs.com/package/smuggle-shield",
       "metric_key": "smuggle-shield"
@@ -456,7 +456,7 @@
       "description_id": "Engine interpretasi bioakustik dan vokalisasi hewan otonom berbasis deteksi pitch YIN dan algoritma Digital Signal Processing (DSP) audio.Tech Stack:TypeScript, Audio DSP, YIN Pitch Detection, Bioacoustics.",
       "link": "https://www.npmjs.com/package/pethertz",
       "slug": "pethertz-npm",
-      "image": "/projects/solvemymedia-1.png",
+      "image": "/projects/covers/npm-cover.svg",
       "logo": "/projects/logos/npm.svg",
       "live_url": "https://www.npmjs.com/package/pethertz",
       "metric_key": "pethertz"
@@ -470,7 +470,7 @@
       "description_id": "Runtime self-healing yang menyembuhkan agen AI dari kebuntuan kognitif (deadlock loop) melalui pemangkasan konteks dan backtracking cerdas.Tech Stack:Python, Agentic AI, Loop Resolution, Resilience.",
       "link": "https://pypi.org/project/capybala/",
       "slug": "capybala-pypi",
-      "image": "/ai/workflow_maps_leadgen.png",
+      "image": "/projects/covers/pypi-cover.svg",
       "logo": "/projects/logos/pypi.svg",
       "live_url": "https://pypi.org/project/capybala/",
       "metric_key": "capybala"
@@ -484,7 +484,7 @@
       "description_id": "Mesin reputasi dan tata kelola ganda untuk manusia dan agen AI otonom dilengkapi mekanisme karantina agen anomali secara otomatis.Tech Stack:Python, Reputation Matrix, Governance, Multi-Agent.",
       "link": "https://pypi.org/project/dualtrust/",
       "slug": "dualtrust-pypi",
-      "image": "/ai/web_agent.png",
+      "image": "/projects/covers/pypi-cover.svg",
       "logo": "/projects/logos/pypi.svg",
       "live_url": "https://pypi.org/project/dualtrust/",
       "metric_key": "dualtrust"
@@ -498,11 +498,13 @@
       "description_id": "Nexus kekebalan dan ketahanan operasional kognitif untuk agen AI otonom dalam arsitektur misi terdistribusi yang krusial.Tech Stack:Python, Agent Immunity, Fault-Tolerance, Telemetry.",
       "link": "https://pypi.org/project/corvin/",
       "slug": "corvin-pypi",
-      "image": "/ai/social_automation.png",
+      "image": "/projects/covers/pypi-cover.svg",
       "logo": "/projects/logos/pypi.svg",
       "live_url": "https://pypi.org/project/corvin/",
       "metric_key": "corvin"
-    },
+    }
+  ],
+  "research": [
     {
       "title": "CAPYBALA Agent Loop Research (DOI)",
       "title_en": "CAPYBALA: Agentic Loop Avoidance Research",
@@ -512,8 +514,8 @@
       "description_id": "Preprint riset terindeks DOI menelaah pemangkasan sadar konteks dan resolusi loop otomatis pada agen rekayasa perangkat lunak otonom.Tech Stack:Springer Nature, Research Square, DOI 10.21203, Agent SWE.",
       "link": "https://doi.org/10.21203/rs.3.rs-11597011/v1",
       "slug": "capybala-research-doi",
-      "image": "/ai/workflow_maps_leadgen.png",
-      "logo": "/projects/logos/doi.svg",
+      "image": "/projects/covers/researchsquare-cover.svg",
+      "logo": "/projects/logos/researchsquare.svg",
       "live_url": "https://doi.org/10.21203/rs.3.rs-11597011/v1"
     },
     {
@@ -525,10 +527,12 @@
       "description_id": "Riset empiris terindeks DOI yang mengevaluasi arsitektur komputasi dokumen 100% lokal di browser pengguna tanpa transfer data cloud.Tech Stack:Springer Nature, Research Square, DOI 10.21203, WebAssembly.",
       "link": "https://doi.org/10.21203/rs.3.rs-11526637/v1",
       "slug": "zero-egress-wasm-doi",
-      "image": "/projects/handlemyfile-3.png",
-      "logo": "/projects/logos/doi.svg",
+      "image": "/projects/covers/researchsquare-cover.svg",
+      "logo": "/projects/logos/researchsquare.svg",
       "live_url": "https://doi.org/10.21203/rs.3.rs-11526637/v1"
-    },
+    }
+  ],
+  "kaggle_datasets": [
     {
       "title": "Global Remote AI Tech Salaries (Kaggle)",
       "title_en": "Global Remote AI Tech Salaries 2026",

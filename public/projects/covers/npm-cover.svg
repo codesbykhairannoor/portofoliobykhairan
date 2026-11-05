@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 660" width="1024" height="660">
+  <defs>
+    <radialGradient id="npm-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#cb3837" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="660" fill="#070a12"/>
+  <rect width="1024" height="660" fill="url(#grid)"/>
+  <circle cx="512" cy="330" r="380" fill="url(#npm-glow)"/>
+
+  <!-- Subtle card container outline -->
+  <rect x="232" y="160" width="560" height="340" rx="24" fill="#0d1322" fill-opacity="0.7" stroke="rgba(203,56,55,0.3)" stroke-width="1.5"/>
+
+  <!-- Centered NPM Logo -->
+  <g transform="translate(362, 250)">
+    <svg viewBox="0 0 780 250" width="300" height="100">
+      <path fill="#cb3837" d="M240,0h2v250h-2v0ZM40,0h200v250h-80v-210h-40v210h-80v-250ZM500,0h240v250h-80v-210h-40v210h-120v-250ZM260,0h200v210h-120v40h-80v-250ZM340,40h40v130h-40v-130ZM580,40h40v130h-40v-130Z"/>
+    </svg>
+  </g>
+
+  <!-- Subtitle Badge -->
+  <g transform="translate(512, 420)" text-anchor="middle">
+    <rect x="-140" y="-18" width="280" height="36" rx="18" fill="rgba(203,56,55,0.12)" stroke="rgba(203,56,55,0.4)" stroke-width="1"/>
+    <circle cx="-112" cy="0" r="4" fill="#cb3837"/>
+    <text x="10" y="5" fill="#f87171" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="2">OFFICIAL NPM PACKAGE</text>
+  </g>
+</svg>
