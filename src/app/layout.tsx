@@ -73,9 +73,12 @@ export const metadata: Metadata = {
     "ICBM": "-6.2088, 106.8456",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
     shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
   openGraph: {
     type: "website",
@@ -86,7 +89,7 @@ export const metadata: Metadata = {
     description: "Software Engineer crafting scalable web platforms, high-concurrency microservices, and distributed cloud systems — from Jakarta to the world.",
     images: [
       {
-        url: "/favicon.ico",
+        url: "/icon.png",
         width: 512,
         height: 512,
         alt: "Khairan Noor Fadhlillah",
