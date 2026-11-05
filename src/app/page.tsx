@@ -853,9 +853,9 @@ export default function Home() {
                   const itemLink = item.link ? item.link.replace(/\/+$/, '') : `/${item.slug}`;
                   const isExternal = itemLink.startsWith("http");
                   const pkgStat = item.metric_key ? metrics.packages?.[item.metric_key] : undefined;
-                  const isResearch = item.logo?.includes("researchsquare") || item.logo?.includes("doi.svg") || item.link?.includes("doi.org");
-                  const isNPM = item.logo?.includes("npm.svg") || item.link?.includes("npmjs.com");
-                  const isPyPI = item.logo?.includes("pypi.svg") || item.link?.includes("pypi.org");
+                  const isResearch = item.logo?.includes("researchsquare") || item.logo?.includes("doi.svg") || item.link?.includes("doi.org") || item.logo?.includes("rs-icon") || item.image?.includes("logo-rs");
+                  const isNPM = item.logo?.includes("npm") || item.link?.includes("npmjs.com") || item.image?.includes("npm");
+                  const isPyPI = item.logo?.includes("pypi") || item.link?.includes("pypi.org") || item.image?.includes("pypi");
 
                   return (
                     <div
@@ -873,7 +873,7 @@ export default function Home() {
                         {/* Clean Subtle Micro Dot Grid on White Canvas */}
                         <div className="absolute inset-0 bg-[radial-gradient(#00000008_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
 
-                        {item.image?.includes("/covers/") ? (
+                        {item.image?.includes("/covers/") || item.image?.startsWith("/ai/") ? (
                           <Image
                             src={item.image}
                             alt={title}
@@ -883,12 +883,12 @@ export default function Home() {
                             priority={true}
                           />
                         ) : (
-                          <div className="relative w-28 h-28 md:w-36 md:h-36 rounded-2xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110 drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)] z-10 p-2">
+                          <div className="relative w-44 h-24 sm:w-52 sm:h-28 md:w-60 md:h-32 max-w-[82%] max-h-[72%] flex items-center justify-center transition-transform duration-500 group-hover:scale-110 drop-shadow-[0_8px_20px_rgba(0,0,0,0.08)] z-10 p-3">
                             <Image
-                              src={item.logo || item.image}
+                              src={item.image || item.logo}
                               alt={`${title} logo`}
                               fill
-                              sizes="(max-width: 768px) 120px, 150px"
+                              sizes="(max-width: 768px) 220px, 280px"
                               className="object-contain"
                               priority={true}
                             />
