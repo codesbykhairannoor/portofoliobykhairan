@@ -420,9 +420,9 @@
   ],
   "open_source": [
     {
-      "title": "zakat-mal (NPM)",
-      "title_en": "zakat-mal (NPM Package)",
-      "title_id": "zakat-mal (Paket NPM)",
+      "title": "Zakat-Mal (NPM)",
+      "title_en": "Zakat-Mal (NPM Package)",
+      "title_id": "Zakat-Mal (Paket NPM)",
       "description": "Authoritative, mathematically rigorous, and Fiqh-verified Zakat Mal calculation engine grounded in AAOIFI Standard 35 & Fatwa MUI.Tech Stack:TypeScript, Node.js, Islamic Fintech, AAOIFI 35.",
       "description_en": "Authoritative, mathematically rigorous, and Fiqh-verified Zakat Mal calculation engine grounded in AAOIFI Standard 35 & Fatwa MUI.Tech Stack:TypeScript, Node.js, Islamic Fintech, AAOIFI 35.",
       "description_id": "Engine kalkulasi Zakat Mal otoritatif dan presisi secara matematis serta tervalidasi Fiqh berdasarkan AAOIFI Standar 35 dan Fatwa MUI/BAZNAS.Tech Stack:TypeScript, Node.js, Islamic Fintech, AAOIFI 35.",
@@ -434,9 +434,9 @@
       "metric_key": "zakat-mal"
     },
     {
-      "title": "smuggle-shield (NPM)",
-      "title_en": "smuggle-shield (NPM Package)",
-      "title_id": "smuggle-shield (Paket NPM)",
+      "title": "Smuggle-Shield (NPM)",
+      "title_en": "Smuggle-Shield (NPM Package)",
+      "title_id": "Smuggle-Shield (Paket NPM)",
       "description": "Zero-dependency invisible prompt injection & ASCII smuggling firewall for LLMs and autonomous AI agents. Detects and neutralizes Unicode steganography.Tech Stack:TypeScript, AI Security, Steganography, OWASP LLM.",
       "description_en": "Zero-dependency invisible prompt injection & ASCII smuggling firewall for LLMs and autonomous AI agents. Detects and neutralizes Unicode steganography.Tech Stack:TypeScript, AI Security, Steganography, OWASP LLM.",
       "description_id": "Firewall tanpa dependensi eksternal untuk mendeteksi dan menetralkan injeksi prompt tak terlihat serta ASCII smuggling pada LLM dan Agen AI.Tech Stack:TypeScript, AI Security, Steganography, OWASP LLM.",
@@ -448,9 +448,9 @@
       "metric_key": "smuggle-shield"
     },
     {
-      "title": "pethertz (NPM)",
-      "title_en": "pethertz (NPM Package)",
-      "title_id": "pethertz (Paket NPM)",
+      "title": "PetHertz (NPM)",
+      "title_en": "PetHertz (NPM Package)",
+      "title_id": "PetHertz (Paket NPM)",
       "description": "Autonomous pet bioacoustics and vocalization interpretation engine leveraging YIN pitch detection and real-time audio DSP algorithms.Tech Stack:TypeScript, Audio DSP, YIN Pitch Detection, Bioacoustics.",
       "description_en": "Autonomous pet bioacoustics and vocalization interpretation engine leveraging YIN pitch detection and real-time audio DSP algorithms.Tech Stack:TypeScript, Audio DSP, YIN Pitch Detection, Bioacoustics.",
       "description_id": "Engine interpretasi bioakustik dan vokalisasi hewan otonom berbasis deteksi pitch YIN dan algoritma Digital Signal Processing (DSP) audio.Tech Stack:TypeScript, Audio DSP, YIN Pitch Detection, Bioacoustics.",
@@ -462,9 +462,9 @@
       "metric_key": "pethertz"
     },
     {
-      "title": "capybala (PyPI)",
-      "title_en": "capybala (PyPI Package)",
-      "title_id": "capybala (Paket PyPI)",
+      "title": "Capybala (PyPI)",
+      "title_en": "Capybala (PyPI Package)",
+      "title_id": "Capybala (Paket PyPI)",
       "description": "Context-Aware Pruning for Yielding & Backtrack-Aligned Loop Avoidance: Self-healing runtime that cures AI agents from cognitive deadlocks.Tech Stack:Python, Agentic AI, Loop Resolution, Resilience.",
       "description_en": "Context-Aware Pruning for Yielding & Backtrack-Aligned Loop Avoidance: Self-healing runtime that cures AI agents from cognitive deadlocks.Tech Stack:Python, Agentic AI, Loop Resolution, Resilience.",
       "description_id": "Runtime self-healing yang menyembuhkan agen AI dari kebuntuan kognitif (deadlock loop) melalui pemangkasan konteks dan backtracking cerdas.Tech Stack:Python, Agentic AI, Loop Resolution, Resilience.",
@@ -476,9 +476,9 @@
       "metric_key": "capybala"
     },
     {
-      "title": "dualtrust (PyPI)",
-      "title_en": "dualtrust (PyPI Package)",
-      "title_id": "dualtrust (Paket PyPI)",
+      "title": "DualTrust (PyPI)",
+      "title_en": "DualTrust (PyPI Package)",
+      "title_id": "DualTrust (Paket PyPI)",
       "description": "Dual-Trust Matrix: Human Social Credit and Autonomous AI Agent Reputation Engine with automated Rogue Agent Quarantine.Tech Stack:Python, Reputation Matrix, Governance, Multi-Agent.",
       "description_en": "Dual-Trust Matrix: Human Social Credit and Autonomous AI Agent Reputation Engine with automated Rogue Agent Quarantine.Tech Stack:Python, Reputation Matrix, Governance, Multi-Agent.",
       "description_id": "Mesin reputasi dan tata kelola ganda untuk manusia dan agen AI otonom dilengkapi mekanisme karantina agen anomali secara otomatis.Tech Stack:Python, Reputation Matrix, Governance, Multi-Agent.",
@@ -490,9 +490,9 @@
       "metric_key": "dualtrust"
     },
     {
-      "title": "corvin (PyPI)",
-      "title_en": "corvin (PyPI Package)",
-      "title_id": "corvin (Paket PyPI)",
+      "title": "Corvin (PyPI)",
+      "title_en": "Corvin (PyPI Package)",
+      "title_id": "Corvin (Paket PyPI)",
       "description": "Cognitive Operational Resilience, Vigilance & Immunity Nexus for Sovereign AI Agents in high-stakes mission-critical environments.Tech Stack:Python, Agent Immunity, Fault-Tolerance, Telemetry.",
       "description_en": "Cognitive Operational Resilience, Vigilance & Immunity Nexus for Sovereign AI Agents in high-stakes mission-critical environments.Tech Stack:Python, Agent Immunity, Fault-Tolerance, Telemetry.",
       "description_id": "Nexus kekebalan dan ketahanan operasional kognitif untuk agen AI otonom dalam arsitektur misi terdistribusi yang krusial.Tech Stack:Python, Agent Immunity, Fault-Tolerance, Telemetry.",
