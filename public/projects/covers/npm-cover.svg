@@ -1,52 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 660" width="1024" height="660">
   <defs>
-    <radialGradient id="npm-glow" cx="50%" cy="45%" r="55%">
-      <stop offset="0%" stop-color="#cb3837" stop-opacity="0.45"/>
-      <stop offset="60%" stop-color="#cb3837" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#070a12" stop-opacity="0"/>
+    <radialGradient id="npm-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#cb3837" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="npm-spot" cx="50%" cy="40%" r="35%">
-      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#070a12" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(0,0,0,0.035)" stroke-width="1"/>
     </pattern>
-    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(203,56,55,0.6)"/>
-      <stop offset="50%" stop-color="rgba(255,255,255,0.08)"/>
-      <stop offset="100%" stop-color="rgba(203,56,55,0.3)"/>
-    </linearGradient>
-    <filter id="logo-drop" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#cb3837" flood-opacity="0.35"/>
-    </filter>
   </defs>
 
-  <!-- Background Base -->
-  <rect width="1024" height="660" fill="#060911"/>
+  <!-- Background -->
+  <rect width="1024" height="660" fill="#ffffff"/>
   <rect width="1024" height="660" fill="url(#grid)"/>
+  <circle cx="512" cy="330" r="400" fill="url(#npm-glow)"/>
 
-  <!-- Ambient Radiant Glow -->
-  <circle cx="512" cy="300" r="420" fill="url(#npm-glow)"/>
-  <circle cx="512" cy="270" r="260" fill="url(#npm-spot)"/>
+  <!-- Card container outline -->
+  <rect x="232" y="160" width="560" height="340" rx="24" fill="#fafbfc" stroke="rgba(203,56,55,0.22)" stroke-width="1.5"/>
 
-  <!-- Sleek High-Tech Card Container -->
-  <rect x="112" y="80" width="800" height="500" rx="28" fill="#0b101d" fill-opacity="0.82" stroke="url(#card-border)" stroke-width="1.75"/>
-
-  <!-- Subtly styled inner backdrop glow for logo -->
-  <rect x="140" y="108" width="744" height="444" rx="20" fill="#080c16" fill-opacity="0.45" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-
-  <!-- Big & Bold NPM Hero Logo (560px x 180px) -->
-  <g transform="translate(232, 185)" filter="url(#logo-drop)">
-    <svg viewBox="0 0 780 250" width="560" height="180">
+  <!-- Centered NPM Logo -->
+  <g transform="translate(362, 250)">
+    <svg viewBox="0 0 780 250" width="300" height="100">
       <path fill="#cb3837" d="M240,0h2v250h-2v0ZM40,0h200v250h-80v-210h-40v210h-80v-250ZM500,0h240v250h-80v-210h-40v210h-120v-250ZM260,0h200v210h-120v40h-80v-250ZM340,40h40v130h-40v-130ZM580,40h40v130h-40v-130Z"/>
     </svg>
   </g>
 
-  <!-- High-Contrast Subtitle Badge -->
-  <g transform="translate(512, 452)" text-anchor="middle">
-    <rect x="-165" y="-21" width="330" height="42" rx="21" fill="rgba(203,56,55,0.14)" stroke="rgba(203,56,55,0.55)" stroke-width="1.25"/>
-    <circle cx="-132" cy="0" r="5" fill="#ef4444"/>
-    <text x="8" y="6" fill="#fca5a5" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="14.5" font-weight="800" letter-spacing="2.5">OFFICIAL NPM PACKAGE</text>
+  <!-- Subtitle Badge -->
+  <g transform="translate(512, 420)" text-anchor="middle">
+    <rect x="-140" y="-18" width="280" height="36" rx="18" fill="rgba(203,56,55,0.08)" stroke="rgba(203,56,55,0.3)" stroke-width="1"/>
+    <circle cx="-112" cy="0" r="4" fill="#cb3837"/>
+    <text x="10" y="5" fill="#b91c1c" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="2">OFFICIAL NPM PACKAGE</text>
   </g>
 </svg>

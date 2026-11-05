@@ -869,25 +869,21 @@ export default function Home() {
                         className="absolute inset-0 z-20"
                         aria-label={`View details of ${title}`}
                       ></a>
-                      <div className="w-full aspect-[1024/660] overflow-hidden border-b border-white/5 relative bg-[#070b14] flex items-center justify-center">
-                        {/* Ambient Radial Glow & Subtle Dot Grid */}
-                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(80,255,217,0.07),transparent_70%)] pointer-events-none"></div>
-                        <div className="absolute inset-0 bg-[radial-gradient(#ffffff05_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+                      <div className="w-full aspect-[1024/660] overflow-hidden border-b border-slate-200/80 dark:border-white/10 relative bg-white flex items-center justify-center">
+                        {/* Clean Subtle Micro Dot Grid on White Canvas */}
+                        <div className="absolute inset-0 bg-[radial-gradient(#00000008_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
 
                         {item.image?.includes("/covers/") ? (
-                          <>
-                            <Image
-                              src={item.image}
-                              alt={title}
-                              fill
-                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                              className="object-cover transition-transform duration-700 group-hover:scale-105"
-                              priority={true}
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#020202]/40 to-transparent pointer-events-none"></div>
-                          </>
+                          <Image
+                            src={item.image}
+                            alt={title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            priority={true}
+                          />
                         ) : (
-                          <div className="relative w-28 h-28 md:w-36 md:h-36 rounded-2xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110 drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)] z-10 p-2">
+                          <div className="relative w-28 h-28 md:w-36 md:h-36 rounded-2xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110 drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)] z-10 p-2">
                             <Image
                               src={item.logo || item.image}
                               alt={`${title} logo`}
