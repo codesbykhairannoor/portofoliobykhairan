@@ -873,7 +873,7 @@ export default function Home() {
                         {/* Clean Subtle Micro Dot Grid on White Canvas */}
                         <div className="absolute inset-0 bg-[radial-gradient(#00000008_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
 
-                        {item.image?.includes("/covers/") || item.image?.startsWith("/ai/") ? (
+                        {item.image && (item.image.includes("/covers/") || item.image.startsWith("/ai/")) ? (
                           <Image
                             src={item.image}
                             alt={title}
@@ -885,7 +885,7 @@ export default function Home() {
                         ) : (
                           <div className="relative w-44 h-24 sm:w-52 sm:h-28 md:w-60 md:h-32 max-w-[82%] max-h-[72%] flex items-center justify-center transition-transform duration-500 group-hover:scale-110 drop-shadow-[0_8px_20px_rgba(0,0,0,0.08)] z-10 p-3">
                             <Image
-                              src={item.image || item.logo}
+                              src={(item.image || item.logo || "/favicon.ico") as string}
                               alt={`${title} logo`}
                               fill
                               sizes="(max-width: 768px) 220px, 280px"
