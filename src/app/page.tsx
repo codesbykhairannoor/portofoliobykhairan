@@ -194,17 +194,48 @@ export default function Home() {
 
   // Registry telemetry state with robust verified fallbacks
   const [metrics, setMetrics] = useState<{
-    summary?: { totalDownloads: number; weeklyDownloads: number; totalClones?: number; totalUniqueClones?: number };
-    packages?: Record<string, { weekly: number; total: number; clones?: number; uniques?: number }>;
+    summary?: {
+      totalDownloads: number;
+      weeklyDownloads: number;
+      todayDownloads?: number;
+      yesterdayDownloads?: number;
+      totalClones?: number;
+      totalUniqueClones?: number;
+      todayClones?: number;
+      yesterdayClones?: number;
+    };
+    packages?: Record<
+      string,
+      {
+        weekly: number;
+        total: number;
+        dailyDownloads?: number;
+        yesterdayDownloads?: number;
+        clones?: number;
+        uniques?: number;
+        dailyClones?: number;
+        yesterdayClones?: number;
+        dailyUniques?: number;
+      }
+    >;
   }>({
-    summary: { totalDownloads: 4141, weeklyDownloads: 2201, totalClones: 2402, totalUniqueClones: 892 },
+    summary: {
+      totalDownloads: 4290,
+      weeklyDownloads: 2201,
+      todayDownloads: 176,
+      yesterdayDownloads: 143,
+      totalClones: 2486,
+      totalUniqueClones: 942,
+      todayClones: 58,
+      yesterdayClones: 110,
+    },
     packages: {
-      "zakat-mal": { weekly: 267, total: 1211, clones: 319, uniques: 118 },
-      "pethertz": { weekly: 606, total: 606, clones: 267, uniques: 115 },
-      "smuggle-shield": { weekly: 476, total: 476, clones: 50, uniques: 23 },
-      "dualtrust": { weekly: 743, total: 785, clones: 817, uniques: 302 },
-      "corvin": { weekly: 15, total: 753, clones: 115, uniques: 62 },
-      "capybala": { weekly: 109, total: 310, clones: 834, uniques: 272 },
+      "zakat-mal": { weekly: 267, total: 1211, dailyDownloads: 4, yesterdayDownloads: 2, clones: 242, uniques: 89, dailyClones: 3, yesterdayClones: 4, dailyUniques: 2 },
+      "pethertz": { weekly: 606, total: 606, dailyDownloads: 42, yesterdayDownloads: 25, clones: 272, uniques: 120, dailyClones: 4, yesterdayClones: 1, dailyUniques: 4 },
+      "smuggle-shield": { weekly: 476, total: 476, dailyDownloads: 18, yesterdayDownloads: 14, clones: 53, uniques: 25, dailyClones: 1, yesterdayClones: 2, dailyUniques: 1 },
+      "dualtrust": { weekly: 743, total: 785, dailyDownloads: 6, yesterdayDownloads: 12, clones: 835, uniques: 315, dailyClones: 6, yesterdayClones: 12, dailyUniques: 3 },
+      "corvin": { weekly: 888, total: 888, dailyDownloads: 103, yesterdayDownloads: 75, clones: 191, uniques: 101, dailyClones: 33, yesterdayClones: 43, dailyUniques: 19 },
+      "capybala": { weekly: 324, total: 324, dailyDownloads: 3, yesterdayDownloads: 15, clones: 893, uniques: 292, dailyClones: 11, yesterdayClones: 48, dailyUniques: 7 },
     }
   });
 
@@ -760,18 +791,31 @@ export default function Home() {
           <p className="text-[var(--text-muted)] text-[10px] md:text-sm mt-2 max-w-md leading-relaxed">{TRANSLATIONS[lang].vault_desc}</p>
 
           {/* Live Registry Telemetry Badge */}
-          <div className="mt-5 inline-flex flex-wrap items-center justify-center gap-3 px-4 py-2 rounded-full glass-panel border border-teal-500/20 text-xs text-[var(--text-secondary)] shadow-sm animate-fade-in">
+          <div className="mt-5 inline-flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 px-4 sm:px-5 py-2.5 rounded-full glass-panel border border-teal-500/20 text-xs text-[var(--text-secondary)] shadow-sm animate-fade-in">
             <span className="flex items-center gap-1.5 font-bold text-teal-600 dark:text-[var(--neon-cyan)]">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               {TRANSLATIONS[lang].telemetry_live}
             </span>
             <span className="text-slate-300 dark:text-white/20 hidden sm:inline">•</span>
-            <span className="font-semibold text-slate-700 dark:text-gray-300">
-              <strong className="text-teal-600 dark:text-[var(--neon-cyan)] font-extrabold">{metrics.summary?.totalDownloads?.toLocaleString() || "4,141"}+</strong> {TRANSLATIONS[lang].telemetry_downloads}
+            <span className="inline-flex items-center gap-1.5 font-semibold text-slate-700 dark:text-gray-300">
+              <strong className="text-teal-600 dark:text-[var(--neon-cyan)] font-extrabold">{metrics.summary?.totalDownloads?.toLocaleString() || "4,290"}+</strong> {TRANSLATIONS[lang].telemetry_downloads}
+              {metrics.summary?.todayDownloads !== undefined && metrics.summary.todayDownloads > 0 && (
+                <span className="inline-flex items-center gap-0.5 text-[10.5px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full" title={lang === "id" ? `+${metrics.summary.todayDownloads} unduhan hari ini` : `+${metrics.summary.todayDownloads} downloads today`}>
+                  <span className="text-[9px]">▲</span> +{metrics.summary.todayDownloads} {lang === "id" ? "hari ini" : "today"}
+                </span>
+              )}
             </span>
             <span className="text-slate-300 dark:text-white/20 hidden sm:inline">•</span>
-            <span className="font-semibold text-slate-700 dark:text-gray-300">
-              <strong className="text-teal-600 dark:text-[var(--neon-cyan)] font-extrabold">{metrics.summary?.totalClones?.toLocaleString() || "2,402"}+</strong> {TRANSLATIONS[lang].telemetry_clones}
+            <span className="inline-flex items-center gap-1.5 font-semibold text-slate-700 dark:text-gray-300">
+              <strong className="text-teal-600 dark:text-[var(--neon-cyan)] font-extrabold">{metrics.summary?.totalClones?.toLocaleString() || "2,486"}+</strong> {TRANSLATIONS[lang].telemetry_clones}
+              {metrics.summary?.todayClones !== undefined && metrics.summary.todayClones > 0 && (
+                <span className="inline-flex items-center gap-0.5 text-[10.5px] font-bold text-sky-600 dark:text-sky-400 bg-sky-500/10 border border-sky-500/20 px-2 py-0.5 rounded-full" title={lang === "id" ? `+${metrics.summary.todayClones} clone hari ini • ${metrics.summary.yesterdayClones} kemarin` : `+${metrics.summary.todayClones} clones today • ${metrics.summary.yesterdayClones} yesterday`}>
+                  <span className="text-[9px]">▲</span> +{metrics.summary.todayClones} {lang === "id" ? "clone hari ini" : "clones today"}
+                  {metrics.summary?.yesterdayClones !== undefined && metrics.summary.yesterdayClones > 0 && (
+                    <span className="opacity-70 font-normal ml-0.5">({metrics.summary.yesterdayClones} {lang === "id" ? "kemarin" : "yesterday"})</span>
+                  )}
+                </span>
+              )}
             </span>
           </div>
 
@@ -936,22 +980,45 @@ export default function Home() {
                       <div className="p-5 md:p-8 flex flex-col flex-grow">
                         <h3 className="text-base md:text-lg font-bold text-[var(--text-primary)] mb-2 hover:text-[var(--neon-cyan)] transition-colors line-clamp-2 leading-snug">{title}</h3>
 
-                        {/* Telemetry Highlight Pill on Open-Source Card */}
+                        {/* Telemetry Highlight Pill on Open-Source Card with Daily Growth */}
                         {pkgStat && (
-                          <div className="flex flex-wrap items-center gap-2 mb-3">
-                            <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full">
-                              <svg className="w-3 h-3 text-emerald-500" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                              </svg>
-                              {pkgStat.total.toLocaleString()} {TRANSLATIONS[lang].downloads_badge}
-                            </span>
-                            {pkgStat.clones !== undefined && pkgStat.clones > 0 && (
-                              <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-sky-600 dark:text-sky-400 bg-sky-500/10 border border-sky-500/20 px-2.5 py-0.5 rounded-full">
-                                <svg className="w-3 h-3 text-sky-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                          <div className="flex flex-col gap-2 mb-3.5">
+                            {/* Downloads Pill & Daily Increase */}
+                            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                              <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full">
+                                <svg className="w-3 h-3 text-emerald-500" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                                 </svg>
-                                {pkgStat.clones.toLocaleString()} {TRANSLATIONS[lang].clones_badge} ({pkgStat.uniques?.toLocaleString()} {TRANSLATIONS[lang].uniques_badge})
+                                {pkgStat.total.toLocaleString()} {TRANSLATIONS[lang].downloads_badge}
                               </span>
+                              {pkgStat.dailyDownloads !== undefined && pkgStat.dailyDownloads > 0 && (
+                                <span className="inline-flex items-center gap-1 text-[10.5px] font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 rounded-full" title={lang === "id" ? `+${pkgStat.dailyDownloads} unduhan hari ini${pkgStat.yesterdayDownloads !== undefined ? ` • ${pkgStat.yesterdayDownloads} kemarin` : ''}` : `+${pkgStat.dailyDownloads} downloads today${pkgStat.yesterdayDownloads !== undefined ? ` • ${pkgStat.yesterdayDownloads} yesterday` : ''}`}>
+                                  <span className="text-[9px]">▲</span> +{pkgStat.dailyDownloads} {lang === "id" ? "hari ini" : "today"}
+                                  {pkgStat.yesterdayDownloads !== undefined && pkgStat.yesterdayDownloads > 0 && (
+                                    <span className="opacity-75 font-medium ml-0.5 text-[10px]">({pkgStat.yesterdayDownloads} {lang === "id" ? "kemarin" : "yesterday"})</span>
+                                  )}
+                                </span>
+                              )}
+                            </div>
+
+                            {/* Git Clones Pill & Daily Increase */}
+                            {pkgStat.clones !== undefined && pkgStat.clones > 0 && (
+                              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                                <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-sky-600 dark:text-sky-400 bg-sky-500/10 border border-sky-500/20 px-2.5 py-0.5 rounded-full">
+                                  <svg className="w-3 h-3 text-sky-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                                  </svg>
+                                  {pkgStat.clones.toLocaleString()} {TRANSLATIONS[lang].clones_badge} ({pkgStat.uniques?.toLocaleString()} {TRANSLATIONS[lang].uniques_badge})
+                                </span>
+                                {pkgStat.dailyClones !== undefined && pkgStat.dailyClones > 0 && (
+                                  <span className="inline-flex items-center gap-1 text-[10.5px] font-bold text-sky-700 dark:text-sky-300 bg-sky-500/15 border border-sky-500/30 px-2 py-0.5 rounded-full" title={lang === "id" ? `+${pkgStat.dailyClones} clone hari ini${pkgStat.yesterdayClones !== undefined ? ` • ${pkgStat.yesterdayClones} kemarin` : ''}` : `+${pkgStat.dailyClones} clones today${pkgStat.yesterdayClones !== undefined ? ` • ${pkgStat.yesterdayClones} yesterday` : ''}`}>
+                                    <span className="text-[9px]">▲</span> +{pkgStat.dailyClones} {lang === "id" ? "clone hari ini" : "clones today"}
+                                    {pkgStat.yesterdayClones !== undefined && pkgStat.yesterdayClones > 0 && (
+                                      <span className="opacity-75 font-medium ml-0.5 text-[10px]">({pkgStat.yesterdayClones} {lang === "id" ? "kemarin" : "yesterday"})</span>
+                                    )}
+                                  </span>
+                                )}
+                              </div>
                             )}
                           </div>
                         )}
