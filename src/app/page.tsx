@@ -260,43 +260,6 @@ export default function Home() {
     setSearchQuery("");
   };
 
-  // Typing animation variants
-  const typingVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.04 }
-    }
-  };
-
-  const charVariants = {
-    hidden: { opacity: 0, y: 15 },
-    visible: { opacity: 1, y: 0, transition: { type: "spring" as const, damping: 12, stiffness: 200 } }
-  };
-
-  const AnimatedText = ({ text, className = "" }: { text: string, className?: string }) => (
-    <motion.span
-      variants={typingVariants}
-      initial="hidden"
-      animate="visible"
-      className={className}
-      key={text}
-    >
-      {text.split(" ").map((word, wordIndex, array) => (
-        <React.Fragment key={`word-${wordIndex}`}>
-          <span className="inline-block whitespace-nowrap">
-            {word.split("").map((char, charIndex) => (
-              <motion.span key={`${char}-${charIndex}`} variants={charVariants} className="inline-block">
-                {char}
-              </motion.span>
-            ))}
-          </span>
-          {wordIndex !== array.length - 1 && " "}
-        </React.Fragment>
-      ))}
-    </motion.span>
-  );
-
   // Sync language with localStorage on mount
   useEffect(() => {
     const savedLang = localStorage.getItem("lang") as "id" | "en" | null;
@@ -614,14 +577,12 @@ export default function Home() {
       {/* Hero Landing Section */}
       <section className="relative z-10 pt-32 pb-20 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
 
-        <h1 className="custom-hero-title mb-6 md:mb-8 font-extrabold leading-[1.1] tracking-tight">
-          <AnimatedText text={TRANSLATIONS[lang].hero_title_1} />
-          {" "}
+        <h1 className="custom-hero-title mb-6 md:mb-8 font-extrabold leading-[1.1] tracking-tight animate-hero-title">
+          <span>{TRANSLATIONS[lang].hero_title_1}</span>{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-primary)] via-[var(--neon-cyan)] to-[var(--neon-violet)]">
-            <AnimatedText text={TRANSLATIONS[lang].hero_title_2} />
-          </span>
-          {" "}
-          <AnimatedText text={TRANSLATIONS[lang].hero_title_3} />
+            {TRANSLATIONS[lang].hero_title_2}
+          </span>{" "}
+          <span>{TRANSLATIONS[lang].hero_title_3}</span>
         </h1>
 
         <p className="max-w-2xl text-[var(--text-secondary)] text-xs md:text-base mb-10 md:mb-12 leading-relaxed font-medium px-4 md:px-0">
